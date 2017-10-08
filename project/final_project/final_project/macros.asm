@@ -1,37 +1,43 @@
-;useful macros created to make project easier to read
+;USEFUL MACROS CREATED TO MAKE PROJECT EASIER TO READ
 ;STORE
-.macro STORE
-	.if @0 > 0x40
-		sts @0, @1
-	.else
-		out @0, @1
-	.endif
-.endmacro
+.MACRO STORE
+	.IF @0 > 0X40
+		STS @0, @1
+	.ELSE
+		OUT @0, @1
+	.ENDIF
+.ENDMACRO
 ;LOAD
-.macro LOAD
-	.if @1 > 0x40
-		lds @0, @1
-	.else
-		in @0, @1
-	.endif
-.endmacro
+.MACRO LOAD
+	.IF @1 > 0X40
+		LDS @0, @1
+	.ELSE
+		IN @0, @1
+	.ENDIF
+.ENDMACRO
 
-;write data into lcd, using some constant value
-.macro lcd_write_data
-	ldi r16, @0
-	rcall data_write
-	rcall lcd_wait
-.endmacro
+;WRITE DATA INTO LCD, USING SOME CONSTANT VALUE
+.MACRO LCD_WRITE_DATA
+	LDI R16, @0
+	RCALL DATA_WRITE
+	RCALL LCD_WAIT
+.ENDMACRO
 
-;write data into lcd_com, using some constant value
-.macro lcd_write_com
-	ldi r16, @0
-	rcall com_write
-	rcall lcd_wait
-.endmacro
+;WRITE DATA INTO LCD_COM, USING SOME CONSTANT VALUE
+.MACRO LCD_WRITE_COM
+	LDI R16, @0
+	RCALL COM_WRITE
+	RCALL LCD_WAIT
+.ENDMACRO
 
-;wait for more than 1ms using some constant value
-.macro macro_wait
-	ldi r16, @0
-	call wait_more
-.endmacro
+;WAIT FOR MORE THAN 1MS USING SOME CONSTANT VALUE
+.MACRO MACRO_WAIT
+	LDI R16, @0
+	CALL WAIT_MORE
+.ENDMACRO
+
+;FLY CONTROL
+.MACRO FLY_CTRL
+	LDI R16, @0
+	CALL PWM_DUTY
+.ENDMACRO

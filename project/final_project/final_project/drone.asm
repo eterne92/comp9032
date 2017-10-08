@@ -1,0 +1,63 @@
+;Z POINTING TO THE LAST POSITION, R18 DIRECTION
+;R20-> ROW, R21-> COL, R18 -> DIRECTION
+;Z POINT TO LAST POSITION
+;NEW_HEIGHT -> R23 AS RETURN
+;IF REACH END, RETURN -1(WHICH MIGHT NEVER HAPPEN)
+FLY_TO_NEXT_POS:    
+    CPI R18, 0      ;R18 -> SET AS FLY RIGHT, CLEAR AS FLY LEFT
+    BREQ GO_LEFT
+    CPI R21, BORDER_X
+    BREQ GO_DOWN
+    ADIW Z, 1
+    SUBI R21, -1
+
+    CHECK_HEIGHT:
+        LPM R23, Z
+        RET
+
+    GO_END:
+        LDI R23, -1
+        RET
+
+    GO_LEFT:
+        CPI R21, 0
+        BREQ GO_DOWN
+        SBIW Z, 1
+        SUBI R21, 1
+        RJMP CHECK_HEIGHT
+    
+    GO_DOWN:
+        CPI R20, BORDER_X
+        BREQ GO_END
+        ADIW Z, BORDER_Y	;NEXT ROW
+        COM R18                 ;DIFFERENT DIRECTION
+        SUBI R20, -1            ;SET R20, NEXT ROW
+
+;current position: R20:R21 -> x:y
+;return r23 as signal if r23 set, then the accident position is found
+;else if r23 is clr, accident position is not found
+DRONE_SEARCH:
+	PUSH R16
+	PUSH R17
+	PUSH ZL
+	PUSH ZH
+
+	CLR R23
+	FLY_CTRL HALF_MOTOR_SPEED	;SET MOTOR SPEED TO HALF
+	LDI ZL, LOW(ACCIDENT)
+	LDI ZH, HIGH(ACCIDENT)
+
+	LPM R16, Z+
+	LPM R17, Z
+
+	CP R16, R20
+	BRNE SEARCH_RETURN
+	CP R17, R21
+	BRNE SEARCH_RETURN
+	SER R23
+SEARCH_RETURN:
+	POP ZH
+	POP ZL
+	POP R16
+	POP R17
+	RET

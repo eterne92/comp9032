@@ -5,133 +5,136 @@
  *   Author: shaoh
  */ 
 ;---------------------------------------------
-;some useful functions:
-;itoa
-;itoa_16bit
+;SOME USEFUL FUNCTIONS:
+;ITOA
+;ITOA_16BIT
+;PWM_GENERATE
 ;---------------------------------------------
-itoa:	;8bit input(max 255, min 0) r16, r23:r24:r25 output ascii value
+ITOA:	;8BIT INPUT(MAX 255, MIN 0) R16, R23:R24:R25 OUTPUT ASCII VALUE
+	PUSH R16
+	CLR R23
+	CLR R24
+	CLR R25
+
+	E100S:					;EXTRACT 100
+		CPI R16, 100
+		BRLO E10S
+		SUBI R16, 100
+		INC R23
+		RJMP E100S
+
+	E10S:					;EXTRACT 10
+		CPI R16, 10
+		BRLO E1S
+		SUBI R16, 10
+		INC R24
+		RJMP E10S
+
+	E1S:					;EXTRACT 1
+		CPI R16, 1
+		BRLO ITOA_RETURN
+		SUBI R16, 1
+		INC R25
+		RJMP E1S
+
+	ITOA_RETURN:
+		SUBI R23, -'0'		;GET ASCII VALUE FOR EACH
+		SUBI R24, -'0'
+		SUBI R25, -'0'
+		POP R16
+		RET
+
+ITOA_16BIT:	;16BIT INPUT(MAX 65535, MIN 0) R17_HIGH:R16_LOW, R21:R22:R23:R24:R25 OUTPUT ASCII VALUE
+	PUSH R16			;LOW
+	PUSH R17			;HIGH
+	PUSH R18			;TEMP REGISTER
+	CLR R21				;10000S
+	CLR R22				;1000S
+	CLR R23				;100S
+	CLR R24				;10S
+	CLR R25				;1S
+
+	XE10000S:					;EXTRACT 10000
+		LDI R18, HIGH(10000)
+		CPI R16, LOW(10000)
+		CPC R17, R18
+		BRLO XE1000S
+		SUBI R16, LOW(10000)
+		SBC R17, R18
+		INC R21
+		RJMP XE10000S
+
+	XE1000S:					;EXTRACT 1000
+		LDI R18, HIGH(1000)		;USE R18 TO CMP
+		CPI R16, LOW(1000)		;CMP LOW FIRST
+		CPC R17, R18			;THEN HIGH
+		BRLO XE100S
+		SUBI R16, LOW(1000)		;SUB LOW FIRST
+		SBC R17, R18			;THEN HIGH
+		INC R22
+		RJMP XE1000S
+
+	XE100S:					;EXTRACT 100
+		LDI R18, HIGH(100)
+		CPI R16, LOW(100)
+		CPC R17, R18
+		BRLO XE10S
+		SUBI R16, LOW(100)
+		SBC R17, R18
+		INC R23
+		RJMP XE100S
+
+	XE10S:					;EXTRACT 10
+		CPI R16, 10
+		BRLO XE1S
+		SUBI R16, 10
+		INC R24
+		RJMP XE10S
+
+	XE1S:					;EXTRACT 1
+		CPI R16, 1
+		BRLO ITOA_16BIT_RETURN
+		SUBI R16, 1
+		INC R25
+		RJMP XE1S
+
+	ITOA_16BIT_RETURN:
+		SUBI R21, -'0'		;GET ASCII VALUE FOR EACH
+		SUBI R22, -'0'
+		SUBI R23, -'0'
+		SUBI R24, -'0'
+		SUBI R25, -'0'
+
+		POP R18
+		POP R17
+		POP R16
+		RET
+
+;USING TIMER3 AND OCR3B TO GENERATE PWM
+
+PWM_GENERATE:
+	PUSH r16
+	
+	LDI TEMP, 0B00001000
+	STORE DDRE, r16					;SET UP PORTE BIT4 AS PWM OUTPUT
+	CLR TEMP
+	STORE OCR3BH, r16
+	CLR TEMP
+	STORE OCR3BL, r16					;ONLY OCR3BL MATTERS(8BIT PWM)
+	LDI TEMP, (1<<WGM30)|(1<<COM3B1)	;8BIT PHASE CORRECT PWM MODE
+	STORE TCCR3A, r16		
+	LDI TEMP, 1<<CS30					
+	STORE TCCR3B, r16
+
+	POP r16
+	ret
+
+;Change pwm duty
+.set PWM_CMP_REG = OCR3BL		;use OCR3BL as pwm compare regis
+pwm_duty:
 	push r16
-	clr r23
-	clr r24
-	clr r25
 
-	e100s:					;extract 100
-		cpi r16, 100
-		brlo e10s
-		subi r16, 100
-		inc r23
-		rjmp e100s
+	STORE PWM_CMP_REG, r16
 
-	e10s:					;extract 10
-		cpi r16, 10
-		brlo e1s
-		subi r16, 10
-		inc r24
-		rjmp e10s
-
-	e1s:					;extract 1
-		cpi r16, 1
-		brlo itoa_return
-		subi r16, 1
-		inc r25
-		rjmp e1s
-
-	itoa_return:
-		subi r23, -'0'
-		subi r24, -'0'
-		subi r25, -'0'
-		pop r16
-		ret
-
-itoa_16bit:	;16bit input(max 65535, min 0) r17_high:r16_low, r21:r22:r23:r24:r25 output ascii value
-	push r16			;low
-	push r17			;high
-	push r18			;temp register
-	clr r21				;10000s
-	clr r22				;1000s
-	clr r23				;100s
-	clr r24				;10s
-	clr r25				;1s
-
-	xe10000s:					;extract 10000
-		ldi r18, high(10000)
-		cpi r16, low(10000)
-		cpc r17, r18
-		brlo xe1000s
-		subi r16, low(10000)
-		sbc r17, r18
-		inc r21
-		rjmp xe10000s
-
-	xe1000s:					;extract 1000
-		ldi r18, high(1000)		;use r18 to cmp
-		cpi r16, low(1000)		;cmp low first
-		cpc r17, r18			;then high
-		brlo xe100s
-		subi r16, low(1000)		;sub low first
-		sbc r17, r18			;then high
-		inc r22
-		rjmp xe1000s
-
-	xe100s:					;extract 100
-		ldi r18, high(100)
-		cpi r16, low(100)
-		cpc r17, r18
-		brlo xe10s
-		subi r16, low(100)
-		sbc r17, r18
-		inc r23
-		rjmp xe100s
-
-	xe10s:					;extract 10
-		cpi r16, 10
-		brlo xe1s
-		subi r16, 10
-		inc r24
-		rjmp xe10s
-
-	xe1s:					;extract 1
-		cpi r16, 1
-		brlo itoa_16bit_return
-		subi r16, 1
-		inc r25
-		rjmp xe1s
-
-	itoa_16bit_return:
-		subi r21, -'0'
-		subi r22, -'0'
-		subi r23, -'0'
-		subi r24, -'0'
-		subi r25, -'0'
-
-		pop r18
-		pop r17
-		pop r16
-		ret
-
-;using 
-pwm_generator:
-	push temp
-	
-	ser temp
-	STORE DDRE, temp
-	clr temp
-	store ocr3Bh, temp
-	ser temp
-	STORE OCR3Bl, temp
-	/*ldi temp, 0x4A
-	STORE OCR2BL, temp*/
-	
-	ldi temp, (1<<WGM30)|(1<<COM3B1)
-	STORE TCCR3A, temp
-	ldi temp, 1<<CS30
-	STORE TCCR3B, temp
-
-	
-	/*ldi temp, 1<<OCIE3A
-	STORE TIMSK3, temp*/ 
-	ser temp
-	STORE PORTC, temp
-	
-
-	pop temp
+	pop r16
+	ret

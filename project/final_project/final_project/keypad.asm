@@ -1,123 +1,123 @@
 /*
- * keypad.asm
+ * KEYPAD.ASM
  *
- *  Created: 2017/10/3
- *  Author: shaohui z5155945
+ *  CREATED: 2017/10/3
+ *  AUTHOR: SHAOHUI Z5155945
  */ 
 ;----------------------------------
-;functions related to keypad
-;get_key
-;key_ascii
+;FUNCTIONS RELATED TO KEYPAD
+;GET_KEY
+;KEY_ASCII
 ;----------------------------------
-;KEYPAD should be connected as below
+;KEYPAD SHOULD BE CONNECTED AS BELOW
 ;KEYPAD -> PORTL
-;colums -> 4:7
-;rows -> 0:3
-;port directions should be set on RESET
+;COLUMS -> 4:7
+;ROWS -> 0:3
+;PORT DIRECTIONS SHOULD BE SET ON RESET
 ;----------------------------------
-.equ ROWMASK = 0x0F
-.equ COLMASK = 0b11101111	;start from c0
+.EQU ROWMASK = 0X0F
+.EQU COLMASK = 0B11101111	;START FROM C0
 
-;function to get keyvalue from keypad, return row:col on r24:r25
-get_key:
-	push r16				;r16 as rmask
-	push r17				;r17 as row
-	push r18				;r18 as col
-	push r19				;r19 as temp1
-	push r20				;r20 as temp2
-	push r21				;r21 as cmask
-	set_cmask:
-		ldi r21, COLMASK
-		STORE PORTL, r21	;set colmask to 0x11101111
-		clr r18				;set col to 0
-	cloop:
-		ldi r16, 0x01		;start from row 0
-		clr r17				;set row to 0
-	rloop:
-		LOAD r19, PINL		;get value from KEYPAD
-		mov r20, r19
-		andi r20, ROWMASK	;clr col input
-		and r20, r16
-		brne next_row
-		rjmp debouncing_loop
-	next_row:
-		lsl r16				;leftshift rmask
-		inc r17				;row = row + 1
-		cpi r17, 4			;if row == 4
-		breq next_col		;goto next col
-		rjmp rloop			;else goto next row
-	next_col:
-		lsl r21				;leftshift cmask
-		inc r18				;col = col + 1
-		cpi r18, 4			;if col == 4
-		breq set_cmask		;startover again
-		inc r21
-		STORE PORTL, r21		;set cmask
-		rjmp cloop			;goto next col
+;FUNCTION TO GET KEYVALUE FROM KEYPAD, RETURN ROW:COL ON R24:R25
+GET_KEY:
+	PUSH R16				;R16 AS RMASK
+	PUSH R17				;R17 AS ROW
+	PUSH R18				;R18 AS COL
+	PUSH R19				;R19 AS TEMP1
+	PUSH R20				;R20 AS TEMP2
+	PUSH R21				;R21 AS CMASK
+	SET_CMASK:
+		LDI R21, COLMASK
+		STORE KEY_PORT, R21	;SET COLMASK TO 0X11101111
+		CLR R18				;SET COL TO 0
+	CLOOP:
+		LDI R16, 0X01		;START FROM ROW 0
+		CLR R17				;SET ROW TO 0
+	RLOOP:
+		LOAD R19, PINL		;GET VALUE FROM KEYPAD
+		MOV R20, R19
+		ANDI R20, ROWMASK	;CLR COL INPUT
+		AND R20, R16
+		BRNE NEXT_ROW
+		RJMP DEBOUNCING_LOOP
+	NEXT_ROW:
+		LSL R16				;LEFTSHIFT RMASK
+		INC R17				;ROW = ROW + 1
+		CPI R17, 4			;IF ROW == 4
+		BREQ NEXT_COL		;GOTO NEXT COL
+		RJMP RLOOP			;ELSE GOTO NEXT ROW
+	NEXT_COL:
+		LSL R21				;LEFTSHIFT CMASK
+		INC R18				;COL = COL + 1
+		CPI R18, 4			;IF COL == 4
+		BREQ SET_CMASK		;STARTOVER AGAIN
+		INC R21
+		STORE KEY_PORT, R21		;SET CMASK
+		RJMP CLOOP			;GOTO NEXT COL
 
-	debouncing_loop:		;solve debouncing
-		LOAD r19, PINL
-		andi r19, ROWMASK
-		cpi r19, 0x0F
-		brne debouncing_loop
-	mov r24, r17			;r24 as row
-	mov r25, r18			;r25 as col
+	DEBOUNCING_LOOP:		;SOLVE DEBOUNCING
+		LOAD R19, PINL
+		ANDI R19, ROWMASK
+		CPI R19, 0X0F
+		BRNE DEBOUNCING_LOOP
+	MOV R24, R17			;R24 AS ROW
+	MOV R25, R18			;R25 AS COL
 
-	pop r21
-	pop r20
-	pop r19
-	pop r18
-	pop r17
-	pop r16
-	ret
+	POP R21
+	POP R20
+	POP R19
+	POP R18
+	POP R17
+	POP R16
+	RET
 
-;get key_ascii value from input as r24->row, r25->col, return ascii value as r23
-key_ascii:
-	push r24				;r24 as row
-	push r25				;r25 as col
-	push r16				;r16 as temp
-	push r0
-	push r1					;mul will be used
+;GET KEY_ASCII VALUE FROM INPUT AS R24->ROW, R25->COL, RETURN ASCII VALUE AS R23
+KEY_ASCII:
+	PUSH R24				;R24 AS ROW
+	PUSH R25				;R25 AS COL
+	PUSH R16				;R16 AS TEMP
+	PUSH R0
+	PUSH R1					;MUL WILL BE USED
 
-	rcall get_key
-	cpi r25, 3				;if col == 3
-	breq ascii_letter
-	cpi r24, 3				;if row == 3
-	breq ascii_symbol
-	ldi r16, 3				;temp = 3 * row + col
-	mul r24, r16			;
-	mov r16, r0
-	add r16, r25 
-	subi r16, -'1'			;get ascii value
-	mov r23, r16
-	rjmp return_key_ascii
+	RCALL GET_KEY
+	CPI R25, 3				;IF COL == 3
+	BREQ ASCII_LETTER
+	CPI R24, 3				;IF ROW == 3
+	BREQ ASCII_SYMBOL
+	LDI R16, 3				;TEMP = 3 * ROW + COL
+	MUL R24, R16			;
+	MOV R16, R0
+	ADD R16, R25 
+	SUBI R16, -'1'			;GET ASCII VALUE
+	MOV R23, R16
+	RJMP RETURN_KEY_ASCII
 
-	ascii_letter:
-		ldi r16, 'A'			;temp = 'A'
-		add r16, r24			;temp += row
-		mov r23, r16
-		rjmp return_key_ascii
+	ASCII_LETTER:
+		LDI R16, 'A'			;TEMP = 'A'
+		ADD R16, R24			;TEMP += ROW
+		MOV R23, R16
+		RJMP RETURN_KEY_ASCII
 
-	ascii_symbol:
-		cpi r25, 0				;'*'
-		breq ascii_star
-		cpi r25, 1				;'0'
-		breq ascii_zero
-		ldi r23, '#'			;'#'
-		rjmp return_key_ascii
+	ASCII_SYMBOL:
+		CPI R25, 0				;'*'
+		BREQ ASCII_STAR
+		CPI R25, 1				;'0'
+		BREQ ASCII_ZERO
+		LDI R23, '#'			;'#'
+		RJMP RETURN_KEY_ASCII
 
-	ascii_star:
-		ldi r23, '*'
-		rjmp return_key_ascii
+	ASCII_STAR:
+		LDI R23, '*'
+		RJMP RETURN_KEY_ASCII
 
-	ascii_zero:
-		ldi r23, '0'
-		rjmp return_key_ascii
+	ASCII_ZERO:
+		LDI R23, '0'
+		RJMP RETURN_KEY_ASCII
 
-return_key_ascii:
-	pop r1
-	pop r0
-	pop r16
-	pop r25
-	pop r24
-	ret
+RETURN_KEY_ASCII:
+	POP R1
+	POP R0
+	POP R16
+	POP R25
+	POP R24
+	RET

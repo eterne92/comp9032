@@ -6,156 +6,151 @@
  */ 
 
 ;--------------------------------------
-;functions related to the lcd display:
-;lcd_wait
-;data_write
-;com_write
-;lcd_init
-;lcd_display_number:
-;lcd_display_number_16bit:
+;FUNCTIONS RELATED TO THE LCD DISPLAY:
+;LCD_WAIT
+;DATA_WRITE
+;COM_WRITE
+;LCD_INIT
+;LCD_DISPLAY_NUMBER:
+;LCD_DISPLAY_NUMBER_16BIT:
 ;--------------------------------------
-;LCD ports should be connected as below
-;lcd_ctrl -> portA
-;lcd_DATA -> portF
-;spcificly each bit should be
-.equ LCD_RS = 7
-.equ LCD_E = 6
-.equ LCD_RW = 5
+;LCD PORTS SHOULD BE CONNECTED AS BELOW
+;LCD_CTRL -> LCD_CTRL_PORT
+;LCD_DATA -> LCD_DATA_PORT
+;WHITCH IS DEFINED IN CONSTANT.INC
+;SPCIFICLY EACH BIT SHOULD BE
+.EQU LCD_RS = 7
+.EQU LCD_E = 6
+.EQU LCD_RW = 5
 ;--------------------------------------
-;waiting functions and general functions are used in some of lcd functions
-;macros.asm should also be include in the main.asm file
-.ifndef wait_1s
-	.include "wait.asm"
-.endif
-.ifndef itoa
-	.include "generalfunc.asm"
-.endif
+;WAITING FUNCTIONS AND GENERAL FUNCTIONS ARE USED IN SOME OF LCD FUNCTIONS
+;MACROS.ASM SHOULD ALSO BE INCLUDE IN THE MAIN.ASM FILE
 ;--------------------------------------
 
-;wait untill lcd is not busy
-lcd_wait:
-	push r16
-	clr r16
-	out DDRF, r16			;set PORTF as input
-	ldi r16, 1<<LCD_RW
-	out PORTA, r16			;set RS = 0 & RW = 1
-	busy_loop:
-		rcall wait_1ms		;get some delay
-		sbi PORTA, LCD_E
-		rcall wait_1ms		;get some delay
-		ldi r16, PINF
-		cbi PORTA, LCD_E
-		sbrc r16, 7			;if BF is clear, end busy loop
-		rjmp busy_loop		;else loop until it's set
-	clr r16
-	out PORTA, r16
-	ser r16
-	out DDRF, r16
-	pop r16
-	ret
+;WAIT UNTILL LCD IS NOT BUSY
+LCD_WAIT:
+	PUSH R16
+	CLR R16
+	OUT DDRF, R16			;SET PORTF AS INPUT
+	LDI R16, 1<<LCD_RW
+	OUT LCD_CTRL_PORT, R16			;SET RS = 0 & RW = 1
+	BUSY_LOOP:
+		RCALL WAIT_1MS		;GET SOME DELAY
+		SBI LCD_CTRL_PORT, LCD_E
+		RCALL WAIT_1MS		;GET SOME DELAY
+		LDI R16, PINF
+		CBI LCD_CTRL_PORT, LCD_E
+		SBRC R16, 7			;IF BF IS CLEAR, END BUSY LOOP
+		RJMP BUSY_LOOP		;ELSE LOOP UNTIL IT'S SET
+	CLR R16
+	OUT LCD_CTRL_PORT, R16
+	SER R16
+	OUT DDRF, R16
+	POP R16
+	RET
 
-;function to write data to lcd, using register r16(data)
-data_write:
-	out PORTF, r16			;send data to lcd_data
-	sbi PORTA, LCD_RS		;set LCD_RS = 1
-	cbi PORTA, LCD_RW		;set LCD_RW = 0
-	rcall wait_1ms
-	sbi PORTA, LCD_E		;enable
-	rcall wait_1ms
-	cbi PORTA, LCD_E
-	rcall wait_1ms
-	ret		
+;FUNCTION TO WRITE DATA TO LCD, USING REGISTER R16(DATA)
+DATA_WRITE:
+	OUT LCD_DATA_PORT, R16			;SEND DATA TO LCD_DATA
+	SBI LCD_CTRL_PORT, LCD_RS		;SET LCD_RS = 1
+	CBI LCD_CTRL_PORT, LCD_RW		;SET LCD_RW = 0
+	RCALL WAIT_1MS
+	SBI LCD_CTRL_PORT, LCD_E		;ENABLE
+	RCALL WAIT_1MS
+	CBI LCD_CTRL_PORT, LCD_E
+	RCALL WAIT_1MS
+	RET		
 
-;function to write com to lcd, using register r16(data)
-com_write:
-	out PORTF, r16			;send data to lcd_data
-	cbi PORTA, LCD_RS		;set LCD_RS = 0
-	cbi PORTA, LCD_RW		;set LCD_RW = 0
-	rcall wait_1ms
-	sbi PORTA, LCD_E		;enable
-	rcall wait_1ms
-	cbi PORTA, LCD_E
-	rcall wait_1ms
-	ret
+;FUNCTION TO WRITE COM TO LCD, USING REGISTER R16(DATA)
+COM_WRITE:
+	OUT LCD_DATA_PORT, R16			;SEND DATA TO LCD_DATA
+	CBI LCD_CTRL_PORT, LCD_RS		;SET LCD_RS = 0
+	CBI LCD_CTRL_PORT, LCD_RW		;SET LCD_RW = 0
+	RCALL WAIT_1MS
+	SBI LCD_CTRL_PORT, LCD_E		;ENABLE
+	RCALL WAIT_1MS
+	CBI LCD_CTRL_PORT, LCD_E
+	RCALL WAIT_1MS
+	RET
 
-;init lcd using some macros defined in macros.asm
-lcd_init:
-	push r16
-	push temp
-	macro_wait 15				;wait 15ms
-	;init lcd
-	lcd_write_com 0b00111000
-	macro_wait 5
-	lcd_write_com 0b00111000
-	macro_wait 1
-	lcd_write_com 0b00111000	;write function set 3times
-	lcd_write_com 0b00111000	;2*5*7
+;INIT LCD USING SOME MACROS DEFINED IN MACROS.ASM
+LCD_INIT:
+	PUSH R16
+	PUSH TEMP
+	MACRO_WAIT 15				;WAIT 15MS
+	;INIT LCD
+	LCD_WRITE_COM 0B00111000
+	MACRO_WAIT 5
+	LCD_WRITE_COM 0B00111000
+	MACRO_WAIT 1
+	LCD_WRITE_COM 0B00111000	;WRITE FUNCTION SET 3TIMES
+	LCD_WRITE_COM 0B00111000	;2*5*7
 
-	lcd_write_com 0b00001000	;display off
-	lcd_write_com 0b00000001	;display clr
-	lcd_write_com 0b00000110	;increment, no shift
-	lcd_write_com 0b00001111	;cursor on, bar, blink
-	pop r16
-	pop temp
-	ret
+	LCD_WRITE_COM 0B00001000	;DISPLAY OFF
+	LCD_WRITE_COM 0B00000001	;DISPLAY CLR
+	LCD_WRITE_COM 0B00000110	;INCREMENT, NO SHIFT
+	LCD_WRITE_COM 0B00001111	;CURSOR ON, BAR, BLINK
+	POP R16
+	POP TEMP
+	RET
 
 
-;display 8bit number on lcd, input r16 as number, r23 r24 r25 using for take the ascii value of the number
-lcd_display_number:
-	push r16
-	push r23
-	push r24
-	push r25
+;DISPLAY 8BIT NUMBER ON LCD, INPUT R16 AS NUMBER, R23 R24 R25 USING FOR TAKE THE ASCII VALUE OF THE NUMBER
+LCD_DISPLAY_NUMBER:
+	PUSH R16
+	PUSH R23
+	PUSH R24
+	PUSH R25
 
-	call itoa				;using function itoa from general functions to get ascii value of a certain int
-	mov r16, r23			;display ascii symble one by one
-	rcall lcd_wait
-	rcall data_write
-	mov r16, r24			;from high to low
-	rcall lcd_wait
-	rcall data_write
-	mov r16, r25
-	rcall lcd_wait
-	rcall data_write
+	CALL ITOA				;USING FUNCTION ITOA FROM GENERAL FUNCTIONS TO GET ASCII VALUE OF A CERTAIN INT
+	MOV R16, R23			;DISPLAY ASCII SYMBLE ONE BY ONE
+	RCALL LCD_WAIT
+	RCALL DATA_WRITE
+	MOV R16, R24			;FROM HIGH TO LOW
+	RCALL LCD_WAIT
+	RCALL DATA_WRITE
+	MOV R16, R25
+	RCALL LCD_WAIT
+	RCALL DATA_WRITE
 
-	pop r25
-	pop r24
-	pop r23
-	pop r16
-	ret
+	POP R25
+	POP R24
+	POP R23
+	POP R16
+	RET
 
-;16bit number display, same technique as 8bit version
-lcd_display_number_16bit:
-	push r16
-	push r17
-	push r21
-	push r22
-	push r23
-	push r24
-	push r25
+;16BIT NUMBER DISPLAY, SAME TECHNIQUE AS 8BIT VERSION
+LCD_DISPLAY_NUMBER_16BIT:
+	PUSH R16
+	PUSH R17
+	PUSH R21
+	PUSH R22
+	PUSH R23
+	PUSH R24
+	PUSH R25
 
-	call itoa_16bit
-	mov r16, r21
-	rcall lcd_wait
-	rcall data_write
-	mov r16, r22
-	rcall lcd_wait
-	rcall data_write
-	mov r16, r23
-	rcall lcd_wait
-	rcall data_write
-	mov r16, r24
-	rcall lcd_wait
-	rcall data_write
-	mov r16, r25
-	rcall lcd_wait
-	rcall data_write
+	CALL ITOA_16BIT
+	MOV R16, R21
+	RCALL LCD_WAIT
+	RCALL DATA_WRITE
+	MOV R16, R22
+	RCALL LCD_WAIT
+	RCALL DATA_WRITE
+	MOV R16, R23
+	RCALL LCD_WAIT
+	RCALL DATA_WRITE
+	MOV R16, R24
+	RCALL LCD_WAIT
+	RCALL DATA_WRITE
+	MOV R16, R25
+	RCALL LCD_WAIT
+	RCALL DATA_WRITE
 
-	pop r25
-	pop r24
-	pop r23
-	pop r22
-	pop r21
-	pop r16
-	pop r17
-	ret
+	POP R25
+	POP R24
+	POP R23
+	POP R22
+	POP R21
+	POP R16
+	POP R17
+	RET

@@ -1,38 +1,38 @@
 /*
- * wait.asm
+ * WAIT.ASM
  *
- *  Created: 2017/10/3
- *  Author: shaohui z5155945
+ *  CREATED: 2017/10/3
+ *  AUTHOR: SHAOHUI Z5155945
  */ 
 ;----------------------------------
-;some functions to generate delays
-;wait_1ms
-;wait_more
+;SOME FUNCTIONS TO GENERATE DELAYS
+;WAIT_1MS
+;WAIT_MORE
 ;----------------------------------
 
-;function to wait for 1ms
-wait_1ms:
-	push r24
-	push r25
+;FUNCTION TO WAIT FOR 1MS
+WAIT_1MS:
+	PUSH R24
+	PUSH R25
 
-	ldi r24, low(4100)
-	ldi r25, high(4100)		;a little more than 1ms
-	ms_loop:
-		sbiw r24, 1
-		brne ms_loop
+	LDI R24, LOW(4100)
+	LDI R25, HIGH(4100)		;A LITTLE MORE THAN 1MS
+	MS_LOOP:
+		SBIW R24, 1
+		BRNE MS_LOOP
 	
-	pop r25
-	pop r24
-	ret
+	POP R25
+	POP R24
+	RET
 
-;using r16 as input for wait r16ms
-wait_more:
-	push r16
+;USING R16 AS INPUT FOR WAIT R16MS
+WAIT_MORE:
+	PUSH R16
 
-	wait_more_loop:
-		rcall wait_1ms		;each time wait for 1ms
-		dec r16
-		brne wait_more_loop
+	WAIT_MORE_LOOP:
+		RCALL WAIT_1MS		;EACH TIME WAIT FOR 1MS
+		DEC R16
+		BRNE WAIT_MORE_LOOP
 
-	pop r16
-	ret
+	POP R16
+	RET
