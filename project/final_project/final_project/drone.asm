@@ -6,13 +6,15 @@
 FLY_TO_NEXT_POS:    
     CPI R18, 0      ;R18 -> SET AS FLY RIGHT, CLEAR AS FLY LEFT
     BREQ GO_LEFT
-    CPI R21, BORDER_X
-    BREQ GO_DOWN
+    CPI R21, BORDER_X   ;CHECK IF REACHED BOARDER
+    BREQ GO_DOWN        ;IF BOARDER REACHED, GO DOWN
+    LCD_WRITE_DATA 'R'
     ADIW Z, 1
     SUBI R21, -1
 
     CHECK_HEIGHT:
         LPM R23, Z
+        LCD_WRITE_DATA ' '
         RET
 
     GO_END:
@@ -22,6 +24,7 @@ FLY_TO_NEXT_POS:
     GO_LEFT:
         CPI R21, 0
         BREQ GO_DOWN
+        LCD_WRITE_DATA 'L'
         SBIW Z, 1
         SUBI R21, 1
         RJMP CHECK_HEIGHT
@@ -29,13 +32,15 @@ FLY_TO_NEXT_POS:
     GO_DOWN:
         CPI R20, BORDER_X
         BREQ GO_END
-        ADIW Z, BORDER_Y	;NEXT ROW
+        LCD_WRITE_DATA 'D'
+        ADIW Z, BORDER_Y	    ;NEXT ROW
         COM R18                 ;DIFFERENT DIRECTION
         SUBI R20, -1            ;SET R20, NEXT ROW
+        RJMP CHECK_HEIGHT
 
-;current position: R20:R21 -> x:y
-;return r23 as signal if r23 set, then the accident position is found
-;else if r23 is clr, accident position is not found
+;CURRENT POSITION: R20:R21 -> X:Y
+;RETURN R23 AS SIGNAL IF R23 SET, THEN THE ACCIDENT POSITION IS FOUND
+;ELSE IF R23 IS CLR, ACCIDENT POSITION IS NOT FOUND
 DRONE_SEARCH:
 	PUSH R16
 	PUSH R17
@@ -61,3 +66,18 @@ SEARCH_RETURN:
 	POP R16
 	POP R17
 	RET
+
+;SET ACCIDENT POSITION IN DESG, ACCIDENT(X,Y)
+;WITH REGISTER R16 AS X, R17 AS Y
+SET_LOCATION:
+    PUSH ZL
+    PUSH ZH
+
+    LDI ZL, LOW(ACCIDENT)
+    LDI ZH, HIGH(ACCIDENT)
+    STS Z+, R16
+    STS Z, R17
+
+    POP ZH
+    POP ZL
+    RET

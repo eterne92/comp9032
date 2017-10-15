@@ -154,3 +154,24 @@ LCD_DISPLAY_NUMBER_16BIT:
 	POP R16
 	POP R17
 	RET
+
+;display STRING, r16(low), r17(high) as string addr
+LCD_DISPLAY_STRING:
+	push ZL
+	push ZH
+
+	mov zl, R16
+	mov zh, R17
+	lcd_display_string_loop:
+		rcall lcd_wait
+		lpm r16
+		cpi r16, 0
+		breq lcd_display_string_return
+		rcall DATA_WRITE
+		rjmp lcd_display_string_loop
+	
+	lcd_display_string_return:
+	pop zh
+	pop zl
+	ret
+
