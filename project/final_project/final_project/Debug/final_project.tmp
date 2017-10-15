@@ -30,6 +30,35 @@
   <FILE>final_project.lss</FILE>
  </OUTPUT_FILES>
  <LABELS>
+  <RESET><FILE>D:\workspace\comp9032\project\final_project\final_project\main.asm</FILE><LINE>134</LINE></RESET>
+  <SEARCH_START><FILE>D:\workspace\comp9032\project\final_project\final_project\main.asm</FILE><LINE>128</LINE></SEARCH_START>
+  <ext_abort><FILE>D:\workspace\comp9032\project\final_project\final_project\main.asm</FILE><LINE>131</LINE></ext_abort>
+  <main><FILE>D:\workspace\comp9032\project\final_project\final_project\main.asm</FILE><LINE>27</LINE></main>
+  <input_x_y><FILE>D:\workspace\comp9032\project\final_project\final_project\main.asm</FILE><LINE>173</LINE></input_x_y>
+  <lcd_display_string><FILE>D:\workspace\comp9032\project\final_project\final_project\lcd.asm</FILE><LINE>159</LINE></lcd_display_string>
+  <wait_for_interrupt><FILE>D:\workspace\comp9032\project\final_project\final_project\main.asm</FILE><LINE>32</LINE></wait_for_interrupt>
+  <mountain><FILE>D:\workspace\comp9032\project\final_project\final_project\mountain.asm</FILE><LINE>1</LINE></mountain>
+  <PWM_DUTY><FILE>D:\workspace\comp9032\project\final_project\final_project\generalfunc.asm</FILE><LINE>136</LINE></PWM_DUTY>
+  <fly_loop><FILE>D:\workspace\comp9032\project\final_project\final_project\main.asm</FILE><LINE>44</LINE></fly_loop>
+  <lcd_wait><FILE>D:\workspace\comp9032\project\final_project\final_project\lcd.asm</FILE><LINE>31</LINE></lcd_wait>
+  <COM_WRITE><FILE>D:\workspace\comp9032\project\final_project\final_project\lcd.asm</FILE><LINE>65</LINE></COM_WRITE>
+  <search_abort><FILE>D:\workspace\comp9032\project\final_project\final_project\main.asm</FILE><LINE>87</LINE></search_abort>
+  <fly_to_next_pos><FILE>D:\workspace\comp9032\project\final_project\final_project\drone.asm</FILE><LINE>6</LINE></fly_to_next_pos>
+  <search_not_found><FILE>D:\workspace\comp9032\project\final_project\final_project\main.asm</FILE><LINE>94</LINE></search_not_found>
+  <fly_high><FILE>D:\workspace\comp9032\project\final_project\final_project\main.asm</FILE><LINE>83</LINE></fly_high>
+  <search><FILE>D:\workspace\comp9032\project\final_project\final_project\main.asm</FILE><LINE>55</LINE></search>
+  <DATA_WRITE><FILE>D:\workspace\comp9032\project\final_project\final_project\lcd.asm</FILE><LINE>53</LINE></DATA_WRITE>
+  <lcd_display_number><FILE>D:\workspace\comp9032\project\final_project\final_project\lcd.asm</FILE><LINE>99</LINE></lcd_display_number>
+  <string_search><FILE>D:\workspace\comp9032\project\final_project\final_project\main.asm</FILE><LINE>174</LINE></string_search>
+  <drone_search><FILE>D:\workspace\comp9032\project\final_project\final_project\drone.asm</FILE><LINE>44</LINE></drone_search>
+  <WAIT_MORE><FILE>D:\workspace\comp9032\project\final_project\final_project\wait.asm</FILE><LINE>29</LINE></WAIT_MORE>
+  <search_found><FILE>D:\workspace\comp9032\project\final_project\final_project\main.asm</FILE><LINE>102</LINE></search_found>
+  <string_abort><FILE>D:\workspace\comp9032\project\final_project\final_project\main.asm</FILE><LINE>177</LINE></string_abort>
+  <end><FILE>D:\workspace\comp9032\project\final_project\final_project\main.asm</FILE><LINE>121</LINE></end>
+  <string_not_found><FILE>D:\workspace\comp9032\project\final_project\final_project\main.asm</FILE><LINE>176</LINE></string_not_found>
+  <string_found><FILE>D:\workspace\comp9032\project\final_project\final_project\main.asm</FILE><LINE>175</LINE></string_found>
+  <lcd_init><FILE>D:\workspace\comp9032\project\final_project\final_project\lcd.asm</FILE><LINE>77</LINE></lcd_init>
+  <pwm_generate><FILE>D:\workspace\comp9032\project\final_project\final_project\generalfunc.asm</FILE><LINE>115</LINE></pwm_generate>
   <GET_KEY><FILE>D:\workspace\comp9032\project\final_project\final_project\keypad.asm</FILE><LINE>22</LINE></GET_KEY>
   <SET_CMASK><FILE>D:\workspace\comp9032\project\final_project\final_project\keypad.asm</FILE><LINE>29</LINE></SET_CMASK>
   <CLOOP><FILE>D:\workspace\comp9032\project\final_project\final_project\keypad.asm</FILE><LINE>33</LINE></CLOOP>
@@ -43,28 +72,22 @@
   <RETURN_KEY_ASCII><FILE>D:\workspace\comp9032\project\final_project\final_project\keypad.asm</FILE><LINE>117</LINE></RETURN_KEY_ASCII>
   <ASCII_STAR><FILE>D:\workspace\comp9032\project\final_project\final_project\keypad.asm</FILE><LINE>109</LINE></ASCII_STAR>
   <ASCII_ZERO><FILE>D:\workspace\comp9032\project\final_project\final_project\keypad.asm</FILE><LINE>113</LINE></ASCII_ZERO>
-  <LCD_WAIT><FILE>D:\workspace\comp9032\project\final_project\final_project\lcd.asm</FILE><LINE>31</LINE></LCD_WAIT>
   <BUSY_LOOP><FILE>D:\workspace\comp9032\project\final_project\final_project\lcd.asm</FILE><LINE>37</LINE></BUSY_LOOP>
   <WAIT_1MS><FILE>D:\workspace\comp9032\project\final_project\final_project\wait.asm</FILE><LINE>14</LINE></WAIT_1MS>
-  <DATA_WRITE><FILE>D:\workspace\comp9032\project\final_project\final_project\lcd.asm</FILE><LINE>53</LINE></DATA_WRITE>
-  <COM_WRITE><FILE>D:\workspace\comp9032\project\final_project\final_project\lcd.asm</FILE><LINE>65</LINE></COM_WRITE>
-  <LCD_INIT><FILE>D:\workspace\comp9032\project\final_project\final_project\lcd.asm</FILE><LINE>77</LINE></LCD_INIT>
-  <WAIT_MORE><FILE>D:\workspace\comp9032\project\final_project\final_project\wait.asm</FILE><LINE>29</LINE></WAIT_MORE>
-  <LCD_DISPLAY_NUMBER><FILE>D:\workspace\comp9032\project\final_project\final_project\lcd.asm</FILE><LINE>99</LINE></LCD_DISPLAY_NUMBER>
   <ITOA><FILE>D:\workspace\comp9032\project\final_project\final_project\generalfunc.asm</FILE><LINE>13</LINE></ITOA>
   <LCD_DISPLAY_NUMBER_16BIT><FILE>D:\workspace\comp9032\project\final_project\final_project\lcd.asm</FILE><LINE>123</LINE></LCD_DISPLAY_NUMBER_16BIT>
   <ITOA_16BIT><FILE>D:\workspace\comp9032\project\final_project\final_project\generalfunc.asm</FILE><LINE>47</LINE></ITOA_16BIT>
+  <lcd_display_string_loop><FILE>D:\workspace\comp9032\project\final_project\final_project\lcd.asm</FILE><LINE>165</LINE></lcd_display_string_loop>
+  <lcd_display_string_return><FILE>D:\workspace\comp9032\project\final_project\final_project\lcd.asm</FILE><LINE>173</LINE></lcd_display_string_return>
   <MS_LOOP><FILE>D:\workspace\comp9032\project\final_project\final_project\wait.asm</FILE><LINE>20</LINE></MS_LOOP>
   <WAIT_MORE_LOOP><FILE>D:\workspace\comp9032\project\final_project\final_project\wait.asm</FILE><LINE>32</LINE></WAIT_MORE_LOOP>
-  <FLY_TO_NEXT_POS><FILE>D:\workspace\comp9032\project\final_project\final_project\drone.asm</FILE><LINE>6</LINE></FLY_TO_NEXT_POS>
-  <GO_LEFT><FILE>D:\workspace\comp9032\project\final_project\final_project\drone.asm</FILE><LINE>22</LINE></GO_LEFT>
-  <GO_DOWN><FILE>D:\workspace\comp9032\project\final_project\final_project\drone.asm</FILE><LINE>29</LINE></GO_DOWN>
-  <CHECK_HEIGHT><FILE>D:\workspace\comp9032\project\final_project\final_project\drone.asm</FILE><LINE>14</LINE></CHECK_HEIGHT>
-  <GO_END><FILE>D:\workspace\comp9032\project\final_project\final_project\drone.asm</FILE><LINE>18</LINE></GO_END>
-  <DRONE_SEARCH><FILE>D:\workspace\comp9032\project\final_project\final_project\drone.asm</FILE><LINE>39</LINE></DRONE_SEARCH>
-  <PWM_DUTY><FILE>D:\workspace\comp9032\project\final_project\final_project\generalfunc.asm</FILE><LINE>134</LINE></PWM_DUTY>
-  <ACCIDENT><FILE>D:\workspace\comp9032\project\final_project\final_project\main.asm</FILE><LINE>33</LINE></ACCIDENT>
-  <SEARCH_RETURN><FILE>D:\workspace\comp9032\project\final_project\final_project\drone.asm</FILE><LINE>58</LINE></SEARCH_RETURN>
+  <GO_LEFT><FILE>D:\workspace\comp9032\project\final_project\final_project\drone.asm</FILE><LINE>24</LINE></GO_LEFT>
+  <GO_DOWN><FILE>D:\workspace\comp9032\project\final_project\final_project\drone.asm</FILE><LINE>32</LINE></GO_DOWN>
+  <CHECK_HEIGHT><FILE>D:\workspace\comp9032\project\final_project\final_project\drone.asm</FILE><LINE>15</LINE></CHECK_HEIGHT>
+  <GO_END><FILE>D:\workspace\comp9032\project\final_project\final_project\drone.asm</FILE><LINE>20</LINE></GO_END>
+  <ACCIDENT><FILE>D:\workspace\comp9032\project\final_project\final_project\main.asm</FILE><LINE>181</LINE></ACCIDENT>
+  <SEARCH_RETURN><FILE>D:\workspace\comp9032\project\final_project\final_project\drone.asm</FILE><LINE>63</LINE></SEARCH_RETURN>
+  <SET_LOCATION><FILE>D:\workspace\comp9032\project\final_project\final_project\drone.asm</FILE><LINE>72</LINE></SET_LOCATION>
   <E100S><FILE>D:\workspace\comp9032\project\final_project\final_project\generalfunc.asm</FILE><LINE>19</LINE></E100S>
   <E10S><FILE>D:\workspace\comp9032\project\final_project\final_project\generalfunc.asm</FILE><LINE>26</LINE></E10S>
   <E1S><FILE>D:\workspace\comp9032\project\final_project\final_project\generalfunc.asm</FILE><LINE>33</LINE></E1S>
@@ -75,8 +98,5 @@
   <XE10S><FILE>D:\workspace\comp9032\project\final_project\final_project\generalfunc.asm</FILE><LINE>87</LINE></XE10S>
   <XE1S><FILE>D:\workspace\comp9032\project\final_project\final_project\generalfunc.asm</FILE><LINE>94</LINE></XE1S>
   <ITOA_16BIT_RETURN><FILE>D:\workspace\comp9032\project\final_project\final_project\generalfunc.asm</FILE><LINE>101</LINE></ITOA_16BIT_RETURN>
-  <PWM_GENERATE><FILE>D:\workspace\comp9032\project\final_project\final_project\generalfunc.asm</FILE><LINE>115</LINE></PWM_GENERATE>
-  <mountain><FILE>D:\workspace\comp9032\project\final_project\final_project\mountain.asm</FILE><LINE>1</LINE></mountain>
-  <SEARCH_START><FILE>D:\workspace\comp9032\project\final_project\final_project\main.asm</FILE><LINE>28</LINE></SEARCH_START>
  </LABELS>
 </ASSEMBLER_INFO>

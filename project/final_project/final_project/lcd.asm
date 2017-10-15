@@ -164,7 +164,7 @@ LCD_DISPLAY_STRING:
 	mov zh, R17
 	lcd_display_string_loop:
 		rcall lcd_wait
-		lpm r16
+		lpm r16, Z+
 		cpi r16, 0
 		breq lcd_display_string_return
 		rcall DATA_WRITE

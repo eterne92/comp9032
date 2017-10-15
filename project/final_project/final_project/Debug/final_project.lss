@@ -1,26 +1,26 @@
 
-AVRASM ver. 2.2.6  D:\workspace\comp9032\project\final_project\final_project\main.asm Sun Oct 08 20:09:50 2017
+AVRASM ver. 2.2.6  D:\workspace\comp9032\project\final_project\final_project\main.asm Sun Oct 15 23:30:01 2017
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc\m2560def.inc'
 D:\workspace\comp9032\project\final_project\final_project\main.asm(8): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc\m2560def.inc'
 D:\workspace\comp9032\project\final_project\final_project\main.asm(9): Including file 'D:\workspace\comp9032\project\final_project\final_project\constant.inc'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(16): Including file 'D:\workspace\comp9032\project\final_project\final_project\macros.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(21): Including file 'D:\workspace\comp9032\project\final_project\final_project\keypad.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(22): Including file 'D:\workspace\comp9032\project\final_project\final_project\lcd.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(23): Including file 'D:\workspace\comp9032\project\final_project\final_project\wait.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(24): Including file 'D:\workspace\comp9032\project\final_project\final_project\drone.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(25): Including file 'D:\workspace\comp9032\project\final_project\final_project\generalfunc.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(26): Including file 'D:\workspace\comp9032\project\final_project\final_project\mountain.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(18): Including file 'D:\workspace\comp9032\project\final_project\final_project\macros.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(167): Including file 'D:\workspace\comp9032\project\final_project\final_project\keypad.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(168): Including file 'D:\workspace\comp9032\project\final_project\final_project\lcd.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(169): Including file 'D:\workspace\comp9032\project\final_project\final_project\wait.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(170): Including file 'D:\workspace\comp9032\project\final_project\final_project\drone.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(171): Including file 'D:\workspace\comp9032\project\final_project\final_project\generalfunc.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(172): Including file 'D:\workspace\comp9032\project\final_project\final_project\mountain.asm'
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc\m2560def.inc'
 D:\workspace\comp9032\project\final_project\final_project\main.asm(8): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc\m2560def.inc'
 D:\workspace\comp9032\project\final_project\final_project\main.asm(9): Including file 'D:\workspace\comp9032\project\final_project\final_project\constant.inc'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(16): Including file 'D:\workspace\comp9032\project\final_project\final_project\macros.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(21): Including file 'D:\workspace\comp9032\project\final_project\final_project\keypad.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(22): Including file 'D:\workspace\comp9032\project\final_project\final_project\lcd.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(23): Including file 'D:\workspace\comp9032\project\final_project\final_project\wait.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(24): Including file 'D:\workspace\comp9032\project\final_project\final_project\drone.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(25): Including file 'D:\workspace\comp9032\project\final_project\final_project\generalfunc.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(26): Including file 'D:\workspace\comp9032\project\final_project\final_project\mountain.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(18): Including file 'D:\workspace\comp9032\project\final_project\final_project\macros.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(167): Including file 'D:\workspace\comp9032\project\final_project\final_project\keypad.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(168): Including file 'D:\workspace\comp9032\project\final_project\final_project\lcd.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(169): Including file 'D:\workspace\comp9032\project\final_project\final_project\wait.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(170): Including file 'D:\workspace\comp9032\project\final_project\final_project\drone.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(171): Including file 'D:\workspace\comp9032\project\final_project\final_project\generalfunc.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(172): Including file 'D:\workspace\comp9032\project\final_project\final_project\mountain.asm'
                                  
                                  ;
                                  
@@ -1917,19 +1917,25 @@ D:\workspace\comp9032\project\final_project\final_project\main.asm(26): Includin
                                  ;
                                  ;PORTS USING FOR DIFFERENT I/O DEVICES
                                  .EQU KEY_PORT = PORTL
+                                 .EQU KEY_DDR = DDRL
                                  .EQU LCD_DATA_PORT = PORTF
+                                 .EQU LCD_DATA_DDR = DDRF
                                  .EQU LCD_CTRL_PORT = PORTA
+                                 .EQU LCD_CTRL_DDR = DDRA
                                  .EQU LED_PORT = PORTC
+                                 .EQU LED_DDR = DDRC
                                  ;MOTOR SPEED(USING FOR PWM)
-                                 .EQU FAST_MOTOR_SPEED = 255
-                                 .EQU HALF_MOTOR_SPEED = 127
+                                 .EQU FAST_MOTOR_SPEED = 100
+                                 .EQU HALF_MOTOR_SPEED = 50
                                  .EQU STOP_MOTOR_SPEED = 0
                                  ;MOUNTAIN MAP BOARDER
                                  .EQU BORDER_X = 63
                                  .EQU BORDER_Y = 63
                                  ;
                                  .def temp = r16
+                                 .def temp2 = r17
                                  .def direction = r18
+                                 .def current_height = r19
                                  .def current_x = r20
                                  .def current_y = r21
                                  
@@ -1960,12 +1966,24 @@ D:\workspace\comp9032\project\final_project\final_project\main.asm(26): Includin
                                  	RCALL LCD_WAIT
                                  .ENDMACRO
                                  
+                                 ;WRITE DATA INTO LCD, USING SOME register
+                                 .MACRO LCD_WRITE_DATA_reg
+                                 	mov R16, @0
+                                 	RCALL DATA_WRITE
+                                 	RCALL LCD_WAIT
+                                 .ENDMACRO
+                                 
                                  ;WRITE DATA INTO LCD_COM, USING SOME CONSTANT VALUE
                                  .MACRO LCD_WRITE_COM
                                  	LDI R16, @0
                                  	RCALL COM_WRITE
                                  	RCALL LCD_WAIT
                                  .ENDMACRO
+                                 
+                                 .macro LCD_CLEAR
+                                 	rcall lcd_wait
+                                 	lcd_write_com 0B00000001
+                                 .endmacro
                                  
                                  ;WAIT FOR MORE THAN 1MS USING SOME CONSTANT VALUE
                                  .MACRO MACRO_WAIT
@@ -1979,7 +1997,197 @@ D:\workspace\comp9032\project\final_project\final_project\main.asm(26): Includin
                                  	CALL PWM_DUTY
                                  
                                  .org 0	;set interrupt vertex
+000000 c104                      	rjmp RESET
+                                 .org INT0addr
+000002 940c 0101                 	jmp SEARCH_START
+                                 .org INT1addr
+000004 940c 0103                 	jmp ext_abort
+                                 .org 0x80
+                                 main:
+000080 e50e                      	ldi temp, low(input_x_y<<1)
+000081 e115                      	ldi temp2, high(input_x_y<<1)
+000082 d16d                      	rcall lcd_display_string
+000083 ef0f                      	ser temp
+                                 	wait_for_interrupt:			;in search start interrupt, set temp to 0
+000084 3000                      		cpi temp, 0
+000085 f7f1                      		brne wait_for_interrupt
+                                 	
+000086 ef4f                      	ldi current_x, -1			;set start position
+000087 e050                      	ldi current_y, 0
+000088 e5ee                      	ldi zl, low(mountain<<1)
+000089 e0f5                      	ldi zh, high(mountain<<1)
+00008a 9731                      	sbiw z, 1
+00008b ef2f                      	ser direction
+00008c e03a                      	ldi current_height, 10
+00008d e604
+00008e 940e 02aa                 	fly_ctrl fast_motor_speed
+                                 	fly_loop:
+000090 d0e1
+000091 e001
+000092 d0fa
+000093 d0de                      		lcd_clear
+000094 3f7e                      		cpi r23, -2
+000095 f1b1                      		breq search_abort
+                                 		;find next position
+000096 d175                      		rcall fly_to_next_pos
+000097 3f7f                      		cpi r23, -1
+000098 f1f1                      		breq search_not_found
+000099 5f7f                      		subi r23, -1
+00009a 1737                      		cp current_height, r23
+00009b f160                      		brlo fly_high
+                                 	search:
+00009c 2f37                      		mov current_height, r23
+                                 		;display now pos
+00009d e708
+00009e d0e5
+00009f d0d2                      		lcd_write_data 'x'
+0000a0 e30a
+0000a1 d0e2
+0000a2 d0cf                      		lcd_write_data ':'
+0000a3 2f04                      		mov temp, current_x
+0000a4 d117                      		rcall lcd_display_number
+0000a5 e200
+0000a6 d0dd
+0000a7 d0ca                      		lcd_write_data ' '
+0000a8 e709
+0000a9 d0da
+0000aa d0c7                      		lcd_write_data 'y'
+0000ab e30a
+0000ac d0d7
+0000ad d0c4                      		lcd_write_data ':'
+0000ae 2f05                      		mov temp, current_y
+0000af d10c                      		rcall lcd_display_number
+0000b0 ec00
+0000b1 d0db
+0000b2 d0bf                      		lcd_write_com 0b11000000
+0000b3 e70a
+0000b4 d0cf
+0000b5 d0bc                      		lcd_write_data 'z'
+0000b6 e30a
+0000b7 d0cc
+0000b8 d0b9                      		lcd_write_data ':'
+0000b9 2f03                      		mov temp, current_height
+0000ba d101                      		rcall lcd_display_number
+0000bb e200
+0000bc d0c7
+0000bd d0b4                      		lcd_write_data ' '
+0000be e60a                      		ldi temp, low(string_search<<1)
+0000bf e115                      		ldi temp2, high(string_search<<1)
+0000c0 d12f                      		rcall lcd_display_string
+0000c1 d16b                      		rcall drone_search
+0000c2 e00f
+0000c3 940e 0206                 		macro_wait 15
                                  
+0000c5 3070                      		cpi r23, 0
+0000c6 f249                      		breq fly_loop	;if not found, keep flying
+0000c7 c01a                      		rjmp search_found
+                                 	
+                                 	fly_high:
+0000c8 e604
+0000c9 940e 02aa                 		fly_ctrl fast_motor_speed
+0000cb cfd0                      		rjmp search
+                                 
+                                 	search_abort:
+0000cc d0a5
+0000cd e001
+0000ce d0be
+0000cf d0a2                      		lcd_clear
+0000d0 e806                      		ldi temp, low(string_abort<<1)
+0000d1 e115                      		ldi temp2, high(string_abort<<1)
+0000d2 d11d                      		rcall lcd_display_string
+0000d3 e000
+0000d4 940e 02aa                 		fly_ctrl stop_motor_speed
+0000d6 c029                      		rjmp end
+                                 	search_not_found:
+0000d7 d09a
+0000d8 e001
+0000d9 d0b3
+0000da d097                      		lcd_clear
+0000db e70c                      		ldi temp, low(string_not_found<<1)
+0000dc e115                      		ldi temp2, high(string_not_found<<1)
+0000dd d112                      		rcall lcd_display_string
+0000de e000
+0000df 940e 02aa                 		fly_ctrl stop_motor_speed
+0000e1 c01e                      		rjmp end
+                                 
+                                 	search_found:
+0000e2 d08f
+0000e3 e001
+0000e4 d0a8
+0000e5 d08c                      		lcd_clear
+0000e6 eb0a                      		ldi temp, low(string_found)
+0000e7 e01a                      		ldi temp2, high(string_found)
+0000e8 d107                      		rcall lcd_display_string
+0000e9 e708
+0000ea d099
+0000eb d086                      		lcd_write_data 'x'
+0000ec e30a
+0000ed d096
+0000ee d083                      		lcd_write_data ':'
+0000ef 2f04                      		mov temp, current_x
+0000f0 d0cb                      		rcall lcd_display_number
+0000f1 e200
+0000f2 d091
+0000f3 d07e                      		lcd_write_data ' '
+0000f4 e709
+0000f5 d08e
+0000f6 d07b                      		lcd_write_data 'y'
+0000f7 e30a
+0000f8 d08b
+0000f9 d078                      		lcd_write_data ':'
+0000fa 2f05                      		mov temp, current_y
+0000fb d0c0                      		rcall lcd_display_number
+0000fc e000
+0000fd 940e 02aa                 		fly_ctrl stop_motor_speed
+0000ff c000                      		rjmp end
+                                 
+                                 		
+                                 
+                                 end:
+000100 cfff                      	rjmp end
+                                 
+                                 
+                                 
+                                 
+                                 
+                                 SEARCH_START:
+000101 2700                      	clr temp
+000102 9518                      	reti
+                                 ext_abort:
+000103 ef7e                      	ldi r23, -2
+000104 9518                      	reti
+                                 RESET:
+000105 2700                      	clr temp
+000106 2711                      	clr temp2
+000107 2722                      	clr direction
+000108 2733                      	clr current_height
+000109 2744                      	clr current_x
+00010a 2755                      	clr current_y
+00010b 2777                      	clr r23
+                                 	;clear all registers being used
+                                 
+                                 	;setup lcd
+00010c ef0f                      	ser temp
+00010d bb00                      	store lcd_data_ddr, temp
+00010e b901                      	store lcd_ctrl_ddr, temp
+00010f d086                      	rcall lcd_init
+                                 
+                                 	;setup led
+000110 ef0f                      	ser temp	
+000111 b907                      	store led_ddr, temp
+                                 	
+                                 	;setup keypad
+000112 e00f                      	ldi temp, 0b00001111	
+000113 9300 010a                 	store key_ddr, temp
+000115 e00a                      	ldi temp, (1<<ISC01)|(1<<ISC11)
+000116 9300 0069                 	sts EICRA, temp
+000118 e003                      	ldi temp, (1<<INT0)|(1<<INT1)
+000119 bb0d                      	out EIMSK, temp
+00011a ef0f                      	ser temp
+00011b b90d                      	out DDRE, temp
+00011c 940e 0297                 	call pwm_generate
+                                 	
+00011e cf61                      	rjmp main
                                  
                                  .include "keypad.asm"
                                  
@@ -2004,108 +2212,108 @@ D:\workspace\comp9032\project\final_project\final_project\main.asm(26): Includin
                                  
                                  ;FUNCTION TO GET KEYVALUE FROM KEYPAD, RETURN ROW:COL ON R24:R25
                                  GET_KEY:
-000000 930f                      	PUSH R16				;R16 AS RMASK
-000001 931f                      	PUSH R17				;R17 AS ROW
-000002 932f                      	PUSH R18				;R18 AS COL
-000003 933f                      	PUSH R19				;R19 AS TEMP1
-000004 934f                      	PUSH R20				;R20 AS TEMP2
-000005 935f                      	PUSH R21				;R21 AS CMASK
+00011f 930f                      	PUSH R16				;R16 AS RMASK
+000120 931f                      	PUSH R17				;R17 AS ROW
+000121 932f                      	PUSH R18				;R18 AS COL
+000122 933f                      	PUSH R19				;R19 AS TEMP1
+000123 934f                      	PUSH R20				;R20 AS TEMP2
+000124 935f                      	PUSH R21				;R21 AS CMASK
                                  	SET_CMASK:
-000006 ee5f                      		LDI R21, COLMASK
-000007 9350 010b                 		STORE KEY_PORT, R21	;SET COLMASK TO 0X11101111
-000009 2722                      		CLR R18				;SET COL TO 0
+000125 ee5f                      		LDI R21, COLMASK
+000126 9350 010b                 		STORE KEY_PORT, R21	;SET COLMASK TO 0X11101111
+000128 2722                      		CLR R18				;SET COL TO 0
                                  	CLOOP:
-00000a e001                      		LDI R16, 0X01		;START FROM ROW 0
-00000b 2711                      		CLR R17				;SET ROW TO 0
+000129 e001                      		LDI R16, 0X01		;START FROM ROW 0
+00012a 2711                      		CLR R17				;SET ROW TO 0
                                  	RLOOP:
-00000c 9130 0109                 		LOAD R19, PINL		;GET VALUE FROM KEYPAD
-00000e 2f43                      		MOV R20, R19
-00000f 704f                      		ANDI R20, ROWMASK	;CLR COL INPUT
-000010 2340                      		AND R20, R16
-000011 f409                      		BRNE NEXT_ROW
-000012 c00d                      		RJMP DEBOUNCING_LOOP
+00012b 9130 0109                 		LOAD R19, PINL		;GET VALUE FROM KEYPAD
+00012d 2f43                      		MOV R20, R19
+00012e 704f                      		ANDI R20, ROWMASK	;CLR COL INPUT
+00012f 2340                      		AND R20, R16
+000130 f409                      		BRNE NEXT_ROW
+000131 c00d                      		RJMP DEBOUNCING_LOOP
                                  	NEXT_ROW:
-000013 0f00                      		LSL R16				;LEFTSHIFT RMASK
-000014 9513                      		INC R17				;ROW = ROW + 1
-000015 3014                      		CPI R17, 4			;IF ROW == 4
-000016 f009                      		BREQ NEXT_COL		;GOTO NEXT COL
-000017 cff4                      		RJMP RLOOP			;ELSE GOTO NEXT ROW
+000132 0f00                      		LSL R16				;LEFTSHIFT RMASK
+000133 9513                      		INC R17				;ROW = ROW + 1
+000134 3014                      		CPI R17, 4			;IF ROW == 4
+000135 f009                      		BREQ NEXT_COL		;GOTO NEXT COL
+000136 cff4                      		RJMP RLOOP			;ELSE GOTO NEXT ROW
                                  	NEXT_COL:
-000018 0f55                      		LSL R21				;LEFTSHIFT CMASK
-000019 9523                      		INC R18				;COL = COL + 1
-00001a 3024                      		CPI R18, 4			;IF COL == 4
-00001b f351                      		BREQ SET_CMASK		;STARTOVER AGAIN
-00001c 9553                      		INC R21
-00001d 9350 010b                 		STORE KEY_PORT, R21		;SET CMASK
-00001f cfea                      		RJMP CLOOP			;GOTO NEXT COL
+000137 0f55                      		LSL R21				;LEFTSHIFT CMASK
+000138 9523                      		INC R18				;COL = COL + 1
+000139 3024                      		CPI R18, 4			;IF COL == 4
+00013a f351                      		BREQ SET_CMASK		;STARTOVER AGAIN
+00013b 9553                      		INC R21
+00013c 9350 010b                 		STORE KEY_PORT, R21		;SET CMASK
+00013e cfea                      		RJMP CLOOP			;GOTO NEXT COL
                                  
                                  	DEBOUNCING_LOOP:		;SOLVE DEBOUNCING
-000020 9130 0109                 		LOAD R19, PINL
-000022 703f                      		ANDI R19, ROWMASK
-000023 303f                      		CPI R19, 0X0F
-000024 f7d9                      		BRNE DEBOUNCING_LOOP
-000025 2f81                      	MOV R24, R17			;R24 AS ROW
-000026 2f92                      	MOV R25, R18			;R25 AS COL
+00013f 9130 0109                 		LOAD R19, PINL
+000141 703f                      		ANDI R19, ROWMASK
+000142 303f                      		CPI R19, 0X0F
+000143 f7d9                      		BRNE DEBOUNCING_LOOP
+000144 2f81                      	MOV R24, R17			;R24 AS ROW
+000145 2f92                      	MOV R25, R18			;R25 AS COL
                                  
-000027 915f                      	POP R21
-000028 914f                      	POP R20
-000029 913f                      	POP R19
-00002a 912f                      	POP R18
-00002b 911f                      	POP R17
-00002c 910f                      	POP R16
-00002d 9508                      	RET
+000146 915f                      	POP R21
+000147 914f                      	POP R20
+000148 913f                      	POP R19
+000149 912f                      	POP R18
+00014a 911f                      	POP R17
+00014b 910f                      	POP R16
+00014c 9508                      	RET
                                  
                                  ;GET KEY_ASCII VALUE FROM INPUT AS R24->ROW, R25->COL, RETURN ASCII VALUE AS R23
                                  KEY_ASCII:
-00002e 938f                      	PUSH R24				;R24 AS ROW
-00002f 939f                      	PUSH R25				;R25 AS COL
-000030 930f                      	PUSH R16				;R16 AS TEMP
-000031 920f                      	PUSH R0
-000032 921f                      	PUSH R1					;MUL WILL BE USED
+00014d 938f                      	PUSH R24				;R24 AS ROW
+00014e 939f                      	PUSH R25				;R25 AS COL
+00014f 930f                      	PUSH R16				;R16 AS TEMP
+000150 920f                      	PUSH R0
+000151 921f                      	PUSH R1					;MUL WILL BE USED
                                  
-000033 dfcc                      	RCALL GET_KEY
-000034 3093                      	CPI R25, 3				;IF COL == 3
-000035 f049                      	BREQ ASCII_LETTER
-000036 3083                      	CPI R24, 3				;IF ROW == 3
-000037 f059                      	BREQ ASCII_SYMBOL
-000038 e003                      	LDI R16, 3				;TEMP = 3 * ROW + COL
-000039 9f80                      	MUL R24, R16			;
-00003a 2d00                      	MOV R16, R0
-00003b 0f09                      	ADD R16, R25 
-00003c 5c0f                      	SUBI R16, -'1'			;GET ASCII VALUE
-00003d 2f70                      	MOV R23, R16
-00003e c00e                      	RJMP RETURN_KEY_ASCII
+000152 dfcc                      	RCALL GET_KEY
+000153 3093                      	CPI R25, 3				;IF COL == 3
+000154 f049                      	BREQ ASCII_LETTER
+000155 3083                      	CPI R24, 3				;IF ROW == 3
+000156 f059                      	BREQ ASCII_SYMBOL
+000157 e003                      	LDI R16, 3				;TEMP = 3 * ROW + COL
+000158 9f80                      	MUL R24, R16			;
+000159 2d00                      	MOV R16, R0
+00015a 0f09                      	ADD R16, R25 
+00015b 5c0f                      	SUBI R16, -'1'			;GET ASCII VALUE
+00015c 2f70                      	MOV R23, R16
+00015d c00e                      	RJMP RETURN_KEY_ASCII
                                  
                                  	ASCII_LETTER:
-00003f e401                      		LDI R16, 'A'			;TEMP = 'A'
-000040 0f08                      		ADD R16, R24			;TEMP += ROW
-000041 2f70                      		MOV R23, R16
-000042 c00a                      		RJMP RETURN_KEY_ASCII
+00015e e401                      		LDI R16, 'A'			;TEMP = 'A'
+00015f 0f08                      		ADD R16, R24			;TEMP += ROW
+000160 2f70                      		MOV R23, R16
+000161 c00a                      		RJMP RETURN_KEY_ASCII
                                  
                                  	ASCII_SYMBOL:
-000043 3090                      		CPI R25, 0				;'*'
-000044 f021                      		BREQ ASCII_STAR
-000045 3091                      		CPI R25, 1				;'0'
-000046 f021                      		BREQ ASCII_ZERO
-000047 e273                      		LDI R23, '#'			;'#'
-000048 c004                      		RJMP RETURN_KEY_ASCII
+000162 3090                      		CPI R25, 0				;'*'
+000163 f021                      		BREQ ASCII_STAR
+000164 3091                      		CPI R25, 1				;'0'
+000165 f021                      		BREQ ASCII_ZERO
+000166 e273                      		LDI R23, '#'			;'#'
+000167 c004                      		RJMP RETURN_KEY_ASCII
                                  
                                  	ASCII_STAR:
-000049 e27a                      		LDI R23, '*'
-00004a c002                      		RJMP RETURN_KEY_ASCII
+000168 e27a                      		LDI R23, '*'
+000169 c002                      		RJMP RETURN_KEY_ASCII
                                  
                                  	ASCII_ZERO:
-00004b e370                      		LDI R23, '0'
-00004c c000                      		RJMP RETURN_KEY_ASCII
+00016a e370                      		LDI R23, '0'
+00016b c000                      		RJMP RETURN_KEY_ASCII
                                  
                                  RETURN_KEY_ASCII:
-00004d 901f                      	POP R1
-00004e 900f                      	POP R0
-00004f 910f                      	POP R16
-000050 919f                      	POP R25
-000051 918f                      	POP R24
+00016c 901f                      	POP R1
+00016d 900f                      	POP R0
+00016e 910f                      	POP R16
+00016f 919f                      	POP R25
+000170 918f                      	POP R24
                                  .include "lcd.asm"
-000052 9508                      
+000171 9508                      
                                   * lcd.asm
                                   *
                                   *  Created: 2017/10/3
@@ -2136,151 +2344,173 @@ D:\workspace\comp9032\project\final_project\final_project\main.asm(26): Includin
                                  
                                  ;WAIT UNTILL LCD IS NOT BUSY
                                  LCD_WAIT:
-000053 930f                      	PUSH R16
-000054 2700                      	CLR R16
-000055 bb00                      	OUT DDRF, R16			;SET PORTF AS INPUT
-000056 e200                      	LDI R16, 1<<LCD_RW
-000057 b902                      	OUT LCD_CTRL_PORT, R16			;SET RS = 0 & RW = 1
+000172 930f                      	PUSH R16
+000173 2700                      	CLR R16
+000174 bb00                      	OUT DDRF, R16			;SET PORTF AS INPUT
+000175 e200                      	LDI R16, 1<<LCD_RW
+000176 b902                      	OUT LCD_CTRL_PORT, R16			;SET RS = 0 & RW = 1
                                  	BUSY_LOOP:
-000058 d078                      		RCALL WAIT_1MS		;GET SOME DELAY
-000059 9a16                      		SBI LCD_CTRL_PORT, LCD_E
-00005a d076                      		RCALL WAIT_1MS		;GET SOME DELAY
-00005b e00f                      		LDI R16, PINF
-00005c 9816                      		CBI LCD_CTRL_PORT, LCD_E
-00005d fd07                      		SBRC R16, 7			;IF BF IS CLEAR, END BUSY LOOP
-00005e cff9                      		RJMP BUSY_LOOP		;ELSE LOOP UNTIL IT'S SET
-00005f 2700                      	CLR R16
-000060 b902                      	OUT LCD_CTRL_PORT, R16
-000061 ef0f                      	SER R16
-000062 bb00                      	OUT DDRF, R16
-000063 910f                      	POP R16
-000064 9508                      	RET
+000177 d085                      		RCALL WAIT_1MS		;GET SOME DELAY
+000178 9a16                      		SBI LCD_CTRL_PORT, LCD_E
+000179 d083                      		RCALL WAIT_1MS		;GET SOME DELAY
+00017a e00f                      		LDI R16, PINF
+00017b 9816                      		CBI LCD_CTRL_PORT, LCD_E
+00017c fd07                      		SBRC R16, 7			;IF BF IS CLEAR, END BUSY LOOP
+00017d cff9                      		RJMP BUSY_LOOP		;ELSE LOOP UNTIL IT'S SET
+00017e 2700                      	CLR R16
+00017f b902                      	OUT LCD_CTRL_PORT, R16
+000180 ef0f                      	SER R16
+000181 bb00                      	OUT DDRF, R16
+000182 910f                      	POP R16
+000183 9508                      	RET
                                  
                                  ;FUNCTION TO WRITE DATA TO LCD, USING REGISTER R16(DATA)
                                  DATA_WRITE:
-000065 bb01                      	OUT LCD_DATA_PORT, R16			;SEND DATA TO LCD_DATA
-000066 9a17                      	SBI LCD_CTRL_PORT, LCD_RS		;SET LCD_RS = 1
-000067 9815                      	CBI LCD_CTRL_PORT, LCD_RW		;SET LCD_RW = 0
-000068 d068                      	RCALL WAIT_1MS
-000069 9a16                      	SBI LCD_CTRL_PORT, LCD_E		;ENABLE
-00006a d066                      	RCALL WAIT_1MS
-00006b 9816                      	CBI LCD_CTRL_PORT, LCD_E
-00006c d064                      	RCALL WAIT_1MS
-00006d 9508                      	RET		
+000184 bb01                      	OUT LCD_DATA_PORT, R16			;SEND DATA TO LCD_DATA
+000185 9a17                      	SBI LCD_CTRL_PORT, LCD_RS		;SET LCD_RS = 1
+000186 9815                      	CBI LCD_CTRL_PORT, LCD_RW		;SET LCD_RW = 0
+000187 d075                      	RCALL WAIT_1MS
+000188 9a16                      	SBI LCD_CTRL_PORT, LCD_E		;ENABLE
+000189 d073                      	RCALL WAIT_1MS
+00018a 9816                      	CBI LCD_CTRL_PORT, LCD_E
+00018b d071                      	RCALL WAIT_1MS
+00018c 9508                      	RET		
                                  
                                  ;FUNCTION TO WRITE COM TO LCD, USING REGISTER R16(DATA)
                                  COM_WRITE:
-00006e bb01                      	OUT LCD_DATA_PORT, R16			;SEND DATA TO LCD_DATA
-00006f 9817                      	CBI LCD_CTRL_PORT, LCD_RS		;SET LCD_RS = 0
-000070 9815                      	CBI LCD_CTRL_PORT, LCD_RW		;SET LCD_RW = 0
-000071 d05f                      	RCALL WAIT_1MS
-000072 9a16                      	SBI LCD_CTRL_PORT, LCD_E		;ENABLE
-000073 d05d                      	RCALL WAIT_1MS
-000074 9816                      	CBI LCD_CTRL_PORT, LCD_E
-000075 d05b                      	RCALL WAIT_1MS
-000076 9508                      	RET
+00018d bb01                      	OUT LCD_DATA_PORT, R16			;SEND DATA TO LCD_DATA
+00018e 9817                      	CBI LCD_CTRL_PORT, LCD_RS		;SET LCD_RS = 0
+00018f 9815                      	CBI LCD_CTRL_PORT, LCD_RW		;SET LCD_RW = 0
+000190 d06c                      	RCALL WAIT_1MS
+000191 9a16                      	SBI LCD_CTRL_PORT, LCD_E		;ENABLE
+000192 d06a                      	RCALL WAIT_1MS
+000193 9816                      	CBI LCD_CTRL_PORT, LCD_E
+000194 d068                      	RCALL WAIT_1MS
+000195 9508                      	RET
                                  
                                  ;INIT LCD USING SOME MACROS DEFINED IN MACROS.ASM
                                  LCD_INIT:
-000077 930f                      	PUSH R16
-000078 930f                      	PUSH TEMP
-000079 e00f
-00007a 940e 00da                 	MACRO_WAIT 15				;WAIT 15MS
+000196 930f                      	PUSH R16
+000197 930f                      	PUSH TEMP
+000198 e00f
+000199 940e 0206                 	MACRO_WAIT 15				;WAIT 15MS
                                  	;INIT LCD
-00007c e308
-00007d dff0
-00007e dfd4                      	LCD_WRITE_COM 0B00111000
-00007f e005
-000080 940e 00da                 	MACRO_WAIT 5
-000082 e308
-000083 dfea
-000084 dfce                      	LCD_WRITE_COM 0B00111000
-000085 e001
-000086 940e 00da                 	MACRO_WAIT 1
-000088 e308
-000089 dfe4
-00008a dfc8                      	LCD_WRITE_COM 0B00111000	;WRITE FUNCTION SET 3TIMES
-00008b e308
-00008c dfe1
-00008d dfc5                      	LCD_WRITE_COM 0B00111000	;2*5*7
+00019b e308
+00019c dff0
+00019d dfd4                      	LCD_WRITE_COM 0B00111000
+00019e e005
+00019f 940e 0206                 	MACRO_WAIT 5
+0001a1 e308
+0001a2 dfea
+0001a3 dfce                      	LCD_WRITE_COM 0B00111000
+0001a4 e001
+0001a5 940e 0206                 	MACRO_WAIT 1
+0001a7 e308
+0001a8 dfe4
+0001a9 dfc8                      	LCD_WRITE_COM 0B00111000	;WRITE FUNCTION SET 3TIMES
+0001aa e308
+0001ab dfe1
+0001ac dfc5                      	LCD_WRITE_COM 0B00111000	;2*5*7
                                  
-00008e e008
-00008f dfde
-000090 dfc2                      	LCD_WRITE_COM 0B00001000	;DISPLAY OFF
-000091 e001
-000092 dfdb
-000093 dfbf                      	LCD_WRITE_COM 0B00000001	;DISPLAY CLR
-000094 e006
-000095 dfd8
-000096 dfbc                      	LCD_WRITE_COM 0B00000110	;INCREMENT, NO SHIFT
-000097 e00f
-000098 dfd5
-000099 dfb9                      	LCD_WRITE_COM 0B00001111	;CURSOR ON, BAR, BLINK
-00009a 910f                      	POP R16
-00009b 910f                      	POP TEMP
-00009c 9508                      	RET
+0001ad e008
+0001ae dfde
+0001af dfc2                      	LCD_WRITE_COM 0B00001000	;DISPLAY OFF
+0001b0 e001
+0001b1 dfdb
+0001b2 dfbf                      	LCD_WRITE_COM 0B00000001	;DISPLAY CLR
+0001b3 e006
+0001b4 dfd8
+0001b5 dfbc                      	LCD_WRITE_COM 0B00000110	;INCREMENT, NO SHIFT
+0001b6 e00f
+0001b7 dfd5
+0001b8 dfb9                      	LCD_WRITE_COM 0B00001111	;CURSOR ON, BAR, BLINK
+0001b9 910f                      	POP R16
+0001ba 910f                      	POP TEMP
+0001bb 9508                      	RET
                                  
                                  
                                  ;DISPLAY 8BIT NUMBER ON LCD, INPUT R16 AS NUMBER, R23 R24 R25 USING FOR TAKE THE ASCII VALUE OF THE NUMBER
                                  LCD_DISPLAY_NUMBER:
-00009d 930f                      	PUSH R16
-00009e 937f                      	PUSH R23
-00009f 938f                      	PUSH R24
-0000a0 939f                      	PUSH R25
+0001bc 930f                      	PUSH R16
+0001bd 937f                      	PUSH R23
+0001be 938f                      	PUSH R24
+0001bf 939f                      	PUSH R25
                                  
-0000a1 940e 010a                 	CALL ITOA				;USING FUNCTION ITOA FROM GENERAL FUNCTIONS TO GET ASCII VALUE OF A CERTAIN INT
-0000a3 2f07                      	MOV R16, R23			;DISPLAY ASCII SYMBLE ONE BY ONE
-0000a4 dfae                      	RCALL LCD_WAIT
-0000a5 dfbf                      	RCALL DATA_WRITE
-0000a6 2f08                      	MOV R16, R24			;FROM HIGH TO LOW
-0000a7 dfab                      	RCALL LCD_WAIT
-0000a8 dfbc                      	RCALL DATA_WRITE
-0000a9 2f09                      	MOV R16, R25
-0000aa dfa8                      	RCALL LCD_WAIT
-0000ab dfb9                      	RCALL DATA_WRITE
+0001c0 940e 024c                 	CALL ITOA				;USING FUNCTION ITOA FROM GENERAL FUNCTIONS TO GET ASCII VALUE OF A CERTAIN INT
+0001c2 2f07                      	MOV R16, R23			;DISPLAY ASCII SYMBLE ONE BY ONE
+0001c3 dfae                      	RCALL LCD_WAIT
+0001c4 dfbf                      	RCALL DATA_WRITE
+0001c5 2f08                      	MOV R16, R24			;FROM HIGH TO LOW
+0001c6 dfab                      	RCALL LCD_WAIT
+0001c7 dfbc                      	RCALL DATA_WRITE
+0001c8 2f09                      	MOV R16, R25
+0001c9 dfa8                      	RCALL LCD_WAIT
+0001ca dfb9                      	RCALL DATA_WRITE
                                  
-0000ac 919f                      	POP R25
-0000ad 918f                      	POP R24
-0000ae 917f                      	POP R23
-0000af 910f                      	POP R16
-0000b0 9508                      	RET
+0001cb 919f                      	POP R25
+0001cc 918f                      	POP R24
+0001cd 917f                      	POP R23
+0001ce 910f                      	POP R16
+0001cf 9508                      	RET
                                  
                                  ;16BIT NUMBER DISPLAY, SAME TECHNIQUE AS 8BIT VERSION
                                  LCD_DISPLAY_NUMBER_16BIT:
-0000b1 930f                      	PUSH R16
-0000b2 931f                      	PUSH R17
-0000b3 935f                      	PUSH R21
-0000b4 936f                      	PUSH R22
-0000b5 937f                      	PUSH R23
-0000b6 938f                      	PUSH R24
-0000b7 939f                      	PUSH R25
+0001d0 930f                      	PUSH R16
+0001d1 931f                      	PUSH R17
+0001d2 935f                      	PUSH R21
+0001d3 936f                      	PUSH R22
+0001d4 937f                      	PUSH R23
+0001d5 938f                      	PUSH R24
+0001d6 939f                      	PUSH R25
                                  
-0000b8 940e 0122                 	CALL ITOA_16BIT
-0000ba 2f05                      	MOV R16, R21
-0000bb df97                      	RCALL LCD_WAIT
-0000bc dfa8                      	RCALL DATA_WRITE
-0000bd 2f06                      	MOV R16, R22
-0000be df94                      	RCALL LCD_WAIT
-0000bf dfa5                      	RCALL DATA_WRITE
-0000c0 2f07                      	MOV R16, R23
-0000c1 df91                      	RCALL LCD_WAIT
-0000c2 dfa2                      	RCALL DATA_WRITE
-0000c3 2f08                      	MOV R16, R24
-0000c4 df8e                      	RCALL LCD_WAIT
-0000c5 df9f                      	RCALL DATA_WRITE
-0000c6 2f09                      	MOV R16, R25
-0000c7 df8b                      	RCALL LCD_WAIT
-0000c8 df9c                      	RCALL DATA_WRITE
+0001d7 940e 0264                 	CALL ITOA_16BIT
+0001d9 2f05                      	MOV R16, R21
+0001da df97                      	RCALL LCD_WAIT
+0001db dfa8                      	RCALL DATA_WRITE
+0001dc 2f06                      	MOV R16, R22
+0001dd df94                      	RCALL LCD_WAIT
+0001de dfa5                      	RCALL DATA_WRITE
+0001df 2f07                      	MOV R16, R23
+0001e0 df91                      	RCALL LCD_WAIT
+0001e1 dfa2                      	RCALL DATA_WRITE
+0001e2 2f08                      	MOV R16, R24
+0001e3 df8e                      	RCALL LCD_WAIT
+0001e4 df9f                      	RCALL DATA_WRITE
+0001e5 2f09                      	MOV R16, R25
+0001e6 df8b                      	RCALL LCD_WAIT
+0001e7 df9c                      	RCALL DATA_WRITE
                                  
-0000c9 919f                      	POP R25
-0000ca 918f                      	POP R24
-0000cb 917f                      	POP R23
-0000cc 916f                      	POP R22
-0000cd 915f                      	POP R21
-0000ce 910f                      	POP R16
-0000cf 911f                      	POP R17
+0001e8 919f                      	POP R25
+0001e9 918f                      	POP R24
+0001ea 917f                      	POP R23
+0001eb 916f                      	POP R22
+0001ec 915f                      	POP R21
+0001ed 910f                      	POP R16
+0001ee 911f                      	POP R17
+0001ef 9508                      	RET
+                                 
+                                 ;display STRING, r16(low), r17(high) as string addr
+                                 LCD_DISPLAY_STRING:
+0001f0 93ef                      	push ZL
+0001f1 93ff                      	push ZH
+                                 
+0001f2 2fe0                      	mov zl, R16
+0001f3 2ff1                      	mov zh, R17
+                                 	lcd_display_string_loop:
+0001f4 df7d                      		rcall lcd_wait
+0001f5 9105                      		lpm r16, Z+
+0001f6 3000                      		cpi r16, 0
+0001f7 f011                      		breq lcd_display_string_return
+0001f8 df8b                      		rcall DATA_WRITE
+0001f9 cffa                      		rjmp lcd_display_string_loop
+                                 	
+                                 	lcd_display_string_return:
+0001fa 91ff                      	pop zh
+0001fb 91ef                      	pop zl
+0001fc 9508                      	ret
+                                 
                                  .include "wait.asm"
-0000d0 9508                      
+                                 
                                   * WAIT.ASM
                                   *
                                   *  CREATED: 2017/10/3
@@ -2294,96 +2524,124 @@ D:\workspace\comp9032\project\final_project\final_project\main.asm(26): Includin
                                  
                                  ;FUNCTION TO WAIT FOR 1MS
                                  WAIT_1MS:
-0000d1 938f                      	PUSH R24
-0000d2 939f                      	PUSH R25
+0001fd 938f                      	PUSH R24
+0001fe 939f                      	PUSH R25
                                  
-0000d3 e084                      	LDI R24, LOW(4100)
-0000d4 e190                      	LDI R25, HIGH(4100)		;A LITTLE MORE THAN 1MS
+0001ff e084                      	LDI R24, LOW(4100)
+000200 e190                      	LDI R25, HIGH(4100)		;A LITTLE MORE THAN 1MS
                                  	MS_LOOP:
-0000d5 9701                      		SBIW R24, 1
-0000d6 f7f1                      		BRNE MS_LOOP
+000201 9701                      		SBIW R24, 1
+000202 f7f1                      		BRNE MS_LOOP
                                  	
-0000d7 919f                      	POP R25
-0000d8 918f                      	POP R24
-0000d9 9508                      	RET
+000203 919f                      	POP R25
+000204 918f                      	POP R24
+000205 9508                      	RET
                                  
                                  ;USING R16 AS INPUT FOR WAIT R16MS
                                  WAIT_MORE:
-0000da 930f                      	PUSH R16
+000206 930f                      	PUSH R16
                                  
                                  	WAIT_MORE_LOOP:
-0000db dff5                      		RCALL WAIT_1MS		;EACH TIME WAIT FOR 1MS
-0000dc 950a                      		DEC R16
-0000dd f7e9                      		BRNE WAIT_MORE_LOOP
+000207 dff5                      		RCALL WAIT_1MS		;EACH TIME WAIT FOR 1MS
+000208 950a                      		DEC R16
+000209 f7e9                      		BRNE WAIT_MORE_LOOP
                                  
-0000de 910f                      	POP R16
-0000df 9508                      	RET
+00020a 910f                      	POP R16
+00020b 9508                      	RET
                                  .include "drone.asm"
                                  
-                                 ;R20-> ROW, R21-> COL, R18 -> DIRECTION
+                                 ;R21-> ROW, R20-> COL, R18 -> DIRECTION
                                  ;Z POINT TO LAST POSITION
                                  ;NEW_HEIGHT -> R23 AS RETURN
                                  ;IF REACH END, RETURN -1(WHICH MIGHT NEVER HAPPEN)
                                  FLY_TO_NEXT_POS:    
-0000e0 3020                          CPI R18, 0      ;R18 -> SET AS FLY RIGHT, CLEAR AS FLY LEFT
-0000e1 f041                          BREQ GO_LEFT
-0000e2 335f                          CPI R21, BORDER_X
-0000e3 f059                          BREQ GO_DOWN
-0000e4 9631                          ADIW Z, 1
-0000e5 5f5f                          SUBI R21, -1
+00020c 3020                          CPI R18, 0      ;R18 -> SET AS FLY RIGHT, CLEAR AS FLY LEFT
+00020d f071                          BREQ GO_LEFT
+00020e 334f                          CPI R20, BORDER_X   ;CHECK IF REACHED BOARDER
+00020f f0a1                          BREQ GO_DOWN        ;IF BOARDER REACHED, GO DOWN
+000210 e502
+000211 df72
+000212 df5f                          LCD_WRITE_DATA 'R'
+000213 9631                          ADIW Z, 1
+000214 9543                          INC R20
                                  
                                      CHECK_HEIGHT:
-0000e6 9174                              LPM R23, Z
-0000e7 9508                              RET
+000215 9174                              LPM R23, Z
+000216 e200
+000217 df6c
+000218 df59                              LCD_WRITE_DATA ' '
+000219 9508                              RET
                                  
                                      GO_END:
-0000e8 ef7f                              LDI R23, -1
-0000e9 9508                              RET
+00021a ef7f                              LDI R23, -1
+00021b 9508                              RET
                                  
                                      GO_LEFT:
-0000ea 3050                              CPI R21, 0
-0000eb f019                              BREQ GO_DOWN
-0000ec 9731                              SBIW Z, 1
-0000ed 5051                              SUBI R21, 1
-0000ee cff7                              RJMP CHECK_HEIGHT
+00021c 3040                              CPI R20, 0
+00021d f031                              BREQ GO_DOWN
+00021e e40c
+00021f df64
+000220 df51                              LCD_WRITE_DATA 'L'
+000221 9731                              SBIW Z, 1
+000222 954a                              DEC R20
+000223 cff1                              RJMP CHECK_HEIGHT
                                      
                                      GO_DOWN:
-0000ef 334f                              CPI R20, BORDER_X
-0000f0 f3b9                              BREQ GO_END
-0000f1 96ff                              ADIW Z, BORDER_Y	;NEXT ROW
-0000f2 9520                              COM R18                 ;DIFFERENT DIRECTION
-0000f3 5f4f                              SUBI R20, -1            ;SET R20, NEXT ROW
+000224 335f                              CPI R21, BORDER_Y
+000225 f3a1                              BREQ GO_END
+000226 e404
+000227 df5c
+000228 df49                              LCD_WRITE_DATA 'D'
+000229 96ff                              ADIW Z, BORDER_Y	    ;NEXT ROW
+00022a 9520                              COM R18                 ;DIFFERENT DIRECTION
+00022b 9553                              inc R21					;SET R21, NEXT ROW
+00022c cfe8                              RJMP CHECK_HEIGHT
                                  
-                                 ;current position: R20:R21 -> x:y
-                                 ;return r23 as signal if r23 set, then the accident position is found
-                                 ;else if r23 is clr, accident position is not found
+                                 ;CURRENT POSITION: R20:R21 -> X:Y
+                                 ;RETURN R23 AS SIGNAL IF R23 SET, THEN THE ACCIDENT POSITION IS FOUND
+                                 ;ELSE IF R23 IS CLR, ACCIDENT POSITION IS NOT FOUND
                                  DRONE_SEARCH:
-0000f4 930f                      	PUSH R16
-0000f5 931f                      	PUSH R17
-0000f6 93ef                      	PUSH ZL
-0000f7 93ff                      	PUSH ZH
+00022d 930f                      	PUSH R16
+00022e 931f                      	PUSH R17
+00022f 93ef                      	PUSH ZL
+000230 93ff                      	PUSH ZH
                                  
-0000f8 2777                      	CLR R23
-0000f9 e70f
-0000fa 940e 0166                 	FLY_CTRL HALF_MOTOR_SPEED	;SET MOTOR SPEED TO HALF
-0000fc e0e0                      	LDI ZL, LOW(ACCIDENT)
-0000fd e0f2                      	LDI ZH, HIGH(ACCIDENT)
+000231 2777                      	CLR R23
+000232 e302
+000233 940e 02aa                 	FLY_CTRL HALF_MOTOR_SPEED	;SET MOTOR SPEED TO HALF
+000235 e0e0                      	LDI ZL, LOW(ACCIDENT)
+000236 e0f2                      	LDI ZH, HIGH(ACCIDENT)
                                  
-0000fe 9105                      	LPM R16, Z+
-0000ff 9114                      	LPM R17, Z
+000237 9105                      	LPM R16, Z+
+000238 9114                      	LPM R17, Z
                                  
-000100 1704                      	CP R16, R20
-000101 f419                      	BRNE SEARCH_RETURN
-000102 1715                      	CP R17, R21
-000103 f409                      	BRNE SEARCH_RETURN
-000104 ef7f                      	SER R23
+000239 1704                      	CP R16, R20
+00023a f419                      	BRNE SEARCH_RETURN
+00023b 1715                      	CP R17, R21
+00023c f409                      	BRNE SEARCH_RETURN
+00023d ef7f                      	SER R23
                                  SEARCH_RETURN:
-000105 91ff                      	POP ZH
-000106 91ef                      	POP ZL
-000107 910f                      	POP R16
-000108 911f                      	POP R17
+00023e 91ff                      	POP ZH
+00023f 91ef                      	POP ZL
+000240 910f                      	POP R16
+000241 911f                      	POP R17
+000242 9508                      	RET
+                                 
+                                 ;SET ACCIDENT POSITION IN DESG, ACCIDENT(X,Y)
+                                 ;WITH REGISTER R16 AS X, R17 AS Y
+                                 SET_LOCATION:
+000243 93ef                          PUSH ZL
+000244 93ff                          PUSH ZH
+                                 
+000245 e0e0                          LDI ZL, LOW(ACCIDENT)
+000246 e0f2                          LDI ZH, HIGH(ACCIDENT)
+000247 9301                          ST Z+, R16
+000248 8310                          ST Z, R17
+                                 
+000249 91ff                          POP ZH
+00024a 91ef                          POP ZL
                                  .include "generalfunc.asm"
-000109 9508                      
+00024b 9508                      
                                   * generalfunc.asm
                                   *
                                   *  Created: 2017/9/29 22:20:30
@@ -2396,188 +2654,2209 @@ D:\workspace\comp9032\project\final_project\final_project\main.asm(26): Includin
                                  ;PWM_GENERATE
                                  ;---------------------------------------------
                                  ITOA:	;8BIT INPUT(MAX 255, MIN 0) R16, R23:R24:R25 OUTPUT ASCII VALUE
-00010a 930f                      	PUSH R16
-00010b 2777                      	CLR R23
-00010c 2788                      	CLR R24
-00010d 2799                      	CLR R25
+00024c 930f                      	PUSH R16
+00024d 2777                      	CLR R23
+00024e 2788                      	CLR R24
+00024f 2799                      	CLR R25
                                  
                                  	E100S:					;EXTRACT 100
-00010e 3604                      		CPI R16, 100
-00010f f018                      		BRLO E10S
-000110 5604                      		SUBI R16, 100
-000111 9573                      		INC R23
-000112 cffb                      		RJMP E100S
+000250 3604                      		CPI R16, 100
+000251 f018                      		BRLO E10S
+000252 5604                      		SUBI R16, 100
+000253 9573                      		INC R23
+000254 cffb                      		RJMP E100S
                                  
                                  	E10S:					;EXTRACT 10
-000113 300a                      		CPI R16, 10
-000114 f018                      		BRLO E1S
-000115 500a                      		SUBI R16, 10
-000116 9583                      		INC R24
-000117 cffb                      		RJMP E10S
+000255 300a                      		CPI R16, 10
+000256 f018                      		BRLO E1S
+000257 500a                      		SUBI R16, 10
+000258 9583                      		INC R24
+000259 cffb                      		RJMP E10S
                                  
                                  	E1S:					;EXTRACT 1
-000118 3001                      		CPI R16, 1
-000119 f018                      		BRLO ITOA_RETURN
-00011a 5001                      		SUBI R16, 1
-00011b 9593                      		INC R25
-00011c cffb                      		RJMP E1S
+00025a 3001                      		CPI R16, 1
+00025b f018                      		BRLO ITOA_RETURN
+00025c 5001                      		SUBI R16, 1
+00025d 9593                      		INC R25
+00025e cffb                      		RJMP E1S
                                  
                                  	ITOA_RETURN:
-00011d 5d70                      		SUBI R23, -'0'		;GET ASCII VALUE FOR EACH
-00011e 5d80                      		SUBI R24, -'0'
-00011f 5d90                      		SUBI R25, -'0'
-000120 910f                      		POP R16
-000121 9508                      		RET
+00025f 5d70                      		SUBI R23, -'0'		;GET ASCII VALUE FOR EACH
+000260 5d80                      		SUBI R24, -'0'
+000261 5d90                      		SUBI R25, -'0'
+000262 910f                      		POP R16
+000263 9508                      		RET
                                  
                                  ITOA_16BIT:	;16BIT INPUT(MAX 65535, MIN 0) R17_HIGH:R16_LOW, R21:R22:R23:R24:R25 OUTPUT ASCII VALUE
-000122 930f                      	PUSH R16			;LOW
-000123 931f                      	PUSH R17			;HIGH
-000124 932f                      	PUSH R18			;TEMP REGISTER
-000125 2755                      	CLR R21				;10000S
-000126 2766                      	CLR R22				;1000S
-000127 2777                      	CLR R23				;100S
-000128 2788                      	CLR R24				;10S
-000129 2799                      	CLR R25				;1S
+000264 930f                      	PUSH R16			;LOW
+000265 931f                      	PUSH R17			;HIGH
+000266 932f                      	PUSH R18			;TEMP REGISTER
+000267 2755                      	CLR R21				;10000S
+000268 2766                      	CLR R22				;1000S
+000269 2777                      	CLR R23				;100S
+00026a 2788                      	CLR R24				;10S
+00026b 2799                      	CLR R25				;1S
                                  
                                  	XE10000S:					;EXTRACT 10000
-00012a e227                      		LDI R18, HIGH(10000)
-00012b 3100                      		CPI R16, LOW(10000)
-00012c 0712                      		CPC R17, R18
-00012d f020                      		BRLO XE1000S
-00012e 5100                      		SUBI R16, LOW(10000)
-00012f 0b12                      		SBC R17, R18
-000130 9553                      		INC R21
-000131 cff8                      		RJMP XE10000S
+00026c e227                      		LDI R18, HIGH(10000)
+00026d 3100                      		CPI R16, LOW(10000)
+00026e 0712                      		CPC R17, R18
+00026f f020                      		BRLO XE1000S
+000270 5100                      		SUBI R16, LOW(10000)
+000271 0b12                      		SBC R17, R18
+000272 9553                      		INC R21
+000273 cff8                      		RJMP XE10000S
                                  
                                  	XE1000S:					;EXTRACT 1000
-000132 e023                      		LDI R18, HIGH(1000)		;USE R18 TO CMP
-000133 3e08                      		CPI R16, LOW(1000)		;CMP LOW FIRST
-000134 0712                      		CPC R17, R18			;THEN HIGH
-000135 f020                      		BRLO XE100S
-000136 5e08                      		SUBI R16, LOW(1000)		;SUB LOW FIRST
-000137 0b12                      		SBC R17, R18			;THEN HIGH
-000138 9563                      		INC R22
-000139 cff8                      		RJMP XE1000S
+000274 e023                      		LDI R18, HIGH(1000)		;USE R18 TO CMP
+000275 3e08                      		CPI R16, LOW(1000)		;CMP LOW FIRST
+000276 0712                      		CPC R17, R18			;THEN HIGH
+000277 f020                      		BRLO XE100S
+000278 5e08                      		SUBI R16, LOW(1000)		;SUB LOW FIRST
+000279 0b12                      		SBC R17, R18			;THEN HIGH
+00027a 9563                      		INC R22
+00027b cff8                      		RJMP XE1000S
                                  
                                  	XE100S:					;EXTRACT 100
-00013a e020                      		LDI R18, HIGH(100)
-00013b 3604                      		CPI R16, LOW(100)
-00013c 0712                      		CPC R17, R18
-00013d f020                      		BRLO XE10S
-00013e 5604                      		SUBI R16, LOW(100)
-00013f 0b12                      		SBC R17, R18
-000140 9573                      		INC R23
-000141 cff8                      		RJMP XE100S
+00027c e020                      		LDI R18, HIGH(100)
+00027d 3604                      		CPI R16, LOW(100)
+00027e 0712                      		CPC R17, R18
+00027f f020                      		BRLO XE10S
+000280 5604                      		SUBI R16, LOW(100)
+000281 0b12                      		SBC R17, R18
+000282 9573                      		INC R23
+000283 cff8                      		RJMP XE100S
                                  
                                  	XE10S:					;EXTRACT 10
-000142 300a                      		CPI R16, 10
-000143 f018                      		BRLO XE1S
-000144 500a                      		SUBI R16, 10
-000145 9583                      		INC R24
-000146 cffb                      		RJMP XE10S
+000284 300a                      		CPI R16, 10
+000285 f018                      		BRLO XE1S
+000286 500a                      		SUBI R16, 10
+000287 9583                      		INC R24
+000288 cffb                      		RJMP XE10S
                                  
                                  	XE1S:					;EXTRACT 1
-000147 3001                      		CPI R16, 1
-000148 f018                      		BRLO ITOA_16BIT_RETURN
-000149 5001                      		SUBI R16, 1
-00014a 9593                      		INC R25
-00014b cffb                      		RJMP XE1S
+000289 3001                      		CPI R16, 1
+00028a f018                      		BRLO ITOA_16BIT_RETURN
+00028b 5001                      		SUBI R16, 1
+00028c 9593                      		INC R25
+00028d cffb                      		RJMP XE1S
                                  
                                  	ITOA_16BIT_RETURN:
-00014c 5d50                      		SUBI R21, -'0'		;GET ASCII VALUE FOR EACH
-00014d 5d60                      		SUBI R22, -'0'
-00014e 5d70                      		SUBI R23, -'0'
-00014f 5d80                      		SUBI R24, -'0'
-000150 5d90                      		SUBI R25, -'0'
+00028e 5d50                      		SUBI R21, -'0'		;GET ASCII VALUE FOR EACH
+00028f 5d60                      		SUBI R22, -'0'
+000290 5d70                      		SUBI R23, -'0'
+000291 5d80                      		SUBI R24, -'0'
+000292 5d90                      		SUBI R25, -'0'
                                  
-000151 912f                      		POP R18
-000152 911f                      		POP R17
-000153 910f                      		POP R16
-000154 9508                      		RET
+000293 912f                      		POP R18
+000294 911f                      		POP R17
+000295 910f                      		POP R16
+000296 9508                      		RET
                                  
                                  ;USING TIMER3 AND OCR3B TO GENERATE PWM
                                  
                                  PWM_GENERATE:
-000155 930f                      	PUSH r16
+000297 930f                      	PUSH r16
                                  	
-000156 e008                      	LDI TEMP, 0B00001000
-000157 b90d                      	STORE DDRE, r16					;SET UP PORTE BIT4 AS PWM OUTPUT
-000158 2700                      	CLR TEMP
-000159 9300 009b                 	STORE OCR3BH, r16
-00015b 2700                      	CLR TEMP
-00015c 9300 009a                 	STORE OCR3BL, r16					;ONLY OCR3BL MATTERS(8BIT PWM)
-00015e e201                      	LDI TEMP, (1<<WGM30)|(1<<COM3B1)	;8BIT PHASE CORRECT PWM MODE
-00015f 9300 0090                 	STORE TCCR3A, r16		
-000161 e001                      	LDI TEMP, 1<<CS30					
-000162 9300 0091                 	STORE TCCR3B, r16
-                                 
-000164 910f                      	POP r16
-000165 9508                      	ret
+000298 ef0f                      	ser TEMP
+000299 b90d                      	STORE DDRE, r16					;SET UP PORTE BIT4 AS PWM OUTPUT
+00029a 2700                      	clr TEMP
+00029b 9300 009d                 	STORE OCR3CH, r16
+00029d 2700                      	clr temp
+00029e 9300 009c                 	STORE OCR3CL, r16					;ONLY OCR3BL MATTERS(8BIT PWM)
+0002a0 e009                      	LDI TEMP, (1<<WGM30)|(1<<COM3C1)	;8BIT PHASE CORRECT PWM MODE
+0002a1 9300 0090                 	STORE TCCR3A, r16		
+0002a3 e001                      	LDI TEMP, 1<<CS30					
+0002a4 9300 0091                 	STORE TCCR3B, r16
+0002a6 ef0f                      	ser temp
+0002a7 b908                      	out portc, temp
+                                 	
+0002a8 910f                      	POP r16
+0002a9 9508                      	ret
                                  
                                  ;Change pwm duty
-                                 .set PWM_CMP_REG = OCR3BL		;use OCR3BL as pwm compare regis
+                                 .set PWM_CMP_REG = OCR3CL		;use OCR3BL as pwm compare regis
                                  pwm_duty:
-000166 930f                      	push r16
+0002aa 930f                      	push r16
                                  
-000167 9300 009a                 	STORE PWM_CMP_REG, r16
+0002ab 9300 009c                 	STORE PWM_CMP_REG, r16
                                  
-000169 910f                      	pop r16
+0002ad 910f                      	pop r16
                                  .include "mountain.asm"
-00016a 9508                      
-00016b 275d
-00016c 354e
-00016d 594a
-00016e 4b5f
-00016f 634d                      .db 93,39,78,53,74,89,95,75,77,99
-000170 4f22
-000171 4714
-000172 6579
-000173 154b
-000174 1754                      .db 34,79,20,71,121,101,75,21,84,23
-000175 2d65
-000176 6231
-000177 4d58
-000178 141a
-000179 4a1c                      .db 101,45,49,98,88,77,26,20,28,74
-00017a 5036
-00017b 5267
-00017c 4680
-00017d 241e
-00017e 4f1b                      .db 54,80,103,82,128,70,30,36,27,79
-00017f 4136
-000180 0a56
-000181 5d10
-000182 0b52
-000183 5b0a                      .db 54,65,86,10,16,93,82,11,10,91
-000184 3f60
-000185 4078
-000186 5b3f
-000187 2543
-000188 4e41                      .db 96,63,120,64,63,91,67,37,65,78
-000189 7a3b
-00018a 0c43
-00018b 7c45
-00018c 783d
-00018d 1f2e                      .db 59,122,67,12,69,124,61,120,46,31
-00018e 2522
-00018f 1640
-000190 6056
-000191 7b72
-000192 1a20                      .db 34,37,64,22,86,96,114,123,32,26
-000193 2b2b
-000194 6552
-000195 3749
-000196 6626
-000197 7415                      .db 43,43,82,101,73,55,38,102,21,116
-000198 5517
-000199 6f0d
-00019a 263d
-00019b 3447
-00019c 4760                      .db 23,85,13,111,61,38,71,52,96,71
+0002ae 9508                      
+0002af 5b3a
+0002b0 630e
+0002b1 6310
+0002b2 3a50
+0002b3 2b6c
+0002b4 1238
+0002b5 425d
+0002b6 1c34
+0002b7 2273
+0002b8 146f
+0002b9 2a1e
+0002ba 5d38
+0002bb 0b78
+0002bc 3c4a
+0002bd 6125
+0002be 4178
+0002bf 2410
+0002c0 396c
+0002c1 2a31
+0002c2 6f7e
+0002c3 753c
+0002c4 2c40
+0002c5 7329
+0002c6 443a
+0002c7 4e66
+0002c8 1623
+0002c9 7d58
+0002ca 7273
+0002cb 7314
+0002cc 1f3f
+0002cd 5835
+0002ce 196d                      .db 58,91,14,99,16,99,80,58,108,43,56,18,93,66,52,28,115,34,111,20,30,42,56,93,120,11,74,60,37,97,120,65,16,36,108,57,49,42,126,111,60,117,64,44,41,115,58,68,102,78,35,22,88,125,115,114,20,115,63,31,53,88,109,25
+0002cf 0d3f
+0002d0 7d3c
+0002d1 7168
+0002d2 2f31
+0002d3 1e59
+0002d4 1c21
+0002d5 4c1e
+0002d6 440a
+0002d7 2246
+0002d8 4531
+0002d9 515f
+0002da 5b59
+0002db 4872
+0002dc 504c
+0002dd 0a48
+0002de 6971
+0002df 7d13
+0002e0 806e
+0002e1 7219
+0002e2 361c
+0002e3 7d80
+0002e4 705b
+0002e5 1113
+0002e6 1e6a
+0002e7 2342
+0002e8 5875
+0002e9 0e11
+0002ea 1a67
+0002eb 3457
+0002ec 7634
+0002ed 5d18
+0002ee 1a60                      .db 63,13,60,125,104,113,49,47,89,30,33,28,30,76,10,68,70,34,49,69,95,81,89,91,114,72,76,80,72,10,113,105,19,125,110,128,25,114,28,54,128,125,91,112,19,17,106,30,66,35,117,88,17,14,103,26,87,52,52,118,24,93,96,26
+0002ef 0b45
+0002f0 2a3e
+0002f1 384c
+0002f2 4d25
+0002f3 6871
+0002f4 4e68
+0002f5 1a3a
+0002f6 565d
+0002f7 5d38
+0002f8 1354
+0002f9 2621
+0002fa 3169
+0002fb 1927
+0002fc 3d66
+0002fd 442d
+0002fe 1c5e
+0002ff 5a63
+000300 7556
+000301 113e
+000302 602f
+000303 6e4b
+000304 6c3e
+000305 4157
+000306 3a0f
+000307 6a3c
+000308 3e4b
+000309 7c74
+00030a 1813
+00030b 1d2d
+00030c 6d6a
+00030d 0c46
+00030e 7e65                      .db 69,11,62,42,76,56,37,77,113,104,104,78,58,26,93,86,56,93,84,19,33,38,105,49,39,25,102,61,45,68,94,28,99,90,86,117,62,17,47,96,75,110,62,108,87,65,15,58,60,106,75,62,116,124,19,24,45,29,106,109,70,12,101,126
+00030f 5c77
+000310 3510
+000311 3a20
+000312 267d
+000313 0f51
+000314 4056
+000315 3612
+000316 7660
+000317 615c
+000318 201b
+000319 495e
+00031a 2338
+00031b 4449
+00031c 0c50
+00031d 6462
+00031e 5272
+00031f 4548
+000320 6b29
+000321 495c
+000322 3f66
+000323 793e
+000324 3345
+000325 7018
+000326 0e4c
+000327 4655
+000328 251c
+000329 2744
+00032a 5d32
+00032b 2a72
+00032c 424d
+00032d 3237
+00032e 5f3e                      .db 119,92,16,53,32,58,125,38,81,15,86,64,18,54,96,118,92,97,27,32,94,73,56,35,73,68,80,12,98,100,114,82,72,69,41,107,92,73,102,63,62,121,69,51,24,112,76,14,85,70,28,37,68,39,50,93,114,42,77,66,55,50,62,95
+00032f 3076
+000330 1367
+000331 121f
+000332 1e75
+000333 3a46
+000334 5526
+000335 5b32
+000336 2762
+000337 4815
+000338 694c
+000339 5c4b
+00033a 7375
+00033b 5134
+00033c 0b27
+00033d 3e78
+00033e 4559
+00033f 717e
+000340 5d80
+000341 5e39
+000342 6720
+000343 1253
+000344 5b69
+000345 6326
+000346 6d60
+000347 161e
+000348 0c7e
+000349 7a56
+00034a 1750
+00034b 2c2d
+00034c 4536
+00034d 4023
+00034e 1f22                      .db 118,48,103,19,31,18,117,30,70,58,38,85,50,91,98,39,21,72,76,105,75,92,117,115,52,81,39,11,120,62,89,69,126,113,128,93,57,94,32,103,83,18,105,91,38,99,96,109,30,22,126,12,86,122,80,23,45,44,54,69,35,64,34,31
+00034f 620d
+000350 4861
+000351 6a28
+000352 483a
+000353 443a
+000354 7e3b
+000355 1f2f
+000356 6f77
+000357 3624
+000358 7f4b
+000359 1a58
+00035a 2d21
+00035b 242f
+00035c 7041
+00035d 6f0b
+00035e 4779
+00035f 7d40
+000360 6272
+000361 4756
+000362 3570
+000363 7d2b
+000364 1d30
+000365 1a4c
+000366 2856
+000367 3b0b
+000368 7239
+000369 3317
+00036a 267d
+00036b 1e59
+00036c 5c25
+00036d 4443
+00036e 6a6f                      .db 13,98,97,72,40,106,58,72,58,68,59,126,47,31,119,111,36,54,75,127,88,26,33,45,47,36,65,112,11,111,121,71,64,125,114,98,86,71,112,53,43,125,48,29,76,26,86,40,11,59,57,114,23,51,125,38,89,30,37,92,67,68,111,106
+00036f 583a
+000370 0d0d
+000371 1126
+000372 1d70
+000373 181a
+000374 4e68
+000375 3e75
+000376 7938
+000377 7f57
+000378 2545
+000379 7947
+00037a 7b60
+00037b 3c26
+00037c 3c43
+00037d 1645
+00037e 127a
+00037f 1c1a
+000380 7143
+000381 7967
+000382 4927
+000383 225a
+000384 6b69
+000385 2e58
+000386 4e35
+000387 6e6b
+000388 1c69
+000389 6f32
+00038a 3b53
+00038b 3217
+00038c 2166
+00038d 4a7d
+00038e 1014                      .db 58,88,13,13,38,17,112,29,26,24,104,78,117,62,56,121,87,127,69,37,71,121,96,123,38,60,67,60,69,22,122,18,26,28,67,113,103,121,39,73,90,34,105,107,88,46,53,78,107,110,105,28,50,111,83,59,23,50,102,33,125,74,20,16
+00038f 1442
+000390 6c6b
+000391 4f57
+000392 0c6d
+000393 0c7b
+000394 4320
+000395 141b
+000396 5753
+000397 4068
+000398 6a43
+000399 7f60
+00039a 5c16
+00039b 1b25
+00039c 2642
+00039d 7739
+00039e 594b
+00039f 1d0b
+0003a0 1f38
+0003a1 1b11
+0003a2 0a4d
+0003a3 5e26
+0003a4 6432
+0003a5 162e
+0003a6 693c
+0003a7 114d
+0003a8 6540
+0003a9 0e56
+0003aa 684a
+0003ab 1b6f
+0003ac 7768
+0003ad 613e
+0003ae 383e                      .db 66,20,107,108,87,79,109,12,123,12,32,67,27,20,83,87,104,64,67,106,96,127,22,92,37,27,66,38,57,119,75,89,11,29,56,31,17,27,77,10,38,94,50,100,46,22,60,105,77,17,64,101,86,14,74,104,111,27,104,119,62,97,62,56
+0003af 0c1f
+0003b0 767f
+0003b1 1f73
+0003b2 3129
+0003b3 577b
+0003b4 0f80
+0003b5 5a80
+0003b6 3e4a
+0003b7 2e5e
+0003b8 6447
+0003b9 625d
+0003ba 3947
+0003bb 2c2a
+0003bc 6e54
+0003bd 0a0c
+0003be 3135
+0003bf 1d64
+0003c0 2c73
+0003c1 571b
+0003c2 4613
+0003c3 4113
+0003c4 7b21
+0003c5 3f30
+0003c6 144f
+0003c7 1343
+0003c8 4c76
+0003c9 4628
+0003ca 4c73
+0003cb 7c1d
+0003cc 3966
+0003cd 544b
+0003ce 733e                      .db 31,12,127,118,115,31,41,49,123,87,128,15,128,90,74,62,94,46,71,100,93,98,71,57,42,44,84,110,12,10,53,49,100,29,115,44,27,87,19,70,19,65,33,123,48,63,79,20,67,19,118,76,40,70,115,76,29,124,102,57,75,84,62,115
+0003cf 6c2a
+0003d0 2933
+0003d1 7f49
+0003d2 1b59
+0003d3 3a6c
+0003d4 1260
+0003d5 7f0d
+0003d6 3a42
+0003d7 426c
+0003d8 6b3e
+0003d9 0c4c
+0003da 5f31
+0003db 2b1d
+0003dc 397c
+0003dd 7838
+0003de 6380
+0003df 3278
+0003e0 752b
+0003e1 753a
+0003e2 2554
+0003e3 602d
+0003e4 2342
+0003e5 430e
+0003e6 4846
+0003e7 3578
+0003e8 4c4a
+0003e9 1245
+0003ea 3517
+0003eb 7465
+0003ec 462a
+0003ed 3555
+0003ee 357c                      .db 42,108,51,41,73,127,89,27,108,58,96,18,13,127,66,58,108,66,62,107,76,12,49,95,29,43,124,57,56,120,128,99,120,50,43,117,58,117,84,37,45,96,66,35,14,67,70,72,120,53,74,76,69,18,23,53,101,116,42,70,85,53,124,53
+0003ef 1844
+0003f0 3b3c
+0003f1 5663
+0003f2 5c59
+0003f3 1f49
+0003f4 593a
+0003f5 7740
+0003f6 6c12
+0003f7 3937
+0003f8 1579
+0003f9 745a
+0003fa 3b0c
+0003fb 343d
+0003fc 744e
+0003fd 6a21
+0003fe 2e48
+0003ff 6b24
+000400 146e
+000401 3861
+000402 6626
+000403 191d
+000404 4178
+000405 665f
+000406 765c
+000407 6452
+000408 3f7d
+000409 7817
+00040a 4260
+00040b 663c
+00040c 7e26
+00040d 6c19
+00040e 1a5d                      .db 68,24,60,59,99,86,89,92,73,31,58,89,64,119,18,108,55,57,121,21,90,116,12,59,61,52,78,116,33,106,72,46,36,107,110,20,97,56,38,102,29,25,120,65,95,102,92,118,82,100,125,63,23,120,96,66,60,102,38,126,25,108,93,26
+00040f 1848
+000410 5025
+000411 5052
+000412 5178
+000413 563b
+000414 647b
+000415 4662
+000416 0f1c
+000417 4246
+000418 6c74
+000419 5b5d
+00041a 131b
+00041b 282c
+00041c 2963
+00041d 190a
+00041e 1f7c
+00041f 7a48
+000420 7450
+000421 397b
+000422 745f
+000423 1511
+000424 555d
+000425 5b3f
+000426 2423
+000427 1177
+000428 483e
+000429 4e0b
+00042a 1772
+00042b 0a62
+00042c 5244
+00042d 0d7b
+00042e 5d4b                      .db 72,24,37,80,82,80,120,81,59,86,123,100,98,70,28,15,70,66,116,108,93,91,27,19,44,40,99,41,10,25,124,31,72,122,80,116,123,57,95,116,17,21,93,85,63,91,35,36,119,17,62,72,11,78,114,23,98,10,68,82,123,13,75,93
+00042f 0c72
+000430 3e55
+000431 335b
+000432 376d
+000433 3714
+000434 3911
+000435 2752
+000436 4534
+000437 7b3a
+000438 257d
+000439 6a3d
+00043a 0a50
+00043b 3259
+00043c 750f
+00043d 4565
+00043e 5e71
+00043f 7655
+000440 3e77
+000441 4443
+000442 786a
+000443 1b36
+000444 1f7f
+000445 2e63
+000446 4b46
+000447 553e
+000448 0f65
+000449 2440
+00044a 2810
+00044b 1e60
+00044c 5943
+00044d 237e
+00044e 706b                      .db 114,12,85,62,91,51,109,55,20,55,17,57,82,39,52,69,58,123,125,37,61,106,80,10,89,50,15,117,101,69,113,94,85,118,119,62,67,68,106,120,54,27,127,31,99,46,70,75,62,85,101,15,64,36,16,40,96,30,67,89,126,35,107,112
+00044f 0e44
+000450 3a5d
+000451 6e43
+000452 677f
+000453 6176
+000454 6c6f
+000455 3138
+000456 5458
+000457 6a2c
+000458 2e3a
+000459 6b48
+00045a 3131
+00045b 6a28
+00045c 3065
+00045d 260f
+00045e 567a
+00045f 5780
+000460 5729
+000461 5768
+000462 6c3d
+000463 0a2b
+000464 284b
+000465 150d
+000466 253b
+000467 653f
+000468 4538
+000469 757c
+00046a 3f0a
+00046b 7254
+00046c 374a
+00046d 3929
+00046e 526b                      .db 68,14,93,58,67,110,127,103,118,97,111,108,56,49,88,84,44,106,58,46,72,107,49,49,40,106,101,48,15,38,122,86,128,87,41,87,104,87,61,108,43,10,75,40,13,21,59,37,63,101,56,69,124,117,10,63,84,114,74,55,41,57,107,82
+00046f 7873
+000470 7228
+000471 7470
+000472 1447
+000473 277d
+000474 6f0e
+000475 150e
+000476 7a26
+000477 165c
+000478 557a
+000479 2e12
+00047a 1541
+00047b 6249
+00047c 3054
+00047d 553a
+00047e 7f48
+00047f 0b53
+000480 7f50
+000481 3618
+000482 2e28
+000483 296f
+000484 7370
+000485 103c
+000486 347d
+000487 3848
+000488 1072
+000489 4255
+00048a 7e1f
+00048b 3358
+00048c 7766
+00048d 2167
+00048e 192a                      .db 115,120,40,114,112,116,71,20,125,39,14,111,14,21,38,122,92,22,122,85,18,46,65,21,73,98,84,48,58,85,72,127,83,11,80,127,24,54,40,46,111,41,112,115,60,16,125,52,72,56,114,16,85,66,31,126,88,51,102,119,103,33,42,25
+00048f 7025
+000490 1777
+000491 6968
+000492 5a7f
+000493 391e
+000494 1a18
+000495 5c3c
+000496 3722
+000497 541d
+000498 6278
+000499 4a5b
+00049a 612e
+00049b 6543
+00049c 4e58
+00049d 7a3f
+00049e 3358
+00049f 1010
+0004a0 1750
+0004a1 3e35
+0004a2 2e57
+0004a3 113e
+0004a4 4a79
+0004a5 4e24
+0004a6 7645
+0004a7 6769
+0004a8 673c
+0004a9 315d
+0004aa 3955
+0004ab 7e6b
+0004ac 5215
+0004ad 117a
+0004ae 7479                      .db 37,112,119,23,104,105,127,90,30,57,24,26,60,92,34,55,29,84,120,98,91,74,46,97,67,101,88,78,63,122,88,51,16,16,80,23,53,62,87,46,62,17,121,74,36,78,69,118,105,103,60,103,93,49,85,57,107,126,21,82,122,17,121,116
+0004af 5c34
+0004b0 1527
+0004b1 3914
+0004b2 2225
+0004b3 756c
+0004b4 2f30
+0004b5 172d
+0004b6 740c
+0004b7 7274
+0004b8 6b39
+0004b9 0c7d
+0004ba 2d4c
+0004bb 197b
+0004bc 2d5f
+0004bd 6c1b
+0004be 5776
+0004bf 452b
+0004c0 6a23
+0004c1 4338
+0004c2 5118
+0004c3 6d7d
+0004c4 7079
+0004c5 687b
+0004c6 2a45
+0004c7 5649
+0004c8 3757
+0004c9 0f18
+0004ca 3a2e
+0004cb 3c70
+0004cc 2e54
+0004cd 5a2a
+0004ce 3130                      .db 52,92,39,21,20,57,37,34,108,117,48,47,45,23,12,116,116,114,57,107,125,12,76,45,123,25,95,45,27,108,118,87,43,69,35,106,56,67,24,81,125,109,121,112,123,104,69,42,73,86,87,55,24,15,46,58,112,60,84,46,42,90,48,49
+0004cf 6913
+0004d0 6564
+0004d1 0d68
+0004d2 5519
+0004d3 553a
+0004d4 3d20
+0004d5 801d
+0004d6 2513
+0004d7 167b
+0004d8 2f57
+0004d9 4934
+0004da 3c60
+0004db 1a52
+0004dc 2b45
+0004dd 407e
+0004de 7b50
+0004df 1524
+0004e0 2d65
+0004e1 7a6f
+0004e2 0b0f
+0004e3 6c5b
+0004e4 770e
+0004e5 116a
+0004e6 7844
+0004e7 7815
+0004e8 6d6c
+0004e9 1729
+0004ea 3b28
+0004eb 236c
+0004ec 5368
+0004ed 4d2f
+0004ee 580d                      .db 19,105,100,101,104,13,25,85,58,85,32,61,29,128,19,37,123,22,87,47,52,73,96,60,82,26,69,43,126,64,80,123,36,21,101,45,111,122,15,11,91,108,14,119,106,17,68,120,21,120,108,109,41,23,40,59,108,35,104,83,47,77,13,88
+0004ef 742a
+0004f0 1748
+0004f1 745d
+0004f2 182a
+0004f3 5354
+0004f4 625b
+0004f5 552b
+0004f6 486b
+0004f7 152a
+0004f8 2134
+0004f9 2a0c
+0004fa 4a51
+0004fb 0f4a
+0004fc 7435
+0004fd 6119
+0004fe 3f74
+0004ff 3b67
+000500 467f
+000501 660a
+000502 492b
+000503 4c5e
+000504 461e
+000505 2f6d
+000506 7f27
+000507 2a10
+000508 5f0a
+000509 657e
+00050a 5927
+00050b 0f7b
+00050c 506d
+00050d 4b61
+00050e 3d1b                      .db 42,116,72,23,93,116,42,24,84,83,91,98,43,85,107,72,42,21,52,33,12,42,81,74,74,15,53,116,25,97,116,63,103,59,127,70,10,102,43,73,94,76,30,70,109,47,39,127,16,42,10,95,126,101,39,89,123,15,109,80,97,75,27,61
+00050f 7779
+000510 6b74
+000511 3210
+000512 0c42
+000513 1465
+000514 3518
+000515 3845
+000516 5f3e
+000517 493c
+000518 5114
+000519 0f1f
+00051a 2947
+00051b 4377
+00051c 3a79
+00051d 2731
+00051e 3229
+00051f 782b
+000520 674d
+000521 281d
+000522 3c77
+000523 4118
+000524 3a46
+000525 5a79
+000526 2844
+000527 1c16
+000528 7b1b
+000529 1e0c
+00052a 6f46
+00052b 2280
+00052c 3b74
+00052d 5964
+00052e 3b18                      .db 121,119,116,107,16,50,66,12,101,20,24,53,69,56,62,95,60,73,20,81,31,15,71,41,119,67,121,58,49,39,41,50,43,120,77,103,29,40,119,60,24,65,70,58,121,90,68,40,22,28,27,123,12,30,70,111,128,34,116,59,100,89,24,59
+00052f 1558
+000530 7648
+000531 4318
+000532 5115
+000533 4474
+000534 3758
+000535 591e
+000536 4d75
+000537 5c11
+000538 6f37
+000539 537e
+00053a 513a
+00053b 202e
+00053c 583f
+00053d 0c37
+00053e 5418
+00053f 7664
+000540 5872
+000541 6833
+000542 3559
+000543 7451
+000544 343e
+000545 1917
+000546 800f
+000547 5871
+000548 556e
+000549 7735
+00054a 2127
+00054b 3573
+00054c 416f
+00054d 6868
+00054e 7f6d                      .db 88,21,72,118,24,67,21,81,116,68,88,55,30,89,117,77,17,92,55,111,126,83,58,81,46,32,63,88,55,12,24,84,100,118,114,88,51,104,89,53,81,116,62,52,23,25,15,128,113,88,110,85,53,119,39,33,115,53,111,65,104,104,109,127
+00054f 2055
+000550 365d
+000551 6f7a
+000552 0e7e
+000553 350b
+000554 1375
+000555 3878
+000556 6d5e
+000557 7c72
+000558 5880
+000559 6f50
+00055a 2871
+00055b 3068
+00055c 5225
+00055d 2027
+00055e 3a0a
+00055f 3d26
+000560 3225
+000561 5726
+000562 1f6f
+000563 5a66
+000564 362b
+000565 112d
+000566 4366
+000567 0d4f
+000568 4c17
+000569 5e5c
+00056a 0c53
+00056b 591f
+00056c 270d
+00056d 7a44
+00056e 2a20                      .db 85,32,93,54,122,111,126,14,11,53,117,19,120,56,94,109,114,124,128,88,80,111,113,40,104,48,37,82,39,32,10,58,38,61,37,50,38,87,111,31,102,90,43,54,45,17,102,67,79,13,23,76,92,94,83,12,31,89,13,39,68,122,32,42
+00056f 5f64
+000570 7c4d
+000571 4572
+000572 391f
+000573 3d1b
+000574 4b3f
+000575 2e5d
+000576 5d37
+000577 2510
+000578 7843
+000579 7b7a
+00057a 4d3d
+00057b 2c2c
+00057c 5325
+00057d 695e
+00057e 7325
+00057f 3d7f
+000580 1214
+000581 772d
+000582 3342
+000583 3533
+000584 7535
+000585 2d24
+000586 4010
+000587 6852
+000588 7018
+000589 1419
+00058a 1840
+00058b 0d4a
+00058c 7f77
+00058d 5617
+00058e 1b33                      .db 100,95,77,124,114,69,31,57,27,61,63,75,93,46,55,93,16,37,67,120,122,123,61,77,44,44,37,83,94,105,37,115,127,61,20,18,45,119,66,51,51,53,53,117,36,45,16,64,82,104,24,112,25,20,64,24,74,13,119,127,23,86,51,27
+00058f 1642
+000590 0e7b
+000591 325a
+000592 6942
+000593 294a
+000594 3a78
+000595 5b42
+000596 0a50
+000597 7b4b
+000598 1c30
+000599 2f43
+00059a 4180
+00059b 3d76
+00059c 234b
+00059d 2656
+00059e 6a2c
+00059f 4a0e
+0005a0 6910
+0005a1 5980
+0005a2 7718
+0005a3 415d
+0005a4 2047
+0005a5 4d3e
+0005a6 4834
+0005a7 2473
+0005a8 7b49
+0005a9 6c2c
+0005aa 1b4e
+0005ab 4937
+0005ac 7e10
+0005ad 6f7a
+0005ae 1e1f                      .db 66,22,123,14,90,50,66,105,74,41,120,58,66,91,80,10,75,123,48,28,67,47,128,65,118,61,75,35,86,38,44,106,14,74,16,105,128,89,24,119,93,65,71,32,62,77,52,72,115,36,73,123,44,108,78,27,55,73,16,126,122,111,31,30
+0005af 3f77
+0005b0 693d
+0005b1 657c
+0005b2 2316
+0005b3 1371
+0005b4 1d6d
+0005b5 145e
+0005b6 3137
+0005b7 1513
+0005b8 1b49
+0005b9 3d19
+0005ba 5739
+0005bb 7712
+0005bc 7424
+0005bd 2a5e
+0005be 324d
+0005bf 3412
+0005c0 5a2e
+0005c1 6540
+0005c2 175b
+0005c3 1457
+0005c4 7169
+0005c5 6f6d
+0005c6 0d3c
+0005c7 390b
+0005c8 2914
+0005c9 6963
+0005ca 266b
+0005cb 757a
+0005cc 337d
+0005cd 782e
+0005ce 3d20                      .db 119,63,61,105,124,101,22,35,113,19,109,29,94,20,55,49,19,21,73,27,25,61,57,87,18,119,36,116,94,42,77,50,18,52,46,90,64,101,91,23,87,20,105,113,109,111,60,13,11,57,20,41,99,105,107,38,122,117,125,51,46,120,32,61
+0005cf 2e49
+0005d0 4546
+0005d1 7566
+0005d2 4d19
+0005d3 2663
+0005d4 6b6c
+0005d5 646d
+0005d6 6634
+0005d7 3c5f
+0005d8 4c0f
+0005d9 4914
+0005da 4148
+0005db 1730
+0005dc 3e6c
+0005dd 1921
+0005de 216d
+0005df 5827
+0005e0 6d26
+0005e1 2c13
+0005e2 4d77
+0005e3 4b7d
+0005e4 7125
+0005e5 4546
+0005e6 2e2e
+0005e7 5523
+0005e8 2d7e
+0005e9 4353
+0005ea 745e
+0005eb 5a19
+0005ec 4e30
+0005ed 4025
+0005ee 4641                      .db 73,46,70,69,102,117,25,77,99,38,108,107,109,100,52,102,95,60,15,76,20,73,72,65,48,23,108,62,33,25,109,33,39,88,38,109,19,44,119,77,125,75,37,113,70,69,46,46,35,85,126,45,83,67,94,116,25,90,48,78,37,64,65,70
+0005ef 670b
+0005f0 1b2f
+0005f1 5126
+0005f2 795b
+0005f3 275d
+0005f4 1b48
+0005f5 481c
+0005f6 3254
+0005f7 501b
+0005f8 802c
+0005f9 7468
+0005fa 3348
+0005fb 6539
+0005fc 0e16
+0005fd 685a
+0005fe 6974
+0005ff 4e57
+000600 0a13
+000601 2a37
+000602 3e38
+000603 6849
+000604 6268
+000605 6f3a
+000606 5364
+000607 2b5c
+000608 654d
+000609 4b4f
+00060a 4263
+00060b 3337
+00060c 2a29
+00060d 3873
+00060e 0d78                      .db 11,103,47,27,38,81,91,121,93,39,72,27,28,72,84,50,27,80,44,128,104,116,72,51,57,101,22,14,90,104,116,105,87,78,19,10,55,42,56,62,73,104,104,98,58,111,100,83,92,43,77,101,79,75,99,66,55,51,41,42,115,56,120,13
+00060f 4819
+000610 263c
+000611 2052
+000612 531c
+000613 6a75
+000614 0e1e
+000615 6b37
+000616 6d5d
+000617 4a0e
+000618 6e7e
+000619 5432
+00061a 104f
+00061b 0b5d
+00061c 2e2a
+00061d 3167
+00061e 5c28
+00061f 1b6f
+000620 1071
+000621 5715
+000622 2c79
+000623 745b
+000624 7b28
+000625 4e3c
+000626 5f77
+000627 2d0e
+000628 2058
+000629 2959
+00062a 5513
+00062b 244c
+00062c 712b
+00062d 2b7c
+00062e 1e6d                      .db 25,72,60,38,82,32,28,83,117,106,30,14,55,107,93,109,14,74,126,110,50,84,79,16,93,11,42,46,103,49,40,92,111,27,113,16,21,87,121,44,91,116,40,123,60,78,119,95,14,45,88,32,89,41,19,85,76,36,43,113,124,43,109,30
+00062f 0d45
+000630 5d7d
+000631 6f12
+000632 7d41
+000633 0a11
+000634 1669
+000635 610d
+000636 331a
+000637 394f
+000638 387a
+000639 6763
+00063a 7d10
+00063b 256a
+00063c 7d35
+00063d 4158
+00063e 2f61
+00063f 6328
+000640 5736
+000641 482f
+000642 7a4a
+000643 3654
+000644 6c51
+000645 7c10
+000646 3223
+000647 4d0d
+000648 7b23
+000649 7f5b
+00064a 6e27
+00064b 0c3b
+00064c 185b
+00064d 6044
+00064e 3b20                      .db 69,13,125,93,18,111,65,125,17,10,105,22,13,97,26,51,79,57,122,56,99,103,16,125,106,37,53,125,88,65,97,47,40,99,54,87,47,72,74,122,84,54,81,108,16,124,35,50,13,77,35,123,91,127,39,110,59,12,91,24,68,96,32,59
+00064f 3f2b
+000650 7173
+000651 1250
+000652 735b
+000653 4075
+000654 1344
+000655 383a
+000656 463c
+000657 7b7c
+000658 1c7c
+000659 0d36
+00065a 5e51
+00065b 5d66
+00065c 233f
+00065d 7e80
+00065e 100f
+00065f 0a0f
+000660 1c3b
+000661 327f
+000662 3c41
+000663 6340
+000664 3054
+000665 0d0f
+000666 2d36
+000667 3d40
+000668 7213
+000669 3b2b
+00066a 3543
+00066b 7417
+00066c 6d6c
+00066d 1652
+00066e 1154                      .db 43,63,115,113,80,18,91,115,117,64,68,19,58,56,60,70,124,123,124,28,54,13,81,94,102,93,63,35,128,126,15,16,15,10,59,28,127,50,65,60,64,99,84,48,15,13,54,45,64,61,19,114,43,59,67,53,23,116,108,109,82,22,84,17
+00066f 602a
+000670 5224
+000671 5d40
+000672 293e
+000673 5934
+000674 3433
+000675 5e15
+000676 2966
+000677 384a
+000678 2176
+000679 7b34
+00067a 427d
+00067b 457e
+00067c 3d16
+00067d 261b
+00067e 7a0a
+00067f 2875
+000680 1751
+000681 5d19
+000682 7540
+000683 3a73
+000684 2934
+000685 7d57
+000686 7411
+000687 701a
+000688 217f
+000689 513a
+00068a 5939
+00068b 1b75
+00068c 2d39
+00068d 3559
+00068e 3b3e                      .db 42,96,36,82,64,93,62,41,52,89,51,52,21,94,102,41,74,56,118,33,52,123,125,66,126,69,22,61,27,38,10,122,117,40,81,23,25,93,64,117,115,58,52,41,87,125,17,116,26,112,127,33,58,81,57,89,117,27,57,45,89,53,62,59
+00068f 130c
+000690 5574
+000691 5440
+000692 1e22
+000693 3d4c
+000694 735a
+000695 2b11
+000696 4f6a
+000697 0e36
+000698 5627
+000699 706d
+00069a 736c
+00069b 1077
+00069c 460e
+00069d 3a52
+00069e 1337
+00069f 7072
+0006a0 123d
+0006a1 397b
+0006a2 1b3f
+0006a3 0d5e
+0006a4 7317
+0006a5 5b2c
+0006a6 5310
+0006a7 0b40
+0006a8 3727
+0006a9 7259
+0006aa 7a67
+0006ab 242a
+0006ac 233d
+0006ad 7d55
+0006ae 2c28                      .db 12,19,116,85,64,84,34,30,76,61,90,115,17,43,106,79,54,14,39,86,109,112,108,115,119,16,14,70,82,58,55,19,114,112,61,18,123,57,63,27,94,13,23,115,44,91,16,83,64,11,39,55,89,114,103,122,42,36,61,35,85,125,40,44
+0006af 7430
+0006b0 1316
+0006b1 145c
+0006b2 6b6c
+0006b3 4422
+0006b4 6219
+0006b5 215b
+0006b6 1973
+0006b7 685c
+0006b8 2e1f
+0006b9 0c3e
+0006ba 0f3a
+0006bb 2239
+0006bc 6849
+0006bd 3d41
+0006be 421d
+0006bf 7d7c
+0006c0 807e
+0006c1 4e20
+0006c2 5d4e
+0006c3 7f16
+0006c4 162a
+0006c5 7621
+0006c6 287b
+0006c7 1a79
+0006c8 3e7d
+0006c9 772f
+0006ca 1b2c
+0006cb 3131
+0006cc 4265
+0006cd 2a1e
+0006ce 3658                      .db 48,116,22,19,92,20,108,107,34,68,25,98,91,33,115,25,92,104,31,46,62,12,58,15,57,34,73,104,65,61,29,66,124,125,126,128,32,78,78,93,22,127,42,22,33,118,123,40,121,26,125,62,47,119,44,27,49,49,101,66,30,42,88,54
+0006cf 203f
+0006d0 4818
+0006d1 1a52
+0006d2 6855
+0006d3 470d
+0006d4 6e67
+0006d5 7110
+0006d6 5461
+0006d7 1752
+0006d8 3e0c
+0006d9 540e
+0006da 3f2f
+0006db 6322
+0006dc 7e7c
+0006dd 1a68
+0006de 1643
+0006df 1e2d
+0006e0 6329
+0006e1 7429
+0006e2 1f6a
+0006e3 6829
+0006e4 0a6e
+0006e5 6b4d
+0006e6 2e33
+0006e7 0f60
+0006e8 6a7a
+0006e9 1863
+0006ea 320f
+0006eb 1477
+0006ec 0d45
+0006ed 697e
+0006ee 6160                      .db 63,32,24,72,82,26,85,104,13,71,103,110,16,113,97,84,82,23,12,62,14,84,47,63,34,99,124,126,104,26,67,22,45,30,41,99,41,116,106,31,41,104,110,10,77,107,51,46,96,15,122,106,99,24,15,50,119,20,69,13,126,105,96,97
+0006ef 4654
+0006f0 3737
+0006f1 7839
+0006f2 2f72
+0006f3 4f7f
+0006f4 542d
+0006f5 165f
+0006f6 3848
+0006f7 703f
+0006f8 4b11
+0006f9 3d53
+0006fa 1b17
+0006fb 644a
+0006fc 1134
+0006fd 1515
+0006fe 1462
+0006ff 5067
+000700 7d33
+000701 5222
+000702 127e
+000703 2367
+000704 1769
+000705 3e53
+000706 5531
+000707 635e
+000708 3455
+000709 5834
+00070a 783e
+00070b 1c2e
+00070c 1c42
+00070d 683f
+00070e 2c3d                      .db 84,70,55,55,57,120,114,47,127,79,45,84,95,22,72,56,63,112,17,75,83,61,23,27,74,100,52,17,21,21,98,20,103,80,51,125,34,82,126,18,103,35,105,23,83,62,49,85,94,99,85,52,52,88,62,120,46,28,66,28,63,104,61,44
+00070f 315c
+000710 6677
+000711 7f49
+000712 0a14
+000713 716d
+000714 6652
+000715 1e44
+000716 6f43
+000717 5032
+000718 7d56
+000719 3431
+00071a 7c0b
+00071b 2f3f
+00071c 5526
+00071d 3d34
+00071e 6428
+00071f 3b77
+000720 7838
+000721 5e29
+000722 7233
+000723 7275
+000724 2024
+000725 3364
+000726 1e19
+000727 6536
+000728 3a17
+000729 6d35
+00072a 5b65
+00072b 1d6b
+00072c 4f70
+00072d 717d
+00072e 1b65                      .db 92,49,119,102,73,127,20,10,109,113,82,102,68,30,67,111,50,80,86,125,49,52,11,124,63,47,38,85,52,61,40,100,119,59,56,120,41,94,51,114,117,114,36,32,100,51,25,30,54,101,23,58,53,109,101,91,107,29,112,79,125,113,101,27
+00072f 3742
+000730 4e23
+000731 560b
+000732 4624
+000733 483a
+000734 0c63
+000735 431f
+000736 5e5a
+000737 6611
+000738 4568
+000739 2111
+00073a 6924
+00073b 7c80
+00073c 6b1e
+00073d 4212
+00073e 3d43
+00073f 5d65
+000740 3937
+000741 7f0e
+000742 3723
+000743 685e
+000744 7565
+000745 2068
+000746 3535
+000747 5f3b
+000748 483e
+000749 462c
+00074a 375b
+00074b 2a40
+00074c 696e
+00074d 273d
+00074e 210f                      .db 66,55,35,78,11,86,36,70,58,72,99,12,31,67,90,94,17,102,104,69,17,33,36,105,128,124,30,107,18,66,67,61,101,93,55,57,14,127,35,55,94,104,101,117,104,32,53,53,59,95,62,72,44,70,91,55,64,42,110,105,61,39,15,33
+00074f 254f
+000750 6b7b
+000751 0e49
+000752 0f7d
+000753 4d7b
+000754 6222
+000755 6b36
+000756 2a54
+000757 4d67
+000758 3f19
+000759 4a64
+00075a 600f
+00075b 131f
+00075c 173a
+00075d 3654
+00075e 4753
+00075f 4941
+000760 7c16
+000761 0b2c
+000762 2551
+000763 585a
+000764 1d6e
+000765 5f5c
+000766 1d6c
+000767 0d4e
+000768 4d38
+000769 6047
+00076a 534f
+00076b 4875
+00076c 5021
+00076d 2b80
+00076e 6e0b                      .db 79,37,123,107,73,14,125,15,123,77,34,98,54,107,84,42,103,77,25,63,100,74,15,96,31,19,58,23,84,54,83,71,65,73,22,124,44,11,81,37,90,88,110,29,92,95,108,29,78,13,56,77,71,96,79,83,117,72,33,80,128,43,11,110
+00076f 5935
+000770 271b
+000771 5663
+000772 7b2d
+000773 1d31
+000774 5214
+000775 4334
+000776 676c
+000777 6740
+000778 5e2e
+000779 3223
+00077a 7862
+00077b 492b
+00077c 0b66
+00077d 6d0e
+00077e 5c52
+00077f 506a
+000780 393c
+000781 222e
+000782 7751
+000783 0c5e
+000784 715a
+000785 2266
+000786 7967
+000787 4a2c
+000788 3c5f
+000789 7f21
+00078a 5e6f
+00078b 2812
+00078c 205c
+00078d 7b14
+00078e 2780                      .db 53,89,27,39,99,86,45,123,49,29,20,82,52,67,108,103,64,103,46,94,35,50,98,120,43,73,102,11,14,109,82,92,106,80,60,57,46,34,81,119,94,12,90,113,102,34,103,121,44,74,95,60,33,127,111,94,18,40,92,32,20,123,128,39
+00078f 7c4f
+000790 7e58
+000791 182c
+000792 1771
+000793 2435
+000794 3362
+000795 2b2d
+000796 145b
+000797 3f72
+000798 3f0b
+000799 6a54
+00079a 1975
+00079b 586b
+00079c 1f27
+00079d 5054
+00079e 6932
+00079f 5d6f
+0007a0 7c68
+0007a1 746b
+0007a2 7a16
+0007a3 1721
+0007a4 1277
+0007a5 391e
+0007a6 6152
+0007a7 6127
+0007a8 6645
+0007a9 3980
+0007aa 7857
+0007ab 1f2e
+0007ac 4045
+0007ad 1d72
+0007ae 1b35                      .db 79,124,88,126,44,24,113,23,53,36,98,51,45,43,91,20,114,63,11,63,84,106,117,25,107,88,39,31,84,80,50,105,111,93,104,124,107,116,22,122,33,23,119,18,30,57,82,97,39,97,69,102,128,57,87,120,46,31,69,64,114,29,53,27
+0007af 452a
+0007b0 4c58
+0007b1 5936
+0007b2 6d6e
+0007b3 3b7e
+0007b4 2e5f
+0007b5 5172
+0007b6 3346
+0007b7 184b
+0007b8 1975
+0007b9 6a31
+0007ba 7a72
+0007bb 7b35
+0007bc 4c72
+0007bd 6072
+0007be 203c
+0007bf 5a1f
+0007c0 3c60
+0007c1 5e15
+0007c2 364e
+0007c3 6950
+0007c4 6424
+0007c5 7b34
+0007c6 646e
+0007c7 2d63
+0007c8 643b
+0007c9 1318
+0007ca 5848
+0007cb 6d38
+0007cc 721c
+0007cd 0d2f
+0007ce 296a                      .db 42,69,88,76,54,89,110,109,126,59,95,46,114,81,70,51,75,24,117,25,49,106,114,122,53,123,114,76,114,96,60,32,31,90,96,60,21,94,78,54,80,105,36,100,52,123,110,100,99,45,59,100,24,19,72,88,56,109,28,114,47,13,106,41
+0007cf 3224
+0007d0 7d39
+0007d1 330c
+0007d2 2261
+0007d3 0a6c
+0007d4 2468
+0007d5 1f67
+0007d6 0c7b
+0007d7 2b12
+0007d8 404d
+0007d9 137d
+0007da 1138
+0007db 5423
+0007dc 6f19
+0007dd 4c4a
+0007de 3523
+0007df 1a32
+0007e0 7446
+0007e1 171b
+0007e2 5f27
+0007e3 2c46
+0007e4 7d53
+0007e5 0f78
+0007e6 0a49
+0007e7 6f27
+0007e8 6b66
+0007e9 3d1f
+0007ea 6424
+0007eb 672a
+0007ec 5047
+0007ed 1257
+0007ee 3d1d                      .db 36,50,57,125,12,51,97,34,108,10,104,36,103,31,123,12,18,43,77,64,125,19,56,17,35,84,25,111,74,76,35,53,50,26,70,116,27,23,39,95,70,44,83,125,120,15,73,10,39,111,102,107,31,61,36,100,42,103,71,80,87,18,29,61
+0007ef 597c
+0007f0 706b
+0007f1 1a15
+0007f2 7f34
+0007f3 4a0f
+0007f4 6953
+0007f5 0d6e
+0007f6 3735
+0007f7 5e24
+0007f8 576d
+0007f9 6827
+0007fa 6a3b
+0007fb 334f
+0007fc 2979
+0007fd 4f6e
+0007fe 4965
+0007ff 6e3d
+000800 6c35
+000801 7b64
+000802 7940
+000803 1c1d
+000804 635f
+000805 240c
+000806 360d
+000807 0d21
+000808 2e5f
+000809 7c78
+00080a 6a33
+00080b 151e
+00080c 694d
+00080d 3e52
+00080e 5832                      .db 124,89,107,112,21,26,52,127,15,74,83,105,110,13,53,55,36,94,109,87,39,104,59,106,79,51,121,41,110,79,101,73,61,110,53,108,100,123,64,121,29,28,95,99,12,36,13,54,33,13,95,46,120,124,51,106,30,21,77,105,82,62,50,88
+00080f 733e
+000810 725e
+000811 1635
+000812 3d58
+000813 1e2e
+000814 5f15
+000815 3a19
+000816 5b59
+000817 7542
+000818 4e39
+000819 0d5d
+00081a 7239
+00081b 6432
+00081c 115b
+00081d 2175
+00081e 6217
+00081f 3e73
+000820 6e2b
+000821 4146
+000822 2745
+000823 771a
+000824 3730
+000825 632e
+000826 6a44
+000827 7c53
+000828 3d66
+000829 494e
+00082a 746b
+00082b 233a
+00082c 0c1e
+00082d 527b
+00082e 0a30                      .db 62,115,94,114,53,22,88,61,46,30,21,95,25,58,89,91,66,117,57,78,93,13,57,114,50,100,91,17,117,33,23,98,115,62,43,110,70,65,69,39,26,119,48,55,46,99,68,106,83,124,102,61,78,73,107,116,58,35,30,12,123,82,48,10
+00082f 517a
+000830 5f7b
+000831 5e4c
+000832 1777
+000833 3046
+000834 3b59
+000835 1e3c
+000836 5638
+000837 6177
+000838 6716
+000839 4f4d
+00083a 493d
+00083b 371b
+00083c 6c1c
+00083d 576e
+00083e 625e
+00083f 4629
+000840 365f
+000841 502f
+000842 5b5f
+000843 6f30
+000844 4f36
+000845 1a70
+000846 4f59
+000847 6780
+000848 524d
+000849 3f0d
+00084a 365a
+00084b 6c6e
+00084c 6a7b
+00084d 7e5b
+00084e 4f53                      .db 122,81,123,95,76,94,119,23,70,48,89,59,60,30,56,86,119,97,22,103,77,79,61,73,27,55,28,108,110,87,94,98,41,70,95,54,47,80,95,91,48,111,54,79,112,26,89,79,128,103,77,82,13,63,90,54,110,108,123,106,91,126,83,79
+00084f 4265
+000850 670d
+000851 777e
+000852 6e6d
+000853 141e
+000854 0f2e
+000855 3056
+000856 4652
+000857 3d33
+000858 3174
+000859 3a4f
+00085a 507b
+00085b 1e49
+00085c 692e
+00085d 517a
+00085e 7147
+00085f 4110
+000860 1446
+000861 3543
+000862 3221
+000863 795c
+000864 375e
+000865 5428
+000866 5632
+000867 523c
+000868 360a
+000869 136d
+00086a 564b
+00086b 0b31
+00086c 2a1b
+00086d 7e67
+00086e 190c                      .db 101,66,13,103,126,119,109,110,30,20,46,15,86,48,82,70,51,61,116,49,79,58,123,80,73,30,46,105,122,81,71,113,16,65,70,20,67,53,33,50,92,121,94,55,40,84,50,86,60,82,10,54,109,19,75,86,49,11,27,42,103,126,12,25
+00086f 6e7d
+000870 547a
+000871 4e3a
+000872 2930
+000873 307b
+000874 4167
+000875 6c76
+000876 605f
+000877 7b25
+000878 664e
+000879 642f
+00087a 251c
+00087b 743e
+00087c 4e56
+00087d 435d
+00087e 7d79
+00087f 2d14
+000880 205f
+000881 6763
+000882 3380
+000883 367e
+000884 220c
+000885 4653
+000886 1f2b
+000887 5165
+000888 7c7d
+000889 462d
+00088a 7875
+00088b 2a49
+00088c 803f
+00088d 4433
+00088e 3355                      .db 125,110,122,84,58,78,48,41,123,48,103,65,118,108,95,96,37,123,78,102,47,100,28,37,62,116,86,78,93,67,121,125,20,45,95,32,99,103,128,51,126,54,12,34,83,70,43,31,101,81,125,124,45,70,117,120,73,42,63,128,51,68,85,51
+00088f 266d
+000890 7715
+000891 1118
+000892 3e6e
+000893 3549
+000894 0a2c
+000895 7c22
+000896 4b34
+000897 2f33
+000898 2821
+000899 6e55
+00089a 6665
+00089b 3b7f
+00089c 7759
+00089d 6c25
+00089e 396d
+00089f 5011
+0008a0 446a
+0008a1 0a57
+0008a2 2e40
+0008a3 3b78
+0008a4 2a27
+0008a5 1e1c
+0008a6 3d6e
+0008a7 6739
+0008a8 372c
+0008a9 157f
+0008aa 6b6e
+0008ab 571f
+0008ac 176f
+0008ad 660b
+0008ae 1970                      .db 109,38,21,119,24,17,110,62,73,53,44,10,34,124,52,75,51,47,33,40,85,110,101,102,127,59,89,119,37,108,109,57,17,80,106,68,87,10,64,46,120,59,39,42,28,30,110,61,57,103,44,55,127,21,110,107,31,87,111,23,11,102,112,25
+0008af 1a37
+0008b0 5846
+0008b1 3a0f
+0008b2 5e3e
+0008b3 435f
+0008b4 4280
+0008b5 1b63
+0008b6 2618
+0008b7 4015
+0008b8 0d36
+0008b9 2d1a
+0008ba 552e
+0008bb 7e78
+0008bc 2030
+0008bd 757a
+0008be 7439
+0008bf 547a
+0008c0 5311
+0008c1 7a40
+0008c2 0c45
+0008c3 5d35
+0008c4 4c55
+0008c5 242e
+0008c6 0e77
+0008c7 7f7e
+0008c8 4562
+0008c9 4b33
+0008ca 0d3c
+0008cb 1c40
+0008cc 524a
+0008cd 4659
+0008ce 3f5e                      .db 55,26,70,88,15,58,62,94,95,67,128,66,99,27,24,38,21,64,54,13,26,45,46,85,120,126,48,32,122,117,57,116,122,84,17,83,64,122,69,12,53,93,85,76,46,36,119,14,126,127,98,69,51,75,60,13,64,28,74,82,89,70,94,63
+0008cf 7560
+0008d0 6f52
+0008d1 465e
+0008d2 1166
+0008d3 1c5a
+0008d4 274a
+0008d5 697b
+0008d6 2544
+0008d7 231f
+0008d8 701d
+0008d9 394f
+0008da 676f
+0008db 5d62
+0008dc 6b48
+0008dd 1a19
+0008de 7942
+0008df 517a
+0008e0 5f62
+0008e1 3345
+0008e2 5d4d
+0008e3 5350
+0008e4 2837
+0008e5 140b
+0008e6 3b70
+0008e7 3f79
+0008e8 4071
+0008e9 4441
+0008ea 3d1f
+0008eb 2155
+0008ec 0e61
+0008ed 3e12
+0008ee 7034                      .db 96,117,82,111,94,70,102,17,90,28,74,39,123,105,68,37,31,35,29,112,79,57,111,103,98,93,72,107,25,26,66,121,122,81,98,95,69,51,77,93,80,83,55,40,11,20,112,59,121,63,113,64,65,68,31,61,85,33,97,14,18,62,52,112
+0008ef 7b52
+0008f0 2511
+0008f1 6d55
+0008f2 7458
+0008f3 4a78
+0008f4 4739
+0008f5 215f
+0008f6 1210
+0008f7 1575
+0008f8 553f
+0008f9 3a4d
+0008fa 634a
+0008fb 7266
+0008fc 0c73
+0008fd 376a
+0008fe 6452
+0008ff 4871
+000900 2d20
+000901 0b6c
+000902 467f
+000903 0c51
+000904 4b1d
+000905 491a
+000906 1532
+000907 5418
+000908 6346
+000909 2a35
+00090a 2113
+00090b 1e78
+00090c 511f
+00090d 4768
+00090e 4076                      .db 82,123,17,37,85,109,88,116,120,74,57,71,95,33,16,18,117,21,63,85,77,58,74,99,102,114,115,12,106,55,82,100,113,72,32,45,108,11,127,70,81,12,29,75,26,73,50,21,24,84,70,99,53,42,19,33,120,30,31,81,104,71,118,64
+00090f 424b
+000910 484f
+000911 7f20
+000912 7163
+000913 7773
+000914 1c29
+000915 6a73
+000916 7545
+000917 231d
+000918 7677
+000919 5a0a
+00091a 0b1f
+00091b 4051
+00091c 6d54
+00091d 3a74
+00091e 121e
+00091f 1054
+000920 7254
+000921 6633
+000922 392e
+000923 6e0e
+000924 1739
+000925 5618
+000926 7962
+000927 7063
+000928 5340
+000929 6063
+00092a 761d
+00092b 5673
+00092c 1138
+00092d 207e
+00092e 5472                      .db 75,66,79,72,32,127,99,113,115,119,41,28,115,106,69,117,29,35,119,118,10,90,31,11,81,64,84,109,116,58,30,18,84,16,84,114,51,102,46,57,14,110,57,23,24,86,98,121,99,112,64,83,99,96,29,118,115,86,56,17,126,32,114,84
+00092f 1175
+000930 7252
+000931 4e6d
+000932 5b31
+000933 680a
+000934 433b
+000935 756c
+000936 6331
+000937 220b
+000938 2714
+000939 3d69
+00093a 7f11
+00093b 1a14
+00093c 3e39
+00093d 3f7e
+00093e 141d
+00093f 4f17
+000940 7f4b
+000941 6510
+000942 1e66
+000943 7336
+000944 434f
+000945 4473
+000946 0b40
+000947 3446
+000948 3470
+000949 1b48
+00094a 3a35
+00094b 640f
+00094c 2c4e
+00094d 7e78
+00094e 1b6e                      .db 117,17,82,114,109,78,49,91,10,104,59,67,108,117,49,99,11,34,20,39,105,61,17,127,20,26,57,62,126,63,29,20,23,79,75,127,16,101,102,30,54,115,79,67,115,68,64,11,70,52,112,52,72,27,53,58,15,100,78,44,120,126,110,27
+00094f 737f
+000950 2942
+000951 2749
+000952 4d26
+000953 5f5a
+000954 600a
+000955 5f10
+000956 4339
+000957 7e2b
+000958 2b14
+000959 313d
+00095a 7944
+00095b 1c1e
+00095c 762d
+00095d 6b48
+00095e 8018
+00095f 0e7a
+000960 7656
+000961 4f1e
+000962 6110
+000963 1349
+000964 2f42
+000965 2e17
+000966 5f29
+000967 2f6b
+000968 530c
+000969 3a7b
+00096a 6e5d
+00096b 6842
+00096c 5d79
+00096d 204b
+00096e 270a                      .db 127,115,66,41,73,39,38,77,90,95,10,96,16,95,57,67,43,126,20,43,61,49,68,121,30,28,45,118,72,107,24,128,122,14,86,118,30,79,16,97,73,19,66,47,23,46,41,95,107,47,12,83,123,58,93,110,66,104,121,93,75,32,10,39
+00096f 571e
+000970 2315
+000971 122c
+000972 5473
+000973 1751
+000974 0d19
+000975 6264
+000976 191b
+000977 213c
+000978 1a59
+000979 7223
+00097a 5033
+00097b 2b51
+00097c 6759
+00097d 6c6c
+00097e 6e3d
+00097f 630c
+000980 782c
+000981 800a
+000982 5f0e
+000983 5580
+000984 4c80
+000985 5480
+000986 3f63
+000987 4355
+000988 783b
+000989 3f6b
+00098a 5526
+00098b 1778
+00098c 323c
+00098d 0d64
+00098e 1a48                      .db 30,87,21,35,44,18,115,84,81,23,25,13,100,98,27,25,60,33,89,26,35,114,51,80,81,43,89,103,108,108,61,110,12,99,44,120,10,128,14,95,128,85,128,76,128,84,99,63,85,67,59,120,107,63,38,85,120,23,60,50,100,13,72,26
+00098f 5858
+000990 6e55
+000991 2f45
+000992 3145
+000993 2649
+000994 136e
+000995 232b
+000996 693c
+000997 6761
+000998 4964
+000999 6513
+00099a 3d1d
+00099b 6147
+00099c 264b
+00099d 473d
+00099e 116c
+00099f 5761
+0009a0 2741
+0009a1 6b17
+0009a2 1024
+0009a3 0a42
+0009a4 1f2a
+0009a5 624b
+0009a6 4f3a
+0009a7 7965
+0009a8 1135
+0009a9 3511
+0009aa 644e
+0009ab 735a
+0009ac 1627
+0009ad 7747
+0009ae 1d7a                      .db 88,88,85,110,69,47,69,49,73,38,110,19,43,35,60,105,97,103,100,73,19,101,29,61,71,97,75,38,61,71,108,17,97,87,65,39,23,107,36,16,66,10,42,31,75,98,58,79,101,121,53,17,17,53,78,100,90,115,39,22,71,119,122,29
+0009af 695b
+0009b0 2b74
+0009b1 6d77
+0009b2 2025
+0009b3 137b
+0009b4 155a
+0009b5 3c33
+0009b6 553c
+0009b7 620a
+0009b8 664f
+0009b9 185a
+0009ba 3d1f
+0009bb 207d
+0009bc 1955
+0009bd 412a
+0009be 1969
+0009bf 7523
+0009c0 0a54
+0009c1 4042
+0009c2 3f12
+0009c3 2f2d
+0009c4 0c0f
+0009c5 103b
+0009c6 4271
+0009c7 5669
+0009c8 4039
+0009c9 613d
+0009ca 0b17
+0009cb 751a
+0009cc 7615
+0009cd 5050
+0009ce 1414                      .db 91,105,116,43,119,109,37,32,123,19,90,21,51,60,60,85,10,98,79,102,90,24,31,61,125,32,85,25,42,65,105,25,35,117,84,10,66,64,18,63,45,47,15,12,59,16,113,66,105,86,57,64,61,97,23,11,26,117,21,118,80,80,20,20
+0009cf 7d2c
+0009d0 1961
+0009d1 2f1c
+0009d2 4a6b
+0009d3 381b
+0009d4 391f
+0009d5 4449
+0009d6 7516
+0009d7 5d44
+0009d8 6051
+0009d9 7c6e
+0009da 4075
+0009db 1275
+0009dc 7d7f
+0009dd 117a
+0009de 594e
+0009df 5c50
+0009e0 275f
+0009e1 5a33
+0009e2 605a
+0009e3 0b80
+0009e4 5e38
+0009e5 0f1d
+0009e6 1356
+0009e7 112b
+0009e8 4d77
+0009e9 586f
+0009ea 3740
+0009eb 6219
+0009ec 6065
+0009ed 6e3e
+0009ee 2b56                      .db 44,125,97,25,28,47,107,74,27,56,31,57,73,68,22,117,68,93,81,96,110,124,117,64,117,18,127,125,122,17,78,89,80,92,95,39,51,90,90,96,128,11,56,94,29,15,86,19,43,17,119,77,111,88,64,55,25,98,101,96,62,110,86,43
+0009ef 171f
+0009f0 2072
+0009f1 7032
+0009f2 1d27
+0009f3 0a30
+0009f4 5612
+0009f5 7725
+0009f6 8080
+0009f7 631f
+0009f8 2a7e
+0009f9 1e22
+0009fa 3f6f
+0009fb 7316
+0009fc 1474
+0009fd 7974
+0009fe 542b
+0009ff 3411
+000a00 4e49
+000a01 722a
+000a02 511c
+000a03 1212
+000a04 631b
+000a05 7f57
+000a06 184f
+000a07 104a
+000a08 3065
+000a09 7014
+000a0a 6126
+000a0b 343c
+000a0c 6679
+000a0d 4158
+000a0e 2678                      .db 31,23,114,32,50,112,39,29,48,10,18,86,37,119,128,128,31,99,126,42,34,30,111,63,22,115,116,20,116,121,43,84,17,52,73,78,42,114,28,81,18,18,27,99,87,127,79,24,74,16,101,48,20,112,38,97,60,52,121,102,88,65,120,38
+000a0f 4970
+000a10 0e47
+000a11 547a
+000a12 1848
+000a13 565b
+000a14 2013
+000a15 493a
+000a16 480f
+000a17 281f
+000a18 4230
+000a19 663c
+000a1a 670f
+000a1b 7549
+000a1c 3674
+000a1d 435d
+000a1e 0a0a
+000a1f 7e74
+000a20 2451
+000a21 7144
+000a22 6442
+000a23 334c
+000a24 434d
+000a25 386c
+000a26 565f
+000a27 253f
+000a28 3819
+000a29 6661
+000a2a 2d53
+000a2b 552c
+000a2c 7e35
+000a2d 260c
+000a2e 6d38                      .db 112,73,71,14,122,84,72,24,91,86,19,32,58,73,15,72,31,40,48,66,60,102,15,103,73,117,116,54,93,67,10,10,116,126,81,36,68,113,66,100,76,51,77,67,108,56,95,86,63,37,25,56,97,102,83,45,44,85,53,126,12,38,56,109
+000a2f 3e59
+000a30 2138
+000a31 2329
+000a32 6356
+000a33 384c
+000a34 0e3b
+000a35 2757
+000a36 5c3d
+000a37 0e55
+000a38 512f
+000a39 6637
+000a3a 0e6b
+000a3b 3028
+000a3c 1247
+000a3d 484e
+000a3e 6938
+000a3f 4142
+000a40 1774
+000a41 155f
+000a42 5953
+000a43 7c31
+000a44 5a5b
+000a45 6f22
+000a46 4147
+000a47 6f2b
+000a48 3b3f
+000a49 7276
+000a4a 654a
+000a4b 0a1a
+000a4c 5e66
+000a4d 5c26
+000a4e 6928                      .db 89,62,56,33,41,35,86,99,76,56,59,14,87,39,61,92,85,14,47,81,55,102,107,14,40,48,71,18,78,72,56,105,66,65,116,23,95,21,83,89,49,124,91,90,34,111,71,65,43,111,63,59,118,114,74,101,26,10,102,94,38,92,40,105
+000a4f 7f78
+000a50 5e63
+000a51 1f54
+000a52 0a60
+000a53 1d2f
+000a54 6f4c
+000a55 381e
+000a56 0a70
+000a57 215f
+000a58 2421
+000a59 191e
+000a5a 1b54
+000a5b 1e60
+000a5c 492b
+000a5d 6540
+000a5e 3614
+000a5f 4756
+000a60 340f
+000a61 3b77
+000a62 6068
+000a63 5d62
+000a64 5f0f
+000a65 4d2a
+000a66 0e24
+000a67 6355
+000a68 5929
+000a69 5125
+000a6a 752e
+000a6b 1412
+000a6c 1f7f
+000a6d 5673
+000a6e 2577                      .db 120,127,99,94,84,31,96,10,47,29,76,111,30,56,112,10,95,33,33,36,30,25,84,27,96,30,43,73,64,101,20,54,86,71,15,52,119,59,104,96,98,93,15,95,42,77,36,14,85,99,41,89,37,81,46,117,18,20,127,31,115,86,119,37
+000a6f 6858
+000a70 663a
+000a71 803b
+000a72 631f
+000a73 4e3d
+000a74 1c3b
+000a75 6371
+000a76 3262
+000a77 6739
+000a78 1371
+000a79 0a12
+000a7a 564b
+000a7b 0a43
+000a7c 3d36
+000a7d 4356
+000a7e 636c
+000a7f 1239
+000a80 6b7a
+000a81 7a64
+000a82 0d56
+000a83 6161
+000a84 6932
+000a85 5438
+000a86 3e54
+000a87 153b
+000a88 7d17
+000a89 281d
+000a8a 680c
+000a8b 0e0e
+000a8c 1a16
+000a8d 6f52
+000a8e 3a35                      .db 88,104,58,102,59,128,31,99,61,78,59,28,113,99,98,50,57,103,113,19,18,10,75,86,67,10,54,61,86,67,108,99,57,18,122,107,100,122,86,13,97,97,50,105,56,84,84,62,59,21,23,125,29,40,12,104,14,14,22,26,82,111,53,58
+000a8f 136d
+000a90 280e
+000a91 4d6f
+000a92 1229
+000a93 1146
+000a94 6e45
+000a95 450c
+000a96 6218
+000a97 1e30
+000a98 0f6f
+000a99 6811
+000a9a 594e
+000a9b 3e36
+000a9c 5673
+000a9d 694a
+000a9e 182c
+000a9f 2b15
+000aa0 2b74
+000aa1 2c2b
+000aa2 3d76
+000aa3 197f
+000aa4 2530
+000aa5 446b
+000aa6 2e25
+000aa7 222f
+000aa8 304f
+000aa9 3459
+000aaa 5730
+000aab 1d55
+000aac 4d2e
+000aad 147a
+000aae 3137                      .db 109,19,14,40,111,77,41,18,70,17,69,110,12,69,24,98,48,30,111,15,17,104,78,89,54,62,115,86,74,105,44,24,21,43,116,43,43,44,118,61,127,25,48,37,107,68,37,46,47,34,79,48,89,52,48,87,85,29,46,77,122,20,55,49
                                  
-                                 
-                                 SEARCH_START:
-                                 	
+000aaf 6e49
+000ab0 7570
+000ab1 2074
+000ab2 2c58
+000ab3 3a59
+D:\workspace\comp9032\project\final_project\final_project\main.asm(173): warning: .cseg .db misalignment - padding zero byte
+000ab4 0000                      input_x_y:	.db "Input X,Y:",0
+000ab5 4553
+000ab6 5241
+000ab7 4843
+000ab8 4e49
+000ab9 0047                      string_search: .db "SEARCHING", 0
+000aba 4f46
+000abb 4e55
+000abc 2044
+000abd 0020                      string_found: .db "FOUND  ", 0
+000abe 4f4e
+000abf 2054
+000ac0 4f46
+000ac1 4e55
+000ac2 0044                      string_not_found: .db "NOT FOUND", 0
+000ac3 4241
+000ac4 524f
+000ac5 0054                      string_abort: .db "ABORT", 0
                                  
                                  
                                  .dseg
@@ -2598,41 +4877,41 @@ counted separately from r26..r31 here.
 .dseg memory usage only counts static data declared with .byte
 
 "ATmega2560" register use summary:
-x  :   0 y  :   0 z  :   6 r0 :   3 r1 :   2 r2 :   0 r3 :   0 r4 :   0 
+x  :   0 y  :   0 z  :  10 r0 :   3 r1 :   2 r2 :   0 r3 :   0 r4 :   0 
 r5 :   0 r6 :   0 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
-r13:   0 r14:   0 r15:   0 r16: 100 r17:  20 r18:  19 r19:   7 r20:   8 
-r21:  18 r22:   6 r23:  21 r24:  22 r25:  22 r26:   0 r27:   0 r28:   0 
-r29:   0 r30:   3 r31:   3 
+r13:   0 r14:   0 r15:   0 r16: 161 r17:  28 r18:  21 r19:  12 r20:  14 
+r21:  20 r22:   6 r23:  29 r24:  22 r25:  22 r26:   0 r27:   0 r28:   0 
+r29:   0 r30:  10 r31:  10 
 Registers used: 15 out of 35 (42.9%)
 
 "ATmega2560" instruction use summary:
 .lds  :   0 .sts  :   0 adc   :   0 add   :   2 adiw  :   2 and   :   1 
 andi  :   2 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
-brcc  :   0 brcs  :   0 break :   0 breq  :  10 brge  :   0 brhc  :   0 
-brhs  :   0 brid  :   0 brie  :   0 brlo  :   8 brlt  :   0 brmi  :   0 
-brne  :   6 brpl  :   0 brsh  :   0 brtc  :   0 brts  :   0 brvc  :   0 
-brvs  :   0 bset  :   0 bst   :   0 call  :   6 cbi   :   6 cbr   :   0 
-clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :  15 cls   :   0 
-clt   :   0 clv   :   0 clz   :   0 com   :   1 cp    :   2 cpc   :   3 
-cpi   :  19 cpse  :   0 dec   :   1 eicall:   0 eijmp :   0 elpm  :   0 
+brcc  :   0 brcs  :   0 break :   0 breq  :  14 brge  :   0 brhc  :   0 
+brhs  :   0 brid  :   0 brie  :   0 brlo  :   9 brlt  :   0 brmi  :   0 
+brne  :   7 brpl  :   0 brsh  :   0 brtc  :   0 brts  :   0 brvc  :   0 
+brvs  :   0 bset  :   0 bst   :   0 call  :  13 cbi   :   6 cbr   :   0 
+clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :  23 cls   :   0 
+clt   :   0 clv   :   0 clz   :   0 com   :   1 cp    :   3 cpc   :   3 
+cpi   :  24 cpse  :   0 dec   :   2 eicall:   0 eijmp :   0 elpm  :   0 
 eor   :   0 fmul  :   0 fmuls :   0 fmulsu:   0 icall :   0 ijmp  :   0 
-in    :   0 inc   :  11 jmp   :   0 ld    :   0 ldd   :   0 ldi   :  32 
-lds   :   2 lpm   :   5 lsl   :   2 lsr   :   0 mov   :  14 movw  :   0 
+in    :   0 inc   :  13 jmp   :   2 ld    :   0 ldd   :   0 ldi   :  80 
+lds   :   2 lpm   :   6 lsl   :   2 lsr   :   0 mov   :  22 movw  :   0 
 mul   :   1 muls  :   0 mulsu :   0 neg   :   0 nop   :   0 or    :   0 
-ori   :   0 out   :   7 pop   :  38 push  :  38 rcall :  42 ret   :  17 
-reti  :   0 rjmp  :  18 rol   :   0 ror   :   0 sbc   :   3 sbci  :   0 
-sbi   :   4 sbic  :   0 sbis  :   0 sbiw  :   2 sbr   :   0 sbrc  :   1 
-sbrs  :   0 sec   :   0 seh   :   0 sei   :   0 sen   :   0 ser   :   2 
+ori   :   0 out   :  13 pop   :  42 push  :  42 rcall : 105 ret   :  19 
+reti  :   2 rjmp  :  28 rol   :   0 ror   :   0 sbc   :   3 sbci  :   0 
+sbi   :   4 sbic  :   0 sbis  :   0 sbiw  :   3 sbr   :   0 sbrc  :   1 
+sbrs  :   0 sec   :   0 seh   :   0 sei   :   0 sen   :   0 ser   :   9 
 ses   :   0 set   :   0 sev   :   0 sez   :   0 sleep :   0 spm   :   0 
-st    :   0 std   :   0 sts   :   7 sub   :   0 subi  :  20 swap  :   0 
+st    :   2 std   :   0 sts   :   9 sub   :   0 subi  :  18 swap  :   0 
 tst   :   0 wdr   :   0 
-Instructions used: 35 out of 116 (30.2%)
+Instructions used: 38 out of 116 (32.8%)
 
 "ATmega2560" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x00033a    726    100    826  262144   0.3%
+[.cseg] 0x000000 0x00158c   1128   4142   5270  262144   2.0%
 [.dseg] 0x000200 0x000202      0      2      2    8192   0.0%
 [.eseg] 0x000000 0x000000      0      0      0    4096   0.0%
 
-Assembly complete, 0 errors, 0 warnings
+Assembly complete, 0 errors, 1 warnings
