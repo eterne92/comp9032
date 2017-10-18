@@ -1,26 +1,26 @@
 
-AVRASM ver. 2.2.6  D:\workspace\comp9032\project\final_project\final_project\main.asm Wed Oct 18 22:40:47 2017
+AVRASM ver. 2.2.6  D:\workspace\comp9032\project\final_project\final_project\main.asm Wed Oct 18 23:00:40 2017
 
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc\m2560def.inc'
 D:\workspace\comp9032\project\final_project\final_project\main.asm(8): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc\m2560def.inc'
 D:\workspace\comp9032\project\final_project\final_project\main.asm(9): Including file 'D:\workspace\comp9032\project\final_project\final_project\constant.inc'
 D:\workspace\comp9032\project\final_project\final_project\main.asm(18): Including file 'D:\workspace\comp9032\project\final_project\final_project\macros.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(186): Including file 'D:\workspace\comp9032\project\final_project\final_project\keypad.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(187): Including file 'D:\workspace\comp9032\project\final_project\final_project\lcd.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(188): Including file 'D:\workspace\comp9032\project\final_project\final_project\wait.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(189): Including file 'D:\workspace\comp9032\project\final_project\final_project\drone.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(190): Including file 'D:\workspace\comp9032\project\final_project\final_project\generalfunc.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(191): Including file 'D:\workspace\comp9032\project\final_project\final_project\mountain.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(197): Including file 'D:\workspace\comp9032\project\final_project\final_project\keypad.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(198): Including file 'D:\workspace\comp9032\project\final_project\final_project\lcd.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(199): Including file 'D:\workspace\comp9032\project\final_project\final_project\wait.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(200): Including file 'D:\workspace\comp9032\project\final_project\final_project\drone.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(201): Including file 'D:\workspace\comp9032\project\final_project\final_project\generalfunc.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(202): Including file 'D:\workspace\comp9032\project\final_project\final_project\mountain.asm'
 [builtin](2): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc\m2560def.inc'
 D:\workspace\comp9032\project\final_project\final_project\main.asm(8): Including file 'C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.2.132\avrasm\inc\m2560def.inc'
 D:\workspace\comp9032\project\final_project\final_project\main.asm(9): Including file 'D:\workspace\comp9032\project\final_project\final_project\constant.inc'
 D:\workspace\comp9032\project\final_project\final_project\main.asm(18): Including file 'D:\workspace\comp9032\project\final_project\final_project\macros.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(186): Including file 'D:\workspace\comp9032\project\final_project\final_project\keypad.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(187): Including file 'D:\workspace\comp9032\project\final_project\final_project\lcd.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(188): Including file 'D:\workspace\comp9032\project\final_project\final_project\wait.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(189): Including file 'D:\workspace\comp9032\project\final_project\final_project\drone.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(190): Including file 'D:\workspace\comp9032\project\final_project\final_project\generalfunc.asm'
-D:\workspace\comp9032\project\final_project\final_project\main.asm(191): Including file 'D:\workspace\comp9032\project\final_project\final_project\mountain.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(197): Including file 'D:\workspace\comp9032\project\final_project\final_project\keypad.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(198): Including file 'D:\workspace\comp9032\project\final_project\final_project\lcd.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(199): Including file 'D:\workspace\comp9032\project\final_project\final_project\wait.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(200): Including file 'D:\workspace\comp9032\project\final_project\final_project\drone.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(201): Including file 'D:\workspace\comp9032\project\final_project\final_project\generalfunc.asm'
+D:\workspace\comp9032\project\final_project\final_project\main.asm(202): Including file 'D:\workspace\comp9032\project\final_project\final_project\mountain.asm'
                                  
                                  ;
                                  
@@ -1997,22 +1997,22 @@ D:\workspace\comp9032\project\final_project\final_project\main.asm(191): Includi
                                  	CALL PWM_DUTY
                                  
                                  .org 0	;set interrupt vertex
-000000 c11c                      	rjmp RESET
+000000 c12f                      	rjmp RESET
                                  .org INT0addr
-000002 940c 00a0                 	jmp SEARCH_START
+000002 940c 00a6                 	jmp SEARCH_START
                                  .org INT1addr
-000004 940c 00e8                 	jmp search_abort
+000004 940c 00ef                 	jmp search_abort
                                  .org 0x80
                                  main:
                                  	input_x_loop:
-000080 d12d
+000080 d141
 000081 e001
-000082 d146
-000083 d12a                      		lcd_clear
-000084 e108                      		ldi temp, low(input_x<<1)
+000082 d15a
+000083 d13e                      		lcd_clear
+000084 e400                      		ldi temp, low(input_x<<1)
 000085 e116                      		ldi temp2, high(input_x<<1)
-000086 d1a5                      		rcall lcd_display_string
-000087 940e 018a                 		call KEY_VALUE
+000086 d1b9                      		rcall lcd_display_string
+000087 940e 019e                 		call KEY_VALUE
 000089 3f7f                      		cpi R23, -1
 00008a f3a9                      		breq input_x_loop
 00008b 3470                      		cpi R23, 64
@@ -2020,199 +2020,219 @@ D:\workspace\comp9032\project\final_project\final_project\main.asm(191): Includi
 00008d 2e27                      		mov r2, r23
                                  
                                  	input_y_loop:
-00008e d11f
+00008e d133
 00008f e001
-000090 d138
-000091 d11c                      		lcd_clear
-000092 e202                      		ldi temp, low(input_y<<1)
+000090 d14c
+000091 d130                      		lcd_clear
+000092 e40a                      		ldi temp, low(input_y<<1)
 000093 e116                      		ldi temp2, high(input_y<<1)
-000094 d197                      		rcall lcd_display_string
-000095 940e 018a                 		call KEY_VALUE
+000094 d1ab                      		rcall lcd_display_string
+000095 940e 019e                 		call KEY_VALUE
 000097 3f7f                      		cpi R23, -1
 000098 f3a9                      		breq input_y_loop
 000099 3470                      		cpi R23, 64
 00009a f798                      		brsh input_y_loop
 00009b 2e37                      		mov r3, r23
                                  
-00009c 940e 027f                 	call set_location
+00009c d125
+00009d e001
+00009e d13e
+00009f d122                      	lcd_clear
+0000a0 e706                      	ldi temp, low(ready_to_search<<1)
+0000a1 e116                      	ldi temp2, high(ready_to_search<<1)
+0000a2 d19d                      	rcall lcd_display_string
+                                 	
+0000a3 940e 0293                 	call set_location
                                  
-00009e ef0f                      	ser temp
                                  	wait_for_interrupt:			;in search start interrupt, set temp to 0
-00009f f7f9                      		brne wait_for_interrupt
+0000a5 cfff                      		rjmp wait_for_interrupt
                                  	
                                  search_start:
-0000a0 e002                      	ldi temp, 1<<INT1
-0000a1 bb0d                      	STORE EIMSK, temp			;disable the ex_int0
-0000a2 ef4f                      	ldi current_x, -1			;set start position
-0000a3 e050                      	ldi current_y, 0
-0000a4 e1e8                      	ldi zl, low(mountain<<1)
-0000a5 e0f6                      	ldi zh, high(mountain<<1)
-0000a6 9731                      	sbiw z, 1
-0000a7 ef2f                      	ser direction
-0000a8 e03a                      	ldi current_height, 10
-0000a9 e604
-0000aa 940e 02e6                 	fly_ctrl fast_motor_speed
+0000a6 e002                      	ldi temp, 1<<INT1
+0000a7 bb0d                      	STORE EIMSK, temp			;disable the ex_int0
+0000a8 9478                      	sei
+0000a9 ef4f                      	ldi current_x, -1			;set start position
+0000aa e050                      	ldi current_y, 0
+0000ab e4e0                      	ldi zl, low(mountain<<1)
+0000ac e0f6                      	ldi zh, high(mountain<<1)
+0000ad 9731                      	sbiw z, 1
+0000ae ef2f                      	ser direction
+0000af e03a                      	ldi current_height, 10
+0000b0 e604
+0000b1 940e 02fa                 	fly_ctrl fast_motor_speed
                                  	fly_loop:
-0000ac d101
-0000ad e001
-0000ae d11a
-0000af d0fe                      		lcd_clear
-0000b0 3f7e                      		cpi r23, -2
-0000b1 f1b1                      		breq search_abort
+0000b3 d10e
+0000b4 e001
+0000b5 d127
+0000b6 d10b                      		lcd_clear
+0000b7 3f7e                      		cpi r23, -2
+0000b8 f1b1                      		breq search_abort
                                  		;find next position
-0000b2 d195                      		rcall fly_to_next_pos
-0000b3 3f7f                      		cpi r23, -1
-0000b4 f1f1                      		breq search_not_found
-0000b5 5f7f                      		subi r23, -1
-0000b6 1737                      		cp current_height, r23
-0000b7 f160                      		brlo fly_high
+0000b9 d1a2                      		rcall fly_to_next_pos
+0000ba 3f7f                      		cpi r23, -1
+0000bb f1f1                      		breq search_not_found
+0000bc 5f7f                      		subi r23, -1
+0000bd 1737                      		cp current_height, r23
+0000be f160                      		brlo fly_high
                                  	search:
-0000b8 2f37                      		mov current_height, r23
+0000bf 2f37                      		mov current_height, r23
                                  		;display now pos
-0000b9 e708
-0000ba d105
-0000bb d0f2                      		lcd_write_data 'x'
-0000bc e30a
-0000bd d102
-0000be d0ef                      		lcd_write_data ':'
-0000bf 2f04                      		mov temp, current_x
-0000c0 d137                      		rcall lcd_display_number
-0000c1 e200
-0000c2 d0fd
-0000c3 d0ea                      		lcd_write_data ' '
-0000c4 e709
-0000c5 d0fa
-0000c6 d0e7                      		lcd_write_data 'y'
-0000c7 e30a
-0000c8 d0f7
-0000c9 d0e4                      		lcd_write_data ':'
-0000ca 2f05                      		mov temp, current_y
-0000cb d12c                      		rcall lcd_display_number
-0000cc ec00
-0000cd d0fb
-0000ce d0df                      		lcd_write_com 0b11000000
-0000cf e70a
-0000d0 d0ef
-0000d1 d0dc                      		lcd_write_data 'z'
-0000d2 e30a
-0000d3 d0ec
-0000d4 d0d9                      		lcd_write_data ':'
-0000d5 2f03                      		mov temp, current_height
-0000d6 d121                      		rcall lcd_display_number
-0000d7 e200
-0000d8 d0e7
-0000d9 d0d4                      		lcd_write_data ' '
-0000da e20a                      		ldi temp, low(string_search<<1)
-0000db e116                      		ldi temp2, high(string_search<<1)
-0000dc d14f                      		rcall lcd_display_string
-0000dd d18b                      		rcall drone_search
-0000de e00f
-0000df 940e 0242                 		macro_wait 15
+0000c0 e708
+0000c1 d112
+0000c2 d0ff                      		lcd_write_data 'x'
+0000c3 e30a
+0000c4 d10f
+0000c5 d0fc                      		lcd_write_data ':'
+0000c6 2f04                      		mov temp, current_x
+0000c7 d144                      		rcall lcd_display_number
+0000c8 e200
+0000c9 d10a
+0000ca d0f7                      		lcd_write_data ' '
+0000cb e709
+0000cc d107
+0000cd d0f4                      		lcd_write_data 'y'
+0000ce e30a
+0000cf d104
+0000d0 d0f1                      		lcd_write_data ':'
+0000d1 2f05                      		mov temp, current_y
+0000d2 d139                      		rcall lcd_display_number
+0000d3 ec00
+0000d4 d108
+0000d5 d0ec                      		lcd_write_com 0b11000000
+0000d6 e70a
+0000d7 d0fc
+0000d8 d0e9                      		lcd_write_data 'z'
+0000d9 e30a
+0000da d0f9
+0000db d0e6                      		lcd_write_data ':'
+0000dc 2f03                      		mov temp, current_height
+0000dd d12e                      		rcall lcd_display_number
+0000de e200
+0000df d0f4
+0000e0 d0e1                      		lcd_write_data ' '
+0000e1 e504                      		ldi temp, low(string_search<<1)
+0000e2 e116                      		ldi temp2, high(string_search<<1)
+0000e3 d15c                      		rcall lcd_display_string
+0000e4 d198                      		rcall drone_search
+0000e5 e00f
+0000e6 940e 0256                 		macro_wait 15
                                  
-0000e1 3070                      		cpi r23, 0
-0000e2 f249                      		breq fly_loop	;if not found, keep flying
-0000e3 c01a                      		rjmp search_found
+0000e8 3070                      		cpi r23, 0
+0000e9 f249                      		breq fly_loop	;if not found, keep flying
+0000ea c01a                      		rjmp search_found
                                  	
                                  	fly_high:
-0000e4 e604
-0000e5 940e 02e6                 		fly_ctrl fast_motor_speed
-0000e7 cfd0                      		rjmp search
+0000eb e604
+0000ec 940e 02fa                 		fly_ctrl fast_motor_speed
+0000ee cfd0                      		rjmp search
                                  
                                  	search_abort:
-0000e8 d0c5
-0000e9 e001
-0000ea d0de
-0000eb d0c2                      		lcd_clear
-0000ec e406                      		ldi temp, low(string_abort<<1)
-0000ed e116                      		ldi temp2, high(string_abort<<1)
-0000ee d13d                      		rcall lcd_display_string
-0000ef e000
-0000f0 940e 02e6                 		fly_ctrl stop_motor_speed
-0000f2 c029                      		rjmp end
+0000ef d0d2
+0000f0 e001
+0000f1 d0eb
+0000f2 d0cf                      		lcd_clear
+0000f3 e700                      		ldi temp, low(string_abort<<1)
+0000f4 e116                      		ldi temp2, high(string_abort<<1)
+0000f5 d14a                      		rcall lcd_display_string
+0000f6 e000
+0000f7 940e 02fa                 		fly_ctrl stop_motor_speed
+0000f9 c035                      		rjmp end
                                  	search_not_found:
-0000f3 d0ba
-0000f4 e001
-0000f5 d0d3
-0000f6 d0b7                      		lcd_clear
-0000f7 e30c                      		ldi temp, low(string_not_found<<1)
-0000f8 e116                      		ldi temp2, high(string_not_found<<1)
-0000f9 d132                      		rcall lcd_display_string
-0000fa e000
-0000fb 940e 02e6                 		fly_ctrl stop_motor_speed
-0000fd c01e                      		rjmp end
+0000fa d0c7
+0000fb e001
+0000fc d0e0
+0000fd d0c4                      		lcd_clear
+0000fe e606                      		ldi temp, low(string_not_found<<1)
+0000ff e116                      		ldi temp2, high(string_not_found<<1)
+000100 d13f                      		rcall lcd_display_string
+000101 e000
+000102 940e 02fa                 		fly_ctrl stop_motor_speed
+000104 c02a                      		rjmp end
                                  
                                  	search_found:
-0000fe d0af
-0000ff e001
-000100 d0c8
-000101 d0ac                      		lcd_clear
-000102 e10a                      		ldi temp, low(string_found)
-000103 e01b                      		ldi temp2, high(string_found)
-000104 d127                      		rcall lcd_display_string
-000105 e708
-000106 d0b9
-000107 d0a6                      		lcd_write_data 'x'
-000108 e30a
-000109 d0b6
-00010a d0a3                      		lcd_write_data ':'
-00010b 2f04                      		mov temp, current_x
-00010c d0eb                      		rcall lcd_display_number
-00010d e200
-00010e d0b1
-00010f d09e                      		lcd_write_data ' '
-000110 e709
-000111 d0ae
-000112 d09b                      		lcd_write_data 'y'
-000113 e30a
-000114 d0ab
-000115 d098                      		lcd_write_data ':'
-000116 2f05                      		mov temp, current_y
-000117 d0e0                      		rcall lcd_display_number
-000118 e000
-000119 940e 02e6                 		fly_ctrl stop_motor_speed
-00011b c000                      		rjmp end
+000105 d0bc
+000106 e001
+000107 d0d5
+000108 d0b9                      		lcd_clear
+000109 e50e                      		ldi temp, low(string_found<<1)
+00010a e116                      		ldi temp2, high(string_found<<1)
+00010b d134                      		rcall lcd_display_string
+00010c e708
+00010d d0c6
+00010e d0b3                      		lcd_write_data 'x'
+00010f e30a
+000110 d0c3
+000111 d0b0                      		lcd_write_data ':'
+000112 2f04                      		mov temp, current_x
+000113 d0f8                      		rcall lcd_display_number
+000114 ec00
+000115 d0c7
+000116 d0ab                      		lcd_write_com 0b11000000
+000117 e709
+000118 d0bb
+000119 d0a8                      		lcd_write_data 'y'
+00011a e30a
+00011b d0b8
+00011c d0a5                      		lcd_write_data ':'
+00011d 2f05                      		mov temp, current_y
+00011e d0ed                      		rcall lcd_display_number
+00011f e200
+000120 d0b3
+000121 d0a0                      		lcd_write_data ' '
+000122 e70a
+000123 d0b0
+000124 d09d                      		lcd_write_data 'z'
+000125 e30a
+000126 d0ad
+000127 d09a                      		lcd_write_data ':'
+000128 2f03                      		mov temp, current_height
+000129 950a                      		dec temp
+00012a d0e1                      		rcall lcd_display_number
+00012b e000
+00012c 940e 02fa                 		fly_ctrl stop_motor_speed
+00012e c000                      		rjmp end
                                  
                                  		
                                  
                                  end:
-00011c cfff                      	rjmp end
+00012f cfff                      	rjmp end
                                  
                                  
                                  
                                  
                                  
                                  RESET:
-00011d 2700                      	clr temp
-00011e 2711                      	clr temp2
-00011f 2722                      	clr direction
-000120 2733                      	clr current_height
-000121 2744                      	clr current_x
-000122 2755                      	clr current_y
-000123 2777                      	clr r23
+000130 2700                      	clr temp
+000131 2711                      	clr temp2
+000132 2722                      	clr direction
+000133 2733                      	clr current_height
+000134 2744                      	clr current_x
+000135 2755                      	clr current_y
+000136 2777                      	clr r23
                                  	;clear all registers being used
                                  
                                  	;setup lcd
-000124 ef0f                      	ser temp
-000125 bb00                      	store lcd_data_ddr, temp
-000126 b901                      	store lcd_ctrl_ddr, temp
-000127 d0aa                      	rcall lcd_init
+000137 ef0f                      	ser temp
+000138 bb00                      	store lcd_data_ddr, temp
+000139 b901                      	store lcd_ctrl_ddr, temp
+00013a d0ab                      	rcall lcd_init
                                  
                                  	;setup led
-000128 ef0f                      	ser temp	
-000129 b907                      	store led_ddr, temp
+00013b ef0f                      	ser temp	
+00013c b907                      	store led_ddr, temp
                                  	
                                  	;setup keypad
-00012a e00f                      	ldi temp, 0b00001111	
-00012b 9300 010a                 	store key_ddr, temp
-00012d e00a                      	ldi temp, (1<<ISC01)|(1<<ISC11)
-00012e 9300 0069                 	sts EICRA, temp
-000130 e001                      	ldi temp, (1<<INT0)
-000131 bb0d                      	out EIMSK, temp
-000132 ef0f                      	ser temp
-000133 b90d                      	out DDRE, temp
-000134 940e 02d3                 	call pwm_generate
-                                 	
-000136 cf49                      	rjmp main
+00013d ef00                      	ldi temp, 0b11110000
+00013e 9300 010a                 	store key_ddr, temp
+000140 e00a                      	ldi temp, (1<<ISC01)|(1<<ISC11)
+000141 9300 0069                 	sts EICRA, temp
+000143 e001                      	ldi temp, (1<<INT0)
+000144 bb0d                      	out EIMSK, temp
+000145 ef0f                      	ser temp
+000146 b90d                      	out DDRE, temp
+000147 940e 02e7                 	call pwm_generate
+000149 9478                      	sei
+00014a cf35                      	rjmp main
                                  
                                  .include "keypad.asm"
                                  
@@ -2237,151 +2257,151 @@ D:\workspace\comp9032\project\final_project\final_project\main.asm(191): Includi
                                  
                                  ;FUNCTION TO GET KEYVALUE FROM KEYPAD, RETURN ROW:COL ON R24:R25
                                  GET_KEY:
-000137 930f                      	PUSH R16				;R16 AS RMASK
-000138 931f                      	PUSH R17				;R17 AS ROW
-000139 932f                      	PUSH R18				;R18 AS COL
-00013a 933f                      	PUSH R19				;R19 AS TEMP1
-00013b 934f                      	PUSH R20				;R20 AS TEMP2
-00013c 935f                      	PUSH R21				;R21 AS CMASK
+00014b 930f                      	PUSH R16				;R16 AS RMASK
+00014c 931f                      	PUSH R17				;R17 AS ROW
+00014d 932f                      	PUSH R18				;R18 AS COL
+00014e 933f                      	PUSH R19				;R19 AS TEMP1
+00014f 934f                      	PUSH R20				;R20 AS TEMP2
+000150 935f                      	PUSH R21				;R21 AS CMASK
                                  	SET_CMASK:
-00013d ee5f                      		LDI R21, COLMASK
-00013e 9350 010b                 		STORE KEY_PORT, R21	;SET COLMASK TO 0X11101111
-000140 2722                      		CLR R18				;SET COL TO 0
+000151 ee5f                      		LDI R21, COLMASK
+000152 9350 010b                 		STORE KEY_PORT, R21	;SET COLMASK TO 0X11101111
+000154 2722                      		CLR R18				;SET COL TO 0
                                  	CLOOP:
-000141 e001                      		LDI R16, 0X01		;START FROM ROW 0
-000142 2711                      		CLR R17				;SET ROW TO 0
+000155 e001                      		LDI R16, 0X01		;START FROM ROW 0
+000156 2711                      		CLR R17				;SET ROW TO 0
                                  	RLOOP:
-000143 9130 0109                 		LOAD R19, PINL		;GET VALUE FROM KEYPAD
-000145 2f43                      		MOV R20, R19
-000146 704f                      		ANDI R20, ROWMASK	;CLR COL INPUT
-000147 2340                      		AND R20, R16
-000148 f409                      		BRNE NEXT_ROW
-000149 c00d                      		RJMP DEBOUNCING_LOOP
+000157 9130 0109                 		LOAD R19, PINL		;GET VALUE FROM KEYPAD
+000159 2f43                      		MOV R20, R19
+00015a 704f                      		ANDI R20, ROWMASK	;CLR COL INPUT
+00015b 2340                      		AND R20, R16
+00015c f409                      		BRNE NEXT_ROW
+00015d c00d                      		RJMP DEBOUNCING_LOOP
                                  	NEXT_ROW:
-00014a 0f00                      		LSL R16				;LEFTSHIFT RMASK
-00014b 9513                      		INC R17				;ROW = ROW + 1
-00014c 3014                      		CPI R17, 4			;IF ROW == 4
-00014d f009                      		BREQ NEXT_COL		;GOTO NEXT COL
-00014e cff4                      		RJMP RLOOP			;ELSE GOTO NEXT ROW
+00015e 0f00                      		LSL R16				;LEFTSHIFT RMASK
+00015f 9513                      		INC R17				;ROW = ROW + 1
+000160 3014                      		CPI R17, 4			;IF ROW == 4
+000161 f009                      		BREQ NEXT_COL		;GOTO NEXT COL
+000162 cff4                      		RJMP RLOOP			;ELSE GOTO NEXT ROW
                                  	NEXT_COL:
-00014f 0f55                      		LSL R21				;LEFTSHIFT CMASK
-000150 9523                      		INC R18				;COL = COL + 1
-000151 3024                      		CPI R18, 4			;IF COL == 4
-000152 f351                      		BREQ SET_CMASK		;STARTOVER AGAIN
-000153 9553                      		INC R21
-000154 9350 010b                 		STORE KEY_PORT, R21		;SET CMASK
-000156 cfea                      		RJMP CLOOP			;GOTO NEXT COL
+000163 0f55                      		LSL R21				;LEFTSHIFT CMASK
+000164 9523                      		INC R18				;COL = COL + 1
+000165 3024                      		CPI R18, 4			;IF COL == 4
+000166 f351                      		BREQ SET_CMASK		;STARTOVER AGAIN
+000167 9553                      		INC R21
+000168 9350 010b                 		STORE KEY_PORT, R21		;SET CMASK
+00016a cfea                      		RJMP CLOOP			;GOTO NEXT COL
                                  
                                  	DEBOUNCING_LOOP:		;SOLVE DEBOUNCING
-000157 9130 0109                 		LOAD R19, PINL
-000159 703f                      		ANDI R19, ROWMASK
-00015a 303f                      		CPI R19, 0X0F
-00015b f7d9                      		BRNE DEBOUNCING_LOOP
-00015c 2f81                      	MOV R24, R17			;R24 AS ROW
-00015d 2f92                      	MOV R25, R18			;R25 AS COL
+00016b 9130 0109                 		LOAD R19, PINL
+00016d 703f                      		ANDI R19, ROWMASK
+00016e 303f                      		CPI R19, 0X0F
+00016f f7d9                      		BRNE DEBOUNCING_LOOP
+000170 2f81                      	MOV R24, R17			;R24 AS ROW
+000171 2f92                      	MOV R25, R18			;R25 AS COL
                                  
-00015e 915f                      	POP R21
-00015f 914f                      	POP R20
-000160 913f                      	POP R19
-000161 912f                      	POP R18
-000162 911f                      	POP R17
-000163 910f                      	POP R16
-000164 9508                      	RET
+000172 915f                      	POP R21
+000173 914f                      	POP R20
+000174 913f                      	POP R19
+000175 912f                      	POP R18
+000176 911f                      	POP R17
+000177 910f                      	POP R16
+000178 9508                      	RET
                                  
                                  ;GET KEY_ASCII VALUE FROM INPUT AS R24->ROW, R25->COL, RETURN ASCII VALUE AS R23
                                  KEY_ASCII:
-000165 938f                      	PUSH R24				;R24 AS ROW
-000166 939f                      	PUSH R25				;R25 AS COL
-000167 930f                      	PUSH R16				;R16 AS TEMP
-000168 920f                      	PUSH R0
-000169 921f                      	PUSH R1					;MUL WILL BE USED
+000179 938f                      	PUSH R24				;R24 AS ROW
+00017a 939f                      	PUSH R25				;R25 AS COL
+00017b 930f                      	PUSH R16				;R16 AS TEMP
+00017c 920f                      	PUSH R0
+00017d 921f                      	PUSH R1					;MUL WILL BE USED
                                  
-00016a dfcc                      	RCALL GET_KEY
-00016b 3093                      	CPI R25, 3				;IF COL == 3
-00016c f049                      	BREQ ASCII_LETTER
-00016d 3083                      	CPI R24, 3				;IF ROW == 3
-00016e f059                      	BREQ ASCII_SYMBOL
-00016f e003                      	LDI R16, 3				;TEMP = 3 * ROW + COL
-000170 9f80                      	MUL R24, R16			;
-000171 2d00                      	MOV R16, R0
-000172 0f09                      	ADD R16, R25 
-000173 5c0f                      	SUBI R16, -'1'			;GET ASCII VALUE
-000174 2f70                      	MOV R23, R16
-000175 c00e                      	RJMP RETURN_KEY_ASCII
+00017e dfcc                      	RCALL GET_KEY
+00017f 3093                      	CPI R25, 3				;IF COL == 3
+000180 f049                      	BREQ ASCII_LETTER
+000181 3083                      	CPI R24, 3				;IF ROW == 3
+000182 f059                      	BREQ ASCII_SYMBOL
+000183 e003                      	LDI R16, 3				;TEMP = 3 * ROW + COL
+000184 9f80                      	MUL R24, R16			;
+000185 2d00                      	MOV R16, R0
+000186 0f09                      	ADD R16, R25 
+000187 5c0f                      	SUBI R16, -'1'			;GET ASCII VALUE
+000188 2f70                      	MOV R23, R16
+000189 c00e                      	RJMP RETURN_KEY_ASCII
                                  
                                  	ASCII_LETTER:
-000176 e401                      		LDI R16, 'A'			;TEMP = 'A'
-000177 0f08                      		ADD R16, R24			;TEMP += ROW
-000178 2f70                      		MOV R23, R16
-000179 c00a                      		RJMP RETURN_KEY_ASCII
+00018a e401                      		LDI R16, 'A'			;TEMP = 'A'
+00018b 0f08                      		ADD R16, R24			;TEMP += ROW
+00018c 2f70                      		MOV R23, R16
+00018d c00a                      		RJMP RETURN_KEY_ASCII
                                  
                                  	ASCII_SYMBOL:
-00017a 3090                      		CPI R25, 0				;'*'
-00017b f021                      		BREQ ASCII_STAR
-00017c 3091                      		CPI R25, 1				;'0'
-00017d f021                      		BREQ ASCII_ZERO
-00017e e273                      		LDI R23, '#'			;'#'
-00017f c004                      		RJMP RETURN_KEY_ASCII
+00018e 3090                      		CPI R25, 0				;'*'
+00018f f021                      		BREQ ASCII_STAR
+000190 3091                      		CPI R25, 1				;'0'
+000191 f021                      		BREQ ASCII_ZERO
+000192 e273                      		LDI R23, '#'			;'#'
+000193 c004                      		RJMP RETURN_KEY_ASCII
                                  
                                  	ASCII_STAR:
-000180 e27a                      		LDI R23, '*'
-000181 c002                      		RJMP RETURN_KEY_ASCII
+000194 e27a                      		LDI R23, '*'
+000195 c002                      		RJMP RETURN_KEY_ASCII
                                  
                                  	ASCII_ZERO:
-000182 e370                      		LDI R23, '0'
-000183 c000                      		RJMP RETURN_KEY_ASCII
+000196 e370                      		LDI R23, '0'
+000197 c000                      		RJMP RETURN_KEY_ASCII
                                  
                                  RETURN_KEY_ASCII:
-000184 901f                      	POP R1
-000185 900f                      	POP R0
-000186 910f                      	POP R16
-000187 919f                      	POP R25
-000188 918f                      	POP R24
-000189 9508                      	RET
+000198 901f                      	POP R1
+000199 900f                      	POP R0
+00019a 910f                      	POP R16
+00019b 919f                      	POP R25
+00019c 918f                      	POP R24
+00019d 9508                      	RET
                                  ;GET A 8BIT INT USING KEYPAD, END WITH '#'
                                  ;RETURN value -> r23 if not overflowed
                                  KEY_VALUE:
-00018a 920f                      	PUSH R0
-00018b 921f                      	PUSH R1
-00018c 930f                      	PUSH R16
-00018d 931f                      	PUSH R17
-00018e 932f                      	PUSH R18
+00019e 920f                      	PUSH R0
+00019f 921f                      	PUSH R1
+0001a0 930f                      	PUSH R16
+0001a1 931f                      	PUSH R17
+0001a2 932f                      	PUSH R18
                                  
-00018f 2711                      	CLR R17
+0001a3 2711                      	CLR R17
                                  	
                                  	KEY_VALUE_LOOP:
-000190 dfd4                      		RCALL KEY_ASCII				;GET A VALUE
-000191 2f07
-000192 d02d
-000193 d01a                      		LCD_WRITE_DATA_reg R23		;DISPLAY EVERY KEY PRESSED
-000194 3273                      		CPI R23, '#'
-000195 f089                      		BREQ KEY_VALUE_RETURN
-000196 5370                      		SUBI R23, '0'				;GET THE REAL VALUE
-000197 3070                      		CPI R23, 0
-000198 f058                      		BRLO KEY_VALUE_OVERFLOW
-000199 307a                      		CPI R23, 10
-00019a f448                      		BRSH KEY_VALUE_OVERFLOW		;MAKE SURE key value is between 0-9, if not -> overflow
+0001a4 dfd4                      		RCALL KEY_ASCII				;GET A VALUE
+0001a5 2f07
+0001a6 d02d
+0001a7 d01a                      		LCD_WRITE_DATA_reg R23		;DISPLAY EVERY KEY PRESSED
+0001a8 3273                      		CPI R23, '#'
+0001a9 f089                      		BREQ KEY_VALUE_RETURN
+0001aa 5370                      		SUBI R23, '0'				;GET THE REAL VALUE
+0001ab 3070                      		CPI R23, 0
+0001ac f058                      		BRLO KEY_VALUE_OVERFLOW
+0001ad 307a                      		CPI R23, 10
+0001ae f448                      		BRSH KEY_VALUE_OVERFLOW		;MAKE SURE key value is between 0-9, if not -> overflow
                                  		;convert r17
-00019b e02a                      		LDI R18, 10					
-00019c 9f12                      		MUL R17, R18
-00019d e020                      		LDI R18, 0
-00019e 1521                      		CP R18, R1
-00019f f421                      		BRNE KEY_VALUE_OVERFLOW		;IF R17 * 10 > 255 -> overflow
-0001a0 2d10                      		MOV R17, R0					;R17 = R17 * 10
-0001a1 0f17                      		ADD R17, R23
-0001a2 f008                      		BRCS KEY_VALUE_OVERFLOW		;if r17 + r23 > 255 -> overflow
-0001a3 cfec                      		RJMP KEY_VALUE_LOOP
+0001af e02a                      		LDI R18, 10					
+0001b0 9f12                      		MUL R17, R18
+0001b1 e020                      		LDI R18, 0
+0001b2 1521                      		CP R18, R1
+0001b3 f421                      		BRNE KEY_VALUE_OVERFLOW		;IF R17 * 10 > 255 -> overflow
+0001b4 2d10                      		MOV R17, R0					;R17 = R17 * 10
+0001b5 0f17                      		ADD R17, R23
+0001b6 f008                      		BRCS KEY_VALUE_OVERFLOW		;if r17 + r23 > 255 -> overflow
+0001b7 cfec                      		RJMP KEY_VALUE_LOOP
                                  	KEY_VALUE_OVERFLOW:
-0001a4 940e 02eb                 		CALL LEDFLASH				;WHEN overflow occurs, flash led
-0001a6 ef7f                      		LDI R23, -1
+0001b8 940e 02ff                 		CALL LEDFLASH				;WHEN overflow occurs, flash led
+0001ba ef7f                      		LDI R23, -1
                                  KEY_VALUE_RETURN:
-0001a7 2f71                      	MOV R23, R17
-0001a8 912f                      	POP R18
-0001a9 911f                      	POP R17
-0001aa 910f                      	POP R16
-0001ab 900f                      	pop R0
-0001ac 901f                      	pop r1
-0001ad 9508                      	RET
+0001bb 2f71                      	MOV R23, R17
+0001bc 912f                      	POP R18
+0001bd 911f                      	POP R17
+0001be 910f                      	POP R16
+0001bf 900f                      	pop R0
+0001c0 901f                      	pop r1
+0001c1 9508                      	RET
                                  
                                  
                                  
@@ -2417,170 +2437,170 @@ D:\workspace\comp9032\project\final_project\final_project\main.asm(191): Includi
                                  
                                  ;WAIT UNTILL LCD IS NOT BUSY
                                  LCD_WAIT:
-0001ae 930f                      	PUSH R16
-0001af 2700                      	CLR R16
-0001b0 bb00                      	OUT DDRF, R16			;SET PORTF AS INPUT
-0001b1 e200                      	LDI R16, 1<<LCD_RW
-0001b2 b902                      	OUT LCD_CTRL_PORT, R16			;SET RS = 0 & RW = 1
+0001c2 930f                      	PUSH R16
+0001c3 2700                      	CLR R16
+0001c4 bb00                      	OUT DDRF, R16			;SET PORTF AS INPUT
+0001c5 e200                      	LDI R16, 1<<LCD_RW
+0001c6 b902                      	OUT LCD_CTRL_PORT, R16			;SET RS = 0 & RW = 1
                                  	BUSY_LOOP:
-0001b3 d085                      		RCALL WAIT_1MS		;GET SOME DELAY
-0001b4 9a16                      		SBI LCD_CTRL_PORT, LCD_E
-0001b5 d083                      		RCALL WAIT_1MS		;GET SOME DELAY
-0001b6 e00f                      		LDI R16, PINF
-0001b7 9816                      		CBI LCD_CTRL_PORT, LCD_E
-0001b8 fd07                      		SBRC R16, 7			;IF BF IS CLEAR, END BUSY LOOP
-0001b9 cff9                      		RJMP BUSY_LOOP		;ELSE LOOP UNTIL IT'S SET
-0001ba 2700                      	CLR R16
-0001bb b902                      	OUT LCD_CTRL_PORT, R16
-0001bc ef0f                      	SER R16
-0001bd bb00                      	OUT DDRF, R16
-0001be 910f                      	POP R16
-0001bf 9508                      	RET
+0001c7 d085                      		RCALL WAIT_1MS		;GET SOME DELAY
+0001c8 9a16                      		SBI LCD_CTRL_PORT, LCD_E
+0001c9 d083                      		RCALL WAIT_1MS		;GET SOME DELAY
+0001ca e00f                      		LDI R16, PINF
+0001cb 9816                      		CBI LCD_CTRL_PORT, LCD_E
+0001cc fd07                      		SBRC R16, 7			;IF BF IS CLEAR, END BUSY LOOP
+0001cd cff9                      		RJMP BUSY_LOOP		;ELSE LOOP UNTIL IT'S SET
+0001ce 2700                      	CLR R16
+0001cf b902                      	OUT LCD_CTRL_PORT, R16
+0001d0 ef0f                      	SER R16
+0001d1 bb00                      	OUT DDRF, R16
+0001d2 910f                      	POP R16
+0001d3 9508                      	RET
                                  
                                  ;FUNCTION TO WRITE DATA TO LCD, USING REGISTER R16(DATA)
                                  DATA_WRITE:
-0001c0 bb01                      	OUT LCD_DATA_PORT, R16			;SEND DATA TO LCD_DATA
-0001c1 9a17                      	SBI LCD_CTRL_PORT, LCD_RS		;SET LCD_RS = 1
-0001c2 9815                      	CBI LCD_CTRL_PORT, LCD_RW		;SET LCD_RW = 0
-0001c3 d075                      	RCALL WAIT_1MS
-0001c4 9a16                      	SBI LCD_CTRL_PORT, LCD_E		;ENABLE
-0001c5 d073                      	RCALL WAIT_1MS
-0001c6 9816                      	CBI LCD_CTRL_PORT, LCD_E
-0001c7 d071                      	RCALL WAIT_1MS
-0001c8 9508                      	RET		
+0001d4 bb01                      	OUT LCD_DATA_PORT, R16			;SEND DATA TO LCD_DATA
+0001d5 9a17                      	SBI LCD_CTRL_PORT, LCD_RS		;SET LCD_RS = 1
+0001d6 9815                      	CBI LCD_CTRL_PORT, LCD_RW		;SET LCD_RW = 0
+0001d7 d075                      	RCALL WAIT_1MS
+0001d8 9a16                      	SBI LCD_CTRL_PORT, LCD_E		;ENABLE
+0001d9 d073                      	RCALL WAIT_1MS
+0001da 9816                      	CBI LCD_CTRL_PORT, LCD_E
+0001db d071                      	RCALL WAIT_1MS
+0001dc 9508                      	RET		
                                  
                                  ;FUNCTION TO WRITE COM TO LCD, USING REGISTER R16(DATA)
                                  COM_WRITE:
-0001c9 bb01                      	OUT LCD_DATA_PORT, R16			;SEND DATA TO LCD_DATA
-0001ca 9817                      	CBI LCD_CTRL_PORT, LCD_RS		;SET LCD_RS = 0
-0001cb 9815                      	CBI LCD_CTRL_PORT, LCD_RW		;SET LCD_RW = 0
-0001cc d06c                      	RCALL WAIT_1MS
-0001cd 9a16                      	SBI LCD_CTRL_PORT, LCD_E		;ENABLE
-0001ce d06a                      	RCALL WAIT_1MS
-0001cf 9816                      	CBI LCD_CTRL_PORT, LCD_E
-0001d0 d068                      	RCALL WAIT_1MS
-0001d1 9508                      	RET
+0001dd bb01                      	OUT LCD_DATA_PORT, R16			;SEND DATA TO LCD_DATA
+0001de 9817                      	CBI LCD_CTRL_PORT, LCD_RS		;SET LCD_RS = 0
+0001df 9815                      	CBI LCD_CTRL_PORT, LCD_RW		;SET LCD_RW = 0
+0001e0 d06c                      	RCALL WAIT_1MS
+0001e1 9a16                      	SBI LCD_CTRL_PORT, LCD_E		;ENABLE
+0001e2 d06a                      	RCALL WAIT_1MS
+0001e3 9816                      	CBI LCD_CTRL_PORT, LCD_E
+0001e4 d068                      	RCALL WAIT_1MS
+0001e5 9508                      	RET
                                  
                                  ;INIT LCD USING SOME MACROS DEFINED IN MACROS.ASM
                                  LCD_INIT:
-0001d2 930f                      	PUSH R16
-0001d3 930f                      	PUSH TEMP
-0001d4 e00f
-0001d5 940e 0242                 	MACRO_WAIT 15				;WAIT 15MS
+0001e6 930f                      	PUSH R16
+0001e7 930f                      	PUSH TEMP
+0001e8 e00f
+0001e9 940e 0256                 	MACRO_WAIT 15				;WAIT 15MS
                                  	;INIT LCD
-0001d7 e308
-0001d8 dff0
-0001d9 dfd4                      	LCD_WRITE_COM 0B00111000
-0001da e005
-0001db 940e 0242                 	MACRO_WAIT 5
-0001dd e308
-0001de dfea
-0001df dfce                      	LCD_WRITE_COM 0B00111000
-0001e0 e001
-0001e1 940e 0242                 	MACRO_WAIT 1
-0001e3 e308
-0001e4 dfe4
-0001e5 dfc8                      	LCD_WRITE_COM 0B00111000	;WRITE FUNCTION SET 3TIMES
-0001e6 e308
-0001e7 dfe1
-0001e8 dfc5                      	LCD_WRITE_COM 0B00111000	;2*5*7
+0001eb e308
+0001ec dff0
+0001ed dfd4                      	LCD_WRITE_COM 0B00111000
+0001ee e005
+0001ef 940e 0256                 	MACRO_WAIT 5
+0001f1 e308
+0001f2 dfea
+0001f3 dfce                      	LCD_WRITE_COM 0B00111000
+0001f4 e001
+0001f5 940e 0256                 	MACRO_WAIT 1
+0001f7 e308
+0001f8 dfe4
+0001f9 dfc8                      	LCD_WRITE_COM 0B00111000	;WRITE FUNCTION SET 3TIMES
+0001fa e308
+0001fb dfe1
+0001fc dfc5                      	LCD_WRITE_COM 0B00111000	;2*5*7
                                  
-0001e9 e008
-0001ea dfde
-0001eb dfc2                      	LCD_WRITE_COM 0B00001000	;DISPLAY OFF
-0001ec e001
-0001ed dfdb
-0001ee dfbf                      	LCD_WRITE_COM 0B00000001	;DISPLAY CLR
-0001ef e006
-0001f0 dfd8
-0001f1 dfbc                      	LCD_WRITE_COM 0B00000110	;INCREMENT, NO SHIFT
-0001f2 e00f
-0001f3 dfd5
-0001f4 dfb9                      	LCD_WRITE_COM 0B00001111	;CURSOR ON, BAR, BLINK
-0001f5 910f                      	POP R16
-0001f6 910f                      	POP TEMP
-0001f7 9508                      	RET
+0001fd e008
+0001fe dfde
+0001ff dfc2                      	LCD_WRITE_COM 0B00001000	;DISPLAY OFF
+000200 e001
+000201 dfdb
+000202 dfbf                      	LCD_WRITE_COM 0B00000001	;DISPLAY CLR
+000203 e006
+000204 dfd8
+000205 dfbc                      	LCD_WRITE_COM 0B00000110	;INCREMENT, NO SHIFT
+000206 e00f
+000207 dfd5
+000208 dfb9                      	LCD_WRITE_COM 0B00001111	;CURSOR ON, BAR, BLINK
+000209 910f                      	POP R16
+00020a 910f                      	POP TEMP
+00020b 9508                      	RET
                                  
                                  
                                  ;DISPLAY 8BIT NUMBER ON LCD, INPUT R16 AS NUMBER, R23 R24 R25 USING FOR TAKE THE ASCII VALUE OF THE NUMBER
                                  LCD_DISPLAY_NUMBER:
-0001f8 930f                      	PUSH R16
-0001f9 937f                      	PUSH R23
-0001fa 938f                      	PUSH R24
-0001fb 939f                      	PUSH R25
+00020c 930f                      	PUSH R16
+00020d 937f                      	PUSH R23
+00020e 938f                      	PUSH R24
+00020f 939f                      	PUSH R25
                                  
-0001fc 940e 0288                 	CALL ITOA				;USING FUNCTION ITOA FROM GENERAL FUNCTIONS TO GET ASCII VALUE OF A CERTAIN INT
-0001fe 2f07                      	MOV R16, R23			;DISPLAY ASCII SYMBLE ONE BY ONE
-0001ff dfae                      	RCALL LCD_WAIT
-000200 dfbf                      	RCALL DATA_WRITE
-000201 2f08                      	MOV R16, R24			;FROM HIGH TO LOW
-000202 dfab                      	RCALL LCD_WAIT
-000203 dfbc                      	RCALL DATA_WRITE
-000204 2f09                      	MOV R16, R25
-000205 dfa8                      	RCALL LCD_WAIT
-000206 dfb9                      	RCALL DATA_WRITE
+000210 940e 029c                 	CALL ITOA				;USING FUNCTION ITOA FROM GENERAL FUNCTIONS TO GET ASCII VALUE OF A CERTAIN INT
+000212 2f07                      	MOV R16, R23			;DISPLAY ASCII SYMBLE ONE BY ONE
+000213 dfae                      	RCALL LCD_WAIT
+000214 dfbf                      	RCALL DATA_WRITE
+000215 2f08                      	MOV R16, R24			;FROM HIGH TO LOW
+000216 dfab                      	RCALL LCD_WAIT
+000217 dfbc                      	RCALL DATA_WRITE
+000218 2f09                      	MOV R16, R25
+000219 dfa8                      	RCALL LCD_WAIT
+00021a dfb9                      	RCALL DATA_WRITE
                                  
-000207 919f                      	POP R25
-000208 918f                      	POP R24
-000209 917f                      	POP R23
-00020a 910f                      	POP R16
-00020b 9508                      	RET
+00021b 919f                      	POP R25
+00021c 918f                      	POP R24
+00021d 917f                      	POP R23
+00021e 910f                      	POP R16
+00021f 9508                      	RET
                                  
                                  ;16BIT NUMBER DISPLAY, SAME TECHNIQUE AS 8BIT VERSION
                                  LCD_DISPLAY_NUMBER_16BIT:
-00020c 930f                      	PUSH R16
-00020d 931f                      	PUSH R17
-00020e 935f                      	PUSH R21
-00020f 936f                      	PUSH R22
-000210 937f                      	PUSH R23
-000211 938f                      	PUSH R24
-000212 939f                      	PUSH R25
+000220 930f                      	PUSH R16
+000221 931f                      	PUSH R17
+000222 935f                      	PUSH R21
+000223 936f                      	PUSH R22
+000224 937f                      	PUSH R23
+000225 938f                      	PUSH R24
+000226 939f                      	PUSH R25
                                  
-000213 940e 02a0                 	CALL ITOA_16BIT
-000215 2f05                      	MOV R16, R21
-000216 df97                      	RCALL LCD_WAIT
-000217 dfa8                      	RCALL DATA_WRITE
-000218 2f06                      	MOV R16, R22
-000219 df94                      	RCALL LCD_WAIT
-00021a dfa5                      	RCALL DATA_WRITE
-00021b 2f07                      	MOV R16, R23
-00021c df91                      	RCALL LCD_WAIT
-00021d dfa2                      	RCALL DATA_WRITE
-00021e 2f08                      	MOV R16, R24
-00021f df8e                      	RCALL LCD_WAIT
-000220 df9f                      	RCALL DATA_WRITE
-000221 2f09                      	MOV R16, R25
-000222 df8b                      	RCALL LCD_WAIT
-000223 df9c                      	RCALL DATA_WRITE
+000227 940e 02b4                 	CALL ITOA_16BIT
+000229 2f05                      	MOV R16, R21
+00022a df97                      	RCALL LCD_WAIT
+00022b dfa8                      	RCALL DATA_WRITE
+00022c 2f06                      	MOV R16, R22
+00022d df94                      	RCALL LCD_WAIT
+00022e dfa5                      	RCALL DATA_WRITE
+00022f 2f07                      	MOV R16, R23
+000230 df91                      	RCALL LCD_WAIT
+000231 dfa2                      	RCALL DATA_WRITE
+000232 2f08                      	MOV R16, R24
+000233 df8e                      	RCALL LCD_WAIT
+000234 df9f                      	RCALL DATA_WRITE
+000235 2f09                      	MOV R16, R25
+000236 df8b                      	RCALL LCD_WAIT
+000237 df9c                      	RCALL DATA_WRITE
                                  
-000224 919f                      	POP R25
-000225 918f                      	POP R24
-000226 917f                      	POP R23
-000227 916f                      	POP R22
-000228 915f                      	POP R21
-000229 910f                      	POP R16
-00022a 911f                      	POP R17
-00022b 9508                      	RET
+000238 919f                      	POP R25
+000239 918f                      	POP R24
+00023a 917f                      	POP R23
+00023b 916f                      	POP R22
+00023c 915f                      	POP R21
+00023d 910f                      	POP R16
+00023e 911f                      	POP R17
+00023f 9508                      	RET
                                  
                                  ;display STRING, r16(low), r17(high) as string addr
                                  LCD_DISPLAY_STRING:
-00022c 93ef                      	push ZL
-00022d 93ff                      	push ZH
+000240 93ef                      	push ZL
+000241 93ff                      	push ZH
                                  
-00022e 2fe0                      	mov zl, R16
-00022f 2ff1                      	mov zh, R17
+000242 2fe0                      	mov zl, R16
+000243 2ff1                      	mov zh, R17
                                  	lcd_display_string_loop:
-000230 df7d                      		rcall lcd_wait
-000231 9105                      		lpm r16, Z+
-000232 3000                      		cpi r16, 0
-000233 f011                      		breq lcd_display_string_return
-000234 df8b                      		rcall DATA_WRITE
-000235 cffa                      		rjmp lcd_display_string_loop
+000244 df7d                      		rcall lcd_wait
+000245 9105                      		lpm r16, Z+
+000246 3000                      		cpi r16, 0
+000247 f011                      		breq lcd_display_string_return
+000248 df8b                      		rcall DATA_WRITE
+000249 cffa                      		rjmp lcd_display_string_loop
                                  	
                                  	lcd_display_string_return:
-000236 91ff                      	pop zh
-000237 91ef                      	pop zl
-000238 9508                      	ret
+00024a 91ff                      	pop zh
+00024b 91ef                      	pop zl
+00024c 9508                      	ret
                                  
                                  .include "wait.asm"
                                  
@@ -2597,30 +2617,30 @@ D:\workspace\comp9032\project\final_project\final_project\main.asm(191): Includi
                                  
                                  ;FUNCTION TO WAIT FOR 1MS
                                  WAIT_1MS:
-000239 938f                      	PUSH R24
-00023a 939f                      	PUSH R25
+00024d 938f                      	PUSH R24
+00024e 939f                      	PUSH R25
                                  
-00023b e084                      	LDI R24, LOW(4100)
-00023c e190                      	LDI R25, HIGH(4100)		;A LITTLE MORE THAN 1MS
+00024f e084                      	LDI R24, LOW(4100)
+000250 e190                      	LDI R25, HIGH(4100)		;A LITTLE MORE THAN 1MS
                                  	MS_LOOP:
-00023d 9701                      		SBIW R24, 1
-00023e f7f1                      		BRNE MS_LOOP
+000251 9701                      		SBIW R24, 1
+000252 f7f1                      		BRNE MS_LOOP
                                  	
-00023f 919f                      	POP R25
-000240 918f                      	POP R24
-000241 9508                      	RET
+000253 919f                      	POP R25
+000254 918f                      	POP R24
+000255 9508                      	RET
                                  
                                  ;USING R16 AS INPUT FOR WAIT R16MS
                                  WAIT_MORE:
-000242 930f                      	PUSH R16
+000256 930f                      	PUSH R16
                                  
                                  	WAIT_MORE_LOOP:
-000243 dff5                      		RCALL WAIT_1MS		;EACH TIME WAIT FOR 1MS
-000244 950a                      		DEC R16
-000245 f7e9                      		BRNE WAIT_MORE_LOOP
+000257 dff5                      		RCALL WAIT_1MS		;EACH TIME WAIT FOR 1MS
+000258 950a                      		DEC R16
+000259 f7e9                      		BRNE WAIT_MORE_LOOP
                                  
-000246 910f                      	POP R16
-000247 9508                      	RET
+00025a 910f                      	POP R16
+00025b 9508                      	RET
                                  .include "drone.asm"
                                  
                                  ;R21-> ROW, R20-> COL, R18 -> DIRECTION
@@ -2628,93 +2648,93 @@ D:\workspace\comp9032\project\final_project\final_project\main.asm(191): Includi
                                  ;NEW_HEIGHT -> R23 AS RETURN
                                  ;IF REACH END, RETURN -1(WHICH MIGHT NEVER HAPPEN)
                                  FLY_TO_NEXT_POS:    
-000248 3020                          CPI R18, 0      ;R18 -> SET AS FLY RIGHT, CLEAR AS FLY LEFT
-000249 f071                          BREQ GO_LEFT
-00024a 334f                          CPI R20, BORDER_X   ;CHECK IF REACHED BOARDER
-00024b f0a1                          BREQ GO_DOWN        ;IF BOARDER REACHED, GO DOWN
-00024c e502
-00024d df72
-00024e df5f                          LCD_WRITE_DATA 'R'
-00024f 9631                          ADIW Z, 1
-000250 9543                          INC R20
+00025c 3020                          CPI R18, 0      ;R18 -> SET AS FLY RIGHT, CLEAR AS FLY LEFT
+00025d f071                          BREQ GO_LEFT
+00025e 334f                          CPI R20, BORDER_X   ;CHECK IF REACHED BOARDER
+00025f f0a1                          BREQ GO_DOWN        ;IF BOARDER REACHED, GO DOWN
+000260 e502
+000261 df72
+000262 df5f                          LCD_WRITE_DATA 'R'
+000263 9631                          ADIW Z, 1
+000264 9543                          INC R20
                                  
                                      CHECK_HEIGHT:
-000251 9174                              LPM R23, Z
-000252 e200
-000253 df6c
-000254 df59                              LCD_WRITE_DATA ' '
-000255 9508                              RET
+000265 9174                              LPM R23, Z
+000266 e200
+000267 df6c
+000268 df59                              LCD_WRITE_DATA ' '
+000269 9508                              RET
                                  
                                      GO_END:
-000256 ef7f                              LDI R23, -1
-000257 9508                              RET
+00026a ef7f                              LDI R23, -1
+00026b 9508                              RET
                                  
                                      GO_LEFT:
-000258 3040                              CPI R20, 0
-000259 f031                              BREQ GO_DOWN
-00025a e40c
-00025b df64
-00025c df51                              LCD_WRITE_DATA 'L'
-00025d 9731                              SBIW Z, 1
-00025e 954a                              DEC R20
-00025f cff1                              RJMP CHECK_HEIGHT
+00026c 3040                              CPI R20, 0
+00026d f031                              BREQ GO_DOWN
+00026e e40c
+00026f df64
+000270 df51                              LCD_WRITE_DATA 'L'
+000271 9731                              SBIW Z, 1
+000272 954a                              DEC R20
+000273 cff1                              RJMP CHECK_HEIGHT
                                      
                                      GO_DOWN:
-000260 335f                              CPI R21, BORDER_Y
-000261 f3a1                              BREQ GO_END
-000262 e404
-000263 df5c
-000264 df49                              LCD_WRITE_DATA 'D'
-000265 96ff                              ADIW Z, BORDER_Y	    ;NEXT ROW
-000266 9520                              COM R18                 ;DIFFERENT DIRECTION
-000267 9553                              inc R21					;SET R21, NEXT ROW
-000268 cfe8                              RJMP CHECK_HEIGHT
+000274 335f                              CPI R21, BORDER_Y
+000275 f3a1                              BREQ GO_END
+000276 e404
+000277 df5c
+000278 df49                              LCD_WRITE_DATA 'D'
+000279 96ff                              ADIW Z, BORDER_Y	    ;NEXT ROW
+00027a 9520                              COM R18                 ;DIFFERENT DIRECTION
+00027b 9553                              inc R21					;SET R21, NEXT ROW
+00027c cfe8                              RJMP CHECK_HEIGHT
                                  
                                  ;CURRENT POSITION: R20:R21 -> X:Y
                                  ;RETURN R23 AS SIGNAL IF R23 SET, THEN THE ACCIDENT POSITION IS FOUND
                                  ;ELSE IF R23 IS CLR, ACCIDENT POSITION IS NOT FOUND
                                  DRONE_SEARCH:
-000269 930f                      	PUSH R16
-00026a 931f                      	PUSH R17
-00026b 93ef                      	PUSH ZL
-00026c 93ff                      	PUSH ZH
+00027d 930f                      	PUSH R16
+00027e 931f                      	PUSH R17
+00027f 93ef                      	PUSH ZL
+000280 93ff                      	PUSH ZH
                                  
-00026d 2777                      	CLR R23
-00026e e302
-00026f 940e 02e6                 	FLY_CTRL HALF_MOTOR_SPEED	;SET MOTOR SPEED TO HALF
-000271 e0e0                      	LDI ZL, LOW(ACCIDENT)
-000272 e0f2                      	LDI ZH, HIGH(ACCIDENT)
+000281 2777                      	CLR R23
+000282 e302
+000283 940e 02fa                 	FLY_CTRL HALF_MOTOR_SPEED	;SET MOTOR SPEED TO HALF
+000285 e0e0                      	LDI ZL, LOW(ACCIDENT)
+000286 e0f2                      	LDI ZH, HIGH(ACCIDENT)
                                  
-000273 9105                      	LPM R16, Z+
-000274 9114                      	LPM R17, Z
+000287 9101                      	LD R16, Z+
+000288 8110                      	LD R17, Z
                                  
-000275 1704                      	CP R16, R20
-000276 f419                      	BRNE SEARCH_RETURN
-000277 1715                      	CP R17, R21
-000278 f409                      	BRNE SEARCH_RETURN
-000279 ef7f                      	SER R23
+000289 1704                      	CP R16, R20
+00028a f419                      	BRNE SEARCH_RETURN
+00028b 1715                      	CP R17, R21
+00028c f409                      	BRNE SEARCH_RETURN
+00028d ef7f                      	SER R23
                                  SEARCH_RETURN:
-00027a 91ff                      	POP ZH
-00027b 91ef                      	POP ZL
-00027c 910f                      	POP R16
-00027d 911f                      	POP R17
-00027e 9508                      	RET
+00028e 91ff                      	POP ZH
+00028f 91ef                      	POP ZL
+000290 910f                      	POP R16
+000291 911f                      	POP R17
+000292 9508                      	RET
                                  
                                  ;SET ACCIDENT POSITION IN DESG, ACCIDENT(X,Y)
                                  ;WITH REGISTER R2 AS X, R3 AS Y
                                  SET_LOCATION:
-00027f 93ef                          PUSH ZL
-000280 93ff                          PUSH ZH
+000293 93ef                          PUSH ZL
+000294 93ff                          PUSH ZH
                                  
-000281 e0e0                          LDI ZL, LOW(ACCIDENT)
-000282 e0f2                          LDI ZH, HIGH(ACCIDENT)
-000283 9221                          ST Z+, R2
-000284 8230                          ST Z, R3
+000295 e0e0                          LDI ZL, LOW(ACCIDENT)
+000296 e0f2                          LDI ZH, HIGH(ACCIDENT)
+000297 9221                          ST Z+, R2
+000298 8230                          ST Z, R3
                                  
-000285 91ff                          POP ZH
-000286 91ef                          POP ZL
+000299 91ff                          POP ZH
+00029a 91ef                          POP ZL
                                  .include "generalfunc.asm"
-000287 9508                      
+00029b 9508                      
                                   * generalfunc.asm
                                   *
                                   *  Created: 2017/9/29 22:20:30
@@ -2727,1620 +2747,1600 @@ D:\workspace\comp9032\project\final_project\final_project\main.asm(191): Includi
                                  ;PWM_GENERATE
                                  ;---------------------------------------------
                                  ITOA:	;8BIT INPUT(MAX 255, MIN 0) R16, R23:R24:R25 OUTPUT ASCII VALUE
-000288 930f                      	PUSH R16
-000289 2777                      	CLR R23
-00028a 2788                      	CLR R24
-00028b 2799                      	CLR R25
+00029c 930f                      	PUSH R16
+00029d 2777                      	CLR R23
+00029e 2788                      	CLR R24
+00029f 2799                      	CLR R25
                                  
                                  	E100S:					;EXTRACT 100
-00028c 3604                      		CPI R16, 100
-00028d f018                      		BRLO E10S
-00028e 5604                      		SUBI R16, 100
-00028f 9573                      		INC R23
-000290 cffb                      		RJMP E100S
+0002a0 3604                      		CPI R16, 100
+0002a1 f018                      		BRLO E10S
+0002a2 5604                      		SUBI R16, 100
+0002a3 9573                      		INC R23
+0002a4 cffb                      		RJMP E100S
                                  
                                  	E10S:					;EXTRACT 10
-000291 300a                      		CPI R16, 10
-000292 f018                      		BRLO E1S
-000293 500a                      		SUBI R16, 10
-000294 9583                      		INC R24
-000295 cffb                      		RJMP E10S
+0002a5 300a                      		CPI R16, 10
+0002a6 f018                      		BRLO E1S
+0002a7 500a                      		SUBI R16, 10
+0002a8 9583                      		INC R24
+0002a9 cffb                      		RJMP E10S
                                  
                                  	E1S:					;EXTRACT 1
-000296 3001                      		CPI R16, 1
-000297 f018                      		BRLO ITOA_RETURN
-000298 5001                      		SUBI R16, 1
-000299 9593                      		INC R25
-00029a cffb                      		RJMP E1S
+0002aa 3001                      		CPI R16, 1
+0002ab f018                      		BRLO ITOA_RETURN
+0002ac 5001                      		SUBI R16, 1
+0002ad 9593                      		INC R25
+0002ae cffb                      		RJMP E1S
                                  
                                  	ITOA_RETURN:
-00029b 5d70                      		SUBI R23, -'0'		;GET ASCII VALUE FOR EACH
-00029c 5d80                      		SUBI R24, -'0'
-00029d 5d90                      		SUBI R25, -'0'
-00029e 910f                      		POP R16
-00029f 9508                      		RET
+0002af 5d70                      		SUBI R23, -'0'		;GET ASCII VALUE FOR EACH
+0002b0 5d80                      		SUBI R24, -'0'
+0002b1 5d90                      		SUBI R25, -'0'
+0002b2 910f                      		POP R16
+0002b3 9508                      		RET
                                  
                                  ITOA_16BIT:	;16BIT INPUT(MAX 65535, MIN 0) R17_HIGH:R16_LOW, R21:R22:R23:R24:R25 OUTPUT ASCII VALUE
-0002a0 930f                      	PUSH R16			;LOW
-0002a1 931f                      	PUSH R17			;HIGH
-0002a2 932f                      	PUSH R18			;TEMP REGISTER
-0002a3 2755                      	CLR R21				;10000S
-0002a4 2766                      	CLR R22				;1000S
-0002a5 2777                      	CLR R23				;100S
-0002a6 2788                      	CLR R24				;10S
-0002a7 2799                      	CLR R25				;1S
+0002b4 930f                      	PUSH R16			;LOW
+0002b5 931f                      	PUSH R17			;HIGH
+0002b6 932f                      	PUSH R18			;TEMP REGISTER
+0002b7 2755                      	CLR R21				;10000S
+0002b8 2766                      	CLR R22				;1000S
+0002b9 2777                      	CLR R23				;100S
+0002ba 2788                      	CLR R24				;10S
+0002bb 2799                      	CLR R25				;1S
                                  
                                  	XE10000S:					;EXTRACT 10000
-0002a8 e227                      		LDI R18, HIGH(10000)
-0002a9 3100                      		CPI R16, LOW(10000)
-0002aa 0712                      		CPC R17, R18
-0002ab f020                      		BRLO XE1000S
-0002ac 5100                      		SUBI R16, LOW(10000)
-0002ad 0b12                      		SBC R17, R18
-0002ae 9553                      		INC R21
-0002af cff8                      		RJMP XE10000S
+0002bc e227                      		LDI R18, HIGH(10000)
+0002bd 3100                      		CPI R16, LOW(10000)
+0002be 0712                      		CPC R17, R18
+0002bf f020                      		BRLO XE1000S
+0002c0 5100                      		SUBI R16, LOW(10000)
+0002c1 0b12                      		SBC R17, R18
+0002c2 9553                      		INC R21
+0002c3 cff8                      		RJMP XE10000S
                                  
                                  	XE1000S:					;EXTRACT 1000
-0002b0 e023                      		LDI R18, HIGH(1000)		;USE R18 TO CMP
-0002b1 3e08                      		CPI R16, LOW(1000)		;CMP LOW FIRST
-0002b2 0712                      		CPC R17, R18			;THEN HIGH
-0002b3 f020                      		BRLO XE100S
-0002b4 5e08                      		SUBI R16, LOW(1000)		;SUB LOW FIRST
-0002b5 0b12                      		SBC R17, R18			;THEN HIGH
-0002b6 9563                      		INC R22
-0002b7 cff8                      		RJMP XE1000S
+0002c4 e023                      		LDI R18, HIGH(1000)		;USE R18 TO CMP
+0002c5 3e08                      		CPI R16, LOW(1000)		;CMP LOW FIRST
+0002c6 0712                      		CPC R17, R18			;THEN HIGH
+0002c7 f020                      		BRLO XE100S
+0002c8 5e08                      		SUBI R16, LOW(1000)		;SUB LOW FIRST
+0002c9 0b12                      		SBC R17, R18			;THEN HIGH
+0002ca 9563                      		INC R22
+0002cb cff8                      		RJMP XE1000S
                                  
                                  	XE100S:					;EXTRACT 100
-0002b8 e020                      		LDI R18, HIGH(100)
-0002b9 3604                      		CPI R16, LOW(100)
-0002ba 0712                      		CPC R17, R18
-0002bb f020                      		BRLO XE10S
-0002bc 5604                      		SUBI R16, LOW(100)
-0002bd 0b12                      		SBC R17, R18
-0002be 9573                      		INC R23
-0002bf cff8                      		RJMP XE100S
+0002cc e020                      		LDI R18, HIGH(100)
+0002cd 3604                      		CPI R16, LOW(100)
+0002ce 0712                      		CPC R17, R18
+0002cf f020                      		BRLO XE10S
+0002d0 5604                      		SUBI R16, LOW(100)
+0002d1 0b12                      		SBC R17, R18
+0002d2 9573                      		INC R23
+0002d3 cff8                      		RJMP XE100S
                                  
                                  	XE10S:					;EXTRACT 10
-0002c0 300a                      		CPI R16, 10
-0002c1 f018                      		BRLO XE1S
-0002c2 500a                      		SUBI R16, 10
-0002c3 9583                      		INC R24
-0002c4 cffb                      		RJMP XE10S
+0002d4 300a                      		CPI R16, 10
+0002d5 f018                      		BRLO XE1S
+0002d6 500a                      		SUBI R16, 10
+0002d7 9583                      		INC R24
+0002d8 cffb                      		RJMP XE10S
                                  
                                  	XE1S:					;EXTRACT 1
-0002c5 3001                      		CPI R16, 1
-0002c6 f018                      		BRLO ITOA_16BIT_RETURN
-0002c7 5001                      		SUBI R16, 1
-0002c8 9593                      		INC R25
-0002c9 cffb                      		RJMP XE1S
+0002d9 3001                      		CPI R16, 1
+0002da f018                      		BRLO ITOA_16BIT_RETURN
+0002db 5001                      		SUBI R16, 1
+0002dc 9593                      		INC R25
+0002dd cffb                      		RJMP XE1S
                                  
                                  	ITOA_16BIT_RETURN:
-0002ca 5d50                      		SUBI R21, -'0'		;GET ASCII VALUE FOR EACH
-0002cb 5d60                      		SUBI R22, -'0'
-0002cc 5d70                      		SUBI R23, -'0'
-0002cd 5d80                      		SUBI R24, -'0'
-0002ce 5d90                      		SUBI R25, -'0'
+0002de 5d50                      		SUBI R21, -'0'		;GET ASCII VALUE FOR EACH
+0002df 5d60                      		SUBI R22, -'0'
+0002e0 5d70                      		SUBI R23, -'0'
+0002e1 5d80                      		SUBI R24, -'0'
+0002e2 5d90                      		SUBI R25, -'0'
                                  
-0002cf 912f                      		POP R18
-0002d0 911f                      		POP R17
-0002d1 910f                      		POP R16
-0002d2 9508                      		RET
+0002e3 912f                      		POP R18
+0002e4 911f                      		POP R17
+0002e5 910f                      		POP R16
+0002e6 9508                      		RET
                                  
                                  ;USING TIMER3 AND OCR3B TO GENERATE PWM
                                  
                                  PWM_GENERATE:
-0002d3 930f                      	PUSH r16
+0002e7 930f                      	PUSH r16
                                  	
-0002d4 ef0f                      	ser TEMP
-0002d5 b90d                      	STORE DDRE, r16					;SET UP PORTE BIT4 AS PWM OUTPUT
-0002d6 2700                      	clr TEMP
-0002d7 9300 009d                 	STORE OCR3CH, r16
-0002d9 2700                      	clr temp
-0002da 9300 009c                 	STORE OCR3CL, r16					;ONLY OCR3BL MATTERS(8BIT PWM)
-0002dc e009                      	LDI TEMP, (1<<WGM30)|(1<<COM3C1)	;8BIT PHASE CORRECT PWM MODE
-0002dd 9300 0090                 	STORE TCCR3A, r16		
-0002df e001                      	LDI TEMP, 1<<CS30					
-0002e0 9300 0091                 	STORE TCCR3B, r16
-0002e2 ef0f                      	ser temp
-0002e3 b908                      	out portc, temp
+0002e8 ef0f                      	ser TEMP
+0002e9 b90d                      	STORE DDRE, r16					;SET UP PORTE BIT4 AS PWM OUTPUT
+0002ea 2700                      	clr TEMP
+0002eb 9300 009d                 	STORE OCR3CH, r16
+0002ed 2700                      	clr temp
+0002ee 9300 009c                 	STORE OCR3CL, r16					;ONLY OCR3BL MATTERS(8BIT PWM)
+0002f0 e009                      	LDI TEMP, (1<<WGM30)|(1<<COM3C1)	;8BIT PHASE CORRECT PWM MODE
+0002f1 9300 0090                 	STORE TCCR3A, r16		
+0002f3 e001                      	LDI TEMP, 1<<CS30					
+0002f4 9300 0091                 	STORE TCCR3B, r16
+0002f6 ef0f                      	ser temp
+0002f7 b908                      	out portc, temp
                                  	
-0002e4 910f                      	POP r16
-0002e5 9508                      	ret
+0002f8 910f                      	POP r16
+0002f9 9508                      	ret
                                  
                                  ;Change pwm duty
                                  .set PWM_CMP_REG = OCR3CL		;use OCR3BL as pwm compare regis
                                  pwm_duty:
-0002e6 930f                      	push r16
+0002fa 930f                      	push r16
                                  
-0002e7 9300 009c                 	STORE PWM_CMP_REG, r16
+0002fb 9300 009c                 	STORE PWM_CMP_REG, r16
                                  
-0002e9 910f                      	pop r16
-0002ea 9508                      	ret
+0002fd 910f                      	pop r16
+0002fe 9508                      	ret
                                  
                                  LEDFLASH:
-0002eb 930f                      	push r16
+0002ff 930f                      	push r16
                                  
-0002ec ef0f                      	ser r16
-0002ed b908                      	out portc, r16
-0002ee e302
-0002ef 940e 0242                 	macro_wait 50
-0002f1 2700                      	clr r16
-0002f2 b908                      	out portc, r16
-0002f3 e302
-0002f4 940e 0242                 	macro_wait 50
-0002f6 ef0f                      	ser r16
-0002f7 b908                      	out portc, r16
-0002f8 e302
-0002f9 940e 0242                 	macro_wait 50
-0002fb 2700                      	clr r16
-0002fc b908                      	out portc, r16
-0002fd e302
-0002fe 940e 0242                 	macro_wait 50
 000300 ef0f                      	ser r16
 000301 b908                      	out portc, r16
 000302 e302
-000303 940e 0242                 	macro_wait 50
+000303 940e 0256                 	macro_wait 50
 000305 2700                      	clr r16
 000306 b908                      	out portc, r16
 000307 e302
-000308 940e 0242                 	macro_wait 50
+000308 940e 0256                 	macro_wait 50
+00030a ef0f                      	ser r16
+00030b b908                      	out portc, r16
+00030c e302
+00030d 940e 0256                 	macro_wait 50
+00030f 2700                      	clr r16
+000310 b908                      	out portc, r16
+000311 e302
+000312 940e 0256                 	macro_wait 50
+000314 ef0f                      	ser r16
+000315 b908                      	out portc, r16
+000316 e302
+000317 940e 0256                 	macro_wait 50
+000319 2700                      	clr r16
+00031a b908                      	out portc, r16
+00031b e302
+00031c 940e 0256                 	macro_wait 50
                                  
-00030a 910f                      	pop r16
-00030b 9508                      	ret
+00031e 910f                      	pop r16
+00031f 9508                      	ret
                                  .include "mountain.asm"
                                  
-00030c 0000
-00030d 0000
-00030e 0000
-00030f 0000
-000310 0000
-000311 0000
-000312 0a00
-000313 150f
-000314 1612
-000315 1f1c
-000316 2121
-000317 2b28
-000318 2b28
-000319 292b
-00031a 262a
-00031b 2120
-00031c 1b1d
-00031d 1618
-00031e 151a
-00031f 1c1a
-000320 1d1e
-000321 221c
-000322 2320
-000323 1e23
-000324 151b
-000325 1310
-000326 1115
-000327 0a11
-000328 0d0f
-000329 0000
-00032a 0000
-00032b 0000                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,10,15,21,18,22,28,31,33,33,40,43,40,43,43,41,42,38,32,33,29,27,24,22,26,21,26,28,30,29,28,34,32,35,35,30,27,21,16,19,21,17,17,10,15,13,0,0,0,0,0,0
-00032c 0000
-00032d 0000
-00032e 0000
-00032f 0000
-000330 0000
-000331 0000
-000332 0e0a
-000333 1612
-000334 1b16
-000335 2120
-000336 2623
-000337 2b2b
-000338 2e2b
-000339 2d30
-00033a 292c
-00033b 2125
-00033c 1d1f
-00033d 1b1b
-00033e 161a
-00033f 1d1a
-000340 2120
-000341 241f
-000342 2824
-000343 2228
-000344 171b
-000345 1814
-000346 1415
-000347 0f11
-000348 0d0f
-000349 0008
-00034a 0000
-00034b 0000                      .db 0,0,0,0,0,0,0,0,0,0,0,0,10,14,18,22,22,27,32,33,35,38,43,43,43,46,48,45,44,41,37,33,31,29,27,27,26,22,26,29,32,33,31,36,36,40,40,34,27,23,20,24,21,20,17,15,15,13,8,0,0,0,0,0
-00034c 0000
-00034d 0000
-00034e 0000
-00034f 0000
-000350 0000
-000351 0000
-000352 0b0a
-000353 160e
-000354 1817
-000355 221f
-000356 2123
-000357 2a26
-000358 2e28
-000359 2c2f
-00035a 2829
-00035b 2126
-00035c 191a
-00035d 1517
-00035e 1e18
-00035f 201f
-000360 2422
-000361 2421
-000362 2824
-000363 2227
-000364 1a1d
-000365 1919
-000366 1919
-000367 0717
-000368 0d08
-000369 000a
-00036a 0000
-00036b 0000                      .db 0,0,0,0,0,0,0,0,0,0,0,0,10,11,14,22,23,24,31,34,35,33,38,42,40,46,47,44,41,40,38,33,26,25,23,21,24,30,31,32,34,36,33,36,36,40,39,34,29,26,25,25,25,25,23,7,8,13,10,0,0,0,0,0
-00036c 0000
-00036d 0000
-00036e 0000
-00036f 0000
-000370 0000
-000371 0000
-000372 0900
-000373 110e
-000374 1712
-000375 1d1a
-000376 1d1b
-000377 2822
-000378 2c2b
-000379 262b
-00037a 2627
-00037b 1c26
-00037c 1519
-00037d 1517
-00037e 1b1a
-00037f 2524
-000380 2926
-000381 2428
-000382 2b28
-000383 2527
-000384 2424
-000385 1e21
-000386 1a1e
-000387 0c16
-000388 090b
-000389 0000
-00038a 0000
-00038b 0000                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,9,14,17,18,23,26,29,27,29,34,40,43,44,43,38,39,38,38,28,25,21,23,21,26,27,36,37,38,41,40,36,40,43,39,37,36,36,33,30,30,26,22,12,11,9,0,0,0,0,0,0
-00038c 0000
-00038d 0000
-00038e 0000
-00038f 0000
-000390 0000
-000391 0000
-000392 0000
-000393 0c08
-000394 1510
-000395 1918
-000396 1817
-000397 231f
-000398 2925
-000399 2929
-00039a 2828
-00039b 1723
-00039c 1b19
-00039d 1a15
-00039e 1e1d
-00039f 241f
-0003a0 2a2a
-0003a1 2c2c
-0003a2 302f
-0003a3 282b
-0003a4 2428
-0003a5 2123
-0003a6 1c1e
-0003a7 0e13
-0003a8 0b0b
-0003a9 0908
-0003aa 0900
-0003ab 0a00                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,12,16,21,24,25,23,24,31,35,37,41,41,41,40,40,35,23,25,27,21,26,29,30,31,36,42,42,44,44,47,48,43,40,40,36,35,33,30,28,19,14,11,11,8,9,0,9,0,10
-0003ac 0000
-0003ad 0000
-0003ae 0000
-0003af 0000
-0003b0 0000
-0003b1 0000
-0003b2 0900
-0003b3 0909
-0003b4 0e0b
-0003b5 1913
-0003b6 1313
-0003b7 1f1b
-0003b8 2929
-0003b9 2924
-0003ba 2425
-0003bb 1720
-0003bc 1d19
-0003bd 2520
-0003be 1f1c
-0003bf 2424
-0003c0 2c25
-0003c1 2d28
-0003c2 352f
-0003c3 2f33
-0003c4 2a2f
-0003c5 2226
-0003c6 2020
-0003c7 1317
-0003c8 101b
-0003c9 0c0d
-0003ca 0d07
-0003cb 0f0a                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,9,9,9,11,14,19,25,19,19,27,31,41,41,36,41,37,36,32,23,25,29,32,37,28,31,36,36,37,44,40,45,47,53,51,47,47,42,38,34,32,32,23,19,27,16,13,12,7,13,10,15
-0003cc 0000
-0003cd 0000
-0003ce 0000
-0003cf 0000
-0003d0 0000
-0003d1 0000
-0003d2 0d0a
-0003d3 0e0d
-0003d4 0b06
-0003d5 1512
-0003d6 1010
-0003d7 2120
-0003d8 2823
-0003d9 1d22
-0003da 1c21
-0003db 1720
-0003dc 1f1b
-0003dd 2625
-0003de 272c
-0003df 2522
-0003e0 2f29
-0003e1 2f2a
-0003e2 3833
-0003e3 3437
-0003e4 2b33
-0003e5 2726
-0003e6 2523
-0003e7 1b1c
-0003e8 111b
-0003e9 080c
-0003ea 0e0b
-0003eb 110a                      .db 0,0,0,0,0,0,0,0,0,0,0,0,10,13,13,14,6,11,18,21,16,16,32,33,35,40,34,29,33,28,32,23,27,31,37,38,44,39,34,37,41,47,42,47,51,56,55,52,51,43,38,39,35,37,28,27,27,17,12,8,11,14,10,17
-0003ec 0000
-0003ed 0000
-0003ee 0000
-0003ef 0000
-0003f0 0000
-0003f1 0900
-0003f2 0d0d
-0003f3 1210
-0003f4 1312
-0003f5 1616
-0003f6 1916
-0003f7 211e
-0003f8 2322
-0003f9 1b1f
-0003fa 191e
-0003fb 1b19
-0003fc 221f
-0003fd 2724
-0003fe 272c
-0003ff 2c2a
-000400 2f2e
-000401 2f2f
-000402 392f
-000403 3737
-000404 2f34
-000405 2728
-000406 2526
-000407 2020
-000408 1620
-000409 1414
-00040a 1010
-00040b 110e                      .db 0,0,0,0,0,0,0,0,0,0,0,9,13,13,16,18,18,19,22,22,22,25,30,33,34,35,31,27,30,25,25,27,31,34,36,39,44,39,42,44,46,47,47,47,47,57,55,55,52,47,40,39,38,37,32,32,32,22,20,20,16,16,14,17
-00040c 0000
-00040d 0000
-00040e 0000
-00040f 0000
-000410 0000
-000411 0000
-000412 0d08
-000413 100b
-000414 1011
-000415 1115
-000416 1411
-000417 1c1c
-000418 201f
-000419 181c
-00041a 1a19
-00041b 1e1d
-00041c 2421
-00041d 2929
-00041e 2c2d
-00041f 2f2e
-000420 3433
-000421 3434
-000422 3b34
-000423 3a3b
-000424 3038
-000425 2b2b
-000426 292b
-000427 2425
-000428 1925
-000429 1717
-00042a 1415
-00042b 1415                      .db 0,0,0,0,0,0,0,0,0,0,0,0,8,13,11,16,17,16,21,17,17,20,28,28,31,32,28,24,25,26,29,30,33,36,41,41,45,44,46,47,51,52,52,52,52,59,59,58,56,48,43,43,43,41,37,36,37,25,23,23,21,20,21,20
-00042c 0000
-00042d 0000
-00042e 0000
-00042f 0000
-000430 0000
-000431 0000
-000432 0a00
-000433 1007
-000434 0e0d
-000435 0b13
-000436 130e
-000437 1a18
-000438 171a
-000439 191c
-00043a 1c18
-00043b 201f
-00043c 2520
-00043d 2d27
-00043e 312f
-00043f 2f2e
-000440 3834
-000441 3535
-000442 3b39
-000443 3838
-000444 3035
-000445 2f2c
-000446 2c2f
-000447 272a
-000448 1e25
-000449 181e
-00044a 1618
-00044b 1216                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,10,7,16,13,14,19,11,14,19,24,26,26,23,28,25,24,28,31,32,32,37,39,45,47,49,46,47,52,56,53,53,57,59,56,56,53,48,44,47,47,44,42,39,37,30,30,24,24,22,22,18
-00044c 0000
-00044d 0000
-00044e 0000
-00044f 0000
-000450 0000
-000451 0000
-000452 0000
-000453 0600
-000454 090b
-000455 0b09
-000456 1111
-000457 1514
-000458 1c1a
-000459 181c
-00045a 1d1d
-00045b 2521
-00045c 2323
-00045d 2e28
-00045e 322f
-00045f 2f2f
-000460 3b34
-000461 3639
-000462 3d38
-000463 393e
-000464 3539
-000465 3330
-000466 2f33
-000467 232d
-000468 2321
-000469 1c21
-00046a 1d18
-00046b 181d                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,11,9,9,11,17,17,20,21,26,28,28,24,29,29,33,37,35,35,40,46,47,50,47,47,52,59,57,54,56,61,62,57,57,53,48,51,51,47,45,35,33,35,33,28,24,29,29,24
-00046c 0000
-00046d 0000
-00046e 0000
-00046f 0000
-000470 0000
-000471 0000
-000472 0000
-000473 0000
-000474 0706
-000475 0d0b
-000476 1312
-000477 1514
-000478 1919
-000479 1b1b
-00047a 1d1c
-00047b 2521
-00047c 2525
-00047d 2b29
-00047e 3430
-00047f 3434
-000480 3b38
-000481 3739
-000482 403b
-000483 3e40
-000484 3a3e
-000485 3338
-000486 2d31
-000487 2629
-000488 2323
-000489 1e21
-00048a 1e1e
-00048b 1c1d                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,7,11,13,18,19,20,21,25,25,27,27,28,29,33,37,37,37,41,43,48,52,52,52,56,59,57,55,59,64,64,62,62,58,56,51,49,45,41,38,35,35,33,30,30,30,29,28
-00048c 0000
-00048d 0000
-00048e 0000
-00048f 0000
-000490 0000
-000491 0000
-000492 0000
-000493 0000
-000494 0000
-000495 0a06
-000496 1310
-000497 1214
-000498 1815
-000499 1618
-00049a 1c19
-00049b 201c
-00049c 2827
-00049d 2a28
-00049e 302e
-00049f 3333
-0004a0 3635
-0004a1 3636
-0004a2 3b36
-0004a3 3e3f
-0004a4 3739
-0004a5 3636
-0004a6 2f31
-0004a7 232d
-0004a8 2121
-0004a9 2021
-0004aa 1b1f
-0004ab 1317                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,10,16,19,20,18,21,24,24,22,25,28,28,32,39,40,40,42,46,48,51,51,53,54,54,54,54,59,63,62,57,55,54,54,49,47,45,35,33,33,33,32,31,27,23,19
-0004ac 0000
-0004ad 0000
-0004ae 0000
-0004af 0000
-0004b0 0000
-0004b1 0000
-0004b2 0000
-0004b3 0000
-0004b4 0900
-0004b5 0e0b
-0004b6 1010
-0004b7 1311
-0004b8 1715
-0004b9 1516
-0004ba 1c19
-0004bb 201c
-0004bc 2625
-0004bd 2a28
-0004be 302d
-0004bf 2f33
-0004c0 342f
-0004c1 2f35
-0004c2 3833
-0004c3 3c3b
-0004c4 3234
-0004c5 3633
-0004c6 2a35
-0004c7 1e27
-0004c8 1b1c
-0004c9 1c17
-0004ca 191b
-0004cb 1113                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,11,14,16,16,17,19,21,23,22,21,25,28,28,32,37,38,40,42,45,48,51,47,47,52,53,47,51,56,59,60,52,50,51,54,53,42,39,30,28,27,23,28,27,25,19,17
-0004cc 0000
-0004cd 0000
-0004ce 0000
-0004cf 0000
-0004d0 0000
-0004d1 0000
-0004d2 0000
-0004d3 0000
-0004d4 0000
-0004d5 0e09
-0004d6 0f0e
-0004d7 0d0f
-0004d8 1711
-0004d9 1914
-0004da 1c1c
-0004db 1d18
-0004dc 2222
-0004dd 2627
-0004de 2f2b
-0004df 2b2a
-0004e0 332a
-0004e1 2e2e
-0004e2 352e
-0004e3 3539
-0004e4 2d33
-0004e5 3633
-0004e6 2f34
-0004e7 1926
-0004e8 1b19
-0004e9 1317
-0004ea 0e0f
-0004eb 0f0e                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,14,14,15,15,13,17,23,20,25,28,28,24,29,34,34,39,38,43,47,42,43,42,51,46,46,46,53,57,53,51,45,51,54,52,47,38,25,25,27,23,19,15,14,14,15
-0004ec 0000
-0004ed 0000
-0004ee 0000
-0004ef 0000
-0004f0 0000
-0004f1 0000
-0004f2 0000
-0004f3 0000
-0004f4 0000
-0004f5 0c09
-0004f6 0c0c
-0004f7 0c0e
-0004f8 1011
-0004f9 1814
-0004fa 1512
-0004fb 1918
-0004fc 201f
-0004fd 2423
-0004fe 2e27
-0004ff 2829
-000500 332e
-000501 3032
-000502 332c
-000503 3339
-000504 2d2f
-000505 292d
-000506 2c2f
-000507 1727
-000508 1417
-000509 130f
-00050a 0d0d
-00050b 0d09                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,12,12,12,14,12,17,16,20,24,18,21,24,25,31,32,35,36,39,46,41,40,46,51,50,48,44,51,57,51,47,45,45,41,47,44,39,23,23,20,15,19,13,13,9,13
-00050c 0000
-00050d 0000
-00050e 0000
-00050f 0000
-000510 0000
-000511 0000
-000512 0000
-000513 0000
-000514 0000
-000515 0a06
-000516 100f
-000517 1010
-000518 1310
-000519 1013
-00051a 1211
-00051b 1613
-00051c 1d19
-00051d 2120
-00051e 2525
-00051f 2425
-000520 312c
-000521 2f32
-000522 2e2c
-000523 3039
-000524 2d2c
-000525 2629
-000526 2a2a
-000527 2627
-000528 0f17
-000529 0f0d
-00052a 0809
-00052b 0800                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,10,15,16,16,16,16,19,19,16,17,18,19,22,25,29,32,33,37,37,37,36,44,49,50,47,44,46,57,48,44,45,41,38,42,42,39,38,23,15,13,15,9,8,0,8
-00052c 0000
-00052d 0000
-00052e 0000
-00052f 0000
-000530 0600
-000531 0000
-000532 0000
-000533 0000
-000534 0700
-000535 110b
-000536 1411
-000537 0f14
-000538 150d
-000539 0d15
-00053a 1310
-00053b 1513
-00053c 1c17
-00053d 1f1c
-00053e 2024
-00053f 2625
-000540 2c28
-000541 2f2e
-000542 292a
-000543 3036
-000544 2a30
-000545 2525
-000546 2424
-000547 2524
-000548 1617
-000549 0f15
-00054a 080c
-00054b 0000                      .db 0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,7,11,17,17,20,20,15,13,21,21,13,16,19,19,21,23,28,28,31,36,32,37,38,40,44,46,47,42,41,54,48,48,42,37,37,36,36,36,37,23,22,21,15,12,8,0,0
-00054c 0000
-00054d 0000
-00054e 0000
-00054f 0000
-000550 0b07
-000551 0008
-000552 0000
-000553 0000
-000554 0800
-000555 0c0c
-000556 1211
-000557 0f14
-000558 1508
-000559 1011
-00055a 1414
-00055b 0f0f
-00055c 1817
-00055d 1f1d
-00055e 2321
-00055f 2325
-000560 2824
-000561 2a26
-000562 2527
-000563 2e31
-000564 272c
-000565 2121
-000566 1d20
-000567 1f21
-000568 1517
-000569 1212
-00056a 0009
-00056b 0000                      .db 0,0,0,0,0,0,0,0,7,11,8,0,0,0,0,0,0,8,12,12,17,18,20,15,8,21,17,16,20,20,15,15,23,24,29,31,33,35,37,35,36,40,38,42,39,37,49,46,44,39,33,33,32,29,33,31,23,21,18,18,9,0,0,0
-00056c 0000
-00056d 0000
-00056e 0000
-00056f 0800
-000570 0e0c
-000571 060b
-000572 0000
-000573 0000
-000574 0a00
-000575 0e0e
-000576 1514
-000577 1116
-000578 190d
-000579 1518
-00057a 0d14
-00057b 0c10
-00057c 1c1b
-00057d 1e1c
-00057e 1b1d
-00057f 2420
-000580 2726
-000581 2323
-000582 211f
-000583 2b21
-000584 2a2a
-000585 282a
-000586 1a1f
-000587 1c17
-000588 1116
-000589 0c0d
-00058a 0008
-00058b 0000                      .db 0,0,0,0,0,0,0,8,12,14,11,6,0,0,0,0,0,10,14,14,20,21,22,17,13,25,24,21,20,13,16,12,27,28,28,30,29,27,32,36,38,39,35,35,31,33,33,43,42,42,42,40,31,26,23,28,22,17,13,12,8,0,0,0
-00058c 0000
-00058d 0000
-00058e 0000
-00058f 0000
-000590 1007
-000591 060b
-000592 0000
-000593 090a
-000594 0c0a
-000595 110c
-000596 1a15
-000597 161b
-000598 1919
-000599 1518
-00059a 1212
-00059b 1413
-00059c 1817
-00059d 1c17
-00059e 1614
-00059f 221b
-0005a0 2422
-0005a1 2020
-0005a2 1c1e
-0005a3 191b
-0005a4 1619
-0005a5 262a
-0005a6 1a1c
-0005a7 1417
-0005a8 0e0f
-0005a9 0a09
-0005aa 0000
-0005ab 0000                      .db 0,0,0,0,0,0,0,0,7,16,11,6,0,0,10,9,10,12,12,17,21,26,27,22,25,25,24,21,18,18,19,20,23,24,23,28,20,22,27,34,34,36,32,32,30,28,27,25,25,22,42,38,28,26,23,20,15,14,9,10,0,0,0,0
-0005ac 0000
-0005ad 0000
-0005ae 0000
-0005af 0a00
-0005b0 100c
-0005b1 090c
-0005b2 0a00
-0005b3 0c0b
-0005b4 110e
-0005b5 1612
-0005b6 1b1b
-0005b7 1b1e
-0005b8 1919
-0005b9 1818
-0005ba 1315
-0005bb 1214
-0005bc 1517
-0005bd 1113
-0005be 1312
-0005bf 1f1a
-0005c0 221f
-0005c1 1f20
-0005c2 1c1f
-0005c3 191a
-0005c4 1416
-0005c5 2618
-0005c6 1322
-0005c7 1113
-0005c8 0c0c
-0005c9 000a
-0005ca 0000
-0005cb 0000                      .db 0,0,0,0,0,0,0,10,12,16,12,9,0,10,11,12,14,17,18,22,27,27,30,27,25,25,24,24,21,19,20,18,23,21,19,17,18,19,26,31,31,34,32,31,31,28,26,25,22,20,24,38,34,19,19,17,12,12,10,0,0,0,0,0
-0005cc 0000
-0005cd 0000
-0005ce 0000
-0005cf 0d0a
-0005d0 120e
-0005d1 0c0d
-0005d2 0a09
-0005d3 0d0d
-0005d4 1110
-0005d5 1714
-0005d6 1d1a
-0005d7 1b1e
-0005d8 151a
-0005d9 0f13
-0005da 0d10
-0005db 1112
-0005dc 0b16
-0005dd 0e0e
-0005de 100e
-0005df 1c18
-0005e0 2222
-0005e1 2122
-0005e2 171c
-0005e3 1417
-0005e4 1415
-0005e5 1914
-0005e6 1320
-0005e7 1010
-0005e8 080b
-0005e9 0000
-0005ea 0000
-0005eb 0000                      .db 0,0,0,0,0,0,10,13,14,18,13,12,9,10,13,13,16,17,20,23,26,29,30,27,26,21,19,15,16,13,18,17,22,11,14,14,14,16,24,28,34,34,34,33,28,23,23,20,21,20,20,25,32,19,16,16,11,8,0,0,0,0,0,0
-0005ec 0000
-0005ed 0000
-0005ee 0a00
-0005ef 0f0b
-0005f0 120f
-0005f1 0b0d
-0005f2 0b0a
-0005f3 0b0d
-0005f4 1212
-0005f5 1816
-0005f6 221d
-0005f7 2222
-0005f8 1a1a
-0005f9 1216
-0005fa 1011
-0005fb 150f
-0005fc 0a15
-0005fd 0a0b
-0005fe 110d
-0005ff 1814
-000600 201b
-000601 1d1b
-000602 1717
-000603 1417
-000604 1312
-000605 1614
-000606 0c15
-000607 0c0f
-000608 000a
-000609 0000
-00060a 0000
-00060b 0000                      .db 0,0,0,0,0,10,11,15,15,18,13,11,10,11,13,11,18,18,22,24,29,34,34,34,26,26,22,18,17,16,15,21,21,10,11,10,13,17,20,24,27,32,27,29,23,23,23,20,18,19,20,22,21,12,15,12,10,0,0,0,0,0,0,0
-00060c 0000
-00060d 0700
-00060e 0c09
-00060f 0e0d
-000610 1712
-000611 1112
-000612 0f0a
-000613 0d10
-000614 1714
-000615 1a17
-000616 2320
-000617 1e23
-000618 191d
-000619 0c0b
-00061a 0d0e
-00061b 130d
-00061c 0b10
-00061d 0a06
-00061e 0d0d
-00061f 1615
-000620 1d1b
-000621 1d1c
-000622 1317
-000623 1417
-000624 0c14
-000625 1411
-000626 0d11
-000627 080d
-000628 0000
-000629 0000
-00062a 0000
-00062b 0000                      .db 0,0,0,7,9,12,13,14,18,23,18,17,10,15,16,13,20,23,23,26,32,35,35,30,29,25,11,12,14,13,13,19,16,11,6,10,13,13,21,22,27,29,28,29,23,19,23,20,20,12,17,20,17,13,13,8,0,0,0,0,0,0,0,0
-00062c 0000
-00062d 0b08
-00062e 0e0d
-00062f 140e
-000630 1a15
-000631 1517
-000632 150d
-000633 1015
-000634 110d
-000635 1c17
-000636 201c
-000637 2223
-000638 0d1d
-000639 090d
-00063a 0d0e
-00063b 0b0c
-00063c 0b0c
-00063d 0b0b
-00063e 0f0b
-00063f 1414
-000640 191a
-000641 1a1b
-000642 1919
-000643 1417
-000644 0c0f
-000645 100c
-000646 0d0d
-000647 0c0c
-000648 000a
-000649 0000
-00064a 0000
-00064b 0000                      .db 0,0,8,11,13,14,14,20,21,26,23,21,13,21,21,16,13,17,23,28,28,32,35,34,29,13,13,9,14,13,12,11,12,11,11,11,11,15,20,20,26,25,27,26,25,25,23,20,15,12,12,16,13,13,12,12,10,0,0,0,0,0,0,0
-00064c 0000
-00064d 0800
-00064e 1310
-00064f 1613
-000650 1b16
-000651 1612
-000652 1311
-000653 1415
-000654 1114
-000655 1919
-000656 231d
-000657 2224
-000658 0f1d
-000659 0912
-00065a 0c0b
-00065b 0b0c
-00065c 080c
-00065d 090a
-00065e 0b07
-00065f 1814
-000660 1919
-000661 1216
-000662 1819
-000663 0e14
-000664 080a
-000665 0b0c
-000666 070c
-000667 080c
-000668 0000
-000669 0000
-00066a 0000
-00066b 0000                      .db 0,0,0,8,16,19,19,22,22,27,18,22,17,19,21,20,20,17,25,25,29,35,36,34,29,15,18,9,11,12,12,11,12,8,10,9,7,11,20,24,25,25,22,18,25,24,20,14,10,8,12,11,12,7,12,8,0,0,0,0,0,0,0,0
-00066c 0000
-00066d 0c08
-00066e 1515
-00066f 1617
-000670 1d1e
-000671 1816
-000672 1214
-000673 1315
-000674 1514
-000675 2115
-000676 2422
-000677 2625
-000678 1421
-000679 0d13
-00067a 0c0d
-00067b 1207
-00067c 0c0c
-00067d 100d
-00067e 1613
-00067f 1716
-000680 1518
-000681 1213
-000682 1517
-000683 1314
-000684 0f10
-000685 0809
-000686 0007
-000687 0008
-000688 0000
-000689 0000
-00068a 0000
-00068b 0000                      .db 0,0,8,12,21,21,23,22,30,29,22,24,20,18,21,19,20,21,21,33,34,36,37,38,33,20,19,13,13,12,7,18,12,12,13,16,19,22,22,23,24,21,19,18,23,21,20,19,16,15,9,8,7,0,8,0,0,0,0,0,0,0,0,0
-00068c 0800
-00068d 0d0c
-00068e 1716
-00068f 1b17
-000690 1f1e
-000691 181b
-000692 1213
-000693 1517
-000694 1919
-000695 1c19
-000696 2422
-000697 2727
-000698 1827
-000699 1015
-00069a 0a0e
-00069b 1416
-00069c 0d11
-00069d 0b0d
-00069e 1411
-00069f 1614
-0006a0 1514
-0006a1 1514
-0006a2 1415
-0006a3 0f13
-0006a4 0c0b
-0006a5 0009
-0006a6 0000
-0006a7 0000
-0006a8 0000
-0006a9 0000
-0006aa 0000
-0006ab 0000                      .db 0,8,12,13,22,23,23,27,30,31,27,24,19,18,23,21,25,25,25,28,34,36,39,39,39,24,21,16,14,10,22,20,17,13,13,11,17,20,20,22,20,21,20,21,21,20,19,15,11,12,9,0,0,0,0,0,0,0,0,0,0,0,0,0
-0006ac 0d0d
-0006ad 1012
-0006ae 1515
-0006af 1e1e
-0006b0 2222
-0006b1 1d22
-0006b2 1b1c
-0006b3 1a18
-0006b4 181a
-0006b5 1f1a
-0006b6 2422
-0006b7 2927
-0006b8 1c26
-0006b9 181b
-0006ba 1818
-0006bb 1b1b
-0006bc 1819
-0006bd 0f0b
-0006be 110f
-0006bf 100f
-0006c0 1413
-0006c1 1611
-0006c2 1415
-0006c3 1113
-0006c4 0c0f
-0006c5 0009
-0006c6 0000
-0006c7 0000
-0006c8 0000
-0006c9 0000
-0006ca 0000
-0006cb 0000                      .db 13,13,18,16,21,21,30,30,34,34,34,29,28,27,24,26,26,24,26,31,34,36,39,41,38,28,27,24,24,24,27,27,25,24,11,15,15,17,15,16,19,20,17,22,21,20,19,17,15,12,9,0,0,0,0,0,0,0,0,0,0,0,0,0
-0006cc 0e09
-0006cd 1313
-0006ce 1a16
-0006cf 231e
-0006d0 2225
-0006d1 201f
-0006d2 1b1f
-0006d3 1c1d
-0006d4 171a
-0006d5 241c
-0006d6 2622
-0006d7 2a2b
-0006d8 1c23
-0006d9 1c1f
-0006da 1b17
-0006db 1b1b
-0006dc 191a
-0006dd 0f0e
-0006de 0c0c
-0006df 0b0e
-0006e0 1010
-0006e1 1511
-0006e2 0d11
-0006e3 1111
-0006e4 070c
-0006e5 0000
-0006e6 0000
-0006e7 0000
-0006e8 0000
-0006e9 0000
-0006ea 0000
-0006eb 0000                      .db 9,14,19,19,22,26,30,35,37,34,31,32,31,27,29,28,26,23,28,36,34,38,43,42,35,28,31,28,23,27,27,27,26,25,14,15,12,12,14,11,16,16,17,21,17,13,17,17,12,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0006ec 1311
-0006ed 1b18
-0006ee 1c17
-0006ef 2621
-0006f0 2726
-0006f1 2123
-0006f2 1d24
-0006f3 1c1f
-0006f4 1d1a
-0006f5 241f
-0006f6 2d27
-0006f7 292e
-0006f8 2024
-0006f9 1e1f
-0006fa 1c22
-0006fb 1a19
-0006fc 1216
-0006fd 1411
-0006fe 080c
-0006ff 0e0b
-000700 0b10
-000701 1313
-000702 0b12
-000703 0d0c
-000704 090c
-000705 000a
-000706 0000
-000707 0000
-000708 0000
-000709 0000
-00070a 0000
-00070b 0000                      .db 17,19,24,27,23,28,33,38,38,39,35,33,36,29,31,28,26,29,31,36,39,45,46,41,36,32,31,30,34,28,25,26,22,18,17,20,12,8,11,14,16,11,19,19,18,11,12,13,12,9,10,0,0,0,0,0,0,0,0,0,0,0,0,0
-00070c 1712
-00070d 1e19
-00070e 221e
-00070f 2725
-000710 2a2d
-000711 2527
-000712 2124
-000713 1c20
-000714 1f1b
-000715 241f
-000716 2c29
-000717 2e2f
-000718 2729
-000719 2224
-00071a 1f22
-00071b 1c1c
-00071c 1518
-00071d 1414
-00071e 0c0f
-00071f 0c0b
-000720 0f0b
-000721 1110
-000722 0e10
-000723 0b0d
-000724 0c0c
-000725 090c
-000726 0000
-000727 0000
-000728 0000
-000729 0000
-00072a 0000
-00072b 0000                      .db 18,23,25,30,30,34,37,39,45,42,39,37,36,33,32,28,27,31,31,36,41,44,47,46,41,39,36,34,34,31,28,28,24,21,20,20,15,12,11,12,11,15,16,17,16,14,13,11,12,12,12,9,0,0,0,0,0,0,0,0,0,0,0,0
-00072c 1a19
-00072d 201e
-00072e 2122
-00072f 2824
-000730 2e2d
-000731 252a
-000732 2324
-000733 1e1e
-000734 181b
-000735 2a1c
-000736 2c2c
-000737 2b2e
-000738 2828
-000739 1d26
-00073a 171a
-00073b 1918
-00073c 1517
-00073d 0f11
-00073e 0d0e
-00073f 0c0b
-000740 0e0d
-000741 100b
-000742 0d0e
-000743 0609
-000744 0b08
-000745 0007
-000746 0000
-000747 0000
-000748 0000
-000749 0000
-00074a 0000
-00074b 0000                      .db 25,26,30,32,34,33,36,40,45,46,42,37,36,35,30,30,27,24,28,42,44,44,46,43,40,40,38,29,26,23,24,25,23,21,17,15,14,13,11,12,13,14,11,16,14,13,9,6,8,11,7,0,0,0,0,0,0,0,0,0,0,0,0,0
-00074c 201f
-00074d 1f24
-00074e 2723
-00074f 2926
-000750 302e
-000751 2a2e
-000752 2328
-000753 2122
-000754 1a1c
-000755 2219
-000756 2b27
-000757 292e
-000758 2327
-000759 1d23
-00075a 1819
-00075b 1518
-00075c 1012
-00075d 0a0e
-00075e 090d
-00075f 0806
-000760 0b0d
-000761 0f0e
-000762 0a0a
-000763 0b0e
-000764 0907
-000765 0000
-000766 0000
-000767 0000
-000768 0000
-000769 0000
-00076a 0000
-00076b 0000                      .db 31,32,36,31,35,39,38,41,46,48,46,42,40,35,34,33,28,26,25,34,39,43,46,41,39,35,35,29,25,24,24,21,18,16,14,10,13,9,6,8,13,11,14,15,10,10,14,11,7,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-00076c 2220
-00076d 2726
-00076e 2727
-00076f 2d2b
-000770 332e
-000771 2d2f
-000772 272a
-000773 2224
-000774 1b1f
-000775 1f16
-000776 2827
-000777 2b2c
-000778 202b
-000779 1a1b
-00077a 1519
-00077b 1517
-00077c 0d10
-00077d 070a
-00077e 0009
-00077f 0000
-000780 0609
-000781 0f0b
-000782 0e0f
-000783 0c0e
-000784 080c
-000785 0000
-000786 0000
-000787 0000
-000788 0000
-000789 0000
-00078a 0000
-00078b 0000                      .db 32,34,38,39,39,39,43,45,46,51,47,45,42,39,36,34,31,27,22,31,39,40,44,43,43,32,27,26,25,21,23,21,16,13,10,7,9,0,0,0,9,6,11,15,15,14,14,12,12,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-00078c 1b18
-00078d 221f
-00078e 2622
-00078f 2a28
-000790 302b
-000791 292c
-000792 2326
-000793 1d22
-000794 1b1f
-000795 1f1d
-000796 231f
-000797 2b28
-000798 2929
-000799 1718
-00079a 1116
-00079b 1410
-00079c 1414
-00079d 0c11
-00079e 080c
-00079f 0000
-0007a0 0000
-0007a1 0c08
-0007a2 0a0b
-0007a3 0a0d
-0007a4 0008
-0007a5 0000
-0007a6 0000
-0007a7 0000
-0007a8 0000
-0007a9 0000
-0007aa 0000
-0007ab 0000                      .db 24,27,31,34,34,38,40,42,43,48,44,41,38,35,34,29,31,27,29,31,31,35,40,43,41,41,24,23,22,17,16,20,20,20,17,12,12,8,0,0,0,0,8,12,11,10,13,10,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0007ac 1916
-0007ad 211b
-0007ae 2421
-0007af 2728
-0007b0 3030
-0007b1 2429
-0007b2 2123
-0007b3 1c21
-0007b4 161c
-0007b5 191b
-0007b6 1f1a
-0007b7 2727
-0007b8 2023
-0007b9 1716
-0007ba 0d17
-0007bb 1109
-0007bc 1011
-0007bd 0811
-0007be 000a
-0007bf 0000
-0007c0 0000
-0007c1 0a00
-0007c2 0a06
-0007c3 0b0b
-0007c4 0008
-0007c5 0000
-0007c6 0000
-0007c7 0000
-0007c8 0000
-0007c9 0000
-0007ca 0000
-0007cb 0000                      .db 22,25,27,33,33,36,40,39,48,48,41,36,35,33,33,28,28,22,27,25,26,31,39,39,35,32,22,23,23,13,9,17,17,16,17,8,10,0,0,0,0,0,0,10,6,10,11,11,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0007cc 1414
-0007cd 1c19
-0007ce 221e
-0007cf 2a24
-0007d0 2f2a
-0007d1 1f24
-0007d2 1d1e
-0007d3 1f21
-0007d4 1b1e
-0007d5 1a1b
-0007d6 1d19
-0007d7 2223
-0007d8 1f1f
-0007d9 1114
-0007da 0c0d
-0007db 1107
-0007dc 0e11
-0007dd 0d0f
-0007de 0009
-0007df 0000
-0007e0 0000
-0007e1 0000
-0007e2 0000
-0007e3 0b0a
-0007e4 0008
-0007e5 0000
-0007e6 0000
-0007e7 0000
-0007e8 0000
-0007e9 0000
-0007ea 0000
-0007eb 0000                      .db 20,20,25,28,30,34,36,42,42,47,36,31,30,29,33,31,30,27,27,26,25,29,35,34,31,31,20,17,13,12,7,17,17,14,15,13,9,0,0,0,0,0,0,0,0,0,10,11,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0007ec 1412
-0007ed 2117
-0007ee 2121
-0007ef 2823
-0007f0 2a2a
-0007f1 1b1f
-0007f2 1418
-0007f3 1e11
-0007f4 191e
-0007f5 1519
-0007f6 1c17
-0007f7 2120
-0007f8 1f1a
-0007f9 0f1e
-0007fa 0a0d
-0007fb 1111
-0007fc 0c0f
-0007fd 0a08
+000320 0000
+000321 0000
+000322 0000
+000323 0000
+000324 0000
+000325 0000
+000326 0a00
+000327 150f
+000328 1612
+000329 1f1c
+00032a 2121
+00032b 2b28
+00032c 2b28
+00032d 292b
+00032e 262a
+00032f 2120
+000330 1b1d
+000331 1618
+000332 151a
+000333 1c1a
+000334 1d1e
+000335 221c
+000336 2320
+000337 1e23
+000338 151b
+000339 1310
+00033a 1115
+00033b 0a11
+00033c 0d0f
+00033d 0000
+00033e 0000
+00033f 0000                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,10,15,21,18,22,28,31,33,33,40,43,40,43,43,41,42,38,32,33,29,27,24,22,26,21,26,28,30,29,28,34,32,35,35,30,27,21,16,19,21,17,17,10,15,13,0,0,0,0,0,0
+000340 0000
+000341 0000
+000342 0000
+000343 0000
+000344 0000
+000345 0000
+000346 0e0a
+000347 1612
+000348 1b16
+000349 2120
+00034a 2623
+00034b 2b2b
+00034c 2e2b
+00034d 2d30
+00034e 292c
+00034f 2125
+000350 1d1f
+000351 1b1b
+000352 161a
+000353 1d1a
+000354 2120
+000355 241f
+000356 2824
+000357 2228
+000358 171b
+000359 1814
+00035a 1415
+00035b 0f11
+00035c 0d0f
+00035d 0008
+00035e 0000
+00035f 0000                      .db 0,0,0,0,0,0,0,0,0,0,0,0,10,14,18,22,22,27,32,33,35,38,43,43,43,46,48,45,44,41,37,33,31,29,27,27,26,22,26,29,32,33,31,36,36,40,40,34,27,23,20,24,21,20,17,15,15,13,8,0,0,0,0,0
+000360 0000
+000361 0000
+000362 0000
+000363 0000
+000364 0000
+000365 0000
+000366 0b0a
+000367 160e
+000368 1817
+000369 221f
+00036a 2123
+00036b 2a26
+00036c 2e28
+00036d 2c2f
+00036e 2829
+00036f 2126
+000370 191a
+000371 1517
+000372 1e18
+000373 201f
+000374 2422
+000375 2421
+000376 2824
+000377 2227
+000378 1a1d
+000379 1919
+00037a 1919
+00037b 0717
+00037c 0d08
+00037d 000a
+00037e 0000
+00037f 0000                      .db 0,0,0,0,0,0,0,0,0,0,0,0,10,11,14,22,23,24,31,34,35,33,38,42,40,46,47,44,41,40,38,33,26,25,23,21,24,30,31,32,34,36,33,36,36,40,39,34,29,26,25,25,25,25,23,7,8,13,10,0,0,0,0,0
+000380 0000
+000381 0000
+000382 0000
+000383 0000
+000384 0000
+000385 0000
+000386 0900
+000387 110e
+000388 1712
+000389 1d1a
+00038a 1d1b
+00038b 2822
+00038c 2c2b
+00038d 262b
+00038e 2627
+00038f 1c26
+000390 1519
+000391 1517
+000392 1b1a
+000393 2524
+000394 2926
+000395 2428
+000396 2b28
+000397 2527
+000398 2424
+000399 1e21
+00039a 1a1e
+00039b 0c16
+00039c 090b
+00039d 0000
+00039e 0000
+00039f 0000                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,9,14,17,18,23,26,29,27,29,34,40,43,44,43,38,39,38,38,28,25,21,23,21,26,27,36,37,38,41,40,36,40,43,39,37,36,36,33,30,30,26,22,12,11,9,0,0,0,0,0,0
+0003a0 0000
+0003a1 0000
+0003a2 0000
+0003a3 0000
+0003a4 0000
+0003a5 0000
+0003a6 0000
+0003a7 0c08
+0003a8 1510
+0003a9 1918
+0003aa 1817
+0003ab 231f
+0003ac 2925
+0003ad 2929
+0003ae 2828
+0003af 1723
+0003b0 1b19
+0003b1 1a15
+0003b2 1e1d
+0003b3 241f
+0003b4 2a2a
+0003b5 2c2c
+0003b6 302f
+0003b7 282b
+0003b8 2428
+0003b9 2123
+0003ba 1c1e
+0003bb 0e13
+0003bc 0b0b
+0003bd 0908
+0003be 0900
+0003bf 0a00                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,8,12,16,21,24,25,23,24,31,35,37,41,41,41,40,40,35,23,25,27,21,26,29,30,31,36,42,42,44,44,47,48,43,40,40,36,35,33,30,28,19,14,11,11,8,9,0,9,0,10
+0003c0 0000
+0003c1 0000
+0003c2 0000
+0003c3 0000
+0003c4 0000
+0003c5 0000
+0003c6 0900
+0003c7 0909
+0003c8 0e0b
+0003c9 1913
+0003ca 1313
+0003cb 1f1b
+0003cc 2929
+0003cd 2924
+0003ce 2425
+0003cf 1720
+0003d0 1d19
+0003d1 2520
+0003d2 1f1c
+0003d3 2424
+0003d4 2c25
+0003d5 2d28
+0003d6 352f
+0003d7 2f33
+0003d8 2a2f
+0003d9 2226
+0003da 2020
+0003db 1317
+0003dc 101b
+0003dd 0c0d
+0003de 0d07
+0003df 0f0a                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,9,9,9,11,14,19,25,19,19,27,31,41,41,36,41,37,36,32,23,25,29,32,37,28,31,36,36,37,44,40,45,47,53,51,47,47,42,38,34,32,32,23,19,27,16,13,12,7,13,10,15
+0003e0 0000
+0003e1 0000
+0003e2 0000
+0003e3 0000
+0003e4 0000
+0003e5 0000
+0003e6 0d0a
+0003e7 0e0d
+0003e8 0b06
+0003e9 1512
+0003ea 1010
+0003eb 2120
+0003ec 2823
+0003ed 1d22
+0003ee 1c21
+0003ef 1720
+0003f0 1f1b
+0003f1 2625
+0003f2 272c
+0003f3 2522
+0003f4 2f29
+0003f5 2f2a
+0003f6 3833
+0003f7 3437
+0003f8 2b33
+0003f9 2726
+0003fa 2523
+0003fb 1b1c
+0003fc 111b
+0003fd 080c
+0003fe 0e0b
+0003ff 110a                      .db 0,0,0,0,0,0,0,0,0,0,0,0,10,13,13,14,6,11,18,21,16,16,32,33,35,40,34,29,33,28,32,23,27,31,37,38,44,39,34,37,41,47,42,47,51,56,55,52,51,43,38,39,35,37,28,27,27,17,12,8,11,14,10,17
+000400 0000
+000401 0000
+000402 0000
+000403 0000
+000404 0000
+000405 0900
+000406 0d0d
+000407 1210
+000408 1312
+000409 1616
+00040a 1916
+00040b 211e
+00040c 2322
+00040d 1b1f
+00040e 191e
+00040f 1b19
+000410 221f
+000411 2724
+000412 272c
+000413 2c2a
+000414 2f2e
+000415 2f2f
+000416 392f
+000417 3737
+000418 2f34
+000419 2728
+00041a 2526
+00041b 2020
+00041c 1620
+00041d 1414
+00041e 1010
+00041f 110e                      .db 0,0,0,0,0,0,0,0,0,0,0,9,13,13,16,18,18,19,22,22,22,25,30,33,34,35,31,27,30,25,25,27,31,34,36,39,44,39,42,44,46,47,47,47,47,57,55,55,52,47,40,39,38,37,32,32,32,22,20,20,16,16,14,17
+000420 0000
+000421 0000
+000422 0000
+000423 0000
+000424 0000
+000425 0000
+000426 0d08
+000427 100b
+000428 1011
+000429 1115
+00042a 1411
+00042b 1c1c
+00042c 201f
+00042d 181c
+00042e 1a19
+00042f 1e1d
+000430 2421
+000431 2929
+000432 2c2d
+000433 2f2e
+000434 3433
+000435 3434
+000436 3b34
+000437 3a3b
+000438 3038
+000439 2b2b
+00043a 292b
+00043b 2425
+00043c 1925
+00043d 1717
+00043e 1415
+00043f 1415                      .db 0,0,0,0,0,0,0,0,0,0,0,0,8,13,11,16,17,16,21,17,17,20,28,28,31,32,28,24,25,26,29,30,33,36,41,41,45,44,46,47,51,52,52,52,52,59,59,58,56,48,43,43,43,41,37,36,37,25,23,23,21,20,21,20
+000440 0000
+000441 0000
+000442 0000
+000443 0000
+000444 0000
+000445 0000
+000446 0a00
+000447 1007
+000448 0e0d
+000449 0b13
+00044a 130e
+00044b 1a18
+00044c 171a
+00044d 191c
+00044e 1c18
+00044f 201f
+000450 2520
+000451 2d27
+000452 312f
+000453 2f2e
+000454 3834
+000455 3535
+000456 3b39
+000457 3838
+000458 3035
+000459 2f2c
+00045a 2c2f
+00045b 272a
+00045c 1e25
+00045d 181e
+00045e 1618
+00045f 1216                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,10,7,16,13,14,19,11,14,19,24,26,26,23,28,25,24,28,31,32,32,37,39,45,47,49,46,47,52,56,53,53,57,59,56,56,53,48,44,47,47,44,42,39,37,30,30,24,24,22,22,18
+000460 0000
+000461 0000
+000462 0000
+000463 0000
+000464 0000
+000465 0000
+000466 0000
+000467 0600
+000468 090b
+000469 0b09
+00046a 1111
+00046b 1514
+00046c 1c1a
+00046d 181c
+00046e 1d1d
+00046f 2521
+000470 2323
+000471 2e28
+000472 322f
+000473 2f2f
+000474 3b34
+000475 3639
+000476 3d38
+000477 393e
+000478 3539
+000479 3330
+00047a 2f33
+00047b 232d
+00047c 2321
+00047d 1c21
+00047e 1d18
+00047f 181d                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,11,9,9,11,17,17,20,21,26,28,28,24,29,29,33,37,35,35,40,46,47,50,47,47,52,59,57,54,56,61,62,57,57,53,48,51,51,47,45,35,33,35,33,28,24,29,29,24
+000480 0000
+000481 0000
+000482 0000
+000483 0000
+000484 0000
+000485 0000
+000486 0000
+000487 0000
+000488 0706
+000489 0d0b
+00048a 1312
+00048b 1514
+00048c 1919
+00048d 1b1b
+00048e 1d1c
+00048f 2521
+000490 2525
+000491 2b29
+000492 3430
+000493 3434
+000494 3b38
+000495 3739
+000496 403b
+000497 3e40
+000498 3a3e
+000499 3338
+00049a 2d31
+00049b 2629
+00049c 2323
+00049d 1e21
+00049e 1e1e
+00049f 1c1d                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,7,11,13,18,19,20,21,25,25,27,27,28,29,33,37,37,37,41,43,48,52,52,52,56,59,57,55,59,64,64,62,62,58,56,51,49,45,41,38,35,35,33,30,30,30,29,28
+0004a0 0000
+0004a1 0000
+0004a2 0000
+0004a3 0000
+0004a4 0000
+0004a5 0000
+0004a6 0000
+0004a7 0000
+0004a8 0000
+0004a9 0a06
+0004aa 1310
+0004ab 1214
+0004ac 1815
+0004ad 1618
+0004ae 1c19
+0004af 201c
+0004b0 2827
+0004b1 2a28
+0004b2 302e
+0004b3 3333
+0004b4 3635
+0004b5 3636
+0004b6 3b36
+0004b7 3e3f
+0004b8 3739
+0004b9 3636
+0004ba 2f31
+0004bb 232d
+0004bc 2121
+0004bd 2021
+0004be 1b1f
+0004bf 1317                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,10,16,19,20,18,21,24,24,22,25,28,28,32,39,40,40,42,46,48,51,51,53,54,54,54,54,59,63,62,57,55,54,54,49,47,45,35,33,33,33,32,31,27,23,19
+0004c0 0000
+0004c1 0000
+0004c2 0000
+0004c3 0000
+0004c4 0000
+0004c5 0000
+0004c6 0000
+0004c7 0000
+0004c8 0900
+0004c9 0e0b
+0004ca 1010
+0004cb 1311
+0004cc 1715
+0004cd 1516
+0004ce 1c19
+0004cf 201c
+0004d0 2625
+0004d1 2a28
+0004d2 302d
+0004d3 2f33
+0004d4 342f
+0004d5 2f35
+0004d6 3833
+0004d7 3c3b
+0004d8 3234
+0004d9 3633
+0004da 2a35
+0004db 1e27
+0004dc 1b1c
+0004dd 1c17
+0004de 191b
+0004df 1113                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,11,14,16,16,17,19,21,23,22,21,25,28,28,32,37,38,40,42,45,48,51,47,47,52,53,47,51,56,59,60,52,50,51,54,53,42,39,30,28,27,23,28,27,25,19,17
+0004e0 0000
+0004e1 0000
+0004e2 0000
+0004e3 0000
+0004e4 0000
+0004e5 0000
+0004e6 0000
+0004e7 0000
+0004e8 0000
+0004e9 0e09
+0004ea 0f0e
+0004eb 0d0f
+0004ec 1711
+0004ed 1914
+0004ee 1c1c
+0004ef 1d18
+0004f0 2222
+0004f1 2627
+0004f2 2f2b
+0004f3 2b2a
+0004f4 332a
+0004f5 2e2e
+0004f6 352e
+0004f7 3539
+0004f8 2d33
+0004f9 3633
+0004fa 2f34
+0004fb 1926
+0004fc 1b19
+0004fd 1317
+0004fe 0e0f
+0004ff 0f0e                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,14,14,15,15,13,17,23,20,25,28,28,24,29,34,34,39,38,43,47,42,43,42,51,46,46,46,53,57,53,51,45,51,54,52,47,38,25,25,27,23,19,15,14,14,15
+000500 0000
+000501 0000
+000502 0000
+000503 0000
+000504 0000
+000505 0000
+000506 0000
+000507 0000
+000508 0000
+000509 0c09
+00050a 0c0c
+00050b 0c0e
+00050c 1011
+00050d 1814
+00050e 1512
+00050f 1918
+000510 201f
+000511 2423
+000512 2e27
+000513 2829
+000514 332e
+000515 3032
+000516 332c
+000517 3339
+000518 2d2f
+000519 292d
+00051a 2c2f
+00051b 1727
+00051c 1417
+00051d 130f
+00051e 0d0d
+00051f 0d09                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,12,12,12,14,12,17,16,20,24,18,21,24,25,31,32,35,36,39,46,41,40,46,51,50,48,44,51,57,51,47,45,45,41,47,44,39,23,23,20,15,19,13,13,9,13
+000520 0000
+000521 0000
+000522 0000
+000523 0000
+000524 0000
+000525 0000
+000526 0000
+000527 0000
+000528 0000
+000529 0a06
+00052a 100f
+00052b 1010
+00052c 1310
+00052d 1013
+00052e 1211
+00052f 1613
+000530 1d19
+000531 2120
+000532 2525
+000533 2425
+000534 312c
+000535 2f32
+000536 2e2c
+000537 3039
+000538 2d2c
+000539 2629
+00053a 2a2a
+00053b 2627
+00053c 0f17
+00053d 0f0d
+00053e 0809
+00053f 0800                      .db 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6,10,15,16,16,16,16,19,19,16,17,18,19,22,25,29,32,33,37,37,37,36,44,49,50,47,44,46,57,48,44,45,41,38,42,42,39,38,23,15,13,15,9,8,0,8
+000540 0000
+000541 0000
+000542 0000
+000543 0000
+000544 0600
+000545 0000
+000546 0000
+000547 0000
+000548 0700
+000549 110b
+00054a 1411
+00054b 0f14
+00054c 150d
+00054d 0d15
+00054e 1310
+00054f 1513
+000550 1c17
+000551 1f1c
+000552 2024
+000553 2625
+000554 2c28
+000555 2f2e
+000556 292a
+000557 3036
+000558 2a30
+000559 2525
+00055a 2424
+00055b 2524
+00055c 1617
+00055d 0f15
+00055e 080c
+00055f 0000                      .db 0,0,0,0,0,0,0,0,0,6,0,0,0,0,0,0,0,7,11,17,17,20,20,15,13,21,21,13,16,19,19,21,23,28,28,31,36,32,37,38,40,44,46,47,42,41,54,48,48,42,37,37,36,36,36,37,23,22,21,15,12,8,0,0
+000560 0000
+000561 0000
+000562 0000
+000563 0000
+000564 0b07
+000565 0008
+000566 0000
+000567 0000
+000568 0800
+000569 0c0c
+00056a 1211
+00056b 0f14
+00056c 1508
+00056d 1011
+00056e 1414
+00056f 0f0f
+000570 1817
+000571 1f1d
+000572 2321
+000573 2325
+000574 2824
+000575 2a26
+000576 2527
+000577 2e31
+000578 272c
+000579 2121
+00057a 1d20
+00057b 1f21
+00057c 1517
+00057d 1212
+00057e 0009
+00057f 0000                      .db 0,0,0,0,0,0,0,0,7,11,8,0,0,0,0,0,0,8,12,12,17,18,20,15,8,21,17,16,20,20,15,15,23,24,29,31,33,35,37,35,36,40,38,42,39,37,49,46,44,39,33,33,32,29,33,31,23,21,18,18,9,0,0,0
+000580 0000
+000581 0000
+000582 0000
+000583 0800
+000584 0e0c
+000585 060b
+000586 0000
+000587 0000
+000588 0a00
+000589 0e0e
+00058a 1514
+00058b 1116
+00058c 190d
+00058d 1518
+00058e 0d14
+00058f 0c10
+000590 1c1b
+000591 1e1c
+000592 1b1d
+000593 2420
+000594 2726
+000595 2323
+000596 211f
+000597 2b21
+000598 2a2a
+000599 282a
+00059a 1a1f
+00059b 1c17
+00059c 1116
+00059d 0c0d
+00059e 0008
+00059f 0000                      .db 0,0,0,0,0,0,0,8,12,14,11,6,0,0,0,0,0,10,14,14,20,21,22,17,13,25,24,21,20,13,16,12,27,28,28,30,29,27,32,36,38,39,35,35,31,33,33,43,42,42,42,40,31,26,23,28,22,17,13,12,8,0,0,0
+0005a0 0000
+0005a1 0000
+0005a2 0000
+0005a3 0000
+0005a4 1007
+0005a5 060b
+0005a6 0000
+0005a7 090a
+0005a8 0c0a
+0005a9 110c
+0005aa 1a15
+0005ab 161b
+0005ac 1919
+0005ad 1518
+0005ae 1212
+0005af 1413
+0005b0 1817
+0005b1 1c17
+0005b2 1614
+0005b3 221b
+0005b4 2422
+0005b5 2020
+0005b6 1c1e
+0005b7 191b
+0005b8 1619
+0005b9 262a
+0005ba 1a1c
+0005bb 1417
+0005bc 0e0f
+0005bd 0a09
+0005be 0000
+0005bf 0000                      .db 0,0,0,0,0,0,0,0,7,16,11,6,0,0,10,9,10,12,12,17,21,26,27,22,25,25,24,21,18,18,19,20,23,24,23,28,20,22,27,34,34,36,32,32,30,28,27,25,25,22,42,38,28,26,23,20,15,14,9,10,0,0,0,0
+0005c0 0000
+0005c1 0000
+0005c2 0000
+0005c3 0a00
+0005c4 100c
+0005c5 090c
+0005c6 0a00
+0005c7 0c0b
+0005c8 110e
+0005c9 1612
+0005ca 1b1b
+0005cb 1b1e
+0005cc 1919
+0005cd 1818
+0005ce 1315
+0005cf 1214
+0005d0 1517
+0005d1 1113
+0005d2 1312
+0005d3 1f1a
+0005d4 221f
+0005d5 1f20
+0005d6 1c1f
+0005d7 191a
+0005d8 1416
+0005d9 2618
+0005da 1322
+0005db 1113
+0005dc 0c0c
+0005dd 000a
+0005de 0000
+0005df 0000                      .db 0,0,0,0,0,0,0,10,12,16,12,9,0,10,11,12,14,17,18,22,27,27,30,27,25,25,24,24,21,19,20,18,23,21,19,17,18,19,26,31,31,34,32,31,31,28,26,25,22,20,24,38,34,19,19,17,12,12,10,0,0,0,0,0
+0005e0 0000
+0005e1 0000
+0005e2 0000
+0005e3 0d0a
+0005e4 120e
+0005e5 0c0d
+0005e6 0a09
+0005e7 0d0d
+0005e8 1110
+0005e9 1714
+0005ea 1d1a
+0005eb 1b1e
+0005ec 151a
+0005ed 0f13
+0005ee 0d10
+0005ef 1112
+0005f0 0b16
+0005f1 0e0e
+0005f2 100e
+0005f3 1c18
+0005f4 2222
+0005f5 2122
+0005f6 171c
+0005f7 1417
+0005f8 1415
+0005f9 1914
+0005fa 1320
+0005fb 1010
+0005fc 080b
+0005fd 0000
+0005fe 0000
+0005ff 0000                      .db 0,0,0,0,0,0,10,13,14,18,13,12,9,10,13,13,16,17,20,23,26,29,30,27,26,21,19,15,16,13,18,17,22,11,14,14,14,16,24,28,34,34,34,33,28,23,23,20,21,20,20,25,32,19,16,16,11,8,0,0,0,0,0,0
+000600 0000
+000601 0000
+000602 0a00
+000603 0f0b
+000604 120f
+000605 0b0d
+000606 0b0a
+000607 0b0d
+000608 1212
+000609 1816
+00060a 221d
+00060b 2222
+00060c 1a1a
+00060d 1216
+00060e 1011
+00060f 150f
+000610 0a15
+000611 0a0b
+000612 110d
+000613 1814
+000614 201b
+000615 1d1b
+000616 1717
+000617 1417
+000618 1312
+000619 1614
+00061a 0c15
+00061b 0c0f
+00061c 000a
+00061d 0000
+00061e 0000
+00061f 0000                      .db 0,0,0,0,0,10,11,15,15,18,13,11,10,11,13,11,18,18,22,24,29,34,34,34,26,26,22,18,17,16,15,21,21,10,11,10,13,17,20,24,27,32,27,29,23,23,23,20,18,19,20,22,21,12,15,12,10,0,0,0,0,0,0,0
+000620 0000
+000621 0700
+000622 0c09
+000623 0e0d
+000624 1712
+000625 1112
+000626 0f0a
+000627 0d10
+000628 1714
+000629 1a17
+00062a 2320
+00062b 1e23
+00062c 191d
+00062d 0c0b
+00062e 0d0e
+00062f 130d
+000630 0b10
+000631 0a06
+000632 0d0d
+000633 1615
+000634 1d1b
+000635 1d1c
+000636 1317
+000637 1417
+000638 0c14
+000639 1411
+00063a 0d11
+00063b 080d
+00063c 0000
+00063d 0000
+00063e 0000
+00063f 0000                      .db 0,0,0,7,9,12,13,14,18,23,18,17,10,15,16,13,20,23,23,26,32,35,35,30,29,25,11,12,14,13,13,19,16,11,6,10,13,13,21,22,27,29,28,29,23,19,23,20,20,12,17,20,17,13,13,8,0,0,0,0,0,0,0,0
+000640 0000
+000641 0b08
+000642 0e0d
+000643 140e
+000644 1a15
+000645 1517
+000646 150d
+000647 1015
+000648 110d
+000649 1c17
+00064a 201c
+00064b 2223
+00064c 0d1d
+00064d 090d
+00064e 0d0e
+00064f 0b0c
+000650 0b0c
+000651 0b0b
+000652 0f0b
+000653 1414
+000654 191a
+000655 1a1b
+000656 1919
+000657 1417
+000658 0c0f
+000659 100c
+00065a 0d0d
+00065b 0c0c
+00065c 000a
+00065d 0000
+00065e 0000
+00065f 0000                      .db 0,0,8,11,13,14,14,20,21,26,23,21,13,21,21,16,13,17,23,28,28,32,35,34,29,13,13,9,14,13,12,11,12,11,11,11,11,15,20,20,26,25,27,26,25,25,23,20,15,12,12,16,13,13,12,12,10,0,0,0,0,0,0,0
+000660 0000
+000661 0800
+000662 1310
+000663 1613
+000664 1b16
+000665 1612
+000666 1311
+000667 1415
+000668 1114
+000669 1919
+00066a 231d
+00066b 2224
+00066c 0f1d
+00066d 0912
+00066e 0c0b
+00066f 0b0c
+000670 080c
+000671 090a
+000672 0b07
+000673 1814
+000674 1919
+000675 1216
+000676 1819
+000677 0e14
+000678 080a
+000679 0b0c
+00067a 070c
+00067b 080c
+00067c 0000
+00067d 0000
+00067e 0000
+00067f 0000                      .db 0,0,0,8,16,19,19,22,22,27,18,22,17,19,21,20,20,17,25,25,29,35,36,34,29,15,18,9,11,12,12,11,12,8,10,9,7,11,20,24,25,25,22,18,25,24,20,14,10,8,12,11,12,7,12,8,0,0,0,0,0,0,0,0
+000680 0000
+000681 0c08
+000682 1515
+000683 1617
+000684 1d1e
+000685 1816
+000686 1214
+000687 1315
+000688 1514
+000689 2115
+00068a 2422
+00068b 2625
+00068c 1421
+00068d 0d13
+00068e 0c0d
+00068f 1207
+000690 0c0c
+000691 100d
+000692 1613
+000693 1716
+000694 1518
+000695 1213
+000696 1517
+000697 1314
+000698 0f10
+000699 0809
+00069a 0007
+00069b 0008
+00069c 0000
+00069d 0000
+00069e 0000
+00069f 0000                      .db 0,0,8,12,21,21,23,22,30,29,22,24,20,18,21,19,20,21,21,33,34,36,37,38,33,20,19,13,13,12,7,18,12,12,13,16,19,22,22,23,24,21,19,18,23,21,20,19,16,15,9,8,7,0,8,0,0,0,0,0,0,0,0,0
+0006a0 0800
+0006a1 0d0c
+0006a2 1716
+0006a3 1b17
+0006a4 1f1e
+0006a5 181b
+0006a6 1213
+0006a7 1517
+0006a8 1919
+0006a9 1c19
+0006aa 2422
+0006ab 2727
+0006ac 1827
+0006ad 1015
+0006ae 0a0e
+0006af 1416
+0006b0 0d11
+0006b1 0b0d
+0006b2 1411
+0006b3 1614
+0006b4 1514
+0006b5 1514
+0006b6 1415
+0006b7 0f13
+0006b8 0c0b
+0006b9 0009
+0006ba 0000
+0006bb 0000
+0006bc 0000
+0006bd 0000
+0006be 0000
+0006bf 0000                      .db 0,8,12,13,22,23,23,27,30,31,27,24,19,18,23,21,25,25,25,28,34,36,39,39,39,24,21,16,14,10,22,20,17,13,13,11,17,20,20,22,20,21,20,21,21,20,19,15,11,12,9,0,0,0,0,0,0,0,0,0,0,0,0,0
+0006c0 0d0d
+0006c1 1012
+0006c2 1515
+0006c3 1e1e
+0006c4 2222
+0006c5 1d22
+0006c6 1b1c
+0006c7 1a18
+0006c8 181a
+0006c9 1f1a
+0006ca 2422
+0006cb 2927
+0006cc 1c26
+0006cd 181b
+0006ce 1818
+0006cf 1b1b
+0006d0 1819
+0006d1 0f0b
+0006d2 110f
+0006d3 100f
+0006d4 1413
+0006d5 1611
+0006d6 1415
+0006d7 1113
+0006d8 0c0f
+0006d9 0009
+0006da 0000
+0006db 0000
+0006dc 0000
+0006dd 0000
+0006de 0000
+0006df 0000                      .db 13,13,18,16,21,21,30,30,34,34,34,29,28,27,24,26,26,24,26,31,34,36,39,41,38,28,27,24,24,24,27,27,25,24,11,15,15,17,15,16,19,20,17,22,21,20,19,17,15,12,9,0,0,0,0,0,0,0,0,0,0,0,0,0
+0006e0 0e09
+0006e1 1313
+0006e2 1a16
+0006e3 231e
+0006e4 2225
+0006e5 201f
+0006e6 1b1f
+0006e7 1c1d
+0006e8 171a
+0006e9 241c
+0006ea 2622
+0006eb 2a2b
+0006ec 1c23
+0006ed 1c1f
+0006ee 1b17
+0006ef 1b1b
+0006f0 191a
+0006f1 0f0e
+0006f2 0c0c
+0006f3 0b0e
+0006f4 1010
+0006f5 1511
+0006f6 0d11
+0006f7 1111
+0006f8 070c
+0006f9 0000
+0006fa 0000
+0006fb 0000
+0006fc 0000
+0006fd 0000
+0006fe 0000
+0006ff 0000                      .db 9,14,19,19,22,26,30,35,37,34,31,32,31,27,29,28,26,23,28,36,34,38,43,42,35,28,31,28,23,27,27,27,26,25,14,15,12,12,14,11,16,16,17,21,17,13,17,17,12,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+000700 1311
+000701 1b18
+000702 1c17
+000703 2621
+000704 2726
+000705 2123
+000706 1d24
+000707 1c1f
+000708 1d1a
+000709 241f
+00070a 2d27
+00070b 292e
+00070c 2024
+00070d 1e1f
+00070e 1c22
+00070f 1a19
+000710 1216
+000711 1411
+000712 080c
+000713 0e0b
+000714 0b10
+000715 1313
+000716 0b12
+000717 0d0c
+000718 090c
+000719 000a
+00071a 0000
+00071b 0000
+00071c 0000
+00071d 0000
+00071e 0000
+00071f 0000                      .db 17,19,24,27,23,28,33,38,38,39,35,33,36,29,31,28,26,29,31,36,39,45,46,41,36,32,31,30,34,28,25,26,22,18,17,20,12,8,11,14,16,11,19,19,18,11,12,13,12,9,10,0,0,0,0,0,0,0,0,0,0,0,0,0
+000720 1712
+000721 1e19
+000722 221e
+000723 2725
+000724 2a2d
+000725 2527
+000726 2124
+000727 1c20
+000728 1f1b
+000729 241f
+00072a 2c29
+00072b 2e2f
+00072c 2729
+00072d 2224
+00072e 1f22
+00072f 1c1c
+000730 1518
+000731 1414
+000732 0c0f
+000733 0c0b
+000734 0f0b
+000735 1110
+000736 0e10
+000737 0b0d
+000738 0c0c
+000739 090c
+00073a 0000
+00073b 0000
+00073c 0000
+00073d 0000
+00073e 0000
+00073f 0000                      .db 18,23,25,30,30,34,37,39,45,42,39,37,36,33,32,28,27,31,31,36,41,44,47,46,41,39,36,34,34,31,28,28,24,21,20,20,15,12,11,12,11,15,16,17,16,14,13,11,12,12,12,9,0,0,0,0,0,0,0,0,0,0,0,0
+000740 1a19
+000741 201e
+000742 2122
+000743 2824
+000744 2e2d
+000745 252a
+000746 2324
+000747 1e1e
+000748 181b
+000749 2a1c
+00074a 2c2c
+00074b 2b2e
+00074c 2828
+00074d 1d26
+00074e 171a
+00074f 1918
+000750 1517
+000751 0f11
+000752 0d0e
+000753 0c0b
+000754 0e0d
+000755 100b
+000756 0d0e
+000757 0609
+000758 0b08
+000759 0007
+00075a 0000
+00075b 0000
+00075c 0000
+00075d 0000
+00075e 0000
+00075f 0000                      .db 25,26,30,32,34,33,36,40,45,46,42,37,36,35,30,30,27,24,28,42,44,44,46,43,40,40,38,29,26,23,24,25,23,21,17,15,14,13,11,12,13,14,11,16,14,13,9,6,8,11,7,0,0,0,0,0,0,0,0,0,0,0,0,0
+000760 201f
+000761 1f24
+000762 2723
+000763 2926
+000764 302e
+000765 2a2e
+000766 2328
+000767 2122
+000768 1a1c
+000769 2219
+00076a 2b27
+00076b 292e
+00076c 2327
+00076d 1d23
+00076e 1819
+00076f 1518
+000770 1012
+000771 0a0e
+000772 090d
+000773 0806
+000774 0b0d
+000775 0f0e
+000776 0a0a
+000777 0b0e
+000778 0907
+000779 0000
+00077a 0000
+00077b 0000
+00077c 0000
+00077d 0000
+00077e 0000
+00077f 0000                      .db 31,32,36,31,35,39,38,41,46,48,46,42,40,35,34,33,28,26,25,34,39,43,46,41,39,35,35,29,25,24,24,21,18,16,14,10,13,9,6,8,13,11,14,15,10,10,14,11,7,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+000780 2220
+000781 2726
+000782 2727
+000783 2d2b
+000784 332e
+000785 2d2f
+000786 272a
+000787 2224
+000788 1b1f
+000789 1f16
+00078a 2827
+00078b 2b2c
+00078c 202b
+00078d 1a1b
+00078e 1519
+00078f 1517
+000790 0d10
+000791 070a
+000792 0009
+000793 0000
+000794 0609
+000795 0f0b
+000796 0e0f
+000797 0c0e
+000798 080c
+000799 0000
+00079a 0000
+00079b 0000
+00079c 0000
+00079d 0000
+00079e 0000
+00079f 0000                      .db 32,34,38,39,39,39,43,45,46,51,47,45,42,39,36,34,31,27,22,31,39,40,44,43,43,32,27,26,25,21,23,21,16,13,10,7,9,0,0,0,9,6,11,15,15,14,14,12,12,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0007a0 1b18
+0007a1 221f
+0007a2 2622
+0007a3 2a28
+0007a4 302b
+0007a5 292c
+0007a6 2326
+0007a7 1d22
+0007a8 1b1f
+0007a9 1f1d
+0007aa 231f
+0007ab 2b28
+0007ac 2929
+0007ad 1718
+0007ae 1116
+0007af 1410
+0007b0 1414
+0007b1 0c11
+0007b2 080c
+0007b3 0000
+0007b4 0000
+0007b5 0c08
+0007b6 0a0b
+0007b7 0a0d
+0007b8 0008
+0007b9 0000
+0007ba 0000
+0007bb 0000
+0007bc 0000
+0007bd 0000
+0007be 0000
+0007bf 0000                      .db 24,27,31,34,34,38,40,42,43,48,44,41,38,35,34,29,31,27,29,31,31,35,40,43,41,41,24,23,22,17,16,20,20,20,17,12,12,8,0,0,0,0,8,12,11,10,13,10,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0007c0 1916
+0007c1 211b
+0007c2 2421
+0007c3 2728
+0007c4 3030
+0007c5 2429
+0007c6 2123
+0007c7 1c21
+0007c8 161c
+0007c9 191b
+0007ca 1f1a
+0007cb 2727
+0007cc 2023
+0007cd 1716
+0007ce 0d17
+0007cf 1109
+0007d0 1011
+0007d1 0811
+0007d2 000a
+0007d3 0000
+0007d4 0000
+0007d5 0a00
+0007d6 0a06
+0007d7 0b0b
+0007d8 0008
+0007d9 0000
+0007da 0000
+0007db 0000
+0007dc 0000
+0007dd 0000
+0007de 0000
+0007df 0000                      .db 22,25,27,33,33,36,40,39,48,48,41,36,35,33,33,28,28,22,27,25,26,31,39,39,35,32,22,23,23,13,9,17,17,16,17,8,10,0,0,0,0,0,0,10,6,10,11,11,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0007e0 1414
+0007e1 1c19
+0007e2 221e
+0007e3 2a24
+0007e4 2f2a
+0007e5 1f24
+0007e6 1d1e
+0007e7 1f21
+0007e8 1b1e
+0007e9 1a1b
+0007ea 1d19
+0007eb 2223
+0007ec 1f1f
+0007ed 1114
+0007ee 0c0d
+0007ef 1107
+0007f0 0e11
+0007f1 0d0f
+0007f2 0009
+0007f3 0000
+0007f4 0000
+0007f5 0000
+0007f6 0000
+0007f7 0b0a
+0007f8 0008
+0007f9 0000
+0007fa 0000
+0007fb 0000
+0007fc 0000
+0007fd 0000
 0007fe 0000
-0007ff 0000
-000800 0000
-000801 0000
-000802 0000
-000803 0a00
-000804 0000
-000805 0000
-000806 0000
-000807 0000
-000808 0000
-000809 0000
-00080a 0000
-00080b 0000                      .db 18,20,23,33,33,33,35,40,42,42,31,27,24,20,17,30,30,25,25,21,23,28,32,33,26,31,30,15,13,10,17,17,15,12,8,10,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-00080c 1615
-00080d 1d19
-00080e 1e1e
-00080f 2621
-000810 272a
-000811 1722
-000812 1417
-000813 1213
-000814 171b
-000815 1616
-000816 1916
-000817 161b
-000818 1d12
-000819 0f1e
-00081a 090d
-00081b 0d0d
-00081c 0d0d
-00081d 080b
+0007ff 0000                      .db 20,20,25,28,30,34,36,42,42,47,36,31,30,29,33,31,30,27,27,26,25,29,35,34,31,31,20,17,13,12,7,17,17,14,15,13,9,0,0,0,0,0,0,0,0,0,10,11,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+000800 1412
+000801 2117
+000802 2121
+000803 2823
+000804 2a2a
+000805 1b1f
+000806 1418
+000807 1e11
+000808 191e
+000809 1519
+00080a 1c17
+00080b 2120
+00080c 1f1a
+00080d 0f1e
+00080e 0a0d
+00080f 1111
+000810 0c0f
+000811 0a08
+000812 0000
+000813 0000
+000814 0000
+000815 0000
+000816 0000
+000817 0a00
+000818 0000
+000819 0000
+00081a 0000
+00081b 0000
+00081c 0000
+00081d 0000
 00081e 0000
-00081f 0000
-000820 0000
-000821 0000
-000822 0000
-000823 0000
-000824 0000
-000825 0000
-000826 0000
-000827 0000
-000828 0000
-000829 0000
-00082a 0000
-00082b 0000                      .db 21,22,25,29,30,30,33,38,42,39,34,23,23,20,19,18,27,23,22,22,22,25,27,22,18,29,30,15,13,9,13,13,13,13,11,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-00082c 1110
-00082d 1b15
-00082e 1e1a
-00082f 291e
-000830 2229
-000831 1422
-000832 1414
-000833 1110
-000834 1216
-000835 1616
-000836 1911
-000837 1519
-000838 0e11
-000839 0d1c
-00083a 0a0c
-00083b 0c0d
-00083c 090b
-00083d 0007
+00081f 0000                      .db 18,20,23,33,33,33,35,40,42,42,31,27,24,20,17,30,30,25,25,21,23,28,32,33,26,31,30,15,13,10,17,17,15,12,8,10,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+000820 1615
+000821 1d19
+000822 1e1e
+000823 2621
+000824 272a
+000825 1722
+000826 1417
+000827 1213
+000828 171b
+000829 1616
+00082a 1916
+00082b 161b
+00082c 1d12
+00082d 0f1e
+00082e 090d
+00082f 0d0d
+000830 0d0d
+000831 080b
+000832 0000
+000833 0000
+000834 0000
+000835 0000
+000836 0000
+000837 0000
+000838 0000
+000839 0000
+00083a 0000
+00083b 0000
+00083c 0000
+00083d 0000
 00083e 0000
-00083f 0000
-000840 0000
-000841 0000
-000842 0000
-000843 0000
-000844 0000
-000845 0000
-000846 0000
-000847 0000
-000848 0000
-000849 0000
-00084a 0000
-00084b 0000                      .db 16,17,21,27,26,30,30,41,41,34,34,20,20,20,16,17,22,18,22,22,17,25,25,21,17,14,28,13,12,10,13,12,11,9,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-00084c 0d0a
-00084d 1914
-00084e 1c17
-00084f 241d
-000850 1d24
-000851 1819
-000852 1311
-000853 0f0f
-000854 0d0d
-000855 0c11
-000856 1210
-000857 1316
-000858 0c0f
-000859 080c
-00085a 0909
-00085b 090c
-00085c 080b
+00083f 0000                      .db 21,22,25,29,30,30,33,38,42,39,34,23,23,20,19,18,27,23,22,22,22,25,27,22,18,29,30,15,13,9,13,13,13,13,11,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+000840 1110
+000841 1b15
+000842 1e1a
+000843 291e
+000844 2229
+000845 1422
+000846 1414
+000847 1110
+000848 1216
+000849 1616
+00084a 1911
+00084b 1519
+00084c 0e11
+00084d 0d1c
+00084e 0a0c
+00084f 0c0d
+000850 090b
+000851 0007
+000852 0000
+000853 0000
+000854 0000
+000855 0000
+000856 0000
+000857 0000
+000858 0000
+000859 0000
+00085a 0000
+00085b 0000
+00085c 0000
 00085d 0000
 00085e 0000
-00085f 0000
-000860 0000
-000861 0000
-000862 0000
-000863 0000
-000864 0000
-000865 0000
-000866 0000
-000867 0000
-000868 0000
-000869 0000
-00086a 0000
-00086b 0000                      .db 10,13,20,25,23,28,29,36,36,29,25,24,17,19,15,15,13,13,17,12,16,18,22,19,15,12,12,8,9,9,12,9,11,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-00086c 110f
-00086d 1816
-00086e 1919
-00086f 1c1c
-000870 1a1f
-000871 1718
-000872 0d10
-000873 0a0c
-000874 0c0b
-000875 0b0c
-000876 110d
-000877 0d12
-000878 0a08
-000879 0008
+00085f 0000                      .db 16,17,21,27,26,30,30,41,41,34,34,20,20,20,16,17,22,18,22,22,17,25,25,21,17,14,28,13,12,10,13,12,11,9,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+000860 0d0a
+000861 1914
+000862 1c17
+000863 241d
+000864 1d24
+000865 1819
+000866 1311
+000867 0f0f
+000868 0d0d
+000869 0c11
+00086a 1210
+00086b 1316
+00086c 0c0f
+00086d 080c
+00086e 0909
+00086f 090c
+000870 080b
+000871 0000
+000872 0000
+000873 0000
+000874 0000
+000875 0000
+000876 0000
+000877 0000
+000878 0000
+000879 0000
 00087a 0000
-00087b 0008
-00087c 0008
+00087b 0000
+00087c 0000
 00087d 0000
 00087e 0000
-00087f 0000
-000880 0000
-000881 0000
-000882 0000
-000883 0000
-000884 0000
-000885 0000
-000886 0000
-000887 0000
-000888 0000
-000889 0000
-00088a 0000
-00088b 0000                      .db 15,17,22,24,25,25,28,28,31,26,24,23,16,13,12,10,11,12,12,11,13,17,18,13,8,10,8,0,0,0,8,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-00088c 0c07
-00088d 1512
-00088e 1919
-00088f 171c
-000890 1a18
-000891 1415
-000892 0910
-000893 0007
-000894 0c09
-000895 060d
-000896 110b
-000897 0b0d
-000898 0007
+00087f 0000                      .db 10,13,20,25,23,28,29,36,36,29,25,24,17,19,15,15,13,13,17,12,16,18,22,19,15,12,12,8,9,9,12,9,11,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+000880 110f
+000881 1816
+000882 1919
+000883 1c1c
+000884 1a1f
+000885 1718
+000886 0d10
+000887 0a0c
+000888 0c0b
+000889 0b0c
+00088a 110d
+00088b 0d12
+00088c 0a08
+00088d 0008
+00088e 0000
+00088f 0008
+000890 0008
+000891 0000
+000892 0000
+000893 0000
+000894 0000
+000895 0000
+000896 0000
+000897 0000
+000898 0000
 000899 0000
 00089a 0000
 00089b 0000
 00089c 0000
 00089d 0000
 00089e 0000
-00089f 0000
-0008a0 0000
-0008a1 0000
-0008a2 0000
-0008a3 0000
-0008a4 0000
-0008a5 0000
-0008a6 0000
-0008a7 0000
-0008a8 0000
-0008a9 0000
-0008aa 0000
-0008ab 0000                      .db 7,12,18,21,25,25,28,23,24,26,21,20,16,9,7,0,9,12,13,6,11,17,13,11,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0008ac 0d0c
-0008ad 150e
-0008ae 1419
-0008af 141c
-0008b0 1a15
-0008b1 1017
-0008b2 0b0e
-0008b3 0009
-0008b4 0a00
-0008b5 0d0d
-0008b6 0e0e
-0008b7 0809
+00089f 0000                      .db 15,17,22,24,25,25,28,28,31,26,24,23,16,13,12,10,11,12,12,11,13,17,18,13,8,10,8,0,0,0,8,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0008a0 0c07
+0008a1 1512
+0008a2 1919
+0008a3 171c
+0008a4 1a18
+0008a5 1415
+0008a6 0910
+0008a7 0007
+0008a8 0c09
+0008a9 060d
+0008aa 110b
+0008ab 0b0d
+0008ac 0007
+0008ad 0000
+0008ae 0000
+0008af 0000
+0008b0 0000
+0008b1 0000
+0008b2 0000
+0008b3 0000
+0008b4 0000
+0008b5 0000
+0008b6 0000
+0008b7 0000
 0008b8 0000
 0008b9 0000
 0008ba 0000
@@ -4348,31 +4348,31 @@ D:\workspace\comp9032\project\final_project\final_project\main.asm(191): Includi
 0008bc 0000
 0008bd 0000
 0008be 0000
-0008bf 0000
-0008c0 0000
-0008c1 0000
-0008c2 0000
-0008c3 0000
-0008c4 0000
-0008c5 0000
-0008c6 0000
-0008c7 0000
-0008c8 0000
-0008c9 0000
-0008ca 0000
-0008cb 0000                      .db 12,13,14,21,25,20,28,20,21,26,23,16,14,11,9,0,0,10,13,13,14,14,9,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0008cc 0c08
-0008cd 1716
-0008ce 1a18
-0008cf 141c
-0008d0 1510
-0008d1 1213
-0008d2 090d
+0008bf 0000                      .db 7,12,18,21,25,25,28,23,24,26,21,20,16,9,7,0,9,12,13,6,11,17,13,11,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0008c0 0d0c
+0008c1 150e
+0008c2 1419
+0008c3 141c
+0008c4 1a15
+0008c5 1017
+0008c6 0b0e
+0008c7 0009
+0008c8 0a00
+0008c9 0d0d
+0008ca 0e0e
+0008cb 0809
+0008cc 0000
+0008cd 0000
+0008ce 0000
+0008cf 0000
+0008d0 0000
+0008d1 0000
+0008d2 0000
 0008d3 0000
 0008d4 0000
-0008d5 0809
-0008d6 0b0a
-0008d7 0007
+0008d5 0000
+0008d6 0000
+0008d7 0000
 0008d8 0000
 0008d9 0000
 0008da 0000
@@ -4380,30 +4380,30 @@ D:\workspace\comp9032\project\final_project\final_project\main.asm(191): Includi
 0008dc 0000
 0008dd 0000
 0008de 0000
-0008df 0000
-0008e0 0000
-0008e1 0000
-0008e2 0000
-0008e3 0000
-0008e4 0000
-0008e5 0000
-0008e6 0000
+0008df 0000                      .db 12,13,14,21,25,20,28,20,21,26,23,16,14,11,9,0,0,10,13,13,14,14,9,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0008e0 0c08
+0008e1 1716
+0008e2 1a18
+0008e3 141c
+0008e4 1510
+0008e5 1213
+0008e6 090d
 0008e7 0000
 0008e8 0000
-0008e9 0000
-0008ea 0000
-0008eb 0000                      .db 8,12,22,23,24,26,28,20,16,21,19,18,13,9,0,0,0,0,9,8,10,11,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0008ec 0d0b
-0008ed 1310
-0008ee 120e
-0008ef 0d17
-0008f0 1212
-0008f1 1011
-0008f2 0b0c
-0008f3 000a
+0008e9 0809
+0008ea 0b0a
+0008eb 0007
+0008ec 0000
+0008ed 0000
+0008ee 0000
+0008ef 0000
+0008f0 0000
+0008f1 0000
+0008f2 0000
+0008f3 0000
 0008f4 0000
-0008f5 0b08
-0008f6 070c
+0008f5 0000
+0008f6 0000
 0008f7 0000
 0008f8 0000
 0008f9 0000
@@ -4412,30 +4412,30 @@ D:\workspace\comp9032\project\final_project\final_project\main.asm(191): Includi
 0008fc 0000
 0008fd 0000
 0008fe 0000
-0008ff 0000
-000900 0000
-000901 0000
-000902 0000
-000903 0000
-000904 0000
-000905 0000
-000906 0000
-000907 0000
+0008ff 0000                      .db 8,12,22,23,24,26,28,20,16,21,19,18,13,9,0,0,0,0,9,8,10,11,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+000900 0d0b
+000901 1310
+000902 120e
+000903 0d17
+000904 1212
+000905 1011
+000906 0b0c
+000907 000a
 000908 0000
-000909 0000
-00090a 0000
-00090b 0000                      .db 11,13,16,19,14,18,23,13,18,18,17,16,12,11,10,0,0,0,8,11,12,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-00090c 0a00
-00090d 100d
-00090e 0f0c
-00090f 0b0a
-000910 0f0d
-000911 0b0a
-000912 090b
+000909 0b08
+00090a 070c
+00090b 0000
+00090c 0000
+00090d 0000
+00090e 0000
+00090f 0000
+000910 0000
+000911 0000
+000912 0000
 000913 0000
-000914 0900
-000915 0f0a
-000916 070c
+000914 0000
+000915 0000
+000916 0000
 000917 0000
 000918 0000
 000919 0000
@@ -4444,30 +4444,30 @@ D:\workspace\comp9032\project\final_project\final_project\main.asm(191): Includi
 00091c 0000
 00091d 0000
 00091e 0000
-00091f 0000
-000920 0000
-000921 0000
-000922 0000
-000923 0000
-000924 0000
-000925 0000
-000926 0000
+00091f 0000                      .db 11,13,16,19,14,18,23,13,18,18,17,16,12,11,10,0,0,0,8,11,12,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+000920 0a00
+000921 100d
+000922 0f0c
+000923 0b0a
+000924 0f0d
+000925 0b0a
+000926 090b
 000927 0000
-000928 0000
-000929 0000
-00092a 0000
-00092b 0000                      .db 0,10,13,16,12,15,10,11,13,15,10,11,11,9,0,0,0,9,10,15,12,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+000928 0900
+000929 0f0a
+00092a 070c
+00092b 0000
 00092c 0000
-00092d 0f08
-00092e 0b07
-00092f 0a06
-000930 0d08
-000931 070b
-000932 0b0b
-000933 0a0a
-000934 0b0a
-000935 0f0f
-000936 080a
+00092d 0000
+00092e 0000
+00092f 0000
+000930 0000
+000931 0000
+000932 0000
+000933 0000
+000934 0000
+000935 0000
+000936 0000
 000937 0000
 000938 0000
 000939 0000
@@ -4476,31 +4476,31 @@ D:\workspace\comp9032\project\final_project\final_project\main.asm(191): Includi
 00093c 0000
 00093d 0000
 00093e 0000
-00093f 0000
+00093f 0000                      .db 0,10,13,16,12,15,10,11,13,15,10,11,11,9,0,0,0,9,10,15,12,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 000940 0000
-000941 0000
-000942 0000
-000943 0000
-000944 0000
-000945 0000
-000946 0000
-000947 0000
-000948 0000
-000949 0000
-00094a 0000
-00094b 0000                      .db 0,0,8,15,7,11,6,10,8,13,11,7,11,11,10,10,10,11,15,15,10,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+000941 0f08
+000942 0b07
+000943 0a06
+000944 0d08
+000945 070b
+000946 0b0b
+000947 0a0a
+000948 0b0a
+000949 0f0f
+00094a 080a
+00094b 0000
 00094c 0000
-00094d 0d0a
-00094e 0b09
-00094f 0006
-000950 0a00
-000951 0a0b
-000952 0e0b
-000953 0d0e
-000954 0c0a
-000955 1311
-000956 0c12
-000957 0909
+00094d 0000
+00094e 0000
+00094f 0000
+000950 0000
+000951 0000
+000952 0000
+000953 0000
+000954 0000
+000955 0000
+000956 0000
+000957 0000
 000958 0000
 000959 0000
 00095a 0000
@@ -4508,464 +4508,486 @@ D:\workspace\comp9032\project\final_project\final_project\main.asm(191): Includi
 00095c 0000
 00095d 0000
 00095e 0000
-00095f 0000
+00095f 0000                      .db 0,0,8,15,7,11,6,10,8,13,11,7,11,11,10,10,10,11,15,15,10,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 000960 0000
-000961 0000
-000962 0000
-000963 0000
-000964 0000
-000965 0000
-000966 0000
-000967 0000
-000968 0000
-000969 0000
-00096a 0000
-00096b 0000                      .db 0,0,10,13,9,11,6,0,0,10,11,10,11,14,14,13,10,12,17,19,18,12,9,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+000961 0d0a
+000962 0b09
+000963 0006
+000964 0a00
+000965 0a0b
+000966 0e0b
+000967 0d0e
+000968 0c0a
+000969 1311
+00096a 0c12
+00096b 0909
 00096c 0000
-00096d 0b0a
-00096e 0608
+00096d 0000
+00096e 0000
 00096f 0000
 000970 0000
-000971 0008
-000972 0609
-000973 100f
-000974 1010
-000975 1514
-000976 0f12
-000977 0b0d
-000978 0009
-000979 0008
+000971 0000
+000972 0000
+000973 0000
+000974 0000
+000975 0000
+000976 0000
+000977 0000
+000978 0000
+000979 0000
 00097a 0000
 00097b 0000
 00097c 0000
 00097d 0000
 00097e 0000
-00097f 0000
+00097f 0000                      .db 0,0,10,13,9,11,6,0,0,10,11,10,11,14,14,13,10,12,17,19,18,12,9,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 000980 0000
-000981 0000
-000982 0000
+000981 0b0a
+000982 0608
 000983 0000
 000984 0000
-000985 0000
-000986 0000
-000987 0000
-000988 0000
-000989 0000
-00098a 0000
-00098b 0000                      .db 0,0,10,11,8,6,0,0,0,0,8,0,9,6,15,16,16,16,20,21,18,15,13,11,9,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-00098c 0000
-00098d 0a00
+000985 0008
+000986 0609
+000987 100f
+000988 1010
+000989 1514
+00098a 0f12
+00098b 0b0d
+00098c 0009
+00098d 0008
 00098e 0000
 00098f 0000
 000990 0000
 000991 0000
-000992 0b08
-000993 110f
-000994 1513
-000995 1817
-000996 1114
-000997 1114
-000998 070c
-000999 080b
+000992 0000
+000993 0000
+000994 0000
+000995 0000
+000996 0000
+000997 0000
+000998 0000
+000999 0000
 00099a 0000
-00099b 0006
+00099b 0000
 00099c 0000
 00099d 0000
 00099e 0000
-00099f 0000
+00099f 0000                      .db 0,0,10,11,8,6,0,0,0,0,8,0,9,6,15,16,16,16,20,21,18,15,13,11,9,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0009a0 0000
-0009a1 0000
+0009a1 0a00
 0009a2 0000
 0009a3 0000
 0009a4 0000
 0009a5 0000
-0009a6 0000
-0009a7 0000
-0009a8 0000
-0009a9 0000
-0009aa 0000
-0009ab 0000                      .db 0,0,0,10,0,0,0,0,0,0,0,0,8,11,15,17,19,21,23,24,20,17,20,17,12,7,11,8,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0009ac 0000
-0009ad 0000
+0009a6 0b08
+0009a7 110f
+0009a8 1513
+0009a9 1817
+0009aa 1114
+0009ab 1114
+0009ac 070c
+0009ad 080b
 0009ae 0000
-0009af 0000
+0009af 0006
 0009b0 0000
-0009b1 0a00
-0009b2 0d0c
-0009b3 110f
-0009b4 1615
-0009b5 1819
-0009b6 1616
-0009b7 1519
-0009b8 0e10
-0009b9 090b
-0009ba 0a00
-0009bb 080b
+0009b1 0000
+0009b2 0000
+0009b3 0000
+0009b4 0000
+0009b5 0000
+0009b6 0000
+0009b7 0000
+0009b8 0000
+0009b9 0000
+0009ba 0000
+0009bb 0000
 0009bc 0000
 0009bd 0000
 0009be 0000
-0009bf 0000
+0009bf 0000                      .db 0,0,0,10,0,0,0,0,0,0,0,0,8,11,15,17,19,21,23,24,20,17,20,17,12,7,11,8,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0009c0 0000
 0009c1 0000
 0009c2 0000
 0009c3 0000
 0009c4 0000
-0009c5 0000
-0009c6 0000
-0009c7 0000
-0009c8 0000
-0009c9 0000
-0009ca 0000
-0009cb 0000                      .db 0,0,0,0,0,0,0,0,0,0,0,10,12,13,15,17,21,22,25,24,22,22,25,21,16,14,11,9,0,10,11,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0009cc 0000
-0009cd 0000
-0009ce 0000
-0009cf 0600
-0009d0 0a00
-0009d1 0a00
-0009d2 0f0d
-0009d3 1310
-0009d4 1916
-0009d5 1c1a
-0009d6 1317
-0009d7 161a
-0009d8 1112
-0009d9 0e11
-0009da 0f0a
-0009db 080b
-0009dc 0006
+0009c5 0a00
+0009c6 0d0c
+0009c7 110f
+0009c8 1615
+0009c9 1819
+0009ca 1616
+0009cb 1519
+0009cc 0e10
+0009cd 090b
+0009ce 0a00
+0009cf 080b
+0009d0 0000
+0009d1 0000
+0009d2 0000
+0009d3 0000
+0009d4 0000
+0009d5 0000
+0009d6 0000
+0009d7 0000
+0009d8 0000
+0009d9 0000
+0009da 0000
+0009db 0000
+0009dc 0000
 0009dd 0000
 0009de 0000
-0009df 0000
+0009df 0000                      .db 0,0,0,0,0,0,0,0,0,0,0,10,12,13,15,17,21,22,25,24,22,22,25,21,16,14,11,9,0,10,11,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0009e0 0000
 0009e1 0000
 0009e2 0000
-0009e3 0000
-0009e4 0000
-0009e5 0000
-0009e6 0000
-0009e7 0000
-0009e8 0000
-0009e9 0000
-0009ea 0000
-0009eb 0000                      .db 0,0,0,0,0,0,0,6,0,10,0,10,13,15,16,19,22,25,26,28,23,19,26,22,18,17,17,14,10,15,11,8,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-0009ec 0000
-0009ed 0000
-0009ee 0000
-0009ef 0b08
-0009f0 0b06
-0009f1 0d09
-0009f2 130f
-0009f3 1614
-0009f4 1c18
-0009f5 211e
-0009f6 1d20
-0009f7 1b1b
-0009f8 0817
-0009f9 130f
-0009fa 0f11
-0009fb 0e0e
-0009fc 060b
+0009e3 0600
+0009e4 0a00
+0009e5 0a00
+0009e6 0f0d
+0009e7 1310
+0009e8 1916
+0009e9 1c1a
+0009ea 1317
+0009eb 161a
+0009ec 1112
+0009ed 0e11
+0009ee 0f0a
+0009ef 080b
+0009f0 0006
+0009f1 0000
+0009f2 0000
+0009f3 0000
+0009f4 0000
+0009f5 0000
+0009f6 0000
+0009f7 0000
+0009f8 0000
+0009f9 0000
+0009fa 0000
+0009fb 0000
+0009fc 0000
 0009fd 0000
 0009fe 0000
-0009ff 0000
+0009ff 0000                      .db 0,0,0,0,0,0,0,6,0,10,0,10,13,15,16,19,22,25,26,28,23,19,26,22,18,17,17,14,10,15,11,8,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 000a00 0000
 000a01 0000
 000a02 0000
-000a03 0000
-000a04 0000
-000a05 0000
-000a06 0000
-000a07 0000
-000a08 0000
-000a09 0000
-000a0a 0000
-000a0b 0000                      .db 0,0,0,0,0,0,8,11,6,11,9,13,15,19,20,22,24,28,30,33,32,29,27,27,23,8,15,19,17,15,14,14,11,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-000a0c 0000
-000a0d 0000
-000a0e 0000
-000a0f 0c07
-000a10 0d09
-000a11 1211
-000a12 1313
-000a13 2727
-000a14 2b2a
-000a15 2221
-000a16 2025
-000a17 181c
-000a18 0c11
-000a19 1508
-000a1a 1214
-000a1b 1111
-000a1c 090b
+000a03 0b08
+000a04 0b06
+000a05 0d09
+000a06 130f
+000a07 1614
+000a08 1c18
+000a09 211e
+000a0a 1d20
+000a0b 1b1b
+000a0c 0817
+000a0d 130f
+000a0e 0f11
+000a0f 0e0e
+000a10 060b
+000a11 0000
+000a12 0000
+000a13 0000
+000a14 0000
+000a15 0000
+000a16 0000
+000a17 0000
+000a18 0000
+000a19 0000
+000a1a 0000
+000a1b 0000
+000a1c 0000
 000a1d 0000
 000a1e 0000
-000a1f 0000
+000a1f 0000                      .db 0,0,0,0,0,0,8,11,6,11,9,13,15,19,20,22,24,28,30,33,32,29,27,27,23,8,15,19,17,15,14,14,11,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 000a20 0000
 000a21 0000
 000a22 0000
-000a23 0000
-000a24 0000
-000a25 0000
-000a26 0000
-000a27 0000
-000a28 0000
-000a29 0000
-000a2a 0000
-000a2b 0000                      .db 0,0,0,0,0,0,7,12,9,13,17,18,19,19,39,39,42,43,33,34,37,32,28,24,17,12,8,21,20,18,17,17,11,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-000a2c 0000
-000a2d 0000
-000a2e 0900
-000a2f 0f0d
-000a30 100f
-000a31 1112
-000a32 1515
-000a33 2715
-000a34 2b29
-000a35 2520
-000a36 2829
-000a37 171c
-000a38 1b12
-000a39 1918
-000a3a 1318
-000a3b 0f11
-000a3c 060b
+000a23 0c07
+000a24 0d09
+000a25 1211
+000a26 1313
+000a27 2727
+000a28 2b2a
+000a29 2221
+000a2a 2025
+000a2b 181c
+000a2c 0c11
+000a2d 1508
+000a2e 1214
+000a2f 1111
+000a30 090b
+000a31 0000
+000a32 0000
+000a33 0000
+000a34 0000
+000a35 0000
+000a36 0000
+000a37 0000
+000a38 0000
+000a39 0000
+000a3a 0000
+000a3b 0000
+000a3c 0000
 000a3d 0000
 000a3e 0000
-000a3f 0000
+000a3f 0000                      .db 0,0,0,0,0,0,7,12,9,13,17,18,19,19,39,39,42,43,33,34,37,32,28,24,17,12,8,21,20,18,17,17,11,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 000a40 0000
 000a41 0000
-000a42 0000
-000a43 0000
-000a44 0000
-000a45 0000
-000a46 0000
-000a47 0000
-000a48 0000
-000a49 0000
-000a4a 0000
-000a4b 0000                      .db 0,0,0,0,0,9,13,15,15,16,18,17,21,21,21,39,41,43,32,37,41,40,28,23,18,27,24,25,24,19,17,15,11,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-000a4c 0000
-000a4d 0000
-000a4e 0000
-000a4f 0b0a
-000a50 1110
-000a51 0d17
-000a52 1511
-000a53 1c1a
-000a54 2c24
-000a55 2a2c
-000a56 2429
-000a57 1c21
-000a58 1d19
-000a59 1a1a
-000a5a 1417
-000a5b 1011
-000a5c 0a10
-000a5d 0009
+000a42 0900
+000a43 0f0d
+000a44 100f
+000a45 1112
+000a46 1515
+000a47 2715
+000a48 2b29
+000a49 2520
+000a4a 2829
+000a4b 171c
+000a4c 1b12
+000a4d 1918
+000a4e 1318
+000a4f 0f11
+000a50 060b
+000a51 0000
+000a52 0000
+000a53 0000
+000a54 0000
+000a55 0000
+000a56 0000
+000a57 0000
+000a58 0000
+000a59 0000
+000a5a 0000
+000a5b 0000
+000a5c 0000
+000a5d 0000
 000a5e 0000
-000a5f 0000
+000a5f 0000                      .db 0,0,0,0,0,9,13,15,15,16,18,17,21,21,21,39,41,43,32,37,41,40,28,23,18,27,24,25,24,19,17,15,11,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 000a60 0000
 000a61 0000
 000a62 0000
-000a63 0000
-000a64 0000
-000a65 0000
-000a66 0000
-000a67 0000
-000a68 0000
-000a69 0000
-000a6a 0000
-000a6b 0000                      .db 0,0,0,0,0,0,10,11,16,17,23,13,17,21,26,28,36,44,44,42,41,36,33,28,25,29,26,26,23,20,17,16,16,10,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-000a6c 0900
-000a6d 0709
-000a6e 070a
-000a6f 100d
-000a70 1514
-000a71 1e1a
-000a72 1f1c
-000a73 211e
-000a74 2d27
-000a75 2c2c
-000a76 292c
-000a77 1f28
-000a78 1f1c
-000a79 191a
-000a7a 1519
-000a7b 1212
-000a7c 0f0c
-000a7d 070e
+000a63 0b0a
+000a64 1110
+000a65 0d17
+000a66 1511
+000a67 1c1a
+000a68 2c24
+000a69 2a2c
+000a6a 2429
+000a6b 1c21
+000a6c 1d19
+000a6d 1a1a
+000a6e 1417
+000a6f 1011
+000a70 0a10
+000a71 0009
+000a72 0000
+000a73 0000
+000a74 0000
+000a75 0000
+000a76 0000
+000a77 0000
+000a78 0000
+000a79 0000
+000a7a 0000
+000a7b 0000
+000a7c 0000
+000a7d 0000
 000a7e 0000
-000a7f 0000
-000a80 0000
-000a81 0000
-000a82 0000
-000a83 0000
-000a84 0000
-000a85 0000
-000a86 0000
-000a87 0000
-000a88 0000
-000a89 0000
-000a8a 0000
-000a8b 0000                      .db 0,9,9,7,10,7,13,16,20,21,26,30,28,31,30,33,39,45,44,44,44,41,40,31,28,31,26,25,25,21,18,18,12,15,14,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-000a8c 0c09
-000a8d 0c0c
-000a8e 0c0c
-000a8f 1210
-000a90 1615
-000a91 201d
-000a92 241f
-000a93 2522
-000a94 2e2a
-000a95 3031
-000a96 252c
-000a97 2123
-000a98 2124
-000a99 181d
-000a9a 1617
-000a9b 1212
-000a9c 1111
-000a9d 0c0c
-000a9e 0008
-000a9f 0000
-000aa0 0000
-000aa1 0000
-000aa2 0000
-000aa3 0000
-000aa4 0000
-000aa5 0000
-000aa6 0000
-000aa7 0000
-000aa8 0000
-000aa9 0000
-000aaa 0000
-000aab 0000                      .db 9,12,12,12,12,12,16,18,21,22,29,32,31,36,34,37,42,46,49,48,44,37,35,33,36,33,29,24,23,22,18,18,17,17,12,12,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-000aac 0b0b
-000aad 0a07
-000aae 080a
-000aaf 0e0a
-000ab0 1712
-000ab1 201c
-000ab2 2624
-000ab3 2a28
-000ab4 2d2c
-000ab5 3131
-000ab6 282c
-000ab7 2525
-000ab8 2324
-000ab9 1e22
-000aba 191a
-000abb 1517
-000abc 1414
-000abd 0e0f
-000abe 090c
-000abf 0000
-000ac0 0000
-000ac1 0000
-000ac2 0000
-000ac3 0000
-000ac4 0000
-000ac5 0000
-000ac6 0000
-000ac7 0000
-000ac8 0000
-000ac9 0000
-000aca 0000
-000acb 0000                      .db 11,11,7,10,10,8,10,14,18,23,28,32,36,38,40,42,44,45,49,49,44,40,37,37,36,35,34,30,26,25,23,21,20,20,15,14,12,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-000acc 0700
-000acd 0000
-000ace 0700
-000acf 0f0c
-000ad0 1511
-000ad1 1b1a
-000ad2 2625
-000ad3 2722
-000ad4 2d2a
-000ad5 2c30
-000ad6 2428
-000ad7 2124
-000ad8 1e22
-000ad9 1a1d
-000ada 1417
-000adb 1316
-000adc 1213
-000add 0a0e
-000ade 0008
-000adf 0000
-000ae0 0000
+000a7f 0000                      .db 0,0,0,0,0,0,10,11,16,17,23,13,17,21,26,28,36,44,44,42,41,36,33,28,25,29,26,26,23,20,17,16,16,10,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+000a80 0900
+000a81 0709
+000a82 070a
+000a83 100d
+000a84 1514
+000a85 1e1a
+000a86 1f1c
+000a87 211e
+000a88 2d27
+000a89 2c2c
+000a8a 292c
+000a8b 1f28
+000a8c 1f1c
+000a8d 191a
+000a8e 1519
+000a8f 1212
+000a90 0f0c
+000a91 070e
+000a92 0000
+000a93 0000
+000a94 0000
+000a95 0000
+000a96 0000
+000a97 0000
+000a98 0000
+000a99 0000
+000a9a 0000
+000a9b 0000
+000a9c 0000
+000a9d 0000
+000a9e 0000
+000a9f 0000                      .db 0,9,9,7,10,7,13,16,20,21,26,30,28,31,30,33,39,45,44,44,44,41,40,31,28,31,26,25,25,21,18,18,12,15,14,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+000aa0 0c09
+000aa1 0c0c
+000aa2 0c0c
+000aa3 1210
+000aa4 1615
+000aa5 201d
+000aa6 241f
+000aa7 2522
+000aa8 2e2a
+000aa9 3031
+000aaa 252c
+000aab 2123
+000aac 2124
+000aad 181d
+000aae 1617
+000aaf 1212
+000ab0 1111
+000ab1 0c0c
+000ab2 0008
+000ab3 0000
+000ab4 0000
+000ab5 0000
+000ab6 0000
+000ab7 0000
+000ab8 0000
+000ab9 0000
+000aba 0000
+000abb 0000
+000abc 0000
+000abd 0000
+000abe 0000
+000abf 0000                      .db 9,12,12,12,12,12,16,18,21,22,29,32,31,36,34,37,42,46,49,48,44,37,35,33,36,33,29,24,23,22,18,18,17,17,12,12,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+000ac0 0b0b
+000ac1 0a07
+000ac2 080a
+000ac3 0e0a
+000ac4 1712
+000ac5 201c
+000ac6 2624
+000ac7 2a28
+000ac8 2d2c
+000ac9 3131
+000aca 282c
+000acb 2525
+000acc 2324
+000acd 1e22
+000ace 191a
+000acf 1517
+000ad0 1414
+000ad1 0e0f
+000ad2 090c
+000ad3 0000
+000ad4 0000
+000ad5 0000
+000ad6 0000
+000ad7 0000
+000ad8 0000
+000ad9 0000
+000ada 0000
+000adb 0000
+000adc 0000
+000add 0000
+000ade 0000
+000adf 0000                      .db 11,11,7,10,10,8,10,14,18,23,28,32,36,38,40,42,44,45,49,49,44,40,37,37,36,35,34,30,26,25,23,21,20,20,15,14,12,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+000ae0 0700
 000ae1 0000
-000ae2 0000
-000ae3 0000
-000ae4 0000
-000ae5 0000
-000ae6 0000
-000ae7 0000
-000ae8 0000
-000ae9 0000
-000aea 0000
-000aeb 0000                      .db 0,7,0,0,0,7,12,15,17,21,26,27,37,38,34,39,42,45,48,44,40,36,36,33,34,30,29,26,23,20,22,19,19,18,14,10,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-000aec 0000
-000aed 0000
-000aee 0000
-000aef 0c0a
-000af0 130d
-000af1 1816
-000af2 1f1d
-000af3 2622
-000af4 2723
-000af5 2a28
-000af6 2127
-000af7 1f1e
-000af8 181c
-000af9 1a1a
-000afa 1415
-000afb 1314
-000afc 1213
-000afd 0f10
-000afe 080c
-000aff 0000
+000ae2 0700
+000ae3 0f0c
+000ae4 1511
+000ae5 1b1a
+000ae6 2625
+000ae7 2722
+000ae8 2d2a
+000ae9 2c30
+000aea 2428
+000aeb 2124
+000aec 1e22
+000aed 1a1d
+000aee 1417
+000aef 1316
+000af0 1213
+000af1 0a0e
+000af2 0008
+000af3 0000
+000af4 0000
+000af5 0000
+000af6 0000
+000af7 0000
+000af8 0000
+000af9 0000
+000afa 0000
+000afb 0000
+000afc 0000
+000afd 0000
+000afe 0000
+000aff 0000                      .db 0,7,0,0,0,7,12,15,17,21,26,27,37,38,34,39,42,45,48,44,40,36,36,33,34,30,29,26,23,20,22,19,19,18,14,10,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 000b00 0000
 000b01 0000
 000b02 0000
-000b03 0000
-000b04 0000
-000b05 0000
-000b06 0000
-000b07 0000
-000b08 0000
-000b09 0000
-000b0a 0000
-000b0b 0000                      .db 0,0,0,0,0,0,10,12,13,19,22,24,29,31,34,38,35,39,40,42,39,33,30,31,28,24,26,26,21,20,20,19,19,18,16,15,12,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+000b03 0c0a
+000b04 130d
+000b05 1816
+000b06 1f1d
+000b07 2622
+000b08 2723
+000b09 2a28
+000b0a 2127
+000b0b 1f1e
+000b0c 181c
+000b0d 1a1a
+000b0e 1415
+000b0f 1314
+000b10 1213
+000b11 0f10
+000b12 080c
+000b13 0000
+000b14 0000
+000b15 0000
+000b16 0000
+000b17 0000
+000b18 0000
+000b19 0000
+000b1a 0000
+000b1b 0000
+000b1c 0000
+000b1d 0000
+000b1e 0000
+000b1f 0000                      .db 0,0,0,0,0,0,10,12,13,19,22,24,29,31,34,38,35,39,40,42,39,33,30,31,28,24,26,26,21,20,20,19,19,18,16,15,12,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
                                  
-000b0c 4e49
-000b0d 5550
-000b0e 2054
-000b0f 3a58
-D:\workspace\comp9032\project\final_project\final_project\main.asm(192): warning: .cseg .db misalignment - padding zero byte
-000b10 0000                      input_x:	.db "INPUT X:",0
-000b11 4e49
-000b12 5550
-000b13 2054
-000b14 3a59                      input_y: .db "INPUT Y:"
-000b15 4553
-000b16 5241
-000b17 4843
-000b18 4e49
-000b19 0047                      string_search: .db "SEARCHING", 0
-000b1a 4f46
-000b1b 4e55
-000b1c 2044
-000b1d 0020                      string_found: .db "FOUND  ", 0
-000b1e 4f4e
-000b1f 2054
-000b20 4f46
-000b21 4e55
-000b22 0044                      string_not_found: .db "NOT FOUND", 0
-000b23 4241
-000b24 524f
-000b25 0054                      string_abort: .db "ABORT", 0
-                                 
+000b20 4e49
+000b21 5550
+000b22 2054
+000b23 3a58
+000b24 0000                      input_x:	.db "INPUT X:",0, 0
+000b25 4e49
+000b26 5550
+000b27 2054
+000b28 3a59
+000b29 0000                      input_y: .db "INPUT Y:", 0, 0
+000b2a 4553
+000b2b 5241
+000b2c 4843
+000b2d 4e49
+000b2e 0047                      string_search: .db "SEARCHING", 0
+000b2f 4f46
+000b30 4e55
+000b31 2044
+000b32 0020                      string_found: .db "FOUND  ", 0
+000b33 4f4e
+000b34 2054
+000b35 4f46
+000b36 4e55
+000b37 0044                      string_not_found: .db "NOT FOUND", 0
+000b38 4241
+000b39 524f
+000b3a 0054                      string_abort: .db "ABORT", 0
+000b3b 4552
+000b3c 4441
+000b3d 0059                      ready_to_search: .db "READY", 0
                                  
                                  .dseg
 
@@ -4987,7 +5009,7 @@ counted separately from r26..r31 here.
 "ATmega2560" register use summary:
 x  :   0 y  :   0 z  :  10 r0 :   6 r1 :   5 r2 :   2 r3 :   2 r4 :   0 
 r5 :   0 r6 :   0 r7 :   0 r8 :   0 r9 :   0 r10:   0 r11:   0 r12:   0 
-r13:   0 r14:   0 r15:   0 r16: 186 r17:  35 r18:  27 r19:  12 r20:  14 
+r13:   0 r14:   0 r15:   0 r16: 192 r17:  36 r18:  27 r19:  13 r20:  14 
 r21:  20 r22:   6 r23:  42 r24:  22 r25:  22 r26:   0 r27:   0 r28:   0 
 r29:   0 r30:  10 r31:  10 
 Registers used: 17 out of 35 (48.6%)
@@ -4997,29 +5019,29 @@ Registers used: 17 out of 35 (48.6%)
 andi  :   2 asr   :   0 bclr  :   0 bld   :   0 brbc  :   0 brbs  :   0 
 brcc  :   0 brcs  :   1 break :   0 breq  :  17 brge  :   0 brhc  :   0 
 brhs  :   0 brid  :   0 brie  :   0 brlo  :  10 brlt  :   0 brmi  :   0 
-brne  :   8 brpl  :   0 brsh  :   3 brtc  :   0 brts  :   0 brvc  :   0 
+brne  :   7 brpl  :   0 brsh  :   3 brtc  :   0 brts  :   0 brvc  :   0 
 brvs  :   0 bset  :   0 bst   :   0 call  :  23 cbi   :   6 cbr   :   0 
 clc   :   0 clh   :   0 cli   :   0 cln   :   0 clr   :  26 cls   :   0 
 clt   :   0 clv   :   0 clz   :   0 com   :   1 cp    :   4 cpc   :   3 
-cpi   :  30 cpse  :   0 dec   :   2 eicall:   0 eijmp :   0 elpm  :   0 
+cpi   :  30 cpse  :   0 dec   :   3 eicall:   0 eijmp :   0 elpm  :   0 
 eor   :   0 fmul  :   0 fmuls :   0 fmulsu:   0 icall :   0 ijmp  :   0 
-in    :   0 inc   :  13 jmp   :   2 ld    :   0 ldd   :   0 ldi   :  93 
-lds   :   2 lpm   :   6 lsl   :   2 lsr   :   0 mov   :  27 movw  :   0 
+in    :   0 inc   :  13 jmp   :   2 ld    :   2 ldd   :   0 ldi   :  99 
+lds   :   2 lpm   :   3 lsl   :   2 lsr   :   0 mov   :  28 movw  :   0 
 mul   :   2 muls  :   0 mulsu :   0 neg   :   0 nop   :   0 or    :   0 
-ori   :   0 out   :  20 pop   :  48 push  :  48 rcall : 115 ret   :  21 
-reti  :   0 rjmp  :  29 rol   :   0 ror   :   0 sbc   :   3 sbci  :   0 
+ori   :   0 out   :  20 pop   :  48 push  :  48 rcall : 126 ret   :  21 
+reti  :   0 rjmp  :  30 rol   :   0 ror   :   0 sbc   :   3 sbci  :   0 
 sbi   :   4 sbic  :   0 sbis  :   0 sbiw  :   3 sbr   :   0 sbrc  :   1 
-sbrs  :   0 sec   :   0 seh   :   0 sei   :   0 sen   :   0 ser   :  12 
+sbrs  :   0 sec   :   0 seh   :   0 sei   :   2 sen   :   0 ser   :  11 
 ses   :   0 set   :   0 sev   :   0 sez   :   0 sleep :   0 spm   :   0 
 st    :   2 std   :   0 sts   :   9 sub   :   0 subi  :  19 swap  :   0 
 tst   :   0 wdr   :   0 
-Instructions used: 39 out of 116 (33.6%)
+Instructions used: 41 out of 116 (35.3%)
 
 "ATmega2560" memory use summary [bytes]:
 Segment   Begin    End      Code   Data   Used    Size   Use%
 ---------------------------------------------------------------
-[.cseg] 0x000000 0x00164c   1314   4148   5462  262144   2.1%
+[.cseg] 0x000000 0x00167c   1354   4156   5510  262144   2.1%
 [.dseg] 0x000200 0x000202      0      2      2    8192   0.0%
 [.eseg] 0x000000 0x000000      0      0      0    4096   0.0%
 
-Assembly complete, 0 errors, 1 warnings
+Assembly complete, 0 errors, 0 warnings

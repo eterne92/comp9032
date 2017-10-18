@@ -49,15 +49,20 @@ main:
 		brsh input_y_loop
 		mov r3, r23
 
+	lcd_clear
+	ldi temp, low(ready_to_search<<1)
+	ldi temp2, high(ready_to_search<<1)
+	rcall lcd_display_string
+	
 	call set_location
 
-	ser temp
 	wait_for_interrupt:			;in search start interrupt, set temp to 0
-		brne wait_for_interrupt
+		rjmp wait_for_interrupt
 	
 search_start:
 	ldi temp, 1<<INT1
 	STORE EIMSK, temp			;disable the ex_int0
+	sei
 	ldi current_x, -1			;set start position
 	ldi current_y, 0
 	ldi zl, low(mountain<<1)
@@ -126,17 +131,23 @@ search_start:
 
 	search_found:
 		lcd_clear
-		ldi temp, low(string_found)
-		ldi temp2, high(string_found)
+		ldi temp, low(string_found<<1)
+		ldi temp2, high(string_found<<1)
 		rcall lcd_display_string
 		lcd_write_data 'x'
 		lcd_write_data ':'
 		mov temp, current_x
 		rcall lcd_display_number
-		lcd_write_data ' '
+		lcd_write_com 0b11000000
 		lcd_write_data 'y'
 		lcd_write_data ':'
 		mov temp, current_y
+		rcall lcd_display_number
+		lcd_write_data ' '
+		lcd_write_data 'z'
+		lcd_write_data ':'
+		mov temp, current_height
+		dec temp
 		rcall lcd_display_number
 		fly_ctrl stop_motor_speed
 		rjmp end
@@ -171,7 +182,7 @@ RESET:
 	store led_ddr, temp
 	
 	;setup keypad
-	ldi temp, 0b00001111	
+	ldi temp, 0b11110000
 	store key_ddr, temp
 	ldi temp, (1<<ISC01)|(1<<ISC11)
 	sts EICRA, temp
@@ -180,7 +191,7 @@ RESET:
 	ser temp
 	out DDRE, temp
 	call pwm_generate
-	
+	sei
 	rjmp main
 
 .include "keypad.asm"
@@ -189,13 +200,13 @@ RESET:
 .include "drone.asm"
 .include "generalfunc.asm"
 .include "mountain.asm"
-input_x:	.db "INPUT X:",0
-input_y: .db "INPUT Y:"
+input_x:	.db "INPUT X:",0, 0
+input_y: .db "INPUT Y:", 0, 0
 string_search: .db "SEARCHING", 0
 string_found: .db "FOUND  ", 0
 string_not_found: .db "NOT FOUND", 0
 string_abort: .db "ABORT", 0
-
+ready_to_search: .db "READY", 0
 
 .dseg
 	accident: .byte 2
