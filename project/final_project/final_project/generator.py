@@ -13,7 +13,7 @@ for _ in range(10):
     y = randint(1,64)
     print(x,y)
     new_mountain = [[0 for _ in range(66)] for _ in range(66)]
-    new_mountain[x][y] = randint(50,127)
+    new_mountain[x][y] = randint(20,64)
     print(new_mountain)
     allnodes = {(x,y)}
     newnodes = {1}
