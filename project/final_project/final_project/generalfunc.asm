@@ -140,3 +140,28 @@ pwm_duty:
 
 	pop r16
 	ret
+
+LEDFLASH:
+	push r16
+
+	ser r16
+	out portc, r16
+	macro_wait 50
+	clr r16
+	out portc, r16
+	macro_wait 50
+	ser r16
+	out portc, r16
+	macro_wait 50
+	clr r16
+	out portc, r16
+	macro_wait 50
+	ser r16
+	out portc, r16
+	macro_wait 50
+	clr r16
+	out portc, r16
+	macro_wait 50
+
+	pop r16
+	ret

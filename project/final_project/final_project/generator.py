@@ -44,7 +44,8 @@ for i in range(64):
     string += '.db '
     for j in range(64):
         string += str(mountain[i][j])
-        string += ','
+        if j < 63:
+            string += ','
     string += '\n'
 
 with open("mountain.asm", 'w') as f:

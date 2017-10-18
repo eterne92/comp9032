@@ -37,16 +37,16 @@ main:
 		brsh input_x_loop
 		mov r2, r23
 
-	input_x_loop:
+	input_y_loop:
 		lcd_clear
 		ldi temp, low(input_y<<1)
 		ldi temp2, high(input_y<<1)
 		rcall lcd_display_string
 		call KEY_VALUE
 		cpi R23, -1
-		breq input_x_loop
+		breq input_y_loop
 		cpi R23, 64
-		brsh input_x_loop
+		brsh input_y_loop
 		mov r3, r23
 
 	call set_location
@@ -55,9 +55,9 @@ main:
 	wait_for_interrupt:			;in search start interrupt, set temp to 0
 		brne wait_for_interrupt
 	
-start_serch:
+search_start:
 	ldi temp, 1<<INT1
-	load EIMSK, temp			;disable the ex_int0
+	STORE EIMSK, temp			;disable the ex_int0
 	ldi current_x, -1			;set start position
 	ldi current_y, 0
 	ldi zl, low(mountain<<1)

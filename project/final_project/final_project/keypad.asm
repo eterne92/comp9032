@@ -153,7 +153,7 @@ KEY_VALUE:
 		BRCS KEY_VALUE_OVERFLOW		;if r17 + r23 > 255 -> overflow
 		RJMP KEY_VALUE_LOOP
 	KEY_VALUE_OVERFLOW:
-		CALL LEDFALSH				;WHEN overflow occurs, flash led
+		CALL LEDFLASH				;WHEN overflow occurs, flash led
 		LDI R23, -1
 KEY_VALUE_RETURN:
 	MOV R23, R17
