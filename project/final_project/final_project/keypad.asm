@@ -122,6 +122,7 @@ RETURN_KEY_ASCII:
 	POP R24
 	RET
 ;GET A 8BIT INT USING KEYPAD, END WITH '#'
+;RETURN value -> r23 if not overflowed
 KEY_VALUE:
 	PUSH R0
 	PUSH R1
@@ -153,7 +154,7 @@ KEY_VALUE:
 		RJMP KEY_VALUE_LOOP
 	KEY_VALUE_OVERFLOW:
 		CALL LEDFALSH				;WHEN overflow occurs, flash led
-		JMP RESET					;then reset the board
+		LDI R23, -1
 KEY_VALUE_RETURN:
 	MOV R23, R17
 	POP R18

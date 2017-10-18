@@ -1,0 +1,83 @@
+\documentclass[a4paper, 12 pt]{report}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\usepackage{algorithm}  
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows}
+
+
+
+% -------------------------------------------------------------------------------------
+% BEGIN DOCUMENT
+% -------------------------------------------------------------------------------------
+\begin{document}
+\title{Drone Design Manual}
+\author{Shao Hui z5155945}
+\date{}
+\maketitle
+\pagestyle{empty}
+\setcounter{section}{0}
+% -------------------------------------------------------------------------------------
+% TABLE OF CONTENTS
+% -------------------------------------------------------------------------------------
+\tableofcontents
+\newpage
+
+% -------------------------------------------------------------------------------------
+% INTRODUCTION
+% -------------------------------------------------------------------------------------
+\section{Introduction}
+
+\newpage
+
+% -------------------------------------------------------------------------------------
+%-------------------------
+\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
+\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
+\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+% -------------------------------------------------------------------------------------
+\section{Diagram}
+\begin{center}
+	\begin{tikzpicture}[node distance = 2.5cm]
+		\node (start) [startstop] {start};
+		\node (inputX) [io, below of = start] {input X};
+		\node (checkX) [decision, right of = inputX, xshift = 2cm] {check X};
+		\node (inputY) [io, below of = inputX] {input Y};
+		\node (checkY) [decision, right of = inputY, xshift = 2cm] {check Y};
+		
+		\draw [arrow] (checkX) |- (start);
+	\end{tikzpicture}
+\end{center}
+
+
+\newpage
+
+% -------------------------------------------------------------------------------------
+% Mountain Generator
+% -------------------------------------------------------------------------------------
+\section{Mountain Generator}
+This project provided a random mountain generator written in python called generator.py that will generate a 64$\times$64 matrix and write it to the "mountain.asm" file which will be included into the source code.\\\\
+This generator uses such technique,\\
+1. Randomly generate a peak in position x, y with height h.\\
+2. Generate down from the peak to its neighbour grid until height became less then 10.\\
+3. Combine this graph with the former mountain map and cut out the positions that are lower than the former map.\\
+4. Repeat this procedure for several times.\\\\
+This technique always generate a mountain that make sense. You can also use your own generator or simply type in a mountain that suits your need. But make sure when you assemble the project, label your mountain with a label "mountain".
+\newpage
+% -------------------------------------------------------------------------------------
+% Control Procedure
+% -------------------------------------------------------------------------------------
+\section{Control Procedure}
+Every time when the board is reset. The LCD will display a string "Input X:".\\
+You should always follow such emulate procedure.\\
+1. Input some number within 64 using keypad end with "\#", which is the row number of the accident scene. If your input is invalid, led will flash three times and board will be reset.\\
+2. After LCD showed "Input Y:", input some number within 64 using keypad end with "\#", which is the column number of the accident scene. If your input is invalid, led will flash three times and board will be reset.\\
+3. After LCD showed "READY", press PB0 to start search. LED will flash 3 times to indicate the start of search. LCD will show drone's current position and flying direction. Motor will be spinning, fast means flying high, low speed means suspending.\\
+4. During search, you can always press PB1 to abort the search. LCD will show "ABORT".\\
+5. After finding the accident scene. LCD will show "FOUND" and the position of the accident scene. Motor will stop. If a accident scene not fount(which actually never happen during a simulation), LCD will show "NOT FOUND", and motor also stop.
+\end{document}

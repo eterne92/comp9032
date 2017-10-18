@@ -7,12 +7,12 @@
 
 .include "m2560def.inc"
 .include "constant.inc"
-.def temp = r16
-.def temp2 = r17
-.def direction = r18
-.def current_height = r19
-.def current_x = r20
-.def current_y = r21
+.DEF TEMP = R16
+.DEF TEMP2 = R17
+.DEF DIRECTION = R18
+.DEF CURRENT_HEIGHT = R19
+.DEF CURRENT_X = R20
+.DEF CURRENT_Y = R21
 
 
 .include "macros.asm"
@@ -22,17 +22,42 @@
 .org INT0addr
 	jmp SEARCH_START
 .org INT1addr
-	jmp ext_abort
+	jmp search_abort
 .org 0x80
 main:
-	ldi temp, low(input_x_y<<1)
-	ldi temp2, high(input_x_y<<1)
-	rcall lcd_display_string
+	input_x_loop:
+		lcd_clear
+		ldi temp, low(input_x<<1)
+		ldi temp2, high(input_x<<1)
+		rcall lcd_display_string
+		call KEY_VALUE
+		cpi R23, -1
+		breq input_x_loop
+		cpi R23, 64
+		brsh input_x_loop
+		mov r2, r23
+
+	input_x_loop:
+		lcd_clear
+		ldi temp, low(input_y<<1)
+		ldi temp2, high(input_y<<1)
+		rcall lcd_display_string
+		call KEY_VALUE
+		cpi R23, -1
+		breq input_x_loop
+		cpi R23, 64
+		brsh input_x_loop
+		mov r3, r23
+
+	call set_location
+
 	ser temp
 	wait_for_interrupt:			;in search start interrupt, set temp to 0
-		cpi temp, 0
 		brne wait_for_interrupt
 	
+start_serch:
+	ldi temp, 1<<INT1
+	load EIMSK, temp			;disable the ex_int0
 	ldi current_x, -1			;set start position
 	ldi current_y, 0
 	ldi zl, low(mountain<<1)
@@ -125,12 +150,6 @@ end:
 
 
 
-SEARCH_START:
-	clr temp
-	reti
-ext_abort:
-	ldi r23, -2
-	reti
 RESET:
 	clr temp
 	clr temp2
@@ -156,7 +175,7 @@ RESET:
 	store key_ddr, temp
 	ldi temp, (1<<ISC01)|(1<<ISC11)
 	sts EICRA, temp
-	ldi temp, (1<<INT0)|(1<<INT1)
+	ldi temp, (1<<INT0)
 	out EIMSK, temp
 	ser temp
 	out DDRE, temp
@@ -170,7 +189,8 @@ RESET:
 .include "drone.asm"
 .include "generalfunc.asm"
 .include "mountain.asm"
-input_x_y:	.db "Input X,Y:",0
+input_x:	.db "INPUT X:",0
+input_y: .db "INPUT Y:"
 string_search: .db "SEARCHING", 0
 string_found: .db "FOUND  ", 0
 string_not_found: .db "NOT FOUND", 0
