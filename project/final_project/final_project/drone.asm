@@ -35,7 +35,7 @@ FLY_TO_NEXT_POS:
         LCD_WRITE_DATA 'D'
         ADIW Z, BORDER_Y	    ;NEXT ROW
         COM R18                 ;DIFFERENT DIRECTION
-        inc R21					;SET R21, NEXT ROW
+        INC R21					;SET R21, NEXT ROW
         RJMP CHECK_HEIGHT
 
 ;CURRENT POSITION: R20:R21 -> X:Y

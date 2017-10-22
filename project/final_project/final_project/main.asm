@@ -5,8 +5,8 @@
 ; Author : shaoh
 ;
 
-.include "m2560def.inc"
-.include "constant.inc"
+.INCLUDE "M2560DEF.INC"
+.INCLUDE "CONSTANT.INC"
 .DEF TEMP = R16
 .DEF TEMP2 = R17
 .DEF DIRECTION = R18
@@ -15,198 +15,208 @@
 .DEF CURRENT_Y = R21
 
 
-.include "macros.asm"
+.INCLUDE "MACROS.ASM"
 
-.org 0	;set interrupt vertex
-	rjmp RESET
-.org INT0addr
-	jmp SEARCH_START
-.org INT1addr
-	jmp search_abort
-.org 0x80
-main:
-	input_x_loop:
-		lcd_clear
-		ldi temp, low(input_x<<1)
-		ldi temp2, high(input_x<<1)
-		rcall lcd_display_string
-		call KEY_VALUE
-		cpi R23, -1
-		breq input_x_loop
-		cpi R23, 64
-		brsh input_x_loop
-		mov r2, r23
+.ORG 0	;SET INTERRUPT VERTEX
+	RJMP RESET
+.ORG INT0ADDR
+	JMP SEARCH_START	;INT0 TO START SEARCH
+.ORG INT1ADDR
+	JMP SEARCH_ABORT	;INT1 TO ABORT SEARCH
+.ORG 0X80
+MAIN:
+	INPUT_X_LOOP:		;INPUT A X, UNTIL IT IS VALID NUMBER
+		LCD_CLEAR
+		LDI TEMP, LOW(INPUT_X<<1)
+		LDI TEMP2, HIGH(INPUT_X<<1)
+		RCALL LCD_DISPLAY_STRING
+		CALL KEY_VALUE
+		CPI R23, -1
+		BREQ INPUT_X_LOOP
+		CPI R23, 64
+		BRSH INPUT_X_LOOP
+		MOV R2, R23
 
-	input_y_loop:
-		lcd_clear
-		ldi temp, low(input_y<<1)
-		ldi temp2, high(input_y<<1)
-		rcall lcd_display_string
-		call KEY_VALUE
-		cpi R23, -1
-		breq input_y_loop
-		cpi R23, 64
-		brsh input_y_loop
-		mov r3, r23
+	INPUT_Y_LOOP:		;INPUT A Y, UNTIL IT IS VALID NUMBER
+		LCD_CLEAR
+		LDI TEMP, LOW(INPUT_Y<<1)
+		LDI TEMP2, HIGH(INPUT_Y<<1)
+		RCALL LCD_DISPLAY_STRING
+		CALL KEY_VALUE
+		CPI R23, -1
+		BREQ INPUT_Y_LOOP
+		CPI R23, 64
+		BRSH INPUT_Y_LOOP
+		MOV R3, R23
 
-	lcd_clear
-	ldi temp, low(ready_to_search<<1)
-	ldi temp2, high(ready_to_search<<1)
-	rcall lcd_display_string
+	LCD_CLEAR
+	LDI TEMP, LOW(READY_TO_SEARCH<<1)
+	LDI TEMP2, HIGH(READY_TO_SEARCH<<1)
+	RCALL LCD_DISPLAY_STRING	;DISPLAY READY
+	CALL SET_LOCATION			;SET UP ACCIDENT LOCATION
+	LDI TEMP, 1<<INT0			;ONLY USE INT0 BEFORE SEARCH START
+	STORE EIMSK, TEMP				;
+	;NOW YOU CAN USE INT TO START SEARCH
+	SYSTEM_HALT_LOOP:
+		RJMP SYSTEM_HALT_LOOP
 	
-	call set_location
+SEARCH_START:
+	CALL LEDFLASH				;
+	LDI TEMP, 1<<INT1			;
+	STORE EIMSK, TEMP			;DISABLE THE EX_INT0 SO SEARCH WON'T START AGAIN
+	LDI CURRENT_X, -1			;SET START POSITION
+	LDI CURRENT_Y, 0
+	LDI ZL, LOW(MOUNTAIN<<1)
+	LDI ZH, HIGH(MOUNTAIN<<1)
+	SBIW Z, 1					;POINT Z TO JUST BEFORE MOUNTAIN START
+	SER DIRECTION				;INITIAL DIRECTION RIGHT
+	LDI CURRENT_HEIGHT, 0		;CURRENT HEIGHT 0(LANDING)
+	FLY_CTRL FAST_MOTOR_SPEED	;
+	FLY_LOOP:
+		LCD_CLEAR				;
+		;FIND NEXT POSITION
+		RCALL FLY_TO_NEXT_POS
+		CPI R23, -1				;IF ALL MOUNTAIN BEEN SEARCHED
+		BREQ SEARCH_NOT_FOUND	;THEN ACCIDENT SCENE IS NOT FOUND
+		SUBI R23, -1			;IF CURRENT HEIGHT IS LESS 
+		CP CURRENT_HEIGHT, R23	;THEN NEXT POSITION'S HEIGHT + 1
+		BRLO FLY_HIGH			;WE SHOULD FLY HIGHER
+	SEARCH:
+		MOV CURRENT_HEIGHT, R23	;NEW HEIGHT IS MOUNTAIN HEIGHT + 1
+		;DISPLAY NOW POS
+		LCD_WRITE_DATA 'X'
+		LCD_WRITE_DATA ':'
+		MOV TEMP, CURRENT_X
+		RCALL LCD_DISPLAY_NUMBER
+		LCD_WRITE_DATA ' '
+		LCD_WRITE_DATA 'Y'
+		LCD_WRITE_DATA ':'
+		MOV TEMP, CURRENT_Y
+		RCALL LCD_DISPLAY_NUMBER
+		LCD_WRITE_COM 0B11000000
+		LCD_WRITE_DATA 'Z'
+		LCD_WRITE_DATA ':'
+		MOV TEMP, CURRENT_HEIGHT
+		RCALL LCD_DISPLAY_NUMBER
+		LCD_WRITE_DATA ' '
+		;DISPLAY "SEARCHING"
+		LDI TEMP, LOW(STRING_SEARCH<<1)
+		LDI TEMP2, HIGH(STRING_SEARCH<<1)
+		RCALL LCD_DISPLAY_STRING
+		;SEARCH AREA
+		RCALL DRONE_SEARCH
+		MACRO_WAIT 15			;WAIT SOME TIME TO SEARCH
+		CPI R23, 0
+		BREQ FLY_LOOP			;IF NOT FOUND, KEEP FLYING
+		RJMP SEARCH_FOUND		;ELSE FOUND
 
-	wait_for_interrupt:			;in search start interrupt, set temp to 0
-		rjmp wait_for_interrupt
-	
-search_start:
-	ldi temp, 1<<INT1
-	STORE EIMSK, temp			;disable the ex_int0
-	sei
-	ldi current_x, -1			;set start position
-	ldi current_y, 0
-	ldi zl, low(mountain<<1)
-	ldi zh, high(mountain<<1)
-	sbiw z, 1
-	ser direction
-	ldi current_height, 10
-	fly_ctrl fast_motor_speed
-	fly_loop:
-		lcd_clear
-		cpi r23, -2
-		breq search_abort
-		;find next position
-		rcall fly_to_next_pos
-		cpi r23, -1
-		breq search_not_found
-		subi r23, -1
-		cp current_height, r23
-		brlo fly_high
-	search:
-		mov current_height, r23
-		;display now pos
-		lcd_write_data 'x'
-		lcd_write_data ':'
-		mov temp, current_x
-		rcall lcd_display_number
-		lcd_write_data ' '
-		lcd_write_data 'y'
-		lcd_write_data ':'
-		mov temp, current_y
-		rcall lcd_display_number
-		lcd_write_com 0b11000000
-		lcd_write_data 'z'
-		lcd_write_data ':'
-		mov temp, current_height
-		rcall lcd_display_number
-		lcd_write_data ' '
-		ldi temp, low(string_search<<1)
-		ldi temp2, high(string_search<<1)
-		rcall lcd_display_string
-		rcall drone_search
-		macro_wait 15
+	FLY_HIGH:
+		FLY_CTRL FAST_MOTOR_SPEED;SPEED UP TO FLY HIGH
+		RJMP SEARCH
 
-		cpi r23, 0
-		breq fly_loop	;if not found, keep flying
-		rjmp search_found
-	
-	fly_high:
-		fly_ctrl fast_motor_speed
-		rjmp search
+	SEARCH_NOT_FOUND:
+		CALL LEDFLASH
+		LCD_CLEAR
+		;DISPLAY NOT FOUND
+		LDI TEMP, LOW(STRING_NOT_FOUND<<1)
+		LDI TEMP2, HIGH(STRING_NOT_FOUND<<1)
+		RCALL LCD_DISPLAY_STRING
+		FLY_CTRL STOP_MOTOR_SPEED
+		RJMP END
 
-	search_abort:
-		lcd_clear
-		ldi temp, low(string_abort<<1)
-		ldi temp2, high(string_abort<<1)
-		rcall lcd_display_string
-		fly_ctrl stop_motor_speed
-		rjmp end
-	search_not_found:
-		lcd_clear
-		ldi temp, low(string_not_found<<1)
-		ldi temp2, high(string_not_found<<1)
-		rcall lcd_display_string
-		fly_ctrl stop_motor_speed
-		rjmp end
+	SEARCH_ABORT:
+		CALL LEDFLASH
+		LCD_CLEAR
+		;DISPLAY ABORT
+		LDI TEMP, LOW(STRING_ABORT<<1)
+		LDI TEMP2, HIGH(STRING_ABORT<<1)
+		RCALL LCD_DISPLAY_STRING
+		FLY_CTRL STOP_MOTOR_SPEED
+		SEC
+		RJMP END
 
-	search_found:
-		lcd_clear
-		ldi temp, low(string_found<<1)
-		ldi temp2, high(string_found<<1)
-		rcall lcd_display_string
-		lcd_write_data 'x'
-		lcd_write_data ':'
-		mov temp, current_x
-		rcall lcd_display_number
-		lcd_write_com 0b11000000
-		lcd_write_data 'y'
-		lcd_write_data ':'
-		mov temp, current_y
-		rcall lcd_display_number
-		lcd_write_data ' '
-		lcd_write_data 'z'
-		lcd_write_data ':'
-		mov temp, current_height
-		dec temp
-		rcall lcd_display_number
-		fly_ctrl stop_motor_speed
-		rjmp end
+	SEARCH_FOUND:
+		CALL LEDFLASH
+		LCD_CLEAR
+		;DISPLAY "FOUND"
+		LDI TEMP, LOW(STRING_FOUND<<1)
+		LDI TEMP2, HIGH(STRING_FOUND<<1)
+		RCALL LCD_DISPLAY_STRING
+		;DISPLAY POSITION
+		LCD_WRITE_DATA 'X'
+		LCD_WRITE_DATA ':'
+		MOV TEMP, CURRENT_X
+		RCALL LCD_DISPLAY_NUMBER
+		LCD_WRITE_COM 0B11000000
+		LCD_WRITE_DATA 'Y'
+		LCD_WRITE_DATA ':'
+		MOV TEMP, CURRENT_Y
+		RCALL LCD_DISPLAY_NUMBER
+		LCD_WRITE_DATA ' '
+		LCD_WRITE_DATA 'Z'
+		LCD_WRITE_DATA ':'
+		MOV TEMP, CURRENT_HEIGHT
+		DEC TEMP
+		RCALL LCD_DISPLAY_NUMBER
+		FLY_CTRL STOP_MOTOR_SPEED
+		RJMP END	
 
-		
-
-end:
-	rjmp end
+END:
+	RJMP END
 
 
 
 
 
 RESET:
-	clr temp
-	clr temp2
-	clr direction
-	clr current_height
-	clr current_x
-	clr current_y
-	clr r23
-	;clear all registers being used
+	CLR TEMP
+	CLR TEMP2
+	CLR DIRECTION
+	CLR CURRENT_HEIGHT
+	CLR CURRENT_X
+	CLR CURRENT_Y
+	CLR R23
+	;CLEAR ALL REGISTERS BEING USED
 
-	;setup lcd
-	ser temp
-	store lcd_data_ddr, temp
-	store lcd_ctrl_ddr, temp
-	rcall lcd_init
+	;SETUP LCD
+	SER TEMP
+	STORE LCD_DATA_DDR, TEMP
+	STORE LCD_CTRL_DDR, TEMP
+	RCALL LCD_INIT
 
-	;setup led
-	ser temp	
-	store led_ddr, temp
+	;SETUP LED
+	SER TEMP	
+	STORE LED_DDR, TEMP
 	
-	;setup keypad
-	ldi temp, 0b11110000
-	store key_ddr, temp
-	ldi temp, (1<<ISC01)|(1<<ISC11)
-	sts EICRA, temp
-	ldi temp, (1<<INT0)
-	out EIMSK, temp
-	ser temp
-	out DDRE, temp
-	call pwm_generate
-	sei
-	rjmp main
+	;SETUP KEYPAD
+	LDI TEMP, 0B11110000
+	STORE KEY_DDR, TEMP
+	;SET UP EXINTS
+	LDI TEMP, (1<<ISC01)|(1<<ISC11)
+	STS EICRA, TEMP
+	CLR TEMP
+	STORE EIMSK, TEMP
+	SER TEMP
+	STORE DDRE, TEMP
+	CALL PWM_GENERATE
+	SEI						;ENABLE INTERRUPT
+	RJMP MAIN
 
-.include "keypad.asm"
-.include "lcd.asm"
-.include "wait.asm"
-.include "drone.asm"
-.include "generalfunc.asm"
-.include "mountain.asm"
-input_x:	.db "INPUT X:",0, 0
-input_y: .db "INPUT Y:", 0, 0
-string_search: .db "SEARCHING", 0
-string_found: .db "FOUND  ", 0
-string_not_found: .db "NOT FOUND", 0
-string_abort: .db "ABORT", 0
-ready_to_search: .db "READY", 0
-
-.dseg
-	accident: .byte 2
+.INCLUDE "KEYPAD.ASM"
+.INCLUDE "LCD.ASM"
+.INCLUDE "WAIT.ASM"
+.INCLUDE "DRONE.ASM"
+.INCLUDE "GENERALFUNC.ASM"
+;HARD CODE MAP
+.INCLUDE "MOUNTAIN.ASM"
+;HARD CODE STRINGS
+INPUT_X:	.DB "INPUT X:",0, 0
+INPUT_Y: .DB "INPUT Y:", 0, 0
+STRING_SEARCH: .DB "SEARCHING", 0
+STRING_FOUND: .DB "FOUND  ", 0
+STRING_NOT_FOUND: .DB "NOT FOUND", 0
+STRING_ABORT: .DB "ABORT", 0
+READY_TO_SEARCH: .DB "READY", 0
+;USE DESG TO STORE ACCIDENT LOCATION
+.DSEG
+	ACCIDENT: .BYTE 2

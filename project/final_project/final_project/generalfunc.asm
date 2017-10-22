@@ -1,14 +1,16 @@
 /*
- * generalfunc.asm
+ * GENERALFUNC.ASM
  *
- *  Created: 2017/9/29 22:20:30
- *   Author: shaoh
+ *  CREATED: 2017/9/29 22:20:30
+ *   AUTHOR: SHAOH
  */ 
 ;---------------------------------------------
 ;SOME USEFUL FUNCTIONS:
 ;ITOA
 ;ITOA_16BIT
 ;PWM_GENERATE
+;PWM_DUTY
+;LEDFLASH
 ;---------------------------------------------
 ITOA:	;8BIT INPUT(MAX 255, MIN 0) R16, R23:R24:R25 OUTPUT ASCII VALUE
 	PUSH R16
@@ -113,55 +115,55 @@ ITOA_16BIT:	;16BIT INPUT(MAX 65535, MIN 0) R17_HIGH:R16_LOW, R21:R22:R23:R24:R25
 ;USING TIMER3 AND OCR3B TO GENERATE PWM
 
 PWM_GENERATE:
-	PUSH r16
+	PUSH R16
 	
-	ser TEMP
-	STORE DDRE, r16					;SET UP PORTE BIT4 AS PWM OUTPUT
-	clr TEMP
-	STORE OCR3CH, r16
-	clr temp
-	STORE OCR3CL, r16					;ONLY OCR3BL MATTERS(8BIT PWM)
-	LDI TEMP, (1<<WGM30)|(1<<COM3C1)	;8BIT PHASE CORRECT PWM MODE
-	STORE TCCR3A, r16		
-	LDI TEMP, 1<<CS30					
-	STORE TCCR3B, r16
-	ser temp
-	out portc, temp
+	SER R16 
+	STORE DDRE, R16					;SET UP PORTE BIT4 AS PWM OUTPUT
+	CLR R16
+	STORE OCR3CH, R16
+	CLR R16
+	STORE OCR3CL, R16					;ONLY OCR3BL MATTERS(8BIT PWM)
+	LDI R16, (1<<WGM30)|(1<<COM3C1)	;8BIT PHASE CORRECT PWM MODE
+	STORE TCCR3A, R16		
+	LDI R16, 1<<CS30					
+	STORE TCCR3B, R16
+	SER R16
+	STORE PORTC, R16
 	
-	POP r16
-	ret
+	POP R16
+	RET
 
-;Change pwm duty
-.set PWM_CMP_REG = OCR3CL		;use OCR3BL as pwm compare regis
-pwm_duty:
-	push r16
+;CHANGE PWM DUTY
+.SET PWM_CMP_REG = OCR3CL		;USE OCR3BL AS PWM COMPARE REGIS
+PWM_DUTY:
+	PUSH R16
 
-	STORE PWM_CMP_REG, r16
+	STORE PWM_CMP_REG, R16
 
-	pop r16
-	ret
+	POP R16
+	RET
 
-LEDFLASH:
-	push r16
+LEDFLASH:						;FLASH LED FOR SOME TIMES
+	PUSH R16
 
-	ser r16
-	out portc, r16
-	macro_wait 50
-	clr r16
-	out portc, r16
-	macro_wait 50
-	ser r16
-	out portc, r16
-	macro_wait 50
-	clr r16
-	out portc, r16
-	macro_wait 50
-	ser r16
-	out portc, r16
-	macro_wait 50
-	clr r16
-	out portc, r16
-	macro_wait 50
+	SER R16
+	STORE PORTC, R16
+	MACRO_WAIT 50
+	CLR R16
+	STORE PORTC, R16
+	MACRO_WAIT 50
+	SER R16
+	STORE PORTC, R16
+	MACRO_WAIT 50
+	CLR R16
+	STORE PORTC, R16
+	MACRO_WAIT 50
+	SER R16
+	STORE PORTC, R16
+	MACRO_WAIT 50
+	CLR R16
+	STORE PORTC, R16
+	MACRO_WAIT 50
 
-	pop r16
-	ret
+	POP R16
+	RET
