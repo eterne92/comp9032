@@ -98,8 +98,8 @@ This technique always generate a mountain that make sense. You can also use your
 \section{Control Procedure}
 Every time when the board is reset. The LCD will display a string "Input X:".\\
 You should always follow such emulate procedure.\\
-1. Input some number within 64 using keypad end with "\#", which is the row number of the accident scene. If your input is invalid, led will flash three times and board will be reset.\\
-2. After LCD showed "Input Y:", input some number within 64 using keypad end with "\#", which is the column number of the accident scene. If your input is invalid, led will flash three times and board will be reset.\\
+1. Input some number within 64 using keypad end with "\#", which is the row number of the accident scene. If your input is invalid, led will flash three times and loop until valid number is input.\\
+2. After LCD showed "Input Y:", input some number within 64 using keypad end with "\#", which is the column number of the accident scene. If your input is invalid, led will flash three times and loop until valid number is input.\\
 3. After LCD showed "READY", press PB0 to start search. LED will flash 3 times to indicate the start of search. LCD will show drone's current position and flying direction. Motor will be spinning, fast means flying high, low speed means suspending.\\
 4. During search, you can always press PB1 to abort the search. LCD will show "ABORT".\\
 5. After finding the accident scene. LCD will show "FOUND" and the position of the accident scene. Motor will stop. If a accident scene not fount(which actually never happen during a simulation), LCD will show "NOT FOUND", and motor also stop.

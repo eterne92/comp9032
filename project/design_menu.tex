@@ -1,10 +1,13 @@
 \documentclass[a4paper, 12 pt]{report}
+\usepackage{amssymb}
+\usepackage{amsmath}
 \usepackage{multirow}
 \usepackage{graphicx}
 \usepackage{tabularx}
 \usepackage{geometry}
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 \usepackage{algorithm}  
+\usepackage{algorithmic}
 \usepackage{tikz}
 \usetikzlibrary{shapes.geometric, arrows}
 
@@ -30,29 +33,18 @@
 % INTRODUCTION
 % -------------------------------------------------------------------------------------
 \section{Introduction}
+This project simulates a drone searching for a accident scene in a mountain which is presented by a 64$\times$64 matrix.\\
+Drone starts searching from possition (0,0), then fly east and searching grids one by one.
+Once the drone reaches the boarder of the mountain, it will fly south for 1 meter, then fly to the other direction.
+Program keeps the drone suspend above the mountain by 1 meter to make sure every spot can be seen.\\
+
+
 
 \newpage
-
+\section{Diagram}
 % -------------------------------------------------------------------------------------
 %-------------------------
-\tikzstyle{startstop} = [rectangle, rounded corners, minimum width=3cm, minimum height=1cm,text centered, draw=black, fill=red!30]
-\tikzstyle{io} = [trapezium, trapezium left angle=70, trapezium right angle=110, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=blue!30]
-\tikzstyle{process} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=orange!30]
-\tikzstyle{decision} = [diamond, minimum width=3cm, minimum height=1cm, text centered, draw=black, fill=green!30]
-\tikzstyle{arrow} = [thick,->,>=stealth]
-% -------------------------------------------------------------------------------------
-\section{Diagram}
-\begin{center}
-	\begin{tikzpicture}[node distance = 2.5cm]
-		\node (start) [startstop] {start};
-		\node (inputX) [io, below of = start] {input X};
-		\node (checkX) [decision, right of = inputX, xshift = 2cm] {check X};
-		\node (inputY) [io, below of = inputX] {input Y};
-		\node (checkY) [decision, right of = inputY, xshift = 2cm] {check Y};
-		
-		\draw [arrow] (checkX) |- (start);
-	\end{tikzpicture}
-\end{center}
+\includegraphics[height = 250mm]{diagram.pdf}
 
 
 \newpage
@@ -60,24 +52,49 @@
 % -------------------------------------------------------------------------------------
 % Mountain Generator
 % -------------------------------------------------------------------------------------
-\section{Mountain Generator}
-This project provided a random mountain generator written in python called generator.py that will generate a 64$\times$64 matrix and write it to the "mountain.asm" file which will be included into the source code.\\\\
-This generator uses such technique,\\
-1. Randomly generate a peak in position x, y with height h.\\
-2. Generate down from the peak to its neighbour grid until height became less then 10.\\
-3. Combine this graph with the former mountain map and cut out the positions that are lower than the former map.\\
-4. Repeat this procedure for several times.\\\\
-This technique always generate a mountain that make sense. You can also use your own generator or simply type in a mountain that suits your need. But make sure when you assemble the project, label your mountain with a label "mountain".
+\section{Modules}
+\includegraphics[height = 250mm]{tables.pdf}
+\newpage
+\section{Algorithms}
+\begin{algorithm}
+    \caption{Fly to next position}
+    \label{alg1}
+    \begin{algorithmic}[1]
+        \STATE try go to next position as direction shows
+        \IF{border reached}
+            \STATE go south
+                \IF{border reached}
+                \RETURN -1
+                \ENDIF
+            \STATE flip direction
+        \ENDIF
+        \RETURN position height
+    \end{algorithmic}
+\end{algorithm}
+\begin{algorithm}
+    \caption{Drone search}
+    \label{alg2}
+    \begin{algorithmic}[1]
+        \STATE read accident position
+        \IF {accident scene find}
+        \RETURN $true$
+        \ELSE
+        \RETURN $false$
+        \ENDIF
+    \end{algorithmic}
+\end{algorithm}
 \newpage
 % -------------------------------------------------------------------------------------
 % Control Procedure
 % -------------------------------------------------------------------------------------
-\section{Control Procedure}
-Every time when the board is reset. The LCD will display a string "Input X:".\\
-You should always follow such emulate procedure.\\
-1. Input some number within 64 using keypad end with "\#", which is the row number of the accident scene. If your input is invalid, led will flash three times and board will be reset.\\
-2. After LCD showed "Input Y:", input some number within 64 using keypad end with "\#", which is the column number of the accident scene. If your input is invalid, led will flash three times and board will be reset.\\
-3. After LCD showed "READY", press PB0 to start search. LED will flash 3 times to indicate the start of search. LCD will show drone's current position and flying direction. Motor will be spinning, fast means flying high, low speed means suspending.\\
-4. During search, you can always press PB1 to abort the search. LCD will show "ABORT".\\
-5. After finding the accident scene. LCD will show "FOUND" and the position of the accident scene. Motor will stop. If a accident scene not fount(which actually never happen during a simulation), LCD will show "NOT FOUND", and motor also stop.
+\section{Data Structure}
+\subsection{Mountain}
+Mountain is store in program memory as a 2 dimension array of 8bit integer.\\
+The index of the array presents the relative position of each 1$\times$1 grid.
+The value stored in array presents the height of each position.\\
+To get each position's address simply follow such formular.
+$$ addr\_position_{x,y} = addr_{Mountain start} + x\times 63 + y$$
+\subsection{Accident scene}
+Accident scene is stored in data memory as a two 8bit integer, and can be modified by user.\\
+Sure we can store accident scene by modify mountain height(eg. plus 128), but store it in the data memory can save it for more general use.
 \end{document}

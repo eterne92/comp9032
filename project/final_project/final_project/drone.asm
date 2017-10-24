@@ -8,7 +8,7 @@ FLY_TO_NEXT_POS:
     BREQ GO_LEFT
     CPI R20, BORDER_X   ;CHECK IF REACHED BOARDER
     BREQ GO_DOWN        ;IF BOARDER REACHED, GO DOWN
-    LCD_WRITE_DATA 'R'
+    LCD_WRITE_DATA 'E'
     ADIW Z, 1
     INC R20
 
@@ -24,7 +24,7 @@ FLY_TO_NEXT_POS:
     GO_LEFT:
         CPI R20, 0
         BREQ GO_DOWN
-        LCD_WRITE_DATA 'L'
+        LCD_WRITE_DATA 'W'
         SBIW Z, 1
         DEC R20
         RJMP CHECK_HEIGHT
@@ -32,7 +32,7 @@ FLY_TO_NEXT_POS:
     GO_DOWN:
         CPI R21, BORDER_Y
         BREQ GO_END
-        LCD_WRITE_DATA 'D'
+        LCD_WRITE_DATA 'S'
         ADIW Z, BORDER_Y	    ;NEXT ROW
         COM R18                 ;DIFFERENT DIRECTION
         INC R21					;SET R21, NEXT ROW

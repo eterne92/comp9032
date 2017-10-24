@@ -1,4 +1,7 @@
 \contentsline {section}{\numberline {0.1}Introduction}{2}
 \contentsline {section}{\numberline {0.2}Diagram}{3}
-\contentsline {section}{\numberline {0.3}Mountain Generator}{4}
-\contentsline {section}{\numberline {0.4}Control Procedure}{5}
+\contentsline {section}{\numberline {0.3}Modules}{4}
+\contentsline {section}{\numberline {0.4}Algorithms}{5}
+\contentsline {section}{\numberline {0.5}Data Structure}{6}
+\contentsline {subsection}{\numberline {0.5.1}Mountain}{6}
+\contentsline {subsection}{\numberline {0.5.2}Accident scene}{6}
