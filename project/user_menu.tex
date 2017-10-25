@@ -27,8 +27,11 @@
 % -------------------------------------------------------------------------------------
 \section{Introduction}
 This project simulates a drone searching a certain mountain for accident scene.\\
-Drone can search a mountain of 64m$\times$64m with max height of 64m and minimal height of 0m. This mountain is represented by a 64$\times$64 matrix. This project provide some tools to randomly generate such mountain which will be discussed in section 3.\\
-This project uses two press key, and a 4$\times$4 keypad to control simulation. The simulate process will be discussed in section 4.
+Drone can search a mountain of 64m$\times$64m with max height of 64m and minimal height of 0m.
+This mountain is represented by a 64$\times$64 matrix. This project provide some tools to randomly generate such mountain which will be discussed in section 3.\\
+This project uses two press key, and a 4$\times$4 keypad to control simulation. The simulate process will be discussed in section 4.\\
+The mountain view is showed as follow.\\
+\includegraphics[height = 130mm]{mountain_diagram.pdf}
 \newpage
 
 % -------------------------------------------------------------------------------------
@@ -100,7 +103,11 @@ Every time when the board is reset. The LCD will display a string "Input X:".\\
 You should always follow such emulate procedure.\\
 1. Input some number within 64 using keypad end with "\#", which is the row number of the accident scene. If your input is invalid, led will flash three times and loop until valid number is input.\\
 2. After LCD showed "Input Y:", input some number within 64 using keypad end with "\#", which is the column number of the accident scene. If your input is invalid, led will flash three times and loop until valid number is input.\\
-3. After LCD showed "READY", press PB0 to start search. LED will flash 3 times to indicate the start of search. LCD will show drone's current position and flying direction. Motor will be spinning, fast means flying high, low speed means suspending.\\
-4. During search, you can always press PB1 to abort the search. LCD will show "ABORT".\\
-5. After finding the accident scene. LCD will show "FOUND" and the position of the accident scene. Motor will stop. If a accident scene not fount(which actually never happen during a simulation), LCD will show "NOT FOUND", and motor also stop.
+- If x and y are both less than 64, the accident can be found. If one of them are set to 64, the accident scene can not be found.\\
+3. After LCD showed "READY", press PB0 to start search. LED will flash 3 times to indicate the start of search. LCD will show drone's current position and flying direction.\\
+Motor will be spinning.\\
+4. Once the drone get to each grid, LCD will show it is searching, and the motor should spin at low speed to indicate it is suspending.\\
+5. During search, you can always press PB1 to abort the search. Drone will immediately fly back to position (0,0). LCD will show "ABORT".\\
+6. After finding the accident scene. Drone will immediately fly back to position (0,0).
+LCD will show "FOUND" and the position of the accident scene. Motor will stop. If a accident scene not fount, LCD will show "NOT FOUND", and motor also stop.
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.23)  23 OCT 2017 12:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.10.23)  25 OCT 2017 11:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -253,27 +253,35 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [1
 
-] [2]
-Overfull \hbox (28.91452pt too wide) in alignment at lines 78--78
+]
+<mountain_diagram.pdf, id=12, pagebox=cropbox, 346.29375pt x 363.60844pt>
+File: mountain_diagram.pdf Graphic file (type pdf)
+<use mountain_diagram.pdf>
+Package pdftex.def Info: mountain_diagram.pdf  used on input line 34. on input 
+line 34.
+Package pdftex.def Info: Requested size: 352.28496pt x 369.88582pt on input lin
+e 34.
+ [2 <./mountain_diagram.pdf>]
+Overfull \hbox (28.91452pt too wide) in alignment at lines 81--81
 [][][][] 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 87--94
+Underfull \hbox (badness 10000) in paragraph at lines 90--97
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--94
+Underfull \hbox (badness 10000) in paragraph at lines 90--97
 
  []
 
 [4] [5] (./user_menu.aux) ) 
 Here is how much of TeX's memory you used:
- 2226 strings out of 492990
- 31585 string characters out of 6136333
+ 2231 strings out of 492990
+ 31728 string characters out of 6136333
  123417 words of memory out of 5000000
- 5760 multiletter control sequences out of 15000+600000
+ 5764 multiletter control sequences out of 15000+600000
  8800 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,11n,25p,306b,275s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -281,10 +289,10 @@ Here is how much of TeX's memory you used:
 nts/cm/cmbx12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 r12.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c
 :/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on user_menu.pdf (6 pages, 53805 bytes).
+Output written on user_menu.pdf (6 pages, 79930 bytes).
 PDF statistics:
- 39 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 48 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

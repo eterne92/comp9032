@@ -90,6 +90,9 @@ INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 OUTPUT user_menu.toc
 INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2017/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT mountain_diagram.pdf
+INPUT ./mountain_diagram.pdf
+INPUT ./mountain_diagram.pdf
 INPUT user_menu.aux
 INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT c:/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
